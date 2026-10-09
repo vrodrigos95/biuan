@@ -1,0 +1,185 @@
+{
+  "nivel": "B1",
+  "preguntas": [
+    {
+      "id": "B1-001",
+      "nivel": "B1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "I ___ in this company since 2019.",
+      "opciones": [
+        "have worked",
+        "work",
+        "worked",
+        "am working"
+      ],
+      "correcta": 0,
+      "porque": "Since + un punto de inicio pide presente perfecto: have worked."
+    },
+    {
+      "id": "B1-002",
+      "nivel": "B1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "If it rains tomorrow, we ___ at home.",
+      "opciones": [
+        "will stay",
+        "would stay",
+        "stayed",
+        "staying"
+      ],
+      "correcta": 0,
+      "porque": "Primer condicional: if + presente, will + verbo."
+    },
+    {
+      "id": "B1-003",
+      "nivel": "B1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "When I arrived, they ___ dinner.",
+      "opciones": [
+        "were having",
+        "have",
+        "are having",
+        "has had"
+      ],
+      "correcta": 0,
+      "porque": "Una acción en progreso en el pasado, interrumpida por otra: pasado continuo."
+    },
+    {
+      "id": "B1-004",
+      "nivel": "B1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "I'm not used ___ up so early.",
+      "opciones": [
+        "to getting",
+        "to get",
+        "get",
+        "getting"
+      ],
+      "correcta": 0,
+      "porque": "Be used to (estar acostumbrado a) va seguido de verbo con -ing."
+    },
+    {
+      "id": "B1-005",
+      "nivel": "B1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "This bridge ___ in 1950.",
+      "opciones": [
+        "was built",
+        "built",
+        "is building",
+        "has built"
+      ],
+      "correcta": 0,
+      "porque": "El puente no construyó nada: lo construyeron. Voz pasiva en pasado: was built."
+    },
+    {
+      "id": "B1-006",
+      "nivel": "B1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "I'm looking ___ my keys. Have you seen them?",
+      "opciones": [
+        "for",
+        "at",
+        "after",
+        "up"
+      ],
+      "correcta": 0,
+      "porque": "Look for significa buscar."
+    },
+    {
+      "id": "B1-007",
+      "nivel": "B1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "She was very ___ when she won the prize.",
+      "opciones": [
+        "excited",
+        "exciting",
+        "excite",
+        "excitement"
+      ],
+      "correcta": 0,
+      "porque": "Para cómo se siente una persona se usa -ed: excited (emocionada)."
+    },
+    {
+      "id": "B1-008",
+      "nivel": "B1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "Please ___ the form and give it to the receptionist.",
+      "opciones": [
+        "fill in",
+        "fill up",
+        "fill on",
+        "fill at"
+      ],
+      "correcta": 0,
+      "porque": "Fill in a form es llenar un formulario; fill up es llenar un recipiente."
+    },
+    {
+      "id": "B1-009",
+      "nivel": "B1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Many people think that working from home is always easier. However, a recent survey shows that 40% of remote workers feel lonely, and many of them work longer hours than before.",
+      "enunciado": "Según el texto, ¿qué problema tienen muchas personas que trabajan desde casa?",
+      "opciones": [
+        "Se sienten solas",
+        "Ganan menos dinero",
+        "Tienen menos trabajo"
+      ],
+      "correcta": 0,
+      "porque": "«40% of remote workers feel lonely»: se sienten solas."
+    },
+    {
+      "id": "B1-010",
+      "nivel": "B1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Dear Ms. Rivera, Thank you for your application. Unfortunately, the position has already been filled. However, we will keep your CV in case a similar vacancy becomes available.",
+      "enunciado": "¿Qué le dice la empresa a la Sra. Rivera?",
+      "opciones": [
+        "Que el puesto ya está ocupado",
+        "Que tiene una entrevista",
+        "Que su CV está incompleto"
+      ],
+      "correcta": 0,
+      "porque": "«The position has already been filled»: el puesto ya está ocupado."
+    },
+    {
+      "id": "B1-011",
+      "nivel": "B1",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "Attention, passengers. Flight 208 to Cancún has been delayed by forty-five minutes due to bad weather. Boarding will now take place at gate twelve.",
+      "enunciado": "¿Por qué se retrasa el vuelo?",
+      "opciones": [
+        "Por el mal clima",
+        "Por un problema técnico",
+        "Porque cambió la sala"
+      ],
+      "correcta": 0,
+      "porque": "«Due to bad weather»: por el mal clima."
+    },
+    {
+      "id": "B1-012",
+      "nivel": "B1",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "I'd love to come to your party on Saturday, but I promised my mom I'd help her move to her new apartment.",
+      "enunciado": "¿Por qué no irá a la fiesta?",
+      "opciones": [
+        "Va a ayudar a su mamá a mudarse",
+        "Tiene que trabajar",
+        "No se siente bien"
+      ],
+      "correcta": 0,
+      "porque": "«I promised my mom I'd help her move»: va a ayudar a su mamá con la mudanza."
+    }
+  ]
+}

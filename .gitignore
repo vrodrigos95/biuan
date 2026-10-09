@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+servidor/config.php
+*.log
+.DS_Store

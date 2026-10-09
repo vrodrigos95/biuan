@@ -1,0 +1,185 @@
+{
+  "nivel": "A2",
+  "preguntas": [
+    {
+      "id": "A2-001",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "Yesterday we ___ to the beach.",
+      "opciones": [
+        "went",
+        "go",
+        "goes",
+        "going"
+      ],
+      "correcta": 0,
+      "porque": "Yesterday pide pasado simple; el pasado de go es went."
+    },
+    {
+      "id": "A2-002",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "___ you see the game last night?",
+      "opciones": [
+        "Did",
+        "Do",
+        "Were",
+        "Are"
+      ],
+      "correcta": 0,
+      "porque": "Last night es pasado: las preguntas en pasado simple usan did."
+    },
+    {
+      "id": "A2-003",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "My brother is ___ than me.",
+      "opciones": [
+        "taller",
+        "more tall",
+        "tallest",
+        "tall"
+      ],
+      "correcta": 0,
+      "porque": "Tall es corto: el comparativo se forma con -er: taller."
+    },
+    {
+      "id": "A2-004",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "Look! The children ___ in the garden.",
+      "opciones": [
+        "are playing",
+        "play",
+        "plays",
+        "played"
+      ],
+      "correcta": 0,
+      "porque": "Look! indica que pasa en este momento: presente continuo."
+    },
+    {
+      "id": "A2-005",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "I'm ___ visit my grandmother next weekend.",
+      "opciones": [
+        "going to",
+        "will",
+        "go to",
+        "going"
+      ],
+      "correcta": 0,
+      "porque": "Después de I'm, el futuro planeado es going to + verbo."
+    },
+    {
+      "id": "A2-006",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "The opposite of «cheap» is ___.",
+      "opciones": [
+        "expensive",
+        "poor",
+        "cheaper",
+        "low"
+      ],
+      "correcta": 0,
+      "porque": "Cheap es barato; su contrario es expensive (caro)."
+    },
+    {
+      "id": "A2-007",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "I need some medicine. I'll go to the ___.",
+      "opciones": [
+        "pharmacy",
+        "bakery",
+        "library",
+        "stadium"
+      ],
+      "correcta": 0,
+      "porque": "Las medicinas se compran en la farmacia: pharmacy."
+    },
+    {
+      "id": "A2-008",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "You show your ___ at the border to enter another country.",
+      "opciones": [
+        "passport",
+        "menu",
+        "receipt",
+        "umbrella"
+      ],
+      "correcta": 0,
+      "porque": "En la frontera se muestra el pasaporte: passport."
+    },
+    {
+      "id": "A2-009",
+      "nivel": "A2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Last Saturday, Pedro wanted to go to the cinema, but it was closed. So he went to the park with his sister and they had ice cream.",
+      "enunciado": "¿Por qué Pedro no vio una película?",
+      "opciones": [
+        "El cine estaba cerrado",
+        "No tenía dinero",
+        "Estaba lloviendo"
+      ],
+      "correcta": 0,
+      "porque": "«It was closed»: el cine estaba cerrado."
+    },
+    {
+      "id": "A2-010",
+      "nivel": "A2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Notice: The library will be closed on Monday. On Tuesday it opens at 10 a.m. instead of 8 a.m.",
+      "enunciado": "¿Qué pasa el martes?",
+      "opciones": [
+        "La biblioteca abre más tarde de lo normal",
+        "La biblioteca está cerrada todo el día",
+        "La biblioteca abre a las 8 a. m."
+      ],
+      "correcta": 0,
+      "porque": "El martes abre a las 10 «instead of 8»: más tarde de lo normal."
+    },
+    {
+      "id": "A2-011",
+      "nivel": "A2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "Excuse me, is there a bank near here? Yes, go straight and turn left. It's next to the supermarket.",
+      "enunciado": "¿Dónde está el banco?",
+      "opciones": [
+        "Junto al supermercado",
+        "Frente al supermercado",
+        "Detrás del parque"
+      ],
+      "correcta": 0,
+      "porque": "«It's next to the supermarket»: next to significa junto a."
+    },
+    {
+      "id": "A2-012",
+      "nivel": "A2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "I usually take the bus to work, but today I'm walking because the bus drivers are on strike.",
+      "enunciado": "¿Cómo va hoy al trabajo?",
+      "opciones": [
+        "Caminando",
+        "En autobús",
+        "En carro"
+      ],
+      "correcta": 0,
+      "porque": "Normalmente va en autobús, pero «today I'm walking»: hoy camina."
+    }
+  ]
+}

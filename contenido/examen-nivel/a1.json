@@ -1,0 +1,184 @@
+{
+  "nivel": "A1",
+  "preguntas": [
+    {
+      "id": "A1-001",
+      "nivel": "A1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "She ___ a teacher.",
+      "opciones": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "correcta": 0,
+      "porque": "Con she (ella) se usa is."
+    },
+    {
+      "id": "A1-002",
+      "nivel": "A1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "___ you from Mexico?",
+      "opciones": [
+        "Are",
+        "Is",
+        "Am",
+        "Do"
+      ],
+      "correcta": 0,
+      "porque": "Con you se usa are, y en pregunta va al principio."
+    },
+    {
+      "id": "A1-003",
+      "nivel": "A1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "I ___ two brothers.",
+      "opciones": [
+        "have",
+        "has",
+        "am",
+        "having"
+      ],
+      "correcta": 0,
+      "porque": "Con I se usa have; has es solo para he, she, it."
+    },
+    {
+      "id": "A1-004",
+      "nivel": "A1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "This is ___ umbrella.",
+      "opciones": [
+        "an",
+        "a",
+        "some"
+      ],
+      "correcta": 0,
+      "porque": "Umbrella empieza con sonido de vocal, por eso lleva an."
+    },
+    {
+      "id": "A1-005",
+      "nivel": "A1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "There ___ three chairs in the room.",
+      "opciones": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "correcta": 0,
+      "porque": "Three chairs es plural, por eso there are."
+    },
+    {
+      "id": "A1-006",
+      "nivel": "A1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «martes» en inglés?",
+      "opciones": [
+        "Tuesday",
+        "Thursday",
+        "Monday",
+        "Sunday"
+      ],
+      "correcta": 0,
+      "porque": "Tuesday es martes; Thursday es jueves."
+    },
+    {
+      "id": "A1-007",
+      "nivel": "A1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "My father's mother is my ___.",
+      "opciones": [
+        "grandmother",
+        "aunt",
+        "sister",
+        "cousin"
+      ],
+      "correcta": 0,
+      "porque": "La mamá de tu papá es tu abuela: grandmother."
+    },
+    {
+      "id": "A1-008",
+      "nivel": "A1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "Una «kitchen» es una…",
+      "opciones": [
+        "cocina",
+        "recámara",
+        "cochera",
+        "sala"
+      ],
+      "correcta": 0,
+      "porque": "Kitchen significa cocina."
+    },
+    {
+      "id": "A1-009",
+      "nivel": "A1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Hi! My name is Laura. I am 25 years old. I am from Monterrey, but I live in Puebla. I am a nurse.",
+      "enunciado": "¿Dónde vive Laura?",
+      "opciones": [
+        "En Puebla",
+        "En Monterrey",
+        "En Guadalajara"
+      ],
+      "correcta": 0,
+      "porque": "El texto dice «I live in Puebla»; Monterrey es de donde es."
+    },
+    {
+      "id": "A1-010",
+      "nivel": "A1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Tom has a dog and two cats. The dog is black. The cats are white.",
+      "enunciado": "¿De qué color es el perro?",
+      "opciones": [
+        "Negro",
+        "Blanco",
+        "Café"
+      ],
+      "correcta": 0,
+      "porque": "«The dog is black»: el perro es negro; los gatos son blancos."
+    },
+    {
+      "id": "A1-011",
+      "nivel": "A1",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "My phone number is five, five, two, eight, nine.",
+      "enunciado": "¿Cuál es el número de teléfono?",
+      "opciones": [
+        "55289",
+        "55298",
+        "52289"
+      ],
+      "correcta": 0,
+      "porque": "Se escucha five, five, two, eight, nine: 55289."
+    },
+    {
+      "id": "A1-012",
+      "nivel": "A1",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "The class starts at nine o'clock in the morning.",
+      "enunciado": "¿A qué hora empieza la clase?",
+      "opciones": [
+        "9:00 a. m.",
+        "9:00 p. m.",
+        "5:00 a. m."
+      ],
+      "correcta": 0,
+      "porque": "Nine o'clock in the morning son las 9 de la mañana."
+    }
+  ]
+}

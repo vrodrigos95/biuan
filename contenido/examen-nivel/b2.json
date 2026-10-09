@@ -1,0 +1,185 @@
+{
+  "nivel": "B2",
+  "preguntas": [
+    {
+      "id": "B2-001",
+      "nivel": "B2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "If I had known about the traffic, I ___ earlier.",
+      "opciones": [
+        "would have left",
+        "would leave",
+        "had left",
+        "will leave"
+      ],
+      "correcta": 0,
+      "porque": "Tercer condicional: if + had + participio, would have + participio."
+    },
+    {
+      "id": "B2-002",
+      "nivel": "B2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "Hardly ___ the house when it started to rain.",
+      "opciones": [
+        "had I left",
+        "I had left",
+        "did I leave",
+        "I left"
+      ],
+      "correcta": 0,
+      "porque": "Hardly al inicio invierte el orden y pide pasado perfecto: had I left."
+    },
+    {
+      "id": "B2-003",
+      "nivel": "B2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "She suggested ___ a taxi instead of waiting.",
+      "opciones": [
+        "taking",
+        "to take",
+        "take",
+        "took"
+      ],
+      "correcta": 0,
+      "porque": "Suggest va seguido de verbo con -ing."
+    },
+    {
+      "id": "B2-004",
+      "nivel": "B2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "By the time you get here, we ___ the report.",
+      "opciones": [
+        "will have finished",
+        "will finish",
+        "have finished",
+        "finished"
+      ],
+      "correcta": 0,
+      "porque": "By the time + futuro: algo terminado antes de ese momento, futuro perfecto."
+    },
+    {
+      "id": "B2-005",
+      "nivel": "B2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "I wish I ___ more time to travel.",
+      "opciones": [
+        "had",
+        "have",
+        "will have",
+        "am having"
+      ],
+      "correcta": 0,
+      "porque": "Wish sobre el presente usa pasado simple: I wish I had."
+    },
+    {
+      "id": "B2-006",
+      "nivel": "B2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "The company decided to ___ the meeting until next week.",
+      "opciones": [
+        "put off",
+        "put on",
+        "put up",
+        "put out"
+      ],
+      "correcta": 0,
+      "porque": "Put off significa posponer."
+    },
+    {
+      "id": "B2-007",
+      "nivel": "B2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "Her argument was so ___ that everyone agreed with her.",
+      "opciones": [
+        "convincing",
+        "convinced",
+        "convince",
+        "convincingly"
+      ],
+      "correcta": 0,
+      "porque": "Describe el argumento (lo que provoca), por eso -ing: convincing."
+    },
+    {
+      "id": "B2-008",
+      "nivel": "B2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "Despite the ___ evidence, the jury found him not guilty.",
+      "opciones": [
+        "overwhelming",
+        "overwhelmed",
+        "overwhelm",
+        "overwhelmingly"
+      ],
+      "correcta": 0,
+      "porque": "Antes del sustantivo evidence va un adjetivo; overwhelming significa abrumador."
+    },
+    {
+      "id": "B2-009",
+      "nivel": "B2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Although electric cars produce no emissions while driving, critics point out that the electricity used to charge them often comes from fossil fuels, and that battery production has its own environmental cost.",
+      "enunciado": "¿Cuál es la idea principal del texto?",
+      "opciones": [
+        "Los autos eléctricos también tienen costos ambientales",
+        "Los autos eléctricos contaminan más que los de gasolina",
+        "Las baterías son cada vez más baratas"
+      ],
+      "correcta": 0,
+      "porque": "El texto señala la electricidad de combustibles fósiles y el costo de fabricar baterías."
+    },
+    {
+      "id": "B2-010",
+      "nivel": "B2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "The museum's new policy, which allows visitors to enter free of charge on Sundays, has been so successful that the board is considering extending it to the entire weekend.",
+      "enunciado": "¿Qué podría pasar en el futuro?",
+      "opciones": [
+        "La entrada podría ser gratis también los sábados",
+        "El museo cerraría los domingos",
+        "La entrada de los domingos costaría más"
+      ],
+      "correcta": 0,
+      "porque": "«Extending it to the entire weekend»: extender la entrada gratis a todo el fin de semana."
+    },
+    {
+      "id": "B2-011",
+      "nivel": "B2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "Had the manager responded to the complaints sooner, the company wouldn't have lost so many customers.",
+      "enunciado": "¿Qué se entiende?",
+      "opciones": [
+        "El gerente respondió tarde y se perdieron clientes",
+        "El gerente respondió rápido y no se perdieron clientes",
+        "La empresa ganó clientes nuevos"
+      ],
+      "correcta": 0,
+      "porque": "«Had the manager responded sooner…» = si hubiera respondido antes, no se habrían perdido clientes."
+    },
+    {
+      "id": "B2-012",
+      "nivel": "B2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "I'm not saying the plan won't work; I'm just saying we should have a backup in case it doesn't.",
+      "enunciado": "¿Qué opina quien habla?",
+      "opciones": [
+        "Conviene tener un plan alternativo",
+        "El plan va a fallar seguro",
+        "No hace falta otro plan"
+      ],
+      "correcta": 0,
+      "porque": "«We should have a backup»: conviene tener un plan de respaldo."
+    }
+  ]
+}
