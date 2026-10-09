@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivel 3: Camino a B1</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#B08B14">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Inglés B1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF9FF; --surface:#FFFFFF; --ink:#3D3A4E; --ink-soft:#8B87A3; --line:#ECE7F7;
+    --blue:#BFE7F5; --blue-deep:#3E8FAE; --blue-ink:#215A70;
+    --mint:#C7ECDA; --mint-deep:#3F9E73; --mint-ink:#1F6947;
+    --peach:#FCDCC0; --peach-deep:#CC7C3B; --peach-ink:#8A4E1F;
+    --lav:#E1D2F7; --lav-deep:#8E5FCB; --lav-ink:#5C3A8C;
+    --yellow:#FBEFB2; --yellow-deep:#B08B14; --yellow-ink:#7A5F0C;
+    --pink:#F8D2E3; --pink-deep:#C15C90; --pink-ink:#8A3A63;
+    --teal:#C3EFE9; --teal-deep:#3E9E93; --teal-ink:#206A62;
+    --green-ok:#3F9E73; --red-no:#D46A6A;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background:var(--bg); color:var(--ink); font-family:'Nunito',sans-serif; line-height:1.5; }
+  h1,h2,h3,.tab{ font-family:'Baloo 2',sans-serif; }
+  .wrap{ max-width:900px; margin:0 auto; padding:28px 20px 60px; }
+  header{ text-align:center; margin-bottom:22px; }
+  header h1{ font-size:1.6rem; margin:0 0 6px; }
+  header p{ margin:0; color:var(--ink-soft); font-size:0.95rem; }
+
+  .tabs{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:26px; }
+  .tab{ border:none; padding:9px 14px; border-radius:999px; font-size:0.85rem; font-weight:600; cursor:pointer; color:var(--ink); background:var(--surface); border:2px solid var(--line); transition:transform .15s ease, box-shadow .15s ease; }
+  .tab:hover{ transform:translateY(-1px); }
+  .tab.active{ color:#fff; border-color:transparent; box-shadow:0 4px 14px -4px rgba(0,0,0,0.25); }
+  .tab[data-topic="tips"].active{ background:var(--teal-deep); }
+  .tab[data-topic="pascont"].active{ background:var(--blue-deep); }
+  .tab[data-topic="futuro"].active{ background:var(--mint-deep); }
+  .tab[data-topic="modales"].active{ background:var(--peach-deep); }
+  .tab[data-topic="conectores"].active{ background:var(--lav-deep); }
+  .tab[data-topic="vocab"].active{ background:var(--pink-deep); }
+  .tab[data-topic="simulacro"].active{ background:var(--yellow-deep); }
+
+  .panel{ display:none; }
+  .panel.active{ display:block; animation:fade .25s ease; }
+  @keyframes fade{ from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);} }
+
+  .section-card{ background:var(--surface); border-radius:20px; padding:22px 24px; margin-bottom:18px; border:1px solid var(--line); }
+  .section-card h2{ margin:0 0 10px; font-size:1.2rem; }
+  .section-card h3{ margin:0 0 10px; font-size:1.02rem; }
+  .section-card p{ margin:0 0 8px; }
+  .badge{ display:inline-block; font-size:0.72rem; font-weight:700; padding:4px 10px; border-radius:999px; margin-bottom:10px; }
+
+  table.grammar{ width:100%; border-collapse:collapse; margin:14px 0; }
+  table.grammar th, table.grammar td{ text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); font-size:0.9rem; }
+  table.grammar th{ color:var(--ink-soft); font-weight:700; }
+
+  .compare-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:14px; }
+  .compare-card{ border-radius:16px; padding:14px; }
+  .compare-card h3{ margin:0 0 8px; font-size:0.95rem; }
+  .compare-card.a{ background:var(--blue); color:var(--blue-ink); }
+  .compare-card.b{ background:var(--mint); color:var(--mint-ink); }
+  .compare-card ul{ margin:0; padding-left:18px; }
+  .compare-card li{ margin-bottom:4px; }
+
+  .modal-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin-top:14px; }
+  .modal-card{ border-radius:16px; padding:14px; }
+  .modal-card h3{ margin:0 0 6px; font-size:0.95rem; }
+  .modal-card p{ margin:0; font-size:0.85rem; }
+  .modal-card.can{ background:var(--blue); color:var(--blue-ink); }
+  .modal-card.must{ background:var(--peach); color:var(--peach-ink); }
+  .modal-card.should{ background:var(--mint); color:var(--mint-ink); }
+  .modal-card.haveto{ background:var(--lav); color:var(--lav-ink); }
+
+  .connector-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin-top:12px; }
+  .connector-card{ background:var(--lav); color:var(--lav-ink); border-radius:12px; padding:10px 12px; text-align:center; }
+  .connector-card b{ display:block; font-family:'Baloo 2'; font-size:1.05rem; margin-bottom:2px; }
+  .connector-card small{ font-size:0.78rem; opacity:.9; }
+
+  .vocab-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:12px; margin-top:14px; }
+  .flip-card{ perspective:1000px; height:100px; cursor:pointer; }
+  .flip-inner{ position:relative; width:100%; height:100%; transition:transform .5s; transform-style:preserve-3d; }
+  .flip-card.flipped .flip-inner{ transform:rotateY(180deg); }
+  .flip-front, .flip-back{ position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:14px; display:flex; align-items:center; justify-content:center; text-align:center; padding:8px; font-weight:700; }
+  .flip-front{ background:var(--pink); color:var(--pink-ink); flex-direction:column; }
+  .flip-front .emoji{ font-size:1.6rem; margin-bottom:4px; }
+  .flip-back{ background:var(--pink-deep); color:#fff; transform:rotateY(180deg); font-family:'Baloo 2'; font-size:0.95rem; }
+  .hint{ font-size:0.82rem; color:var(--ink-soft); text-align:center; margin-top:6px; }
+
+  .example-box{ background:var(--bg); border-left:4px solid var(--blue-deep); padding:10px 14px; border-radius:8px; font-size:0.92rem; margin-top:10px; }
+
+  .tips-box{ background:#FFFDF3; border:1px dashed var(--yellow-deep); border-radius:16px; padding:16px 18px; margin-top:4px; }
+  .tips-box h3{ margin:0 0 8px; color:var(--yellow-ink); }
+  .tips-box ul{ margin:0; padding-left:20px; }
+  .tips-box li{ margin-bottom:8px; }
+  .tips-box li:last-child{ margin-bottom:0; }
+  .tips-box.teal{ background:#F1FCFA; border-color:var(--teal-deep); }
+  .tips-box.teal h3{ color:var(--teal-ink); }
+
+  .quiz-q{ margin-bottom:18px; }
+  .quiz-q:last-child{ margin-bottom:0; }
+  .quiz-prompt{ font-weight:700; margin-bottom:8px; }
+  .quiz-options{ display:flex; flex-wrap:wrap; gap:8px; }
+  .quiz-opt{ border:2px solid var(--line); background:var(--surface); border-radius:12px; padding:8px 14px; font-family:'Nunito'; font-size:0.9rem; font-weight:700; cursor:pointer; color:var(--ink); }
+  .quiz-opt:hover{ border-color:var(--ink-soft); }
+  .quiz-opt.correct{ background:var(--mint); border-color:var(--green-ok); color:var(--mint-ink); }
+  .quiz-opt.incorrect{ background:#FBDEDE; border-color:var(--red-no); color:#8A2E2E; }
+  .quiz-feedback{ margin-top:6px; font-size:0.85rem; min-height:1.2em; color:var(--ink-soft); }
+
+  .fill-row{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:6px; }
+  .fill-row input{ border:2px solid var(--line); border-radius:10px; padding:8px 12px; font-family:'Nunito'; font-size:0.9rem; width:150px; }
+  .fill-row button{ border:none; background:var(--ink); color:#fff; border-radius:10px; padding:8px 14px; font-weight:700; cursor:pointer; font-family:'Nunito'; }
+
+  .sim-start{ text-align:center; padding:10px 0; }
+  .sim-start button{ border:none; background:var(--yellow-deep); color:#fff; border-radius:14px; padding:14px 28px; font-family:'Baloo 2'; font-size:1.05rem; font-weight:700; cursor:pointer; }
+  .sim-meta{ display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:8px; }
+  .sim-timer{ font-family:'Baloo 2'; font-size:1.1rem; background:var(--yellow); color:var(--yellow-ink); padding:6px 14px; border-radius:999px; }
+  .sim-progress{ font-size:0.85rem; color:var(--ink-soft); }
+  .sim-result{ text-align:center; padding:16px 0; }
+  .sim-result .score{ font-family:'Baloo 2'; font-size:2.2rem; color:var(--yellow-ink); }
+  .sim-result button{ margin-top:14px; border:none; background:var(--ink); color:#fff; border-radius:12px; padding:10px 20px; font-weight:700; cursor:pointer; font-family:'Nunito'; }
+  .sim-explain{ margin-top:8px; font-size:0.85rem; color:var(--ink); background:var(--bg); border-radius:10px; padding:9px 12px; text-align:left; line-height:1.45; }
+  .sim-explain b{ color:var(--ink); }
+  .sim-review-title{ text-align:center; font-family:'Baloo 2'; font-size:1.05rem; margin:0 0 14px; color:var(--ink); }
+  .sim-analysis{ background:#FFFDF3; border:1px dashed var(--yellow-deep); border-radius:16px; padding:16px 18px; margin-top:16px; text-align:left; }
+  .sim-analysis h3{ margin:0 0 10px; font-size:1rem; color:var(--yellow-ink); font-family:'Baloo 2'; }
+  .sim-analysis ul{ margin:0; padding-left:20px; }
+  .sim-analysis li{ margin-bottom:6px; font-size:0.9rem; }
+  .sim-analysis p{ margin:0; font-size:0.9rem; }
+
+  @media (max-width:520px){ header h1{ font-size:1.35rem; } .fill-row input{ width:110px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Nivel 3: Camino a B1 🚀</h1>
+    <p>Semanas 5-6 · Pasado continuo, futuro, modales y conectores</p>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-topic="tips">Tips y técnicas</button>
+    <button class="tab" data-topic="pascont">Pasado continuo</button>
+    <button class="tab" data-topic="futuro">Futuro (will/going to)</button>
+    <button class="tab" data-topic="modales">Modales</button>
+    <button class="tab" data-topic="conectores">Conectores</button>
+    <button class="tab" data-topic="vocab">Vocabulario</button>
+    <button class="tab" data-topic="simulacro">Simulacro TOEFL</button>
+  </div>
+
+  <!-- TIPS -->
+  <div class="panel active" id="tips">
+    <div class="section-card">
+      <span class="badge" style="background:var(--teal);color:var(--teal-ink);">Cómo aprender más rápido</span>
+      <h2>Técnicas de aprendizaje para este nivel</h2>
+      <p>En este nivel las estructuras empiezan a mezclarse entre sí (pasado simple vs. continuo, will vs. going to). El reto ya no es solo memorizar reglas, sino reconocer cuál usar en cada situación.</p>
+    </div>
+
+    <div class="section-card tips-box teal">
+      <h3>🧠 Técnicas de estudio</h3>
+      <ul>
+        <li><b>Práctica intercalada (interleaving):</b> en este nivel es más importante que nunca — mezcla pasado simple, pasado continuo, will y going to en el mismo repaso, en vez de estudiar cada uno por separado. Así entrenas la habilidad real que pide el examen: decidir cuál usar.</li>
+        <li><b>Chunking (agrupar por función):</b> agrupa los modales por lo que expresan (obligación: must/have to — consejo: should — habilidad: can) en vez de aprenderlos como una lista suelta de palabras.</li>
+        <li><b>Recuperación activa:</b> antes de revisar la regla, intenta responder de memoria "¿cuál de las dos formas va aquí?" — es más efectivo que releer la explicación.</li>
+        <li><b>Repetición espaciada:</b> repasa los conectores y modales de esta semana en 2-3 días, no solo el mismo día que los aprendiste.</li>
+        <li><b>Input comprensible:</b> lee o escucha algo corto en inglés (una nota, un diálogo simple) y subraya cada conector que encuentres (and, but, because, so, although) — verlos en contexto real ayuda a fijar cuándo se usa cada uno.</li>
+      </ul>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>📝 Tips específicos para el examen TOEFL</h3>
+      <ul>
+        <li><b>Presta atención a las palabras señal en el pasado:</b> "while" casi siempre introduce una acción en progreso (pasado continuo) y "when" suele introducir la acción que interrumpe (pasado simple).</li>
+        <li><b>En preguntas de futuro:</b> si la oración sugiere un plan ya decidido o evidencia visible, la respuesta casi siempre es "going to"; si es una decisión espontánea o promesa, es "will".</li>
+        <li><b>Revisa la coherencia de los conectores:</b> el TOEFL evalúa mucho si la relación lógica entre dos ideas (causa, contraste, consecuencia) tiene sentido — no solo la gramática de la palabra en sí.</li>
+        <li><b>Sigue usando eliminación de opciones</b> y no te quedes atorada en una sola pregunta; márcala y regresa si el tiempo lo permite.</li>
+        <li><b>Practica con simulacros cronometrados regularmente</b> (como el de la pestaña "Simulacro TOEFL") para que el ritmo del examen ya no te tome por sorpresa.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PASADO CONTINUO -->
+  <div class="panel" id="pascont">
+    <div class="section-card">
+      <span class="badge" style="background:var(--blue);color:var(--blue-ink);">was/were + -ing</span>
+      <h2>Pasado continuo</h2>
+      <p>Describe una acción <b>en progreso</b> en un momento del pasado, muchas veces interrumpida por otra acción más corta.</p>
+      <div class="compare-grid">
+        <div class="compare-card a">
+          <h3>🎬 Pasado continuo</h3>
+          <ul>
+            <li>Fórmula: was/were + verbo-ing</li>
+            <li>"I was watching TV..."</li>
+            <li>Es la acción "en pausa", de fondo</li>
+          </ul>
+        </div>
+        <div class="compare-card b">
+          <h3>📸 Pasado simple</h3>
+          <ul>
+            <li>Fórmula: verbo en pasado</li>
+            <li>"...when she called."</li>
+            <li>Es la acción corta que interrumpe</li>
+          </ul>
+        </div>
+      </div>
+      <div class="example-box">💡 Piensa en el pasado continuo como una "película en pausa" en un momento del pasado, y el pasado simple como una "foto" de algo que ya terminó. "While" casi siempre va con la película (continuo); "when" casi siempre va con la foto (simple).</div>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Busca la palabra "while" (mientras) → normalmente va con pasado continuo. Busca "when" (cuando) → normalmente va con pasado simple para la acción que interrumpe.</li>
+        <li>Practica contando una anécdota real: "Yesterday at 8pm I was... when...". Contar historias reales fija la estructura mejor que oraciones sueltas.</li>
+        <li>Compara ambas oraciones en la misma frase en voz alta para escuchar la diferencia de ritmo entre "was watching" y "watched".</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-pascont"></div>
+      <div id="fill-pascont"></div>
+    </div>
+  </div>
+
+  <!-- FUTURO -->
+  <div class="panel" id="futuro">
+    <div class="section-card">
+      <span class="badge" style="background:var(--mint);color:var(--mint-ink);">will vs going to</span>
+      <h2>Futuro: will vs. going to</h2>
+      <div class="compare-grid">
+        <div class="compare-card a">
+          <h3>⚡ Will</h3>
+          <ul>
+            <li>Decisión espontánea (la tomas mientras hablas)</li>
+            <li>Promesa: "I will help you."</li>
+            <li>Predicción sin evidencia clara: "I think it will rain."</li>
+          </ul>
+        </div>
+        <div class="compare-card b">
+          <h3>📋 Going to</h3>
+          <ul>
+            <li>Plan ya decidido antes: "I'm going to visit my mom this weekend."</li>
+            <li>Predicción con evidencia visible: "Look at those clouds, it's going to rain."</li>
+          </ul>
+        </div>
+      </div>
+      <div class="example-box">💡 Pregúntate: ¿ya lo decidí antes de hablar (going to) o lo estoy decidiendo justo ahora (will)?</div>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Antes de responder, pregúntate: ¿hay evidencia visible (nubes, boletos comprados) o es algo ya planeado? → going to. ¿Es una decisión del momento o una promesa? → will.</li>
+        <li>Practica reaccionando en voz alta a situaciones reales que veas ("Mira eso... it's going to..."), no solo con ejercicios de papel.</li>
+        <li>Intercala preguntas de will y going to en el mismo repaso en vez de practicar solo uno a la vez — así entrenas a decidir cuál toca, que es lo que realmente pide el examen.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-futuro"></div>
+      <div id="fill-futuro"></div>
+    </div>
+  </div>
+
+  <!-- MODALES -->
+  <div class="panel" id="modales">
+    <div class="section-card">
+      <span class="badge" style="background:var(--peach);color:var(--peach-ink);">can, must, should...</span>
+      <h2>Verbos modales</h2>
+      <div class="modal-grid">
+        <div class="modal-card can"><h3>can / could</h3><p>Habilidad o permiso. "Could" es más formal o pasado de "can".</p></div>
+        <div class="modal-card must"><h3>must</h3><p>Obligación fuerte, casi siempre una regla o algo urgente.</p></div>
+        <div class="modal-card haveto"><h3>have to</h3><p>Obligación que viene de afuera (una regla externa, no tu opinión).</p></div>
+        <div class="modal-card should"><h3>should</h3><p>Consejo o recomendación, no es obligatorio.</p></div>
+      </div>
+      <div class="example-box">Ejemplos: "She can speak French." · "You must wear a seatbelt." · "I have to finish this by Friday." · "You should see a doctor."</div>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Agrupa los modales por función, no por orden alfabético: habilidad/permiso (can/could), obligación (must/have to), consejo (should). El cerebro los recuerda mejor en grupos con significado.</li>
+        <li>"Have to" y "must" se traducen parecido, pero fíjate si la obligación es una regla externa (have to) o algo que tú sientes urgente (must) — es un matiz que se pregunta seguido en exámenes de nivel B1.</li>
+        <li>Practica dando consejos reales a alguien en voz alta usando "should" — es el modal que más se usa en conversación cotidiana.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-modales"></div>
+      <div id="fill-modales"></div>
+    </div>
+  </div>
+
+  <!-- CONECTORES -->
+  <div class="panel" id="conectores">
+    <div class="section-card">
+      <span class="badge" style="background:var(--lav);color:var(--lav-ink);">and, but, because, so, although</span>
+      <h2>Conectores básicos</h2>
+      <div class="connector-grid">
+        <div class="connector-card"><b>and</b><small>suma / agrega</small></div>
+        <div class="connector-card"><b>but</b><small>contraste simple</small></div>
+        <div class="connector-card"><b>because</b><small>razón / causa</small></div>
+        <div class="connector-card"><b>so</b><small>consecuencia</small></div>
+        <div class="connector-card"><b>although</b><small>contraste fuerte</small></div>
+      </div>
+      <div class="example-box">Ejemplos: "I like tea and coffee." · "She is tired but happy." · "He stayed home because he was sick." · "It was raining, so we stayed inside." · "Although it was raining, we went for a walk."</div>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Antes de elegir un conector, pregúntate qué relación hay entre las dos ideas: ¿sumo (and), contrasto (but/although), doy la razón (because) o doy el resultado (so)?</li>
+        <li>"Although" va al inicio o en medio de la oración con la idea completa después, no solo con una palabra — es el error más común al usarlo.</li>
+        <li>Lee un párrafo corto en inglés y subraya cada conector que encuentres, luego pregúntate qué función cumple — practicar con texto real fija mejor el uso que solo memorizar la lista.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-conectores"></div>
+      <div id="fill-conectores"></div>
+    </div>
+  </div>
+
+  <!-- VOCAB -->
+  <div class="panel" id="vocab">
+    <div class="section-card">
+      <span class="badge" style="background:var(--pink);color:var(--pink-ink);">Toca para voltear</span>
+      <h2>Vocabulario intermedio II</h2>
+      <div class="vocab-grid" id="vocabGrid"></div>
+      <p class="hint">Toca cada tarjeta para ver la traducción</p>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Combina estas palabras con las de niveles anteriores en el mismo repaso — mezclar vocabulario de distintas semanas ayuda a fijarlo mejor que repasar por separado.</li>
+        <li>Usa cada palabra nueva en una oración con will, going to o un modal — así practicas dos temas a la vez.</li>
+        <li>Repite las tarjetas en 2 días y de nuevo en una semana para que pasen a tu memoria de largo plazo.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-vocab"></div>
+      <div id="fill-vocab"></div>
+    </div>
+  </div>
+
+  <!-- SIMULACRO -->
+  <div class="panel" id="simulacro">
+    <div class="section-card">
+      <span class="badge" style="background:var(--yellow);color:var(--yellow-ink);">Practica bajo presión de tiempo</span>
+      <h2>Simulacro estilo TOEFL</h2>
+      <p>Banco de 30 preguntas que repasan este nivel y los anteriores. Cada intento toma 10 al azar con 5 minutos de cronómetro.</p>
+      <div id="simIntro" class="sim-start">
+        <button id="simStartBtn">Empezar simulacro (10 preguntas · 5 min)</button>
+      </div>
+      <div id="simArea" style="display:none;">
+        <div class="sim-meta">
+          <span class="sim-progress" id="simProgress"></span>
+          <span class="sim-timer" id="simTimer">5:00</span>
+        </div>
+        <div id="simQuestions"></div>
+        <div class="sim-start"><button id="simSubmitBtn">Terminar y ver resultado</button></div>
+      </div>
+      <div id="simResult" style="display:none;" class="sim-result">
+        <div class="score" id="simScore"></div>
+        <p id="simScoreMsg"></p>
+        <div id="simAnalysis" class="sim-analysis" style="display:none;"></div>
+        <button id="simRetryBtn">Intentar otro simulacro</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      tabs.forEach(t=>t.classList.remove('active'));
+      panels.forEach(p=>p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.topic).classList.add('active');
+    });
+  });
+
+  const vocab = [
+    {emoji:'🎉', en:'celebration', es:'celebración'},
+    {emoji:'🤒', en:'illness', es:'enfermedad'},
+    {emoji:'📈', en:'improvement', es:'mejora'},
+    {emoji:'🧩', en:'challenge', es:'reto'},
+    {emoji:'🗳️', en:'choice', es:'elección'},
+    {emoji:'🚦', en:'rule', es:'regla'},
+    {emoji:'🔧', en:'solution', es:'solución'},
+    {emoji:'💵', en:'expense', es:'gasto'},
+    {emoji:'🛫', en:'departure', es:'salida (viaje)'},
+    {emoji:'🛬', en:'arrival', es:'llegada'},
+    {emoji:'🧾', en:'receipt', es:'recibo'},
+    {emoji:'📢', en:'announcement', es:'anuncio'},
+    {emoji:'🤝', en:'promise', es:'promesa'},
+    {emoji:'🌩️', en:'storm', es:'tormenta'},
+    {emoji:'📝', en:'reminder', es:'recordatorio'},
+  ];
+  const grid = document.getElementById('vocabGrid');
+  vocab.forEach(v=>{
+    const card = document.createElement('div');
+    card.className='flip-card';
+    card.innerHTML = `<div class="flip-inner"><div class="flip-front"><div class="emoji">${v.emoji}</div>${v.en}</div><div class="flip-back">${v.es}</div></div>`;
+    card.addEventListener('click',()=>card.classList.toggle('flipped'));
+    grid.appendChild(card);
+  });
+
+  function renderQuiz(containerId, questions){
+    const container = document.getElementById(containerId);
+    if(!container) return;
+    questions.forEach((q, qi)=>{
+      const qDiv = document.createElement('div');
+      qDiv.className='quiz-q';
+      const optsHtml = q.options.map((opt,oi)=>`<button class="quiz-opt" data-correct="${oi===q.correct}">${opt}</button>`).join('');
+      qDiv.innerHTML = `<div class="quiz-prompt">${qi+1}. ${q.prompt}</div><div class="quiz-options">${optsHtml}</div><div class="quiz-feedback"></div>`;
+      const buttons = qDiv.querySelectorAll('.quiz-opt');
+      const feedback = qDiv.querySelector('.quiz-feedback');
+      buttons.forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          if(btn.disabled) return;
+          buttons.forEach(b=>b.disabled=true);
+          if(btn.dataset.correct==='true'){
+            btn.classList.add('correct');
+            feedback.textContent = '¡Correcto! ' + (q.explanation||'');
+          } else {
+            btn.classList.add('incorrect');
+            buttons.forEach(b=>{ if(b.dataset.correct==='true') b.classList.add('correct'); });
+            feedback.textContent = 'Casi. ' + (q.explanation||'');
+          }
+        });
+      });
+      container.appendChild(qDiv);
+    });
+  }
+
+  function renderFill(containerId, items){
+    const container = document.getElementById(containerId);
+    if(!container) return;
+    items.forEach((it, ii)=>{
+      const row = document.createElement('div');
+      row.className='quiz-q';
+      row.innerHTML = `
+        <div class="quiz-prompt">${ii+1}. ${it.prompt}</div>
+        <div class="fill-row">
+          <input type="text" placeholder="escribe aquí" />
+          <button>Revisar</button>
+          <span class="quiz-feedback"></span>
+        </div>`;
+      const input = row.querySelector('input');
+      const btn = row.querySelector('button');
+      const feedback = row.querySelector('.quiz-feedback');
+      btn.addEventListener('click',()=>{
+        const val = input.value.trim().toLowerCase();
+        const answers = it.answers.map(a=>a.toLowerCase());
+        if(answers.includes(val)){
+          feedback.style.color = 'var(--green-ok)';
+          feedback.textContent = '¡Correcto!';
+        } else {
+          feedback.style.color = 'var(--red-no)';
+          feedback.textContent = 'Respuesta: ' + it.answers[0];
+        }
+      });
+      container.appendChild(row);
+    });
+  }
+
+  renderQuiz('quiz-pascont', [
+    {prompt:'I ___ (watch) TV when she called.', options:['watched','was watching','watch'], correct:1, explanation:'Acción en progreso interrumpida → pasado continuo.'},
+    {prompt:'While I was cooking, he ___ (read) the newspaper.', options:['read','was reading','reads'], correct:1, explanation:'"While" + dos acciones en progreso → continuo.'},
+    {prompt:'She ___ (sleep) when the phone rang.', options:['slept','was sleeping','sleeps'], correct:1, explanation:'Acción en progreso interrumpida → continuo.'},
+    {prompt:'They ___ (not/study) when I arrived.', options:["didn't study","weren't studying",'not studied'], correct:1, explanation:'Negativo de pasado continuo: weren\'t + -ing.'},
+    {prompt:'What ___ you (do) at 8pm last night?', options:['did','were','was'], correct:1, explanation:'Pregunta de pasado continuo: were + sujeto + -ing.'},
+    {prompt:'We ___ (walk) in the park when it started to rain.', options:['walked','were walking','walk'], correct:1, explanation:'Acción en progreso → continuo.'},
+    {prompt:'He broke his leg while he ___ (ski).', options:['skied','was skiing','skis'], correct:1, explanation:'Acción en progreso interrumpida → continuo.'},
+    {prompt:'I ___ (not/watch) TV when you called, I was studying.', options:["didn't watch","wasn't watching",'not watched'], correct:1, explanation:'Negativo de pasado continuo.'},
+    {prompt:'The phone ___ (ring) while she was sleeping.', options:['rang','was ringing','rings'], correct:0, explanation:'Acción corta que interrumpe → pasado simple.'}
+  ]);
+  renderFill('fill-pascont', [
+    {prompt:'At 6pm yesterday, I ___ (have) dinner.', answers:['was having']},
+    {prompt:'She ___ (not/listen) when the teacher explained the rule.', answers:["wasn't listening","was not listening"]},
+    {prompt:'___ (be) you working when I called this morning?', answers:['were','Were']},
+    {prompt:'We ___ (drive) home when we saw the accident.', answers:['were driving']},
+    {prompt:'He ___ (talk) on the phone all night.', answers:['was talking']},
+    {prompt:'They ___ (play) soccer when it started to rain.', answers:['were playing']}
+  ]);
+
+  renderQuiz('quiz-futuro', [
+    {prompt:'Look at those clouds! It ___ (rain).', options:['will rain','is going to rain','rains'], correct:1, explanation:'Evidencia visible → going to.'},
+    {prompt:"I don't have plans yet, but I think I ___ (help) you.", options:['am going to help','will help','help'], correct:1, explanation:'Decisión espontánea → will.'},
+    {prompt:'She ___ (visit) her grandma next weekend. (ya lo planeó)', options:['will visit','is going to visit','visits'], correct:1, explanation:'Plan ya decidido → going to.'},
+    {prompt:"Don't worry, I ___ (carry) that for you.", options:['will carry','am going to carry','carry'], correct:0, explanation:'Decisión espontánea / promesa → will.'},
+    {prompt:'We ___ (move) to a new house next year. (ya está decidido)', options:['will move','are going to move','move'], correct:1, explanation:'Plan ya decidido → going to.'},
+    {prompt:'I think it ___ (be) a great trip.', options:['will be','is going to be','is'], correct:0, explanation:'Predicción sin evidencia clara → will.'},
+    {prompt:'A: The phone is ringing! B: I ___ (answer) it.', options:['am going to answer','will answer','answer'], correct:1, explanation:'Decisión en el momento → will.'},
+    {prompt:'They ___ (get) married in June. (ya compraron todo)', options:['will get','are going to get','get'], correct:1, explanation:'Plan ya decidido con evidencia → going to.'},
+    {prompt:'Maybe I ___ (call) her later.', options:['will call','am going to call','call'], correct:0, explanation:'Predicción/posibilidad con "maybe" → will.'}
+  ]);
+  renderFill('fill-futuro', [
+    {prompt:'I ___ (already/decide), we ___ (travel) to Oaxaca in April.', answers:['are going to travel']},
+    {prompt:'A: I forgot my wallet! B: Don\'t worry, I ___ (lend) you some money.', answers:['will lend']},
+    {prompt:'Look at his face, he ___ (be) angry.', answers:['is going to be']},
+    {prompt:'I promise I ___ (call) you tomorrow.', answers:['will call']},
+    {prompt:'She has bought the tickets, she ___ (fly) to Spain.', answers:['is going to fly']},
+    {prompt:'I think the meeting ___ (start) late.', answers:['will start']}
+  ]);
+
+  renderQuiz('quiz-modales', [
+    {prompt:'She ___ speak three languages.', options:['can','must','should'], correct:0, explanation:'Habilidad → can.'},
+    {prompt:'You ___ wear a seatbelt in the car. (regla obligatoria)', options:['can','must','should'], correct:1, explanation:'Obligación fuerte → must.'},
+    {prompt:'You ___ see a doctor about that cough.', options:['must','should','can'], correct:1, explanation:'Consejo → should.'},
+    {prompt:'I ___ finish this report by Friday. (mi jefe lo pide)', options:['have to','should','can'], correct:0, explanation:'Obligación externa → have to.'},
+    {prompt:'___ you help me with this bag, please?', options:['Must','Could','Should'], correct:1, explanation:'Petición cortés → could.'},
+    {prompt:'Students ___ bring their ID to the exam. (regla del examen)', options:['should','have to','can'], correct:1, explanation:'Obligación externa/regla → have to.'},
+    {prompt:'You ___ smoke in the hospital. (prohibido)', options:["don't have to",'must not','should not'], correct:1, explanation:'Prohibición fuerte → must not.'},
+    {prompt:'You ___ come if you don\'t want to. (no es obligatorio)', options:["don't have to",'must not','should not'], correct:0, explanation:'Falta de obligación → don\'t have to.'},
+    {prompt:'When I was a child, I ___ climb trees easily.', options:['can','could','must'], correct:1, explanation:'Habilidad en el pasado → could.'}
+  ]);
+  renderFill('fill-modales', [
+    {prompt:'You ___ (deber/consejo) study more for the exam.', answers:['should']},
+    {prompt:'Employees ___ (obligación externa) wear a uniform here.', answers:['have to']},
+    {prompt:'I ___ (habilidad) swim very well.', answers:['can']},
+    {prompt:'We ___ (obligación fuerte) finish this today, it\'s urgent.', answers:['must']},
+    {prompt:'___ (petición cortés) I borrow your pen?', answers:['could','Could']},
+    {prompt:'You ___ (no es necesario) bring food, we already have some.', answers:["don't have to","do not have to"]}
+  ]);
+
+  renderQuiz('quiz-conectores', [
+    {prompt:'I like coffee ___ tea.', options:['and','but','so'], correct:0, explanation:'Suma dos ideas → and.'},
+    {prompt:'She is tired ___ happy.', options:['and','but','because'], correct:1, explanation:'Contraste simple → but.'},
+    {prompt:'He stayed home ___ he was sick.', options:['so','because','although'], correct:1, explanation:'Da la razón → because.'},
+    {prompt:'It was raining, ___ we stayed inside.', options:['because','so','but'], correct:1, explanation:'Da la consecuencia → so.'},
+    {prompt:'___ it was raining, we went for a walk.', options:['Because','So','Although'], correct:2, explanation:'Contraste fuerte con la idea completa → although.'},
+    {prompt:'I was hungry, ___ I made a sandwich.', options:['so','but','and'], correct:0, explanation:'Consecuencia → so.'},
+    {prompt:'She studied hard ___ she failed the exam.', options:['so','because','but'], correct:2, explanation:'Contraste → but.'},
+    {prompt:'We can\'t go out ___ it\'s raining.', options:['because','so','and'], correct:0, explanation:'Da la razón → because.'},
+    {prompt:'___ he is young, he is very responsible.', options:['Because','So','Although'], correct:2, explanation:'Contraste fuerte → although.'}
+  ]);
+  renderFill('fill-conectores', [
+    {prompt:'He can\'t come ___ he is working late.', answers:['because']},
+    {prompt:'I was tired, ___ I went to bed early.', answers:['so']},
+    {prompt:'She likes swimming ___ running.', answers:['and']},
+    {prompt:'___ the movie was long, I enjoyed it.', answers:['Although']},
+    {prompt:'I wanted to go, ___ I had no money.', answers:['but']},
+    {prompt:'It was cold, ___ we wore jackets.', answers:['so']}
+  ]);
+
+  renderQuiz('quiz-vocab', [
+    {prompt:'What does "challenge" mean?', options:['reto','celebración','regla'], correct:0},
+    {prompt:'What does "solution" mean?', options:['solución','problema','gasto'], correct:0},
+    {prompt:'What does "promise" mean?', options:['promesa','anuncio','recordatorio'], correct:0},
+    {prompt:'What does "arrival" mean?', options:['llegada','salida','viaje'], correct:0},
+    {prompt:'What does "illness" mean?', options:['enfermedad','mejora','salud'], correct:0},
+    {prompt:'What does "expense" mean?', options:['gasto','recibo','elección'], correct:0},
+    {prompt:'What does "rule" mean?', options:['regla','tormenta','anuncio'], correct:0},
+    {prompt:'What does "storm" mean?', options:['tormenta','clima','viaje'], correct:0},
+    {prompt:'What does "improvement" mean?', options:['mejora','reto','elección'], correct:0}
+  ]);
+  renderFill('fill-vocab', [
+    {prompt:'¿Cómo se dice "recordatorio" en inglés?', answers:['reminder']},
+    {prompt:'¿Cómo se dice "anuncio" en inglés?', answers:['announcement']},
+    {prompt:'¿Cómo se dice "elección" en inglés?', answers:['choice']},
+    {prompt:'¿Cómo se dice "salida" (de viaje) en inglés?', answers:['departure']},
+    {prompt:'¿Cómo se dice "recibo" en inglés?', answers:['receipt']},
+    {prompt:'¿Cómo se dice "celebración" en inglés?', answers:['celebration']}
+  ]);
+
+  /* ---------- SIMULACRO ---------- */
+  const TOPIC_NAMES = {
+    pascont: 'Pasado continuo',
+    futuro: 'Futuro (will / going to)',
+    modales: 'Verbos modales',
+    conectores: 'Conectores',
+    repaso: 'Repaso de niveles anteriores'
+  };
+
+  const bank = [
+    // --- Pasado continuo ---
+    {topic:'pascont', prompt:'I ___ TV when she called.', options:['watched','was watching','watch','watches'], correct:1, explanation:'Acción en progreso interrumpida por otra acción corta → pasado continuo.'},
+    {topic:'pascont', prompt:'While I was cooking, he ___ the newspaper.', options:['read','reads','was reading','reading'], correct:2, explanation:'"While" + dos acciones en progreso al mismo tiempo → pasado continuo.'},
+    {topic:'pascont', prompt:'While she was sleeping, the phone ___.', options:['rang','was ringing','rings','ring'], correct:0, explanation:'Es la acción corta que interrumpe → pasado simple.'},
+    {topic:'pascont', prompt:"They ___ studying when I arrived.", options:["didn't","weren't","doesn't","isn't"], correct:1, explanation:'Negativo de pasado continuo: weren\'t + -ing.'},
+    {topic:'pascont', prompt:'I ___ (read) a book when the lights went out.', options:['read','was reading','reads'], correct:1, explanation:'Acción en progreso interrumpida → pasado continuo.'},
+    {topic:'pascont', prompt:'While they ___ (have) dinner, someone knocked on the door.', options:['have','having','were having'], correct:2, explanation:'"While" + acción en progreso → pasado continuo.'},
+    {topic:'pascont', prompt:'She was cleaning the house while her husband ___ (watch) the game.', options:['watched','was watching','watches'], correct:1, explanation:'Dos acciones simultáneas en progreso con "while" → ambas en pasado continuo.'},
+    {topic:'pascont', prompt:"I ___ (not/pay) attention when the teacher explained the homework.", options:["didn't pay","wasn't paying","don't pay"], correct:1, explanation:'Negativo de pasado continuo: wasn\'t/weren\'t + -ing.'},
+    {topic:'pascont', prompt:'___ (you/sleep) when I texted you last night?', options:['Did you sleep','Were you sleeping','Do you sleep'], correct:1, explanation:'Pregunta de pasado continuo: Were/Was + sujeto + -ing.'},
+    {topic:'pascont', prompt:'The children ___ (play) in the garden when it began to snow.', options:['played','were playing','play'], correct:1, explanation:'Acción en progreso interrumpida → pasado continuo.'},
+    {topic:'pascont', prompt:'I saw Laura while I ___ (wait) for the bus.', options:['waited','was waiting','wait'], correct:1, explanation:'"While" + acción en progreso → pasado continuo.'},
+    {topic:'pascont', prompt:'He ___ (drive) too fast when the accident happened.', options:['drove','was driving','drives'], correct:1, explanation:'Acción en progreso interrumpida por un evento → pasado continuo.'},
+    {topic:'pascont', prompt:'What ___ (she/do) at this time yesterday?', options:['did she do','was she doing','does she do'], correct:1, explanation:'Pregunta sobre una acción en progreso en un momento específico del pasado.'},
+    {topic:'pascont', prompt:"We ___ (not/watch) the news when the power went out; we were sleeping.", options:["didn't watch","weren't watching","don't watch"], correct:1, explanation:'Negativo de pasado continuo.'},
+    {topic:'pascont', prompt:'I broke a plate while I ___ (wash) the dishes.', options:['washed','was washing','wash'], correct:1, explanation:'Acción en progreso interrumpida → pasado continuo.'},
+
+    // --- Futuro (will vs going to) ---
+    {topic:'futuro', prompt:'Look at those clouds! It ___.', options:['will rain','rains','is going to rain','rained'], correct:2, explanation:'Evidencia visible → going to.'},
+    {topic:'futuro', prompt:"I don't have plans yet, I think I ___ you.", options:['am going to help','help','helped','will help'], correct:3, explanation:'Decisión espontánea (sin plan previo) → will.'},
+    {topic:'futuro', prompt:'She ___ her grandma next weekend. (ya lo planeó)', options:['will visit','visits','is going to visit','visited'], correct:2, explanation:'Plan ya decidido → going to.'},
+    {topic:'futuro', prompt:"Don't worry, I ___ that for you.", options:['will carry','carry','am carrying','carried'], correct:0, explanation:'Decisión espontánea / promesa → will.'},
+    {topic:'futuro', prompt:'We ___ to a new house next year. (ya decidido)', options:['will move','move','are going to move','moved'], correct:2, explanation:'Plan ya decidido → going to.'},
+    {topic:'futuro', prompt:'I think it ___ a great trip.', options:['will be','is going to be','was','is'], correct:0, explanation:'Predicción/opinión personal sin evidencia clara → will.'},
+    {topic:'futuro', prompt:"A: I can't lift this box. B: Wait, I ___ (help) you.", options:['help','am going to help','will help'], correct:2, explanation:'Ofrecimiento espontáneo en el momento → will.'},
+    {topic:'futuro', prompt:"We've already booked the flights, we ___ (go) to Cancún in July.", options:['will go','are going to go','go'], correct:1, explanation:'Plan ya decidido y con evidencia (boletos comprados) → going to.'},
+    {topic:'futuro', prompt:"I promise I ___ (not/tell) anyone your secret.", options:["don't tell",'am not going to tell','will not tell'], correct:2, explanation:'Promesa → will.'},
+    {topic:'futuro', prompt:'Look! That tree ___ (fall).', options:['will fall','is going to fall','falls'], correct:1, explanation:'Evidencia visible inmediata → going to.'},
+    {topic:'futuro', prompt:"I don't know yet, maybe I ___ (stay) home this weekend.", options:['stay','am going to stay','will stay'], correct:2, explanation:'Decisión no confirmada / posibilidad con "maybe" → will.'},
+    {topic:'futuro', prompt:'She has already chosen her outfit, she ___ (wear) the blue dress to the party.', options:['will wear','is going to wear','wears'], correct:1, explanation:'Plan ya decidido de antemano → going to.'},
+    {topic:'futuro', prompt:'A: The printer is out of paper again. B: Ok, I ___ (buy) more this afternoon.', options:['buy','am going to buy','will buy'], correct:2, explanation:'Decisión tomada en el momento de hablar → will.'},
+    {topic:'futuro', prompt:'According to the forecast, it ___ (be) sunny all weekend.', options:['will be','is going to be','is'], correct:1, explanation:'Predicción basada en evidencia (el pronóstico) → going to.'},
+    {topic:'futuro', prompt:"I'm sure everything ___ (be) fine.", options:['will be','is going to be','is'], correct:0, explanation:'Predicción/opinión personal sin evidencia concreta → will.'},
+
+    // --- Modales ---
+    {topic:'modales', prompt:'You ___ wear a seatbelt in the car. (regla obligatoria)', options:['can','must','should','could'], correct:1, explanation:'Obligación fuerte, es una regla → must.'},
+    {topic:'modales', prompt:'She ___ speak three languages.', options:['must','should','can','has to'], correct:2, explanation:'Habilidad → can.'},
+    {topic:'modales', prompt:'You ___ see a doctor about that cough.', options:['must','should','can','have'], correct:1, explanation:'Consejo, no es obligatorio → should.'},
+    {topic:'modales', prompt:'I ___ finish this report by Friday. (mi jefe lo pide)', options:['should','can','have to','could'], correct:2, explanation:'Obligación externa → have to.'},
+    {topic:'modales', prompt:'___ you help me, please?', options:['Must','Could','Should',"Can't"], correct:1, explanation:'Petición cortés → could.'},
+    {topic:'modales', prompt:"You ___ come if you're busy. (no es obligatorio)", options:['must not',"don't have to",'should not','can not'], correct:1, explanation:'Falta de obligación → don\'t have to.'},
+    {topic:'modales', prompt:'In this library, you ___ talk loudly. (está prohibido)', options:['must not',"don't have to",'should','can'], correct:0, explanation:'Prohibición fuerte → must not.'},
+    {topic:'modales', prompt:"You ___ bring your own laptop, there are computers here already. (no es necesario)", options:['must not',"don't have to",'should not',"can't"], correct:1, explanation:'Falta de obligación → don\'t have to.'},
+    {topic:'modales', prompt:'When my grandfather was young, he ___ run for hours without getting tired.', options:['must','could','should','has to'], correct:1, explanation:'Habilidad en el pasado → could.'},
+    {topic:'modales', prompt:"___ I open the window? It's a bit hot in here. (petición cortés)", options:['Must','Could','Should','Have to'], correct:1, explanation:'Petición cortés → could.'},
+    {topic:'modales', prompt:'All passengers ___ fasten their seatbelt before takeoff. (regla de la aerolínea)', options:['should','can','have to','could'], correct:2, explanation:'Obligación externa/regla → have to.'},
+    {topic:'modales', prompt:'You look exhausted, you ___ get some rest.', options:['must','should','can','have to'], correct:1, explanation:'Consejo → should.'},
+    {topic:'modales', prompt:'This is an emergency, you ___ call the police right now.', options:['should','can','must','could'], correct:2, explanation:'Obligación urgente y fuerte → must.'},
+    {topic:'modales', prompt:'My little brother ___ tie his shoes by himself now.', options:['must','should','can','has to'], correct:2, explanation:'Habilidad adquirida → can.'},
+    {topic:'modales', prompt:'You ___ smoke inside the building. (prohibido por reglamento)', options:["don't have to",'must not','should not',"can't"], correct:1, explanation:'Prohibición → must not.'},
+
+    // --- Conectores ---
+    {topic:'conectores', prompt:'I like coffee ___ tea.', options:['but','because','and','so'], correct:2, explanation:'Suma dos ideas → and.'},
+    {topic:'conectores', prompt:'She is tired ___ she keeps working.', options:['and','but','because','so'], correct:1, explanation:'Contraste → but.'},
+    {topic:'conectores', prompt:'He stayed home ___ he was sick.', options:['so','although','because','but'], correct:2, explanation:'Da la razón → because.'},
+    {topic:'conectores', prompt:'It was raining, ___ we stayed inside.', options:['because','so','but','and'], correct:1, explanation:'Da la consecuencia → so.'},
+    {topic:'conectores', prompt:'___ it was raining, we went for a walk.', options:['Because','So','Although','And'], correct:2, explanation:'Contraste fuerte con la idea completa → although.'},
+    {topic:'conectores', prompt:"He can't come ___ he is working late.", options:['so','although','because','but'], correct:2, explanation:'Da la razón → because.'},
+    {topic:'conectores', prompt:'I wanted to buy the jacket, ___ it was too expensive.', options:['and','but','because','so'], correct:1, explanation:'Contraste → but.'},
+    {topic:'conectores', prompt:'She practices every day, ___ she has improved a lot.', options:['because','so','but','although'], correct:1, explanation:'Da la consecuencia → so.'},
+    {topic:'conectores', prompt:'He passed the exam ___ he studied very hard.', options:['so','but','because','although'], correct:2, explanation:'Da la razón → because.'},
+    {topic:'conectores', prompt:'___ she was very busy, she helped me with my homework.', options:['Because','So','Although','And'], correct:2, explanation:'Contraste fuerte → although.'},
+    {topic:'conectores', prompt:'We ordered pizza ___ salad for dinner.', options:['but','because','and','so'], correct:2, explanation:'Suma dos ideas → and.'},
+    {topic:'conectores', prompt:'The traffic was terrible, ___ we arrived late.', options:['because','so','but','and'], correct:1, explanation:'Da la consecuencia → so.'},
+    {topic:'conectores', prompt:"I like the design of the house ___ I don't like its location.", options:['and','so','but','because'], correct:2, explanation:'Contraste simple → but.'},
+    {topic:'conectores', prompt:'They lost the game ___ they played really well.', options:['because','so','although','and'], correct:2, explanation:'Contraste fuerte → although.'},
+    {topic:'conectores', prompt:"He didn't call me ___ he lost his phone.", options:['although','so','but','because'], correct:3, explanation:'Da la razón → because.'},
+
+    // --- Repaso de niveles anteriores ---
+    {topic:'repaso', prompt:'My sister ___ a nurse.', options:['am','is','are','be'], correct:1, explanation:'Sujeto singular femenino → is.'},
+    {topic:'repaso', prompt:'They ___ from Spain.', options:['is','am','are','be'], correct:2, explanation:'Sujeto plural → are.'},
+    {topic:'repaso', prompt:'He is ___ engineer.', options:['a','an','the','-'], correct:1, explanation:'"Engineer" empieza con sonido vocal → an.'},
+    {topic:'repaso', prompt:"There isn't ___ sugar left.", options:['any','some','many','a'], correct:0, explanation:'Oración negativa con sustantivo incontable → any.'},
+    {topic:'repaso', prompt:'He ___ every night.', options:['study','studys','studies','studying'], correct:2, explanation:'Tercera persona singular en presente simple → studies.'},
+    {topic:'repaso', prompt:'Yesterday, I ___ to the market.', options:['go','goes','went','going'], correct:2, explanation:'Pasado simple del verbo irregular "go" → went.'},
+    {topic:'repaso', prompt:'This car is ___ than mine.', options:['fast','faster','fastest','more fast'], correct:1, explanation:'Comparativo de adjetivo corto: adjetivo + er → faster.'},
+    {topic:'repaso', prompt:'My birthday is ___ July.', options:['in','on','at','-'], correct:0, explanation:'Con meses se usa la preposición in.'},
+    {topic:'repaso', prompt:'We ___ very happy with the results.', options:['is','am','are','be'], correct:2, explanation:'Sujeto plural "we" → are.'},
+    {topic:'repaso', prompt:'She is ___ honest person.', options:['a','an','the','-'], correct:1, explanation:'"Honest" empieza con sonido vocal → an.'},
+    {topic:'repaso', prompt:'There ___ many books on the shelf.', options:['is','are','was','be'], correct:1, explanation:'Sustantivo plural "books" → are.'},
+    {topic:'repaso', prompt:'He usually ___ breakfast at 7am.', options:['have','has','having','had'], correct:1, explanation:'Tercera persona singular en presente simple → has.'},
+    {topic:'repaso', prompt:'Last summer, we ___ to the beach every weekend.', options:['go','goes','went','going'], correct:2, explanation:'Acción repetida en el pasado, ya terminada → pasado simple (went).'},
+    {topic:'repaso', prompt:'This exercise is ___ than the last one.', options:['difficult','more difficult','most difficult','difficulter'], correct:1, explanation:'Comparativo de adjetivos largos: more + adjetivo.'},
+    {topic:'repaso', prompt:'The meeting starts ___ 9 o\'clock.', options:['in','on','at','-'], correct:2, explanation:'Con una hora exacta se usa la preposición at.'}
+  ];
+
+  function shuffle(arr){
+    const a = arr.slice();
+    for(let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]] = [a[j],a[i]]; }
+    return a;
+  }
+
+  let simQuestions = [];
+  let simTimerInterval = null;
+  let simSecondsLeft = 300;
+
+  const simStartBtn = document.getElementById('simStartBtn');
+  const simIntro = document.getElementById('simIntro');
+  const simArea = document.getElementById('simArea');
+  const simQuestionsEl = document.getElementById('simQuestions');
+  const simProgress = document.getElementById('simProgress');
+  const simTimerEl = document.getElementById('simTimer');
+  const simSubmitBtn = document.getElementById('simSubmitBtn');
+  const simResult = document.getElementById('simResult');
+  const simScore = document.getElementById('simScore');
+  const simScoreMsg = document.getElementById('simScoreMsg');
+  const simAnalysis = document.getElementById('simAnalysis');
+  const simRetryBtn = document.getElementById('simRetryBtn');
+
+  function startSim(){
+    simQuestions = shuffle(bank).slice(0,10);
+    simQuestionsEl.innerHTML = '';
+    simQuestions.forEach((q,qi)=>{
+      const qDiv = document.createElement('div');
+      qDiv.className = 'quiz-q';
+      const optsHtml = q.options.map((opt,oi)=>`<button class="quiz-opt" data-idx="${oi}">${opt}</button>`).join('');
+      qDiv.innerHTML = `<div class="quiz-prompt">${qi+1}. ${q.prompt}</div><div class="quiz-options" data-qi="${qi}">${optsHtml}</div>`;
+      const buttons = qDiv.querySelectorAll('.quiz-opt');
+      buttons.forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          buttons.forEach(b=>{ b.style.borderColor=''; });
+          btn.style.borderColor = 'var(--yellow-deep)';
+          qDiv.dataset.answer = btn.dataset.idx;
+        });
+      });
+      simQuestionsEl.appendChild(qDiv);
+    });
+    simProgress.textContent = '10 preguntas · elige una opción por pregunta';
+    simSubmitBtn.style.display = '';
+    simIntro.style.display='none';
+    simArea.style.display='block';
+    simResult.style.display='none';
+    simAnalysis.style.display='none';
+    simSecondsLeft = 300;
+    updateTimerDisplay();
+    clearInterval(simTimerInterval);
+    simTimerInterval = setInterval(()=>{
+      simSecondsLeft--;
+      updateTimerDisplay();
+      if(simSecondsLeft<=0){ clearInterval(simTimerInterval); finishSim(); }
+    },1000);
+  }
+
+  function updateTimerDisplay(){
+    const m = Math.floor(simSecondsLeft/60);
+    const s = simSecondsLeft%60;
+    simTimerEl.textContent = m+':'+(s<10?'0':'')+s;
+  }
+
+  function finishSim(){
+    clearInterval(simTimerInterval);
+    const qDivs = simQuestionsEl.querySelectorAll('.quiz-q');
+    let correctCount = 0;
+    const topicStats = {};
+    qDivs.forEach((qDiv,qi)=>{
+      const q = simQuestions[qi];
+      const buttons = qDiv.querySelectorAll('.quiz-opt');
+      const answered = qDiv.dataset.answer;
+      const isCorrect = (answered !== undefined && parseInt(answered) === q.correct);
+      buttons.forEach(btn=>{
+        const idx = parseInt(btn.dataset.idx);
+        btn.disabled = true;
+        if(idx === q.correct) btn.classList.add('correct');
+        else if(String(idx) === answered) btn.classList.add('incorrect');
+      });
+      if(isCorrect) correctCount++;
+
+      if(!topicStats[q.topic]) topicStats[q.topic] = {correct:0, incorrect:0, total:0};
+      topicStats[q.topic].total++;
+      if(isCorrect) topicStats[q.topic].correct++; else topicStats[q.topic].incorrect++;
+
+      const explainDiv = document.createElement('div');
+      explainDiv.className = 'sim-explain';
+      const correctText = q.options[q.correct];
+      if(isCorrect){
+        explainDiv.innerHTML = `✅ <b>¡Correcto!</b> ${q.explanation}`;
+      } else if(answered === undefined){
+        explainDiv.innerHTML = `⚪ <b>No contestada.</b> Respuesta correcta: <b>${correctText}</b>. ${q.explanation}`;
+      } else {
+        const yourText = q.options[parseInt(answered)];
+        explainDiv.innerHTML = `❌ <b>Tu respuesta:</b> ${yourText}. <b>Respuesta correcta:</b> ${correctText}. ${q.explanation}`;
+      }
+      qDiv.appendChild(explainDiv);
+    });
+
+    simSubmitBtn.style.display = 'none';
+    simProgress.textContent = 'Revisión de tus respuestas';
+    simTimerEl.textContent = 'Terminado';
+    simResult.style.display='block';
+    simScore.textContent = correctCount + ' / 10';
+    let msg = '';
+    if(correctCount>=9) msg = '¡Excelente! Ya dominas este nivel.';
+    else if(correctCount>=7) msg = 'Muy bien, solo faltan detalles por repasar.';
+    else if(correctCount>=5) msg = 'Vas bien, repasa los temas donde fallaste.';
+    else msg = 'Repasa las secciones de arriba y vuelve a intentarlo.';
+    simScoreMsg.textContent = msg;
+
+    const weakTopics = Object.entries(topicStats)
+      .filter(([,s])=>s.incorrect>0)
+      .sort((a,b)=> b[1].incorrect - a[1].incorrect || (b[1].incorrect/b[1].total) - (a[1].incorrect/a[1].total));
+
+    if(weakTopics.length === 0){
+      simAnalysis.style.display = 'block';
+      simAnalysis.innerHTML = `<h3>📊 Análisis</h3><p>No tuviste errores en este intento. Sigue practicando temas mezclados para mantener el nivel.</p>`;
+    } else {
+      const items = weakTopics.map(([topic,s])=>{
+        const name = TOPIC_NAMES[topic] || topic;
+        return `<li><b>${name}:</b> ${s.incorrect} de ${s.total} incorrectas en este intento.</li>`;
+      }).join('');
+      simAnalysis.style.display = 'block';
+      simAnalysis.innerHTML = `<h3>📊 Análisis — qué reforzar</h3><ul>${items}</ul><p>Repasa esas pestañas y vuelve a intentar el simulacro para confirmar que ya quedaron claras.</p>`;
+    }
+  }
+
+  simStartBtn.addEventListener('click', startSim);
+  simSubmitBtn.addEventListener('click', finishSim);
+  simRetryBtn.addEventListener('click', ()=>{ simResult.style.display='none'; simIntro.style.display='block'; });
+
+  // Registro del service worker: permite instalar la app y usarla sin
+  // internet después de la primera visita. Si falla (p.ej. abierta como
+  // archivo local sin servidor), la app sigue funcionando normal.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    });
+  }
+</script>
+</body>
+</html>

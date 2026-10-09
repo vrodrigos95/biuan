@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bases del inglés</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF9FF;
+    --surface:#FFFFFF;
+    --ink:#3D3A4E;
+    --ink-soft:#8B87A3;
+    --line:#ECE7F7;
+
+    --blue:#BFE7F5; --blue-deep:#3E8FAE; --blue-ink:#215A70;
+    --mint:#C7ECDA; --mint-deep:#3F9E73; --mint-ink:#1F6947;
+    --peach:#FCDCC0; --peach-deep:#CC7C3B; --peach-ink:#8A4E1F;
+    --lav:#E1D2F7; --lav-deep:#8E5FCB; --lav-ink:#5C3A8C;
+    --yellow:#FBEFB2; --yellow-deep:#B08B14; --yellow-ink:#7A5F0C;
+    --pink:#F8D2E3; --pink-deep:#C15C90; --pink-ink:#8A3A63;
+    --green-ok:#3F9E73; --red-no:#D46A6A;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Nunito',sans-serif;
+    line-height:1.5;
+  }
+  h1,h2,h3,.tab{
+    font-family:'Baloo 2',sans-serif;
+  }
+  .wrap{
+    max-width:900px;
+    margin:0 auto;
+    padding:28px 20px 60px;
+  }
+  header{
+    text-align:center;
+    margin-bottom:22px;
+  }
+  header h1{
+    font-size:1.7rem;
+    margin:0 0 6px;
+    color:var(--ink);
+  }
+  header p{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:0.95rem;
+  }
+
+  .tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+    margin-bottom:26px;
+  }
+  .tab{
+    border:none;
+    padding:10px 16px;
+    border-radius:999px;
+    font-size:0.9rem;
+    font-weight:600;
+    cursor:pointer;
+    color:var(--ink);
+    background:var(--surface);
+    border:2px solid var(--line);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .tab:hover{ transform:translateY(-1px); }
+  .tab.active{
+    color:#fff;
+    border-color:transparent;
+    box-shadow:0 4px 14px -4px rgba(0,0,0,0.25);
+  }
+  .tab[data-topic="tobe"].active{ background:var(--blue-deep); }
+  .tab[data-topic="pronombres"].active{ background:var(--mint-deep); }
+  .tab[data-topic="articulos"].active{ background:var(--peach-deep); }
+  .tab[data-topic="plurales"].active{ background:var(--lav-deep); }
+  .tab[data-topic="presente"].active{ background:var(--yellow-deep); }
+  .tab[data-topic="vocab"].active{ background:var(--pink-deep); }
+
+  .panel{ display:none; }
+  .panel.active{ display:block; animation:fade .25s ease; }
+  @keyframes fade{ from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);} }
+
+  .section-card{
+    background:var(--surface);
+    border-radius:20px;
+    padding:22px 24px;
+    margin-bottom:18px;
+    border:1px solid var(--line);
+  }
+  .section-card h2{
+    margin:0 0 10px;
+    font-size:1.25rem;
+  }
+  .section-card h3{
+    margin:0 0 10px;
+    font-size:1.05rem;
+  }
+  .section-card p{ margin:0 0 8px; }
+  .badge{
+    display:inline-block;
+    font-size:0.75rem;
+    font-weight:700;
+    padding:4px 10px;
+    border-radius:999px;
+    margin-bottom:10px;
+  }
+
+  /* ---- TO BE ---- */
+  .badge-blue{ background:var(--blue); color:var(--blue-ink); }
+  table.grammar{
+    width:100%;
+    border-collapse:collapse;
+    margin:14px 0;
+  }
+  table.grammar th, table.grammar td{
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--line);
+    font-size:0.92rem;
+  }
+  table.grammar th{ color:var(--ink-soft); font-weight:700; }
+  .pill{
+    display:inline-block;
+    padding:2px 9px;
+    border-radius:8px;
+    font-weight:700;
+    font-size:0.85rem;
+  }
+  .pill-blue{ background:var(--blue); color:var(--blue-ink); }
+  .pill-mint{ background:var(--mint); color:var(--mint-ink); }
+  .pill-peach{ background:var(--peach); color:var(--peach-ink); }
+  .pill-lav{ background:var(--lav); color:var(--lav-ink); }
+  .pill-yellow{ background:var(--yellow); color:var(--yellow-ink); }
+  .pill-pink{ background:var(--pink); color:var(--pink-ink); }
+
+  /* ---- PRONOUNS GRID ---- */
+  .pron-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:12px;
+    margin-top:14px;
+  }
+  .pron-card{
+    background:var(--mint);
+    border-radius:16px;
+    padding:14px;
+    text-align:center;
+  }
+  .pron-card .es{ color:var(--mint-ink); font-weight:700; font-size:0.85rem; margin-bottom:6px;}
+  .pron-card .en{ font-family:'Baloo 2'; font-size:1.15rem; color:var(--ink); margin-bottom:4px;}
+  .pron-card .pos{ font-size:0.85rem; color:var(--mint-ink); }
+
+  /* ---- ARTICLES FLOW ---- */
+  .flow{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:10px;
+    margin:16px 0;
+    justify-content:center;
+  }
+  .flow-box{
+    background:var(--peach);
+    color:var(--peach-ink);
+    border-radius:14px;
+    padding:12px 16px;
+    font-weight:700;
+    text-align:center;
+    min-width:150px;
+  }
+  .flow-arrow{ color:var(--peach-deep); font-size:1.4rem; }
+
+  /* ---- PLURALS SORT ---- */
+  .sort-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin-top:14px;
+  }
+  .sort-col{
+    background:var(--lav);
+    border-radius:16px;
+    padding:14px;
+  }
+  .sort-col h3{
+    margin:0 0 8px;
+    color:var(--lav-ink);
+    font-size:1rem;
+  }
+  .sort-col ul{ margin:0; padding-left:18px; }
+  .sort-col li{ margin-bottom:4px; }
+
+  /* ---- PRESENT SIMPLE BLOCKS ---- */
+  .sentence-blocks{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:14px 0;
+  }
+  .block{
+    padding:10px 14px;
+    border-radius:10px;
+    font-weight:700;
+    font-family:'Baloo 2';
+  }
+  .block-subject{ background:var(--yellow); color:var(--yellow-ink); }
+  .block-verb{ background:var(--peach); color:var(--peach-ink); }
+  .block-extra{ background:var(--blue); color:var(--blue-ink); }
+
+  /* ---- VOCAB CARDS ---- */
+  .vocab-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    gap:12px;
+    margin-top:14px;
+  }
+  .flip-card{
+    perspective:1000px;
+    height:100px;
+    cursor:pointer;
+  }
+  .flip-inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    transition:transform .5s;
+    transform-style:preserve-3d;
+  }
+  .flip-card.flipped .flip-inner{ transform:rotateY(180deg); }
+  .flip-front, .flip-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:8px;
+    font-weight:700;
+  }
+  .flip-front{ background:var(--pink); color:var(--pink-ink); flex-direction:column; }
+  .flip-front .emoji{ font-size:1.6rem; margin-bottom:4px; }
+  .flip-back{ background:var(--pink-deep); color:#fff; transform:rotateY(180deg); font-family:'Baloo 2'; }
+
+  .hint{
+    font-size:0.82rem;
+    color:var(--ink-soft);
+    text-align:center;
+    margin-top:6px;
+  }
+
+  .example-box{
+    background:var(--bg);
+    border-left:4px solid var(--blue-deep);
+    padding:10px 14px;
+    border-radius:8px;
+    font-size:0.92rem;
+    margin-top:10px;
+  }
+
+  /* ---- TIPS BOX ---- */
+  .tips-box{
+    background:#FFFDF3;
+    border:1px dashed var(--yellow-deep);
+    border-radius:16px;
+    padding:16px 18px;
+    margin-top:4px;
+  }
+  .tips-box h3{ margin:0 0 8px; color:var(--yellow-ink); }
+  .tips-box ul{ margin:0; padding-left:20px; }
+  .tips-box li{ margin-bottom:8px; }
+  .tips-box li:last-child{ margin-bottom:0; }
+
+  /* ---- EXERCISES ---- */
+  .quiz-q{
+    margin-bottom:18px;
+  }
+  .quiz-q:last-child{ margin-bottom:0; }
+  .quiz-prompt{
+    font-weight:700;
+    margin-bottom:8px;
+  }
+  .quiz-options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .quiz-opt{
+    border:2px solid var(--line);
+    background:var(--surface);
+    border-radius:12px;
+    padding:8px 14px;
+    font-family:'Nunito';
+    font-size:0.92rem;
+    font-weight:700;
+    cursor:pointer;
+    color:var(--ink);
+  }
+  .quiz-opt:hover{ border-color:var(--ink-soft); }
+  .quiz-opt.correct{ background:var(--mint); border-color:var(--green-ok); color:var(--mint-ink); }
+  .quiz-opt.incorrect{ background:#FBDEDE; border-color:var(--red-no); color:#8A2E2E; }
+  .quiz-feedback{
+    margin-top:6px;
+    font-size:0.85rem;
+    min-height:1.2em;
+    color:var(--ink-soft);
+  }
+  .fill-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    align-items:center;
+    margin-top:6px;
+  }
+  .fill-row input{
+    border:2px solid var(--line);
+    border-radius:10px;
+    padding:8px 12px;
+    font-family:'Nunito';
+    font-size:0.92rem;
+    width:140px;
+  }
+  .fill-row button{
+    border:none;
+    background:var(--ink);
+    color:#fff;
+    border-radius:10px;
+    padding:8px 14px;
+    font-weight:700;
+    cursor:pointer;
+    font-family:'Nunito';
+  }
+
+  @media (max-width:520px){
+    .sort-grid{ grid-template-columns:1fr; }
+    header h1{ font-size:1.4rem; }
+    .fill-row input{ width:110px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Bases del inglés 🌱</h1>
+    <p>Semanas 1-2 · Toca las tarjetas y explora cada tema</p>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-topic="tobe">To be</button>
+    <button class="tab" data-topic="pronombres">Pronombres</button>
+    <button class="tab" data-topic="articulos">Artículos</button>
+    <button class="tab" data-topic="plurales">Plurales</button>
+    <button class="tab" data-topic="presente">Presente simple</button>
+    <button class="tab" data-topic="vocab">Vocabulario</button>
+  </div>
+
+  <!-- TO BE -->
+  <div class="panel active" id="tobe">
+    <div class="section-card">
+      <span class="badge badge-blue">Verbo más importante</span>
+      <h2>El verbo "to be" (ser / estar)</h2>
+      <p>Es el primer verbo que hay que dominar porque aparece en casi todas las oraciones básicas.</p>
+      <table class="grammar">
+        <tr><th>Pronombre</th><th>To be</th><th>Ejemplo</th></tr>
+        <tr><td>I</td><td><span class="pill pill-blue">am</span></td><td>I <b>am</b> a student.</td></tr>
+        <tr><td>You / We / They</td><td><span class="pill pill-blue">are</span></td><td>You <b>are</b> happy.</td></tr>
+        <tr><td>He / She / It</td><td><span class="pill pill-blue">is</span></td><td>She <b>is</b> tired.</td></tr>
+      </table>
+      <p><b>Negativo:</b> se agrega <span class="pill pill-blue">not</span> después del verbo → "I am not", "She is not (isn't)".</p>
+      <p><b>Pregunta:</b> el verbo se mueve al principio → "Are you ready?", "Is he home?"</p>
+      <div class="example-box">💡 Truco visual: imagina el verbo "to be" como un puente entre el sujeto y una descripción — siempre conecta "quién" con "cómo es o dónde está".</div>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Di en voz alta 5 oraciones sobre ti misma cada mañana usando am/is/are. Hablarlo en voz alta fija la conjugación mejor que solo leerla.</li>
+        <li>Usa siempre el mismo color para cada grupo (I=am, you/we/they=are, he/she/it=is) en tus apuntes; el cerebro asocia más rápido por color que por texto.</li>
+        <li>Practica primero solo el negativo y la pregunta por separado del afirmativo — son las formas que más se olvidan al principio.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-tobe"></div>
+      <div id="fill-tobe"></div>
+    </div>
+  </div>
+
+  <!-- PRONOMBRES -->
+  <div class="panel" id="pronombres">
+    <div class="section-card">
+      <span class="badge" style="background:var(--mint);color:var(--mint-ink);">Sujeto y posesivo</span>
+      <h2>Pronombres personales y posesivos</h2>
+      <p>Cada pronombre de sujeto tiene su versión posesiva. Relaciónalos en pareja.</p>
+      <div class="pron-grid">
+        <div class="pron-card"><div class="es">yo</div><div class="en">I</div><div class="pos">my (mi)</div></div>
+        <div class="pron-card"><div class="es">tú</div><div class="en">you</div><div class="pos">your (tu)</div></div>
+        <div class="pron-card"><div class="es">él</div><div class="en">he</div><div class="pos">his (su)</div></div>
+        <div class="pron-card"><div class="es">ella</div><div class="en">she</div><div class="pos">her (su)</div></div>
+        <div class="pron-card"><div class="es">nosotros</div><div class="en">we</div><div class="pos">our (nuestro)</div></div>
+        <div class="pron-card"><div class="es">ellos/as</div><div class="en">they</div><div class="pos">their (su)</div></div>
+      </div>
+      <div class="example-box">💡 "his / her" cambian según el género de quien posee el objeto, no del objeto en sí: "her car" (el carro de ella).</div>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Cuando dudes entre "his" o "her", pregúntate "¿de quién es?", no "¿qué es?" — el error más común es pensar en el objeto en vez de en la persona dueña.</li>
+        <li>Toma oraciones que ya conozcas (una canción, una noticia) y practica cambiando los nombres propios por pronombres y posesivos.</li>
+        <li>Haz tarjetas de dos caras y repásalas en ambos sentidos: sujeto → posesivo y posesivo → sujeto.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-pronombres"></div>
+      <div id="fill-pronombres"></div>
+    </div>
+  </div>
+
+  <!-- ARTICULOS -->
+  <div class="panel" id="articulos">
+    <div class="section-card">
+      <span class="badge" style="background:var(--peach);color:var(--peach-ink);">a / an / the</span>
+      <h2>Artículos: a, an, the</h2>
+      <p>Sigue este flujo para decidir cuál usar:</p>
+      <div class="flow">
+        <div class="flow-box">¿Hablas de algo específico y ya conocido?</div>
+        <div class="flow-arrow">→ sí →</div>
+        <div class="flow-box" style="background:var(--lav);color:var(--lav-ink);">the</div>
+      </div>
+      <div class="flow">
+        <div class="flow-box">¿Es la primera vez que lo mencionas?</div>
+        <div class="flow-arrow">→ empieza con vocal (a,e,i,o,u) →</div>
+        <div class="flow-box">an</div>
+      </div>
+      <div class="flow">
+        <div class="flow-box">¿Es la primera vez que lo mencionas?</div>
+        <div class="flow-arrow">→ empieza con consonante →</div>
+        <div class="flow-box">a</div>
+      </div>
+      <div class="example-box">
+        Ejemplos: "I have <b>a</b> dog." · "She ate <b>an</b> apple." · "<b>The</b> dog I mentioned is brown."
+      </div>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>El error más común de hispanohablantes es olvidar "a/an" antes de profesiones: en español decimos "soy profesor", pero en inglés siempre "I am <b>a</b> teacher".</li>
+        <li>No traduzcas directo del español: en inglés no se usa artículo antes de sustantivos incontables o generales — "I like music" y no "the music".</li>
+        <li>Aprende cada sustantivo nuevo junto con su artículo desde el principio ("a book", no solo "book") para que el uso correcto se vuelva automático.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-articulos"></div>
+      <div id="fill-articulos"></div>
+    </div>
+  </div>
+
+  <!-- PLURALES -->
+  <div class="panel" id="plurales">
+    <div class="section-card">
+      <span class="badge" style="background:var(--lav);color:var(--lav-ink);">Contables e incontables</span>
+      <h2>Plurales y sustantivos contables / incontables</h2>
+      <p>Regla general de plural: se agrega <span class="pill pill-lav">-s</span> (book → books). Si termina en -s,-x,-ch,-sh se agrega <span class="pill pill-lav">-es</span> (box → boxes).</p>
+      <div class="sort-grid">
+        <div class="sort-col">
+          <h3>Contables (tienen plural)</h3>
+          <ul>
+            <li>book → books</li>
+            <li>chair → chairs</li>
+            <li>apple → apples</li>
+          </ul>
+        </div>
+        <div class="sort-col">
+          <h3>Incontables (no tienen plural)</h3>
+          <ul>
+            <li>water</li>
+            <li>money</li>
+            <li>information</li>
+          </ul>
+        </div>
+      </div>
+      <div class="example-box">💡 Para incontables usa "some" o "a little": "I have <b>some</b> water", nunca "a water".</div>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Antes de usar "a/an", "many" o "-s", pregúntate: ¿puedo contarlo uno por uno? Si no (como water, money, information), es incontable.</li>
+        <li>Usa "some" para ofrecer o pedir algo (funciona con ambos tipos de sustantivo) y "any" en preguntas y negativos.</li>
+        <li>Aprende en bloque los incontables más comunes que en español sí se cuentan, porque son los que más cuestan: advice, news, furniture, information, luggage.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-plurales"></div>
+      <div id="fill-plurales"></div>
+    </div>
+  </div>
+
+  <!-- PRESENTE SIMPLE -->
+  <div class="panel" id="presente">
+    <div class="section-card">
+      <span class="badge" style="background:var(--yellow);color:var(--yellow-ink);">Rutinas y hechos</span>
+      <h2>Presente simple</h2>
+      <p>Se usa para rutinas, hábitos y hechos generales. Con <b>he/she/it</b> el verbo lleva <span class="pill pill-yellow">-s</span>.</p>
+      <div class="sentence-blocks">
+        <div class="block block-subject">She</div>
+        <div class="block block-verb">work<b>s</b></div>
+        <div class="block block-extra">every day.</div>
+      </div>
+      <div class="sentence-blocks">
+        <div class="block block-subject">I</div>
+        <div class="block block-verb">work</div>
+        <div class="block block-extra">every day.</div>
+      </div>
+      <p><b>Negativo:</b> "I don't work" / "She doesn't work".<br><b>Pregunta:</b> "Do you work?" / "Does she work?"</p>
+      <div class="example-box">💡 Recuerda: la "-s" se mueve al verbo con he/she/it, y "do" se convierte en "does" en negativos y preguntas.</div>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Usa el truco clásico de los maestros de inglés: repite "he, she, it… ¿dónde va la s?" cada vez que armes una oración — te obliga a buscar la -s automáticamente.</li>
+        <li>Practica el negativo y la pregunta por separado del afirmativo: el "don't/doesn't" es lo que más se olvida al principio.</li>
+        <li>Lee tus oraciones en voz alta. Es más fácil "escuchar" que falta la -s o el "does" que solo verlo escrito.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-presente"></div>
+      <div id="fill-presente"></div>
+    </div>
+  </div>
+
+  <!-- VOCAB -->
+  <div class="panel" id="vocab">
+    <div class="section-card">
+      <span class="badge" style="background:var(--pink);color:var(--pink-ink);">Toca para voltear</span>
+      <h2>Vocabulario básico de uso diario</h2>
+      <div class="vocab-grid" id="vocabGrid"></div>
+      <p class="hint">Toca cada tarjeta para ver la traducción</p>
+    </div>
+
+    <div class="section-card tips-box">
+      <h3>💡 Tips para aprenderlo más fácil</h3>
+      <ul>
+        <li>Repasa las tarjetas con repetición espaciada: hoy, mañana, en 3 días y en una semana — así el vocabulario pasa a la memoria de largo plazo.</li>
+        <li>Etiqueta objetos reales de la casa con su nombre en inglés (post-its en la puerta, la mesa, el refrigerador) para verlos todos los días.</li>
+        <li>Usa cada palabra nueva en una oración propia en vez de memorizarla suelta; el contexto ayuda mucho más a recordarla.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>✏️ Practica</h3>
+      <div id="quiz-vocab"></div>
+      <div id="fill-vocab"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      tabs.forEach(t=>t.classList.remove('active'));
+      panels.forEach(p=>p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.topic).classList.add('active');
+    });
+  });
+
+  const vocab = [
+    {emoji:'🏠', en:'house', es:'casa'},
+    {emoji:'💧', en:'water', es:'agua'},
+    {emoji:'📖', en:'book', es:'libro'},
+    {emoji:'🚗', en:'car', es:'carro'},
+    {emoji:'🍽️', en:'food', es:'comida'},
+    {emoji:'👨‍👩‍👧', en:'family', es:'familia'},
+    {emoji:'🏢', en:'work', es:'trabajo'},
+    {emoji:'⏰', en:'time', es:'tiempo'},
+    {emoji:'😊', en:'friend', es:'amigo/a'},
+    {emoji:'☀️', en:'day', es:'día'},
+    {emoji:'🌙', en:'night', es:'noche'},
+    {emoji:'💰', en:'money', es:'dinero'},
+    {emoji:'🏫', en:'school', es:'escuela'},
+    {emoji:'🏙️', en:'city', es:'ciudad'},
+    {emoji:'📱', en:'phone', es:'teléfono'},
+    {emoji:'🎵', en:'music', es:'música'},
+    {emoji:'🌦️', en:'weather', es:'clima'},
+    {emoji:'💼', en:'job', es:'trabajo (empleo)'},
+    {emoji:'🛣️', en:'street', es:'calle'},
+    {emoji:'👩‍🏫', en:'teacher', es:'maestro/a'},
+    {emoji:'🍳', en:'kitchen', es:'cocina'},
+    {emoji:'🏷️', en:'name', es:'nombre'},
+    {emoji:'🌷', en:'garden', es:'jardín'},
+  ];
+  const grid = document.getElementById('vocabGrid');
+  vocab.forEach(v=>{
+    const card = document.createElement('div');
+    card.className='flip-card';
+    card.innerHTML = `
+      <div class="flip-inner">
+        <div class="flip-front"><div class="emoji">${v.emoji}</div>${v.en}</div>
+        <div class="flip-back">${v.es}</div>
+      </div>`;
+    card.addEventListener('click',()=>card.classList.toggle('flipped'));
+    grid.appendChild(card);
+  });
+
+  /* ---------- EXERCISES ---------- */
+  function renderQuiz(containerId, questions){
+    const container = document.getElementById(containerId);
+    if(!container) return;
+    questions.forEach((q, qi)=>{
+      const qDiv = document.createElement('div');
+      qDiv.className='quiz-q';
+      const optsHtml = q.options.map((opt,oi)=>`<button class="quiz-opt" data-correct="${oi===q.correct}">${opt}</button>`).join('');
+      qDiv.innerHTML = `<div class="quiz-prompt">${qi+1}. ${q.prompt}</div><div class="quiz-options">${optsHtml}</div><div class="quiz-feedback"></div>`;
+      const buttons = qDiv.querySelectorAll('.quiz-opt');
+      const feedback = qDiv.querySelector('.quiz-feedback');
+      buttons.forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          if(btn.disabled) return;
+          buttons.forEach(b=>b.disabled=true);
+          if(btn.dataset.correct==='true'){
+            btn.classList.add('correct');
+            feedback.textContent = '¡Correcto! ' + (q.explanation||'');
+          } else {
+            btn.classList.add('incorrect');
+            buttons.forEach(b=>{ if(b.dataset.correct==='true') b.classList.add('correct'); });
+            feedback.textContent = 'Casi. ' + (q.explanation||'');
+          }
+        });
+      });
+      container.appendChild(qDiv);
+    });
+  }
+
+  function renderFill(containerId, items){
+    const container = document.getElementById(containerId);
+    if(!container) return;
+    items.forEach((it, ii)=>{
+      const row = document.createElement('div');
+      row.className='quiz-q';
+      row.innerHTML = `
+        <div class="quiz-prompt">${ii+1}. ${it.prompt}</div>
+        <div class="fill-row">
+          <input type="text" placeholder="escribe aquí" />
+          <button>Revisar</button>
+          <span class="quiz-feedback"></span>
+        </div>`;
+      const input = row.querySelector('input');
+      const btn = row.querySelector('button');
+      const feedback = row.querySelector('.quiz-feedback');
+      btn.addEventListener('click',()=>{
+        const val = input.value.trim().toLowerCase();
+        const answers = it.answers.map(a=>a.toLowerCase());
+        if(answers.includes(val)){
+          feedback.style.color = 'var(--green-ok)';
+          feedback.textContent = '¡Correcto!';
+        } else {
+          feedback.style.color = 'var(--red-no)';
+          feedback.textContent = 'Respuesta: ' + it.answers[0];
+        }
+      });
+      container.appendChild(row);
+    });
+  }
+
+  renderQuiz('quiz-tobe', [
+    {prompt:'My parents ___ doctors.', options:['is','are','am'], correct:1, explanation:'"My parents" (ellos) usa "are".'},
+    {prompt:'This book ___ interesting.', options:['is','are','am'], correct:0, explanation:'"This book" (it) usa "is".'},
+    {prompt:'___ we late for class?', options:['Am','Is','Are'], correct:2, explanation:'"We" usa "are".'},
+    {prompt:'The weather ___ cold today.', options:['is','are','am'], correct:0, explanation:'"The weather" (it) usa "is".'},
+    {prompt:'My brother and I ___ students.', options:['is','are','am'], correct:1, explanation:'"My brother and I" = we → are.'},
+    {prompt:'___ it raining outside?', options:['Am','Is','Are'], correct:1, explanation:'"It" usa "is".'},
+    {prompt:'She ___ not from Canada.', options:['is','are','am'], correct:0, explanation:'"She" usa "is".'},
+    {prompt:'You and your sister ___ very kind.', options:['is','are','am'], correct:1, explanation:'"You and your sister" = they/you plural → are.'},
+    {prompt:'___ I late?', options:['Am','Is','Are'], correct:0, explanation:'"I" usa "am".'}
+  ]);
+  renderFill('fill-tobe', [
+    {prompt:'The cat ___ (be) under the table.', answers:['is']},
+    {prompt:'My friends ___ (be) at the park.', answers:['are']},
+    {prompt:'I ___ not (be) a doctor.', answers:['am']},
+    {prompt:'___ (be) you hungry?', answers:['are','Are']},
+    {prompt:'He ___ (be) my classmate.', answers:['is']},
+    {prompt:'We ___ not (be) ready yet.', answers:['are']}
+  ]);
+
+  renderQuiz('quiz-pronombres', [
+    {prompt:'Look at ___ new shoes! (they are mine)', options:['My','Mine','Me'], correct:0, explanation:'Antes de un sustantivo se usa "my".'},
+    {prompt:'Sarah and John have a baby. ___ baby is beautiful.', options:['Their','His','Her'], correct:0, explanation:'Son dos personas → their.'},
+    {prompt:'Is this ___ pen? (talking to a friend)', options:['you','your','yours'], correct:1, explanation:'Antes de un sustantivo se usa "your".'},
+    {prompt:'The dog wagged ___ tail.', options:['its',"it's",'their'], correct:0, explanation:'Posesivo de "it" = its (sin apóstrofo).'},
+    {prompt:'Can I borrow ___ notebook? (talking to a friend)', options:['his','your','my'], correct:1, explanation:'Le hablas directamente a esa persona → your.'},
+    {prompt:'___ teacher is very strict. (it belongs to us)', options:['Our','We','Us'], correct:0, explanation:'El dueño es "we" → our.'},
+    {prompt:'James lost ___ keys.', options:['his','him','he'], correct:0, explanation:'El dueño es "James" (he) → his.'},
+    {prompt:'The girls forgot ___ homework.', options:['her','their','his'], correct:1, explanation:'"The girls" (ellas) → their.'},
+    {prompt:'This is ___ house. (it belongs to me)', options:['I','my','me'], correct:1, explanation:'El dueño soy "I" → my.'}
+  ]);
+  renderFill('fill-pronombres', [
+    {prompt:'Ana has a phone. ___ phone is new.', answers:['her']},
+    {prompt:'The boys have a ball. ___ ball is red.', answers:['their']},
+    {prompt:'I have a sister. ___ sister is funny.', answers:['my']},
+    {prompt:'You have a car. ___ car is fast.', answers:['your']},
+    {prompt:'We have a garden. ___ garden is small.', answers:['our']},
+    {prompt:'He has a job. ___ job is interesting.', answers:['his']}
+  ]);
+
+  renderQuiz('quiz-articulos', [
+    {prompt:'I would like ___ apple, please.', options:['a','an','the'], correct:1, explanation:'"Apple" empieza con vocal → an.'},
+    {prompt:'___ sun rises in the east.', options:['A','An','The'], correct:2, explanation:'Solo hay un sol, algo único → the.'},
+    {prompt:'She works as ___ nurse.', options:['a','an','the'], correct:0, explanation:'"Nurse" empieza con consonante → a.'},
+    {prompt:'We visited ___ museum you told me about.', options:['a','an','the'], correct:2, explanation:'Ya sabemos cuál museo es → the.'},
+    {prompt:'He is reading ___ interesting book.', options:['a','an','the'], correct:1, explanation:'"Interesting" empieza con vocal → an.'},
+    {prompt:'Can you close ___ door, please? (la puerta del cuarto)', options:['a','an','the'], correct:2, explanation:'Es una puerta específica → the.'},
+    {prompt:'I saw ___ cat in the garden.', options:['a','an','the'], correct:0, explanation:'"Cat" empieza con consonante → a.'},
+    {prompt:'This is ___ honest answer.', options:['a','an','the'], correct:1, explanation:'"Honest" suena con vocal (la h es muda) → an.'},
+    {prompt:'___ moon looks beautiful tonight.', options:['A','An','The'], correct:2, explanation:'Solo hay una luna, algo único → the.'}
+  ]);
+  renderFill('fill-articulos', [
+    {prompt:'She bought ___ (a/an) umbrella.', answers:['an']},
+    {prompt:'He wants to be ___ (a/an) architect.', answers:['an']},
+    {prompt:'I found ___ (a/an) wallet on the street.', answers:['a']},
+    {prompt:'Please pass me ___ (the/a) salt.', answers:['the']},
+    {prompt:'They live in ___ (a/an) old house.', answers:['an']},
+    {prompt:'We need ___ (a/an) plan.', answers:['a']}
+  ]);
+
+  renderQuiz('quiz-plurales', [
+    {prompt:"There isn't ___ milk in the fridge.", options:['any','some'], correct:0, explanation:'En negativos se usa "any".'},
+    {prompt:'Would you like ___ tea?', options:['some','any'], correct:0, explanation:'En ofrecimientos se usa "some".'},
+    {prompt:'How ___ sugar do you want?', options:['much','many'], correct:0, explanation:'"Sugar" es incontable → much.'},
+    {prompt:"I don't have ___ friends here.", options:['many','much'], correct:0, explanation:'"Friends" es contable → many.'},
+    {prompt:'She has ___ homework to do.', options:['much','many'], correct:0, explanation:'"Homework" es incontable → much.'},
+    {prompt:'There are ___ chairs in the room.', options:['much','many'], correct:1, explanation:'"Chairs" es contable → many.'},
+    {prompt:'He gave me a piece of ___.', options:['advice','advices'], correct:0, explanation:'"Advice" nunca lleva -s.'},
+    {prompt:'We need ___ furniture for the new house.', options:['many','much'], correct:1, explanation:'"Furniture" es incontable → much.'},
+    {prompt:'I saw many ___ in the field.', options:['sheep','sheeps'], correct:0, explanation:'"Sheep" es igual en singular y plural.'}
+  ]);
+  renderFill('fill-plurales', [
+    {prompt:'There is ___ (a little/many) bread left.', answers:['a little']},
+    {prompt:'I need ___ (some/any) information about the trip.', answers:['some']},
+    {prompt:'Do you have ___ (some/any) questions?', answers:['any']},
+    {prompt:'There are two ___ (child/children) in the park.', answers:['children']},
+    {prompt:'She bought three ___ (loaf/loaves) of bread.', answers:['loaves']},
+    {prompt:'We saw many ___ (person/people) at the concert.', answers:['people']}
+  ]);
+
+  renderQuiz('quiz-presente', [
+    {prompt:'My mom ___ (cook) dinner every night.', options:['cook','cooks'], correct:1, explanation:'"My mom" (she) lleva -s.'},
+    {prompt:'___ your brother play soccer?', options:['Do','Does'], correct:1, explanation:'"Your brother" (he) usa "does".'},
+    {prompt:'The store ___ (open) at 9 am.', options:['open','opens'], correct:1, explanation:'"The store" (it) lleva -s.'},
+    {prompt:'I ___ (not/eat) meat.', options:["don't eat","doesn't eat"], correct:0, explanation:'"I" usa "don\'t".'},
+    {prompt:'___ they work on weekends?', options:['Do','Does'], correct:0, explanation:'"They" usa "do".'},
+    {prompt:'She ___ (watch) TV every evening.', options:['watch','watches'], correct:1, explanation:'Verbo termina en -ch → -es.'},
+    {prompt:'We ___ (not/have) class on Fridays.', options:["don't have","doesn't have"], correct:0, explanation:'"We" usa "don\'t".'},
+    {prompt:'He ___ (fix) cars for a living.', options:['fix','fixes'], correct:1, explanation:'Verbo termina en -x → -es.'},
+    {prompt:'___ it snow here in winter?', options:['Do','Does'], correct:1, explanation:'"It" usa "does".'}
+  ]);
+  renderFill('fill-presente', [
+    {prompt:'My dad ___ (drive) to work.', answers:['drives']},
+    {prompt:'She ___ (not/like) spicy food.', answers:["doesn't like","does not like"]},
+    {prompt:'___ (do) you usually wake up early?', answers:['do','Do']},
+    {prompt:'The baby ___ (cry) a lot at night.', answers:['cries']},
+    {prompt:'We ___ (not/speak) French.', answers:["don't speak","do not speak"]},
+    {prompt:'___ (does) your sister live near here?', answers:['does','Does']}
+  ]);
+
+  renderQuiz('quiz-vocab', [
+    {prompt:'What does "school" mean?', options:['escuela','oficina','parque'], correct:0},
+    {prompt:'What does "city" mean?', options:['ciudad','pueblo','país'], correct:0},
+    {prompt:'What does "phone" mean?', options:['teléfono','computadora','reloj'], correct:0},
+    {prompt:'What does "music" mean?', options:['música','arte','deporte'], correct:0},
+    {prompt:'What does "weather" mean?', options:['clima','comida','ropa'], correct:0},
+    {prompt:'What does "job" mean?', options:['trabajo','juego','viaje'], correct:0},
+    {prompt:'What does "street" mean?', options:['calle','casa','ciudad'], correct:0},
+    {prompt:'What does "teacher" mean?', options:['maestro/a','estudiante','amigo'], correct:0},
+    {prompt:'What does "kitchen" mean?', options:['cocina','baño','jardín'], correct:0}
+  ]);
+  renderFill('fill-vocab', [
+    {prompt:'¿Cómo se dice "ciudad" en inglés?', answers:['city']},
+    {prompt:'¿Cómo se dice "teléfono" en inglés?', answers:['phone']},
+    {prompt:'¿Cómo se dice "clima" en inglés?', answers:['weather']},
+    {prompt:'¿Cómo se dice "calle" en inglés?', answers:['street']},
+    {prompt:'¿Cómo se dice "nombre" en inglés?', answers:['name']},
+    {prompt:'¿Cómo se dice "jardín" en inglés?', answers:['garden']}
+  ]);
+</script>
+</body>
+</html>

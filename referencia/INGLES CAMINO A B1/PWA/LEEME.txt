@@ -1,0 +1,65 @@
+NIVEL 3: CAMINO A B1 — VERSIÓN PWA
+====================================
+
+Qué es esto
+-----------
+Es la misma app de inglés, pero convertida en PWA (Progressive Web App):
+se puede "instalar" en el iPhone (o cualquier celular) desde el navegador
+y después funciona sin internet, con ícono propio en la pantalla de inicio,
+como si fuera una app nativa.
+
+Por qué no basta con abrir el archivo directo
+-----------------------------------------------
+Para que un iPhone pueda "instalar" la app (Agregar a pantalla de inicio)
+y para que el service worker funcione, estos archivos deben servirse desde
+una URL https, no abrirse como archivo local. Por eso hay que subir esta
+carpeta a un hosting (gratis) UNA sola vez.
+
+Archivos incluidos
+-------------------
+- index.html   → la app completa (secciones, tips, simulacro)
+- manifest.json → le dice al navegador cómo "instalar" la app (nombre, ícono, color)
+- sw.js         → service worker: cachea todo para que funcione sin internet
+- icon-192.png / icon-512.png → íconos de la app
+
+Cómo publicarla (elige una opción, ambas son gratis)
+------------------------------------------------------
+
+OPCIÓN A — GitHub Pages (recomendado si ya usas GitHub)
+1. Crea un repositorio nuevo en GitHub (puede ser privado o público).
+2. Sube estos 5 archivos (index.html, manifest.json, sw.js, icon-192.png, icon-512.png)
+   a la raíz del repositorio.
+3. Ve a Settings → Pages → Source, selecciona la rama "main" y carpeta "/ (root)".
+4. Guarda. GitHub te da una URL tipo:
+   https://tuusuario.github.io/tu-repo/
+5. Esa es la URL que se comparte con los alumnos.
+
+OPCIÓN B — Netlify Drop (más rápido, sin usar la terminal)
+1. Entra a https://app.netlify.com/drop desde tu computadora.
+2. Arrastra esta carpeta completa (la carpeta "pwa", con los 5 archivos adentro)
+   al recuadro de la página.
+3. Netlify te da una URL al instante, algo como:
+   https://nombre-al-azar.netlify.app
+4. (Opcional) Crea una cuenta gratis en Netlify para que la URL no expire
+   y puedas ponerle un nombre más fácil de recordar.
+
+Cómo lo instala un alumno en su iPhone
+-----------------------------------------
+1. Abre la URL (la de GitHub Pages o Netlify) en Safari (tiene que ser Safari,
+   no Chrome, para que aparezca la opción de instalar).
+2. Toca el ícono de compartir (el cuadrito con la flecha hacia arriba).
+3. Desliza y toca "Agregar a pantalla de inicio".
+4. Aparece el ícono "Inglés B1" en su pantalla de inicio, como una app.
+5. A partir de ahí ya puede abrirla sin internet: la primera vez que la
+   abre (con internet) el service worker guarda todo en el celular.
+
+Nota sobre Android: el mismo link funciona igual en Chrome para Android,
+con la opción "Instalar app" o "Agregar a la pantalla de inicio".
+
+Actualizaciones
+----------------
+Si más adelante le agregas o corriges preguntas al simulacro, vuelve a subir
+los archivos actualizados al mismo lugar (mismo repo de GitHub o vuelve a
+arrastrar la carpeta en Netlify). El service worker detecta el cambio y
+actualiza la copia guardada en el celular la siguiente vez que el alumno
+tenga internet y abra la app.
