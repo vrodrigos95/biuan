@@ -50,6 +50,11 @@ export default function Inicio() {
         </button>
       )}
 
+      <button className="tarjeta ultimo" onClick={() => ir('leccion/L04')}>
+        <span>Lección de muestra: ¿De dónde eres?</span>
+        <span className="flecha" aria-hidden>›</span>
+      </button>
+
       <p className="pie">El resultado es una estimación de nivel. Biuan no emite certificaciones oficiales.</p>
     </main>
   )

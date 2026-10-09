@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Inicio from './pantallas/Inicio.jsx'
 import ExamenNivel from './pantallas/ExamenNivel.jsx'
 import Resultado from './pantallas/Resultado.jsx'
+import Leccion from './pantallas/Leccion.jsx'
 
 function leerRuta() {
   const h = location.hash.replace(/^#\/?/, '')
@@ -51,6 +52,8 @@ export default function App() {
       return <ExamenNivel />
     case 'resultado':
       return <Resultado />
+    case 'leccion':
+      return <Leccion key={ruta.param} id={ruta.param} />
     default:
       return <Inicio />
   }

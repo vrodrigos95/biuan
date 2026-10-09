@@ -83,10 +83,93 @@ for (const nivel of NIVELES) {
   for (const h of HABILIDADES) if (!porHab[h]) aviso(archivo, `no hay preguntas de ${h}`)
 }
 
+// --- Lecciones ---
+const leccionesEstructura = new Map()
+if (est) for (const s of est.subniveles || []) for (const u of s.unidades || []) for (const l of u.lecciones || []) leccionesEstructura.set(l.id, { subnivel: s.id, unidad: u.numero })
+
+const BLOQUES = ['texto', 'tip', 'ejemplo', 'tabla']
+const TIPOS = ['opcion', 'hueco', 'ordenar', 'emparejar', 'lectura', 'escucha']
+let totalLecciones = 0
+const dirLecciones = path.join(RAIZ, 'lecciones')
+const archivosLeccion = fs.existsSync(dirLecciones) ? fs.readdirSync(dirLecciones).filter((f) => f.endsWith('.json')).sort() : []
+
+for (const nombre of archivosLeccion) {
+  const archivo = `lecciones/${nombre}`
+  const l = leer(archivo)
+  if (!l) continue
+  totalLecciones++
+  const idArchivo = nombre.replace(/\.json$/, '')
+  if (l.id !== idArchivo) err(archivo, `"id" debe ser ${idArchivo}, igual que el nombre del archivo`)
+  const lugar = leccionesEstructura.get(l.id)
+  if (!lugar) err(archivo, `${l.id} no está en estructura.json`)
+  else {
+    if (l.subnivel !== lugar.subnivel) err(archivo, `"subnivel" debe ser ${lugar.subnivel}`)
+    if (l.unidad !== lugar.unidad) err(archivo, `"unidad" debe ser ${lugar.unidad}`)
+  }
+  if (!texto(l.titulo)) err(archivo, 'falta "titulo"')
+
+  if (!Array.isArray(l.explicacion) || !l.explicacion.length) err(archivo, 'falta "explicacion"')
+  for (const [i, b] of (l.explicacion || []).entries()) {
+    const donde = `explicación, bloque ${i + 1}`
+    if (!BLOQUES.includes(b.tipo)) err(archivo, `${donde}: "tipo" debe ser ${BLOQUES.join(', ')}`)
+    if ((b.tipo === 'texto' || b.tipo === 'tip') && !texto(b.md)) err(archivo, `${donde}: falta "md"`)
+    if (b.tipo === 'ejemplo' && !texto(b.en)) err(archivo, `${donde}: falta "en"`)
+    if (b.tipo === 'tabla' && (!Array.isArray(b.filas) || !b.filas.length || b.filas.some((f) => !Array.isArray(f)))) err(archivo, `${donde}: "filas" debe ser una lista de filas`)
+  }
+
+  const ejercicios = l.ejercicios || []
+  if (ejercicios.length < 8 || ejercicios.length > 16) aviso(archivo, `tiene ${ejercicios.length} ejercicios (lo recomendado es unos 12)`)
+  const ids = new Set()
+  for (const ej of ejercicios) {
+    const id = ej.id || '(sin id)'
+    if (!texto(ej.id)) err(archivo, 'un ejercicio no tiene id')
+    else if (ids.has(ej.id)) err(archivo, `id de ejercicio repetido ${ej.id}`)
+    ids.add(ej.id)
+    if (!TIPOS.includes(ej.tipo)) { err(archivo, `${id}: "tipo" debe ser ${TIPOS.join(', ')}`); continue }
+    if (!texto(ej.porque)) err(archivo, `${id}: falta "porque"`)
+    switch (ej.tipo) {
+      case 'opcion':
+        if (!texto(ej.enunciado)) err(archivo, `${id}: falta "enunciado"`)
+        validarOpcion(archivo, ej)
+        break
+      case 'lectura':
+        if (!texto(ej.texto)) err(archivo, `${id}: falta "texto"`)
+        if (!texto(ej.pregunta)) err(archivo, `${id}: falta "pregunta"`)
+        validarOpcion(archivo, ej)
+        break
+      case 'escucha':
+        if (!texto(ej.audio)) err(archivo, `${id}: falta "audio"`)
+        if (!texto(ej.pregunta)) err(archivo, `${id}: falta "pregunta"`)
+        if ((ej.opciones || []).some((o) => norm(o) === norm(ej.audio))) err(archivo, `${id}: una opción es igual al audio; sin voz se vería la respuesta`)
+        validarOpcion(archivo, ej)
+        break
+      case 'hueco':
+        if (!texto(ej.frase) || ej.frase.split('___').length !== 2) err(archivo, `${id}: "frase" debe tener exactamente un ___`)
+        if (ej.opciones) validarOpcion(archivo, ej)
+        else if (!Array.isArray(ej.aceptadas) || !ej.aceptadas.length || ej.aceptadas.some((a) => !texto(a))) err(archivo, `${id}: necesita "aceptadas" (lo que se escribe) o "opciones" + "correcta" (para tocar)`)
+        break
+      case 'ordenar':
+        if (!Array.isArray(ej.respuesta) || ej.respuesta.length < 2 || ej.respuesta.some((p) => !texto(p))) err(archivo, `${id}: "respuesta" debe ser una lista de al menos 2 palabras`)
+        if (ej.distractores && (!Array.isArray(ej.distractores) || ej.distractores.some((p) => !texto(p)))) err(archivo, `${id}: "distractores" debe ser una lista de palabras`)
+        break
+      case 'emparejar': {
+        const pares = ej.pares || []
+        if (!Array.isArray(pares) || pares.length < 2 || pares.length > 6 || pares.some((p) => !Array.isArray(p) || p.length !== 2 || !texto(p[0]) || !texto(p[1]))) {
+          err(archivo, `${id}: "pares" debe tener de 2 a 6 parejas ["a", "b"]`)
+          break
+        }
+        if (new Set(pares.map((p) => norm(p[0]))).size !== pares.length) err(archivo, `${id}: hay elementos repetidos en la columna izquierda`)
+        if (new Set(pares.map((p) => norm(p[1]))).size !== pares.length) err(archivo, `${id}: hay elementos repetidos en la columna derecha`)
+        break
+      }
+    }
+  }
+}
+
 for (const a of avisos) console.log(a)
 for (const e of errores) console.log(e)
 if (errores.length) {
   console.log(`\n${errores.length} error(es). Corrígelos antes de publicar.`)
   process.exit(1)
 }
-console.log(`Contenido válido (${idsPreguntas.size} preguntas del examen de nivel).`)
+console.log(`Contenido válido (${idsPreguntas.size} preguntas del examen de nivel, ${totalLecciones} lecciones).`)
