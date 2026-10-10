@@ -5,6 +5,7 @@ import { leerProgreso, exportarProgreso, importarProgreso } from '../lib/progres
 import { leccionHecha, leccionPendienteAbierta, nivelAbierto, siguienteLeccion, subnivelActual, subnivelesPlanos } from '../lib/ruta.js'
 import { descargar } from '../lib/compartir.js'
 import { hoy } from '../lib/logros.js'
+import { resumenRepaso } from '../lib/repaso.js'
 import { etiquetaNivel } from '../lib/examenNivel.js'
 import BarraNivel from '../componentes/BarraNivel.jsx'
 import Marca from '../componentes/Marca.jsx'
@@ -35,6 +36,7 @@ export default function Ruta() {
   const siguiente = siguienteLeccion(estructura, progreso, disponibles)
   const subs = subnivelesPlanos(estructura)
   const pendiente = siguiente ? null : leccionPendienteAbierta(estructura, progreso, disponibles)
+  const repaso = resumenRepaso(progreso)
 
   function exportar() {
     descargar(exportarProgreso(), `biuan-progreso-${hoy()}.json`)
@@ -68,6 +70,18 @@ export default function Ruta() {
       <div className="barra-fija">
         <BarraNivel sub={actual} progreso={progreso} />
       </div>
+      {repaso.deHoy > 0 ? (
+        <button className="tarjeta repaso-hoy" onClick={() => ir('repaso')}>
+          <span className="repaso-icono" aria-hidden>🔁</span>
+          <span className="nodo-texto">
+            <strong>Repaso de hoy</strong>
+            <small>{Math.min(repaso.deHoy, 15)} ejercicios que fallaste antes · {Math.min(repaso.deHoy, 15) <= 4 ? 'un minuto' : `unos ${Math.round(Math.min(repaso.deHoy, 15) / 3)} minutos`}</small>
+          </span>
+          <span className="flecha" aria-hidden>›</span>
+        </button>
+      ) : repaso.total > 0 ? (
+        <p className="nota repaso-proximo">🔁 Próximo repaso: {repaso.proxima === hoy() ? 'hoy' : new Date(repaso.proxima + 'T12:00').toLocaleDateString('es-MX', { weekday: 'long', day: 'numeric', month: 'long' })} · {repaso.total} {repaso.total === 1 ? 'ejercicio' : 'ejercicios'} en repaso</p>
+      ) : null}
       {siguiente ? (
         <button className="boton boton-primario boton-grande boton-continuar" onClick={() => ir(`leccion/${siguiente.id}`)}>
           Continuar: {siguiente.titulo}

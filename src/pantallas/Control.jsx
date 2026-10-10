@@ -7,6 +7,7 @@ import { guardarProgreso, leerProgreso } from '../lib/progreso.js'
 import { crearFolio, dibujarConstancia, pdfDesdeJpeg } from '../lib/constancia.js'
 import { descargar } from '../lib/compartir.js'
 import { nivelAbierto } from '../lib/ruta.js'
+import { agregarAlRepaso } from '../lib/repaso.js'
 import Ejercicio from '../ejercicios/Ejercicio.jsx'
 
 function textoRespuesta(ej, r) {
@@ -120,7 +121,9 @@ export default function Control({ nivel }) {
       fecha: aprobado && !antes.aprobado ? ahora : antes.fecha || (aprobado ? ahora : null),
       folio: antes.folio || (aprobado ? crearFolio() : null),
     }
-    setProgreso(guardarProgreso({ controles: { ...p.controles, [nivel]: registro } }))
+    guardarProgreso({ controles: { ...p.controles, [nivel]: registro } })
+    agregarAlRepaso(`control:${nivel}`, preguntas.filter((q) => !(resps[q.id] != null && evaluar(q, resps[q.id]))).map((q) => q.id))
+    setProgreso(leerProgreso())
     setResultado({ aciertos, puntaje, aprobado, porSeccion, resps })
     setFase('resultado')
     callar()

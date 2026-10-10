@@ -5,6 +5,7 @@ import Resultado from './pantallas/Resultado.jsx'
 import Leccion from './pantallas/Leccion.jsx'
 import Ruta from './pantallas/Ruta.jsx'
 import Control from './pantallas/Control.jsx'
+import Repaso from './pantallas/Repaso.jsx'
 import { tieneProgreso } from './lib/progreso.js'
 
 function leerRuta() {
@@ -59,6 +60,8 @@ export default function App() {
       return <Leccion key={ruta.param} id={ruta.param} />
     case 'ruta':
       return <Ruta />
+    case 'repaso':
+      return <Repaso />
     case 'control':
       return <Control key={ruta.param} nivel={ruta.param} />
     case 'bienvenida':

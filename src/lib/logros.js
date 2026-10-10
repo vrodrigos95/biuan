@@ -54,3 +54,14 @@ export function registrarLeccion(id, aciertos, total) {
   })
   return { xpGanada, racha: racha.actual, primeraDelDia: (p.racha?.ultimoDia !== hoy()) }
 }
+
+export const XP_POR_REPASO = 5
+
+// Una sesión de repaso también cuenta para la racha del día.
+export function registrarRepaso(aciertos) {
+  const p = leerProgreso()
+  const xpGanada = aciertos * XP_POR_REPASO
+  const racha = marcarDia(p)
+  guardarProgreso({ xp: (p.xp || 0) + xpGanada, racha })
+  return { xpGanada, racha: racha.actual }
+}

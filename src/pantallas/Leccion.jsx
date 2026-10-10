@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react'
 import { ir } from '../App.jsx'
 import { cargarJSON } from '../lib/contenido.js'
 import { prepararVoz, callar } from '../lib/voz.js'
-import { estaLista, evaluar, preparar, respuestaCorrecta } from '../lib/ejercicios.js'
+import { preparar } from '../lib/ejercicios.js'
+import { agregarAlRepaso } from '../lib/repaso.js'
 import { registrarLeccion } from '../lib/logros.js'
 import Explicacion from '../componentes/Explicacion.jsx'
-import Ejercicio from '../ejercicios/Ejercicio.jsx'
+import Ronda from '../componentes/Ronda.jsx'
 
 export default function Leccion({ id }) {
   const [leccion, setLeccion] = useState(null)
@@ -14,8 +15,6 @@ export default function Leccion({ id }) {
   const [fase, setFase] = useState('explicacion')
   const [cola, setCola] = useState([])
   const [pos, setPos] = useState(0)
-  const [respuesta, setRespuesta] = useState(null)
-  const [revelado, setRevelado] = useState(null)
   const [primerIntento, setPrimerIntento] = useState({})
   const [logro, setLogro] = useState(null)
 
@@ -51,8 +50,6 @@ export default function Leccion({ id }) {
     setCola(leccion.ejercicios.map((ej) => ({ ej: preparar(ej), repaso: false })))
     setPos(0)
     setPrimerIntento({})
-    setRespuesta(null)
-    setRevelado(null)
     setFase('ejercicios')
     window.scrollTo(0, 0)
   }
@@ -99,57 +96,36 @@ export default function Leccion({ id }) {
 
   const { ej, repaso } = cola[pos]
 
-  function comprobar(valor = respuesta) {
-    const correcto = evaluar(ej, valor)
-    setRevelado({ correcto })
-    if (!repaso) {
-      setPrimerIntento((p) => ({ ...p, [ej.id]: correcto }))
-      // Lo que se falla regresa una vez al final de la lección.
-      if (!correcto) setCola((c) => [...c, { ej: preparar(leccion.ejercicios.find((e) => e.id === ej.id)), repaso: true }])
-    }
+  function calificar(correcto) {
+    if (repaso) return
+    setPrimerIntento((p) => ({ ...p, [ej.id]: correcto }))
+    // Lo que se falla regresa una vez al final de la lección.
+    if (!correcto) setCola((c) => [...c, { ej: preparar(leccion.ejercicios.find((e) => e.id === ej.id)), repaso: true }])
   }
 
   function continuar() {
     if (pos + 1 >= cola.length) {
+      const fallados = Object.entries(primerIntento).filter(([, ok]) => !ok).map(([id]) => id)
+      agregarAlRepaso(leccion.id, fallados)
       setLogro(registrarLeccion(leccion.id, aciertos, total))
       setFase('fin')
       window.scrollTo(0, 0)
       return
     }
     setPos(pos + 1)
-    setRespuesta(null)
-    setRevelado(null)
     window.scrollTo(0, 0)
   }
 
-  const lista = estaLista(ej, respuesta)
-
   return (
-    <main className="pantalla examen leccion">
-      <header className="barra-examen">
-        <button className="cerrar" onClick={() => confirm('¿Salir de la lección? Perderás tu avance en ella.') && ir('ruta')} aria-label="Salir de la lección">✕</button>
-        <div className="progreso" aria-hidden>
-          <div style={{ width: `${(pos / cola.length) * 100}%` }} />
-        </div>
-      </header>
-      {repaso && <p className="etiqueta etiqueta-repaso">Otra vez</p>}
-      <Ejercicio key={`${pos}-${ej.id}`} ej={ej} respuesta={respuesta} setRespuesta={setRespuesta} revelado={!!revelado} hayVoz={hayVoz} onCompleto={comprobar} />
-
-      {revelado ? (
-        <div className={revelado.correcto ? 'retro retro-bien' : 'retro retro-mal'} role="status">
-          <p className="retro-titulo">{revelado.correcto ? '¡Correcto!' : 'No exactamente'}</p>
-          {!revelado.correcto && (
-            <p>Respuesta correcta: <strong lang="en">{respuestaCorrecta(ej)}</strong></p>
-          )}
-          {ej.audio && hayVoz && <p className="retro-audio">Se dijo: <em lang="en">{ej.audio}</em></p>}
-          <p className="retro-porque">{ej.porque}</p>
-          <button className="boton boton-grande boton-retro" onClick={continuar}>Continuar</button>
-        </div>
-      ) : (
-        <div className="acciones-fijas">
-          <button className="boton boton-primario boton-grande" disabled={!lista} onClick={() => comprobar()}>Comprobar</button>
-        </div>
-      )}
-    </main>
+    <Ronda
+      key={`${pos}-${ej.id}`}
+      ej={ej}
+      etiqueta={repaso ? 'Otra vez' : null}
+      avance={pos / cola.length}
+      hayVoz={hayVoz}
+      onSalir={() => confirm('¿Salir de la lección? Perderás tu avance en ella.') && ir('ruta')}
+      onCalificar={calificar}
+      onContinuar={continuar}
+    />
   )
 }
