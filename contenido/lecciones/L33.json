@@ -1,0 +1,282 @@
+{
+  "id": "L33",
+  "subnivel": "A2.1",
+  "unidad": 9,
+  "titulo": "Hace dos días",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Para decir **cuándo** pasó algo se usan expresiones de tiempo. Casi siempre van al final de la oración."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Palabra",
+        "Uso",
+        "Ejemplos"
+      ],
+      "filas": [
+        [
+          "**ago**",
+          "hace… (va después del tiempo)",
+          "two days ago, a week ago"
+        ],
+        [
+          "**last**",
+          "el… pasado (sin the)",
+          "last night, last Monday, last year"
+        ],
+        [
+          "**yesterday**",
+          "ayer",
+          "yesterday, yesterday morning"
+        ],
+        [
+          "**in**",
+          "con años y meses",
+          "in 2020, in July"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**ago** va al final: se dice *two days ago*, nunca *ago two days*."
+    },
+    {
+      "tipo": "tip",
+      "md": "**last** no lleva the: *last week*, no *the last week*. Y «anoche» es **last night**, nunca *yesterday night*."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I bought this phone a month ago.",
+      "es": "Compré este teléfono hace un mes."
+    },
+    {
+      "tipo": "texto",
+      "md": "Para preguntar cuándo pasó algo se usa **When did…?**"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "When did you see Ana? I saw her two days ago.",
+      "es": "¿Cuándo viste a Ana? La vi hace dos días."
+    },
+    {
+      "tipo": "texto",
+      "md": "Unidades de tiempo:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "minute",
+          "minuto"
+        ],
+        [
+          "hour",
+          "hora"
+        ],
+        [
+          "day",
+          "día"
+        ],
+        [
+          "week",
+          "semana"
+        ],
+        [
+          "month",
+          "mes"
+        ],
+        [
+          "year",
+          "año"
+        ],
+        [
+          "a long time ago",
+          "hace mucho tiempo"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I saw her two days ___.",
+      "opciones": [
+        "ago",
+        "last",
+        "yesterday"
+      ],
+      "correcta": 0,
+      "porque": "«Hace dos días» es two days ago; ago va después del tiempo."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "We went to Oaxaca ___ year.",
+      "opciones": [
+        "last",
+        "ago",
+        "yesterday"
+      ],
+      "correcta": 0,
+      "porque": "«El año pasado» es last year."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «anoche»?",
+      "opciones": [
+        "last night",
+        "yesterday night",
+        "the last night"
+      ],
+      "correcta": 0,
+      "porque": "Anoche es last night, sin the."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "She called me an hour ___.",
+      "aceptadas": [
+        "ago"
+      ],
+      "pista": "hace una hora",
+      "porque": "«Hace una hora» es an hour ago."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "I was born ___ 1999.",
+      "aceptadas": [
+        "in"
+      ],
+      "pista": "va con años",
+      "porque": "Con los años se usa in."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "I didn't work ___ morning.",
+      "opciones": [
+        "yesterday",
+        "last",
+        "ago"
+      ],
+      "correcta": 0,
+      "porque": "«Ayer en la mañana» es yesterday morning."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "bought",
+        "this",
+        "phone",
+        "a",
+        "month",
+        "ago."
+      ],
+      "traduccion": "Compré este teléfono hace un mes.",
+      "porque": "La expresión de tiempo va al final, y ago cierra la frase."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "When",
+        "did",
+        "you",
+        "buy",
+        "your",
+        "car?"
+      ],
+      "traduccion": "¿Cuándo compraste tu carro?",
+      "porque": "When + did + sujeto + verbo en forma base."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada expresión con su significado.",
+      "pares": [
+        [
+          "an hour ago",
+          "hace una hora"
+        ],
+        [
+          "last month",
+          "el mes pasado"
+        ],
+        [
+          "yesterday morning",
+          "ayer en la mañana"
+        ],
+        [
+          "last night",
+          "anoche"
+        ],
+        [
+          "a long time ago",
+          "hace mucho tiempo"
+        ]
+      ],
+      "porque": "Expresiones de tiempo para hablar del pasado."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "I visited her last week.",
+        "I visited her the last week.",
+        "I visited her ago a week."
+      ],
+      "correcta": 0,
+      "porque": "Last va sin the, y ago iría al final: a week ago."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «hace tres años»?",
+      "opciones": [
+        "three years ago",
+        "ago three years",
+        "last three years"
+      ],
+      "correcta": 0,
+      "porque": "Primero el tiempo y después ago."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Marco started his new job three weeks ago. He met his boss last Monday. Yesterday he worked at home, and last night he had dinner with his family.",
+      "pregunta": "¿Cuándo empezó Marco su trabajo nuevo?",
+      "opciones": [
+        "Hace tres semanas",
+        "El lunes pasado",
+        "Ayer"
+      ],
+      "correcta": 0,
+      "porque": "«Marco started his new job three weeks ago»: hace tres semanas."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "When did you see Ana? I saw her two days ago, on Thursday.",
+      "pregunta": "¿Cuándo vio a Ana?",
+      "opciones": [
+        "Hace dos días",
+        "Hace dos semanas",
+        "Anoche"
+      ],
+      "correcta": 0,
+      "porque": "«Two days ago»: hace dos días."
+    }
+  ]
+}

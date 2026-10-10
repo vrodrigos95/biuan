@@ -1,0 +1,295 @@
+{
+  "id": "L39",
+  "subnivel": "A2.2",
+  "unidad": 10,
+  "titulo": "Rápido y bien",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Los **adverbios de modo** dicen **cómo** se hace algo. La mayoría se forma con el adjetivo + **-ly**, igual que «-mente» en español."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "La mayoría: + ly",
+          "slow → slowly, quiet → quietly, careful → carefully"
+        ],
+        [
+          "Termina en -y: cambia a -ily",
+          "easy → easily, noisy → noisily"
+        ]
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Adjetivo",
+        "Adverbio",
+        "Español"
+      ],
+      "filas": [
+        [
+          "good",
+          "well",
+          "bien"
+        ],
+        [
+          "fast",
+          "fast",
+          "rápido"
+        ],
+        [
+          "hard",
+          "hard",
+          "duro, mucho"
+        ],
+        [
+          "late",
+          "late",
+          "tarde"
+        ],
+        [
+          "early",
+          "early",
+          "temprano"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**good** es adjetivo y **well** es adverbio: *She is a good driver* y *She drives well*."
+    },
+    {
+      "tipo": "tip",
+      "md": "**hardly** no es el adverbio de hard: significa «casi no». *I work hard* es «trabajo duro»."
+    },
+    {
+      "tipo": "texto",
+      "md": "El adjetivo describe a una persona o cosa; el adverbio describe la acción:"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "He is a slow driver. He drives slowly.",
+      "es": "Es un conductor lento. Maneja despacio."
+    },
+    {
+      "tipo": "tip",
+      "md": "El adverbio va después del verbo o del objeto, nunca en medio: *She speaks English well*, no *She speaks well English*."
+    },
+    {
+      "tipo": "texto",
+      "md": "Formas de hacer algo:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "carefully",
+          "con cuidado"
+        ],
+        [
+          "quickly",
+          "rápidamente"
+        ],
+        [
+          "slowly",
+          "despacio"
+        ],
+        [
+          "clearly",
+          "claramente"
+        ],
+        [
+          "quietly",
+          "en voz baja, sin ruido"
+        ],
+        [
+          "loudly",
+          "fuerte, en voz alta"
+        ],
+        [
+          "badly",
+          "mal"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "He drives ___.",
+      "opciones": [
+        "carefully",
+        "careful",
+        "more careful"
+      ],
+      "correcta": 0,
+      "porque": "Describe cómo maneja: hace falta un adverbio, carefully."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She speaks English very ___.",
+      "opciones": [
+        "well",
+        "good",
+        "goodly"
+      ],
+      "correcta": 0,
+      "porque": "El adverbio de good es well."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "They talked ___ (quiet) in the hospital.",
+      "aceptadas": [
+        "quietly"
+      ],
+      "pista": "adjetivo + ly",
+      "porque": "Quiet + ly: quietly."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "He opened the door ___ (easy).",
+      "aceptadas": [
+        "easily"
+      ],
+      "pista": "la y cambia",
+      "porque": "Termina en -y: la y cambia a -ily."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el adverbio de fast?",
+      "opciones": [
+        "fast",
+        "fastly",
+        "faster"
+      ],
+      "correcta": 0,
+      "porque": "Fast no cambia: es adjetivo y adverbio."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "She is a ___ driver.",
+      "opciones": [
+        "careful",
+        "carefully",
+        "well"
+      ],
+      "correcta": 0,
+      "porque": "Describe a la persona (driver), no la acción: adjetivo."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada adjetivo con su adverbio.",
+      "pares": [
+        [
+          "slow",
+          "slowly"
+        ],
+        [
+          "good",
+          "well"
+        ],
+        [
+          "easy",
+          "easily"
+        ],
+        [
+          "fast",
+          "fast"
+        ],
+        [
+          "bad",
+          "badly"
+        ]
+      ],
+      "porque": "Well y fast son irregulares."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "She",
+        "speaks",
+        "English",
+        "very",
+        "well."
+      ],
+      "traduccion": "Ella habla inglés muy bien.",
+      "porque": "El adverbio va después del objeto: speaks English very well."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Please",
+        "speak",
+        "more",
+        "slowly."
+      ],
+      "traduccion": "Por favor, habla más despacio.",
+      "porque": "More + adverbio para pedir que alguien lo haga más despacio."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "I work ___ every day.",
+      "opciones": [
+        "hard",
+        "hardly",
+        "hardy"
+      ],
+      "correcta": 0,
+      "porque": "El adverbio de hard es hard. Hardly significa «casi no»."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "He plays the guitar well.",
+        "He plays well the guitar.",
+        "He plays the guitar good."
+      ],
+      "correcta": 0,
+      "porque": "El adverbio va después del objeto, y el de good es well."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "My father drives slowly and carefully. My mother drives fast, but she drives very well. I drive badly: I started two weeks ago! My brother can't drive, but he rides his bike quickly.",
+      "pregunta": "¿Cómo maneja la mamá?",
+      "opciones": [
+        "Rápido y muy bien",
+        "Despacio y con cuidado",
+        "Mal"
+      ],
+      "correcta": 0,
+      "porque": "«My mother drives fast, but she drives very well»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Can you speak more slowly, please? I don't speak English very well.",
+      "pregunta": "¿Qué pide la persona?",
+      "opciones": [
+        "Que le hablen más despacio",
+        "Que le hablen más fuerte",
+        "Que le hablen en español"
+      ],
+      "correcta": 0,
+      "porque": "«Can you speak more slowly, please?»: que le hablen más despacio."
+    }
+  ]
+}

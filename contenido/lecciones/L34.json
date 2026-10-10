@@ -1,0 +1,299 @@
+{
+  "id": "L34",
+  "subnivel": "A2.1",
+  "unidad": 9,
+  "titulo": "Y, pero, porque",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Los **conectores** unen dos ideas en una sola oración. Con estos cuatro ya puedes contar casi cualquier cosa."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Conector",
+        "Significado",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "**and**",
+          "y (suma)",
+          "I have a job **and** I study at night."
+        ],
+        [
+          "**but**",
+          "pero (contraste)",
+          "I studied a lot, **but** I failed the exam."
+        ],
+        [
+          "**because**",
+          "porque (causa)",
+          "I was late **because** the bus didn't come."
+        ],
+        [
+          "**so**",
+          "así que (resultado)",
+          "The bus didn't come, **so** I was late."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**because** y **so** cuentan lo mismo en orden contrario: resultado + because + causa; causa + so + resultado."
+    },
+    {
+      "tipo": "tip",
+      "md": "A una pregunta con **Why…?** se contesta con **Because…**"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "Why were you late? Because the bus didn't come.",
+      "es": "¿Por qué llegaste tarde? Porque el camión no pasó."
+    },
+    {
+      "tipo": "texto",
+      "md": "Antes de **but** y de **so** se pone una coma."
+    },
+    {
+      "tipo": "texto",
+      "md": "La escuela y el trabajo:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "exam",
+          "examen"
+        ],
+        [
+          "pass",
+          "aprobar"
+        ],
+        [
+          "fail",
+          "reprobar"
+        ],
+        [
+          "grade",
+          "calificación"
+        ],
+        [
+          "project",
+          "proyecto"
+        ],
+        [
+          "meeting",
+          "junta"
+        ],
+        [
+          "busy",
+          "ocupado"
+        ],
+        [
+          "late",
+          "tarde"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I studied a lot, ___ I passed the exam.",
+      "opciones": [
+        "so",
+        "because",
+        "but"
+      ],
+      "correcta": 0,
+      "porque": "Aprobar es el resultado de estudiar: so."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "I passed the exam ___ I studied a lot.",
+      "opciones": [
+        "because",
+        "so",
+        "but"
+      ],
+      "correcta": 0,
+      "porque": "Estudiar es la causa de haber aprobado: because."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "He studied a lot, ___ he failed the exam.",
+      "opciones": [
+        "but",
+        "so",
+        "because"
+      ],
+      "correcta": 0,
+      "porque": "Estudió y aun así reprobó: es un contraste, but."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "I have a meeting at nine ___ a class at eleven.",
+      "opciones": [
+        "and",
+        "because",
+        "so"
+      ],
+      "correcta": 0,
+      "porque": "Solo se suman dos cosas: and."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "Why didn't you come? ___ I was busy.",
+      "aceptadas": [
+        "because"
+      ],
+      "pista": "responde a Why",
+      "porque": "A Why…? se contesta con Because…"
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "She was tired, ___ she didn't go to the party.",
+      "aceptadas": [
+        "so"
+      ],
+      "pista": "así que",
+      "porque": "No ir a la fiesta es el resultado de estar cansada: so."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "was",
+        "late",
+        "because",
+        "the",
+        "bus",
+        "didn't",
+        "come."
+      ],
+      "traduccion": "Llegué tarde porque el camión no pasó.",
+      "porque": "Resultado + because + causa."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "She",
+        "was",
+        "busy,",
+        "so",
+        "she",
+        "didn't",
+        "call."
+      ],
+      "traduccion": "Estaba ocupada, así que no llamó.",
+      "porque": "Causa + coma + so + resultado."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada conector con su significado.",
+      "pares": [
+        [
+          "and",
+          "y"
+        ],
+        [
+          "but",
+          "pero"
+        ],
+        [
+          "because",
+          "porque"
+        ],
+        [
+          "so",
+          "así que"
+        ],
+        [
+          "why",
+          "por qué"
+        ]
+      ],
+      "porque": "Because responde a why; so introduce el resultado."
+    },
+    {
+      "id": "e10",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "exam",
+          "examen"
+        ],
+        [
+          "grade",
+          "calificación"
+        ],
+        [
+          "meeting",
+          "junta"
+        ],
+        [
+          "project",
+          "proyecto"
+        ],
+        [
+          "busy",
+          "ocupado"
+        ]
+      ],
+      "porque": "Vocabulario de la escuela y el trabajo."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "I like my job, ___ I don't like my boss.",
+      "opciones": [
+        "but",
+        "so",
+        "because"
+      ],
+      "correcta": 0,
+      "porque": "Dos ideas que contrastan: but."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Yesterday was not a good day for Sofía. She got up late, so she didn't have breakfast. She had an exam at eight, but the bus didn't come. She walked to school and was late, so the teacher was angry.",
+      "pregunta": "¿Por qué no desayunó Sofía?",
+      "opciones": [
+        "Porque se levantó tarde",
+        "Porque no tenía hambre",
+        "Porque el camión no pasó"
+      ],
+      "correcta": 0,
+      "porque": "«She got up late, so she didn't have breakfast»: levantarse tarde es la causa."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "I didn't go to the meeting because I had a class. But I finished the project last night.",
+      "pregunta": "¿Por qué no fue a la junta?",
+      "opciones": [
+        "Porque tenía clase",
+        "Porque estaba ocupado con el proyecto",
+        "Porque llegó tarde"
+      ],
+      "correcta": 0,
+      "porque": "«Because I had a class»: tenía clase."
+    }
+  ]
+}

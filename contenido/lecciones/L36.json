@@ -1,0 +1,299 @@
+{
+  "id": "L36",
+  "subnivel": "A2.1",
+  "unidad": 9,
+  "titulo": "Había una vez",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Para decir lo que **había** en un lugar se usa **there was** (una cosa) y **there were** (varias). Es el pasado de there is y there are."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Una cosa",
+          "There was a park.",
+          "Había un parque."
+        ],
+        [
+          "Varias",
+          "There were two schools.",
+          "Había dos escuelas."
+        ],
+        [
+          "Negativo, una",
+          "There wasn't a bank.",
+          "No había banco."
+        ],
+        [
+          "Negativo, varias",
+          "There weren't any stores.",
+          "No había tiendas."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "En español «había» nunca cambia. En inglés sí: **was** para una cosa, **were** para varias."
+    },
+    {
+      "tipo": "texto",
+      "md": "Para preguntar, **was** o **were** pasa al principio:"
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Was there a river?",
+          "Yes, there was.",
+          "No, there wasn't."
+        ],
+        [
+          "Were there any cars?",
+          "Yes, there were.",
+          "No, there weren't."
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Es muy común comparar el pasado con el presente:"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "In 1980 there was a market here. Now there is a supermarket.",
+      "es": "En 1980 había un mercado aquí. Ahora hay un supermercado."
+    },
+    {
+      "tipo": "texto",
+      "md": "Para describir un lugar:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "town",
+          "pueblo"
+        ],
+        [
+          "building",
+          "edificio"
+        ],
+        [
+          "church",
+          "iglesia"
+        ],
+        [
+          "square",
+          "plaza"
+        ],
+        [
+          "river",
+          "río"
+        ],
+        [
+          "bridge",
+          "puente"
+        ],
+        [
+          "movie theater",
+          "cine"
+        ],
+        [
+          "quiet",
+          "tranquilo"
+        ],
+        [
+          "noisy",
+          "ruidoso"
+        ],
+        [
+          "modern",
+          "moderno"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "Fifty years ago, there ___ a church here.",
+      "opciones": [
+        "was",
+        "were",
+        "is"
+      ],
+      "correcta": 0,
+      "porque": "Es pasado y es una sola cosa: there was."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "There ___ two bridges in 1990.",
+      "opciones": [
+        "were",
+        "was",
+        "are"
+      ],
+      "correcta": 0,
+      "porque": "Es pasado y son varias cosas: there were."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "There ___ (not / be) any buildings in 1900.",
+      "aceptadas": [
+        "weren't",
+        "were not"
+      ],
+      "pista": "varias cosas, en negativo",
+      "porque": "Negativo en pasado con plural: there weren't any."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "___ there a river in your town in 1950?",
+      "opciones": [
+        "Was",
+        "Were",
+        "Did"
+      ],
+      "correcta": 0,
+      "porque": "En la pregunta, was pasa al principio; a river es una sola cosa."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "Were there any stores? Yes, there ___.",
+      "opciones": [
+        "were",
+        "was",
+        "did"
+      ],
+      "correcta": 0,
+      "porque": "La respuesta corta repite el verbo: Yes, there were."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "There",
+        "was",
+        "a",
+        "small",
+        "park",
+        "here."
+      ],
+      "traduccion": "Había un parque pequeño aquí.",
+      "porque": "There was + una cosa + lugar."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Were",
+        "there",
+        "any",
+        "cars",
+        "in",
+        "1900?"
+      ],
+      "traduccion": "¿Había carros en 1900?",
+      "porque": "Were + there + any + plural."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "town",
+          "pueblo"
+        ],
+        [
+          "church",
+          "iglesia"
+        ],
+        [
+          "river",
+          "río"
+        ],
+        [
+          "bridge",
+          "puente"
+        ],
+        [
+          "building",
+          "edificio"
+        ]
+      ],
+      "porque": "Vocabulario para describir un lugar."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "Lo contrario de «quiet» es ___.",
+      "opciones": [
+        "noisy",
+        "modern",
+        "old"
+      ],
+      "correcta": 0,
+      "porque": "Quiet es tranquilo y noisy es ruidoso."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "In 1980 there ___ a market here. Now there is a supermarket.",
+      "aceptadas": [
+        "was"
+      ],
+      "pista": "una cosa, en pasado",
+      "porque": "Es pasado y es una sola cosa: there was."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "There weren't any cars.",
+        "There wasn't any cars.",
+        "There didn't any cars."
+      ],
+      "correcta": 0,
+      "porque": "Cars es plural: there weren't. Con there was y were no se usa did."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "My grandfather was born in a small town. In 1960 it was very quiet. There was a church, a square and a river, but there wasn't a hospital. There were two stores and one school. Now the town is modern and noisy, and there are a lot of buildings.",
+      "pregunta": "¿Qué no había en el pueblo en 1960?",
+      "opciones": [
+        "Un hospital",
+        "Una iglesia",
+        "Una escuela"
+      ],
+      "correcta": 0,
+      "porque": "«There wasn't a hospital»: no había hospital."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Was there a movie theater in your town? No, there wasn't. But there was a big park next to the river.",
+      "pregunta": "¿Qué había junto al río?",
+      "opciones": [
+        "Un parque grande",
+        "Un cine",
+        "Una iglesia"
+      ],
+      "correcta": 0,
+      "porque": "«There was a big park next to the river»: un parque grande."
+    }
+  ]
+}

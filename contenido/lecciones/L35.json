@@ -1,0 +1,298 @@
+{
+  "id": "L35",
+  "subnivel": "A2.1",
+  "unidad": 9,
+  "titulo": "Primero, luego",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Para contar algo en orden se usan palabras de **secuencia**. Le dicen al que escucha qué pasó primero y qué pasó después."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Palabra",
+        "Significado",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "**First,**",
+          "primero",
+          "First, I got up."
+        ],
+        [
+          "**Then**",
+          "luego",
+          "Then I had breakfast."
+        ],
+        [
+          "**After that,**",
+          "después de eso",
+          "After that, I went to work."
+        ],
+        [
+          "**Finally,**",
+          "al final, por último",
+          "Finally, I came home."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Después de **First**, **After that** y **Finally** va una coma. Después de **Then** normalmente no."
+    },
+    {
+      "tipo": "texto",
+      "md": "Una anécdota suele empezar con **One day…** (un día) o con una expresión de tiempo: *Last year…*, *Two weeks ago…*"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "One day I lost my wallet. First, I looked in my bag. Then I looked in the car.",
+      "es": "Un día perdí mi cartera. Primero busqué en mi mochila. Luego busqué en el carro."
+    },
+    {
+      "tipo": "texto",
+      "md": "Para contar anécdotas:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "story",
+          "historia"
+        ],
+        [
+          "happen",
+          "pasar, ocurrir"
+        ],
+        [
+          "lose → lost",
+          "perder"
+        ],
+        [
+          "find → found",
+          "encontrar"
+        ],
+        [
+          "forget → forgot",
+          "olvidar"
+        ],
+        [
+          "remember",
+          "recordar"
+        ],
+        [
+          "look",
+          "buscar, mirar"
+        ],
+        [
+          "funny",
+          "chistoso"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Al leer una anécdota en un examen, subraya las palabras de secuencia: te dan el orden de los hechos sin tener que entender todo."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "¿Con qué palabra empieza una secuencia?",
+      "opciones": [
+        "First",
+        "Finally",
+        "After that"
+      ],
+      "correcta": 0,
+      "porque": "First es «primero»."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "¿Con qué palabra termina una secuencia?",
+      "opciones": [
+        "Finally",
+        "First",
+        "Then"
+      ],
+      "correcta": 0,
+      "porque": "Finally es «al final» o «por último»."
+    },
+    {
+      "id": "e03",
+      "tipo": "emparejar",
+      "enunciado": "Une cada expresión con su significado.",
+      "pares": [
+        [
+          "first",
+          "primero"
+        ],
+        [
+          "then",
+          "luego"
+        ],
+        [
+          "after that",
+          "después de eso"
+        ],
+        [
+          "finally",
+          "al final"
+        ],
+        [
+          "one day",
+          "un día"
+        ]
+      ],
+      "porque": "Las palabras que ordenan una historia."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "___, I bought the vegetables. Then I cooked them. Finally, I ate them.",
+      "opciones": [
+        "First",
+        "After that",
+        "Finally"
+      ],
+      "correcta": 0,
+      "porque": "Es el primer paso de tres: First."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "First, we bought the tickets. Then we went to the airport. ___, we flew to Cancún.",
+      "opciones": [
+        "Finally",
+        "First",
+        "One day"
+      ],
+      "correcta": 0,
+      "porque": "Es el último paso: Finally."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "First, I lost my wallet. After ___, I lost my keys.",
+      "aceptadas": [
+        "that"
+      ],
+      "pista": "después de eso",
+      "porque": "«Después de eso» es after that."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Then",
+        "we",
+        "went",
+        "to",
+        "the",
+        "hotel."
+      ],
+      "traduccion": "Luego fuimos al hotel.",
+      "porque": "Then va al principio y sin coma."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Finally,",
+        "I",
+        "found",
+        "my",
+        "keys."
+      ],
+      "traduccion": "Al final encontré mis llaves.",
+      "porque": "Finally va al principio, con coma. El pasado de find es found."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "lose",
+          "perder"
+        ],
+        [
+          "find",
+          "encontrar"
+        ],
+        [
+          "forget",
+          "olvidar"
+        ],
+        [
+          "remember",
+          "recordar"
+        ],
+        [
+          "funny",
+          "chistoso"
+        ]
+      ],
+      "porque": "Verbos que salen en casi todas las anécdotas."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el pasado de forget?",
+      "opciones": [
+        "forgot",
+        "forgetted",
+        "forgets"
+      ],
+      "correcta": 0,
+      "porque": "Forget es irregular: forgot."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "One day I went to a restaurant with my friends. First, we ordered pizza. Then I went to the bathroom. After that, I sat down at a table, but it wasn't my table! A man said: Who are you? Finally, I saw my friends at the table behind him. It was very funny.",
+      "pregunta": "¿Qué hicieron primero?",
+      "opciones": [
+        "Ordenaron pizza",
+        "Fueron al baño",
+        "Se sentaron en otra mesa"
+      ],
+      "correcta": 0,
+      "porque": "«First, we ordered pizza»: first marca lo primero que pasó."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "One day I went to a restaurant with my friends. First, we ordered pizza. Then I went to the bathroom. After that, I sat down at a table, but it wasn't my table! A man said: Who are you? Finally, I saw my friends at the table behind him. It was very funny.",
+      "pregunta": "¿Qué pasó al final?",
+      "opciones": [
+        "Vio a sus amigos en otra mesa",
+        "Pagó la cuenta",
+        "Ordenó otra pizza"
+      ],
+      "correcta": 0,
+      "porque": "«Finally, I saw my friends at the table behind him»: finally marca el final."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Yesterday I lost my keys. First, I looked in my bag. Then I looked in the car. Finally, I found them in the kitchen.",
+      "pregunta": "¿Dónde encontró las llaves?",
+      "opciones": [
+        "En la cocina",
+        "En el carro",
+        "En su mochila"
+      ],
+      "correcta": 0,
+      "porque": "«Finally, I found them in the kitchen»: en la cocina."
+    }
+  ]
+}
