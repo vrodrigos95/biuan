@@ -1,0 +1,127 @@
+{
+  "id": "L53",
+  "subnivel": "B1.1",
+  "unidad": 14,
+  "titulo": "Estaba haciendo",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **pasado continuo** describe una acción **en progreso** en un momento del pasado, muchas veces interrumpida por otra acción más corta."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Forma",
+        "Fórmula",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "Afirmativo",
+          "**was / were** + verbo-**ing**",
+          "I **was watching** TV."
+        ],
+        [
+          "Negativo",
+          "**wasn't / weren't** + verbo-ing",
+          "They **weren't studying**."
+        ],
+        [
+          "Pregunta",
+          "**Was / Were** + sujeto + verbo-ing",
+          "**Were** you **working**?"
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "At 6 p.m. yesterday, I was having dinner.",
+      "es": "Ayer a las 6 de la tarde estaba cenando."
+    },
+    {
+      "tipo": "tip",
+      "md": "Practica contando una anécdota real: *Yesterday at 8 p.m. I was… when…* Contar historias reales fija la estructura mejor que oraciones sueltas."
+    },
+    {
+      "tipo": "tip",
+      "md": "Compara ambas formas en voz alta para escuchar la diferencia de ritmo entre *was watching* y *watched*."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "They ___ (not/study) when I arrived.",
+      "opciones": [
+        "didn't study",
+        "weren't studying",
+        "not studied"
+      ],
+      "correcta": 1,
+      "porque": "Negativo de pasado continuo: weren't + -ing."
+    },
+    {
+      "id": "e02",
+      "tipo": "hueco",
+      "frase": "At 6pm yesterday, I ___ (have) dinner.",
+      "aceptadas": [
+        "was having"
+      ],
+      "porque": "Una hora exacta del pasado con una acción en progreso → was + -ing.",
+      "pista": "acción en progreso"
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "What ___ you doing at 8 p.m. last night?",
+      "opciones": [
+        "did",
+        "were",
+        "was"
+      ],
+      "correcta": 1,
+      "porque": "Pregunta de pasado continuo: were + sujeto + -ing."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "She ___ (not/listen) when the teacher explained the rule.",
+      "aceptadas": [
+        "wasn't listening",
+        "was not listening"
+      ],
+      "porque": "Negativo de pasado continuo: wasn't + -ing."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "I ___ (not/watch) TV when you called, I was studying.",
+      "opciones": [
+        "didn't watch",
+        "wasn't watching",
+        "not watched"
+      ],
+      "correcta": 1,
+      "porque": "Negativo de pasado continuo."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "___ (be) you working when I called this morning?",
+      "aceptadas": [
+        "were"
+      ],
+      "porque": "Pregunta de pasado continuo con you: Were + sujeto + -ing."
+    },
+    {
+      "id": "e07",
+      "tipo": "hueco",
+      "frase": "He ___ (talk) on the phone all night.",
+      "aceptadas": [
+        "was talking"
+      ],
+      "porque": "Una acción que duró toda la noche, en progreso → was + -ing.",
+      "pista": "acción en progreso"
+    }
+  ]
+}

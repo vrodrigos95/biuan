@@ -1,0 +1,189 @@
+{
+  "id": "L57",
+  "subnivel": "B1.1",
+  "unidad": 15,
+  "titulo": "Tres futuros",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Para hablar del futuro, la clave es preguntarte: ¿ya lo decidí **antes de hablar** (*going to*) o lo estoy decidiendo **justo ahora** (*will*)?"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "⚡ will",
+        "📋 going to"
+      ],
+      "filas": [
+        [
+          "Decisión espontánea (la tomas mientras hablas)",
+          "Plan ya decidido antes"
+        ],
+        [
+          "Promesa: *I will help you.*",
+          "*I'm going to visit my mom this weekend.*"
+        ],
+        [
+          "Predicción sin evidencia clara: *I think it will rain.*",
+          "Predicción con evidencia visible: *Look at those clouds, it's going to rain.*"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "¿Hay evidencia visible (nubes, boletos comprados) o algo ya planeado? → *going to*. ¿Es una decisión del momento o una promesa? → *will*."
+    },
+    {
+      "tipo": "tip",
+      "md": "Practica reaccionando en voz alta a situaciones reales que veas (*Mira eso… it's going to…*), no solo con ejercicios de papel."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "Look at those clouds! It ___ (rain).",
+      "opciones": [
+        "will rain",
+        "is going to rain",
+        "rains"
+      ],
+      "correcta": 1,
+      "porque": "Evidencia visible → going to."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "I don't have plans yet, but I think I ___ (help) you.",
+      "opciones": [
+        "am going to help",
+        "will help",
+        "help"
+      ],
+      "correcta": 1,
+      "porque": "Decisión espontánea → will."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "I've already decided: we ___ (travel) to Oaxaca in April.",
+      "aceptadas": [
+        "are going to travel",
+        "'re going to travel"
+      ],
+      "porque": "Ya está decidido (I've already decided) → going to."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "She ___ (visit) her grandma next weekend. (ya lo planeó)",
+      "opciones": [
+        "will visit",
+        "is going to visit",
+        "visits"
+      ],
+      "correcta": 1,
+      "porque": "Plan ya decidido → going to."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "Don't worry, I ___ (carry) that for you.",
+      "opciones": [
+        "will carry",
+        "am going to carry",
+        "carry"
+      ],
+      "correcta": 0,
+      "porque": "Decisión espontánea / promesa → will."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "A: I forgot my wallet! B: Don't worry, I ___ (lend) you some money.",
+      "aceptadas": [
+        "will lend",
+        "'ll lend"
+      ],
+      "porque": "Decisión espontánea para ayudar → will."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "We ___ (move) to a new house next year. (ya está decidido)",
+      "opciones": [
+        "will move",
+        "are going to move",
+        "move"
+      ],
+      "correcta": 1,
+      "porque": "Plan ya decidido → going to."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "A: The phone is ringing! B: I ___ (answer) it.",
+      "opciones": [
+        "am going to answer",
+        "will answer",
+        "answer"
+      ],
+      "correcta": 1,
+      "porque": "Decisión en el momento → will."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "Look at his face, he ___ (be) angry.",
+      "aceptadas": [
+        "is going to be",
+        "'s going to be"
+      ],
+      "porque": "Evidencia visible (su cara) → going to."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "They ___ (get) married in June. (ya compraron todo)",
+      "opciones": [
+        "will get",
+        "are going to get",
+        "get"
+      ],
+      "correcta": 1,
+      "porque": "Plan ya decidido con evidencia → going to."
+    },
+    {
+      "id": "e11",
+      "tipo": "hueco",
+      "frase": "I promise I ___ (call) you tomorrow.",
+      "aceptadas": [
+        "will call",
+        "'ll call"
+      ],
+      "porque": "Promesa → will."
+    },
+    {
+      "id": "e12",
+      "tipo": "opcion",
+      "enunciado": "Maybe I ___ (call) her later.",
+      "opciones": [
+        "will call",
+        "am going to call",
+        "call"
+      ],
+      "correcta": 0,
+      "porque": "Predicción/posibilidad con \"maybe\" → will."
+    },
+    {
+      "id": "e13",
+      "tipo": "hueco",
+      "frase": "She has bought the tickets, she ___ (fly) to Spain.",
+      "aceptadas": [
+        "is going to fly",
+        "'s going to fly"
+      ],
+      "porque": "Ya compró los boletos: plan decidido con evidencia → going to."
+    }
+  ]
+}

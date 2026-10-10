@@ -1,0 +1,266 @@
+{
+  "id": "A1",
+  "titulo": "Examen de control A1",
+  "minutos": 15,
+  "aprobacion": 70,
+  "espera_horas_reintento": 12,
+  "desbloquea": "A2.1",
+  "secciones": [
+    {
+      "habilidad": "gramatica",
+      "titulo": "Gramática",
+      "preguntas": [
+        {
+          "id": "g01",
+          "tipo": "opcion",
+          "enunciado": "My brother ___ a doctor.",
+          "opciones": [
+            "is",
+            "are",
+            "am"
+          ],
+          "correcta": 0,
+          "porque": "My brother equivale a he: is."
+        },
+        {
+          "id": "g02",
+          "tipo": "opcion",
+          "enunciado": "___ they from Chile?",
+          "opciones": [
+            "Are",
+            "Is",
+            "Do"
+          ],
+          "correcta": 0,
+          "porque": "Con they el verbo to be es are, y en pregunta va al inicio."
+        },
+        {
+          "id": "g03",
+          "tipo": "hueco",
+          "frase": "She ___ two children.",
+          "opciones": [
+            "has",
+            "have",
+            "is"
+          ],
+          "correcta": 0,
+          "porque": "Con she se usa has."
+        },
+        {
+          "id": "g04",
+          "tipo": "opcion",
+          "enunciado": "There ___ a bank next to the school.",
+          "opciones": [
+            "is",
+            "are",
+            "be"
+          ],
+          "correcta": 0,
+          "porque": "A bank es singular: there is."
+        },
+        {
+          "id": "g05",
+          "tipo": "hueco",
+          "frase": "He ___ (not / like) coffee.",
+          "aceptadas": [
+            "doesn't like",
+            "does not like"
+          ],
+          "porque": "Negativo en tercera persona: doesn't + verbo sin -s."
+        },
+        {
+          "id": "g06",
+          "tipo": "ordenar",
+          "respuesta": [
+            "Where",
+            "do",
+            "you",
+            "work?"
+          ],
+          "traduccion": "¿Dónde trabajas?",
+          "porque": "Pregunta con Wh-: Where + do + sujeto + verbo."
+        },
+        {
+          "id": "g07",
+          "tipo": "opcion",
+          "enunciado": "The class starts ___ 8 o'clock.",
+          "opciones": [
+            "at",
+            "in",
+            "on"
+          ],
+          "correcta": 0,
+          "porque": "Con una hora exacta se usa at."
+        },
+        {
+          "id": "g08",
+          "tipo": "opcion",
+          "enunciado": "I can ___ English and Spanish.",
+          "opciones": [
+            "speak",
+            "speaks",
+            "to speak"
+          ],
+          "correcta": 0,
+          "porque": "Después de can va el verbo en forma base."
+        }
+      ]
+    },
+    {
+      "habilidad": "vocabulario",
+      "titulo": "Vocabulario",
+      "preguntas": [
+        {
+          "id": "v01",
+          "tipo": "emparejar",
+          "enunciado": "Une cada palabra con su traducción.",
+          "pares": [
+            [
+              "Monday",
+              "lunes"
+            ],
+            [
+              "kitchen",
+              "cocina"
+            ],
+            [
+              "aunt",
+              "tía"
+            ],
+            [
+              "always",
+              "siempre"
+            ]
+          ],
+          "porque": "Días, casa, familia y frecuencia: vocabulario básico de A1."
+        },
+        {
+          "id": "v02",
+          "tipo": "opcion",
+          "enunciado": "Your mother's sister is your ___.",
+          "opciones": [
+            "aunt",
+            "cousin",
+            "grandmother"
+          ],
+          "correcta": 0,
+          "porque": "La hermana de tu mamá es tu tía: aunt."
+        },
+        {
+          "id": "v03",
+          "tipo": "opcion",
+          "enunciado": "¿Cómo se dice 45?",
+          "opciones": [
+            "forty-five",
+            "fourteen-five",
+            "fifty-four"
+          ],
+          "correcta": 0,
+          "porque": "40 es forty y 5 es five: forty-five."
+        },
+        {
+          "id": "v04",
+          "tipo": "opcion",
+          "enunciado": "I take the ___ to work every day.",
+          "opciones": [
+            "bus",
+            "kitchen",
+            "breakfast"
+          ],
+          "correcta": 0,
+          "porque": "Al trabajo se va en un transporte: bus."
+        }
+      ]
+    },
+    {
+      "habilidad": "lectura",
+      "titulo": "Lectura",
+      "preguntas": [
+        {
+          "id": "l01",
+          "tipo": "lectura",
+          "texto": "Hi! I'm Sofía. I'm 19 and I'm a student. I live in Puebla with my parents and my brother. I get up at 6:30 every day and I go to school by bus. On weekends I play soccer.",
+          "pregunta": "¿Cómo va Sofía a la escuela?",
+          "opciones": [
+            "En autobús",
+            "Caminando",
+            "En carro"
+          ],
+          "correcta": 0,
+          "porque": "«I go to school by bus»: en autobús."
+        },
+        {
+          "id": "l02",
+          "tipo": "lectura",
+          "texto": "Hi! I'm Sofía. I'm 19 and I'm a student. I live in Puebla with my parents and my brother. I get up at 6:30 every day and I go to school by bus. On weekends I play soccer.",
+          "pregunta": "¿Qué hace Sofía los fines de semana?",
+          "opciones": [
+            "Juega futbol",
+            "Trabaja",
+            "Visita a sus abuelos"
+          ],
+          "correcta": 0,
+          "porque": "«On weekends I play soccer»: juega futbol."
+        },
+        {
+          "id": "l03",
+          "tipo": "lectura",
+          "texto": "SUPERMARKET — Open Monday to Saturday, 8 a.m. to 9 p.m. Closed on Sundays.",
+          "pregunta": "¿Cuándo está cerrado el supermercado?",
+          "opciones": [
+            "Los domingos",
+            "Los lunes",
+            "Los sábados"
+          ],
+          "correcta": 0,
+          "porque": "«Closed on Sundays»: cerrado los domingos."
+        }
+      ]
+    },
+    {
+      "habilidad": "escucha",
+      "titulo": "Listening",
+      "preguntas": [
+        {
+          "id": "e01",
+          "tipo": "escucha",
+          "audio": "Excuse me, where is the bathroom? It's upstairs, next to the bedroom.",
+          "pregunta": "¿Dónde está el baño?",
+          "opciones": [
+            "Arriba, junto a la recámara",
+            "Abajo, junto a la cocina",
+            "Afuera, en el jardín"
+          ],
+          "correcta": 0,
+          "porque": "«It's upstairs, next to the bedroom»: arriba, junto a la recámara."
+        },
+        {
+          "id": "e02",
+          "tipo": "escucha",
+          "audio": "My birthday is on March fifteenth.",
+          "pregunta": "¿Cuándo es su cumpleaños?",
+          "opciones": [
+            "El 15 de marzo",
+            "El 5 de marzo",
+            "El 15 de mayo"
+          ],
+          "correcta": 0,
+          "porque": "«March fifteenth»: 15 de marzo."
+        },
+        {
+          "id": "e03",
+          "tipo": "escucha",
+          "audio": "I don't like tea, but I love coffee.",
+          "pregunta": "¿Qué le encanta?",
+          "opciones": [
+            "El café",
+            "El té",
+            "El jugo"
+          ],
+          "correcta": 0,
+          "porque": "«I don't like tea, but I love coffee»: le encanta el café."
+        }
+      ]
+    }
+  ]
+}

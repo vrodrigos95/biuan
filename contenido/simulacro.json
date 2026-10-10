@@ -1,0 +1,1055 @@
+{
+  "titulo": "Simulacro tipo TOEFL",
+  "descripcion": "Preguntas de opción múltiple que repasan B1 y los niveles anteriores, con cronómetro y análisis de errores por tema.",
+  "modos": [
+    {
+      "id": "practica",
+      "titulo": "Práctica",
+      "preguntas": 10,
+      "minutos": 5
+    },
+    {
+      "id": "completo",
+      "titulo": "Completo",
+      "preguntas": 75,
+      "minutos": 60
+    }
+  ],
+  "temas": {
+    "pascont": "Pasado continuo",
+    "futuro": "Futuro (will / going to)",
+    "modales": "Verbos modales",
+    "conectores": "Conectores",
+    "repaso": "Repaso de niveles anteriores"
+  },
+  "preguntas": [
+    {
+      "id": "S001",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "I ___ TV when she called.",
+      "opciones": [
+        "watched",
+        "was watching",
+        "watch",
+        "watches"
+      ],
+      "correcta": 1,
+      "porque": "Acción en progreso interrumpida por otra acción corta → pasado continuo."
+    },
+    {
+      "id": "S002",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "While I was cooking, he ___ the newspaper.",
+      "opciones": [
+        "read",
+        "reads",
+        "was reading",
+        "reading"
+      ],
+      "correcta": 2,
+      "porque": "\"While\" + dos acciones en progreso al mismo tiempo → pasado continuo."
+    },
+    {
+      "id": "S003",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "While she was sleeping, the phone ___.",
+      "opciones": [
+        "rang",
+        "was ringing",
+        "rings",
+        "ring"
+      ],
+      "correcta": 0,
+      "porque": "Es la acción corta que interrumpe → pasado simple."
+    },
+    {
+      "id": "S004",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "They ___ studying when I arrived.",
+      "opciones": [
+        "didn't",
+        "weren't",
+        "doesn't",
+        "isn't"
+      ],
+      "correcta": 1,
+      "porque": "Negativo de pasado continuo: weren't + -ing."
+    },
+    {
+      "id": "S005",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "I ___ (read) a book when the lights went out.",
+      "opciones": [
+        "read",
+        "was reading",
+        "reads"
+      ],
+      "correcta": 1,
+      "porque": "Acción en progreso interrumpida → pasado continuo."
+    },
+    {
+      "id": "S006",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "While they ___ (have) dinner, someone knocked on the door.",
+      "opciones": [
+        "have",
+        "having",
+        "were having"
+      ],
+      "correcta": 2,
+      "porque": "\"While\" + acción en progreso → pasado continuo."
+    },
+    {
+      "id": "S007",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "She was cleaning the house while her husband ___ (watch) the game.",
+      "opciones": [
+        "watched",
+        "was watching",
+        "watches"
+      ],
+      "correcta": 1,
+      "porque": "Dos acciones simultáneas en progreso con \"while\" → ambas en pasado continuo."
+    },
+    {
+      "id": "S008",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "I ___ (not/pay) attention when the teacher explained the homework.",
+      "opciones": [
+        "didn't pay",
+        "wasn't paying",
+        "don't pay"
+      ],
+      "correcta": 1,
+      "porque": "Negativo de pasado continuo: wasn't/weren't + -ing."
+    },
+    {
+      "id": "S009",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "___ (you/sleep) when I texted you last night?",
+      "opciones": [
+        "Did you sleep",
+        "Were you sleeping",
+        "Do you sleep"
+      ],
+      "correcta": 1,
+      "porque": "Pregunta de pasado continuo: Were/Was + sujeto + -ing."
+    },
+    {
+      "id": "S010",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "The children ___ (play) in the garden when it began to snow.",
+      "opciones": [
+        "played",
+        "were playing",
+        "play"
+      ],
+      "correcta": 1,
+      "porque": "Acción en progreso interrumpida → pasado continuo."
+    },
+    {
+      "id": "S011",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "I saw Laura while I ___ (wait) for the bus.",
+      "opciones": [
+        "waited",
+        "was waiting",
+        "wait"
+      ],
+      "correcta": 1,
+      "porque": "\"While\" + acción en progreso → pasado continuo."
+    },
+    {
+      "id": "S012",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "He ___ (drive) too fast when the accident happened.",
+      "opciones": [
+        "drove",
+        "was driving",
+        "drives"
+      ],
+      "correcta": 1,
+      "porque": "Acción en progreso interrumpida por un evento → pasado continuo."
+    },
+    {
+      "id": "S013",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "What ___ (she/do) at this time yesterday?",
+      "opciones": [
+        "did she do",
+        "was she doing",
+        "does she do"
+      ],
+      "correcta": 1,
+      "porque": "Pregunta sobre una acción en progreso en un momento específico del pasado."
+    },
+    {
+      "id": "S014",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "We ___ (not/watch) the news when the power went out; we were sleeping.",
+      "opciones": [
+        "didn't watch",
+        "weren't watching",
+        "don't watch"
+      ],
+      "correcta": 1,
+      "porque": "Negativo de pasado continuo."
+    },
+    {
+      "id": "S015",
+      "tema": "pascont",
+      "tipo": "opcion",
+      "enunciado": "I broke a plate while I ___ (wash) the dishes.",
+      "opciones": [
+        "washed",
+        "was washing",
+        "wash"
+      ],
+      "correcta": 1,
+      "porque": "Acción en progreso interrumpida → pasado continuo."
+    },
+    {
+      "id": "S016",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "Look at those clouds! It ___.",
+      "opciones": [
+        "will rain",
+        "rains",
+        "is going to rain",
+        "rained"
+      ],
+      "correcta": 2,
+      "porque": "Evidencia visible → going to."
+    },
+    {
+      "id": "S017",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "I don't have plans yet, I think I ___ you.",
+      "opciones": [
+        "am going to help",
+        "help",
+        "helped",
+        "will help"
+      ],
+      "correcta": 3,
+      "porque": "Decisión espontánea (sin plan previo) → will."
+    },
+    {
+      "id": "S018",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "She ___ her grandma next weekend. (ya lo planeó)",
+      "opciones": [
+        "will visit",
+        "visits",
+        "is going to visit",
+        "visited"
+      ],
+      "correcta": 2,
+      "porque": "Plan ya decidido → going to."
+    },
+    {
+      "id": "S019",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "Don't worry, I ___ that for you.",
+      "opciones": [
+        "will carry",
+        "carry",
+        "am carrying",
+        "carried"
+      ],
+      "correcta": 0,
+      "porque": "Decisión espontánea / promesa → will."
+    },
+    {
+      "id": "S020",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "We ___ to a new house next year. (ya decidido)",
+      "opciones": [
+        "will move",
+        "move",
+        "are going to move",
+        "moved"
+      ],
+      "correcta": 2,
+      "porque": "Plan ya decidido → going to."
+    },
+    {
+      "id": "S021",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "I think it ___ a great trip next summer.",
+      "opciones": [
+        "will be",
+        "being",
+        "was",
+        "is"
+      ],
+      "correcta": 0,
+      "porque": "Predicción/opinión personal sin evidencia clara → will."
+    },
+    {
+      "id": "S022",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "A: I can't lift this box. B: Wait, I ___ (help) you.",
+      "opciones": [
+        "help",
+        "am going to help",
+        "will help"
+      ],
+      "correcta": 2,
+      "porque": "Ofrecimiento espontáneo en el momento → will."
+    },
+    {
+      "id": "S023",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "We've already booked the flights, we ___ (go) to Cancún in July.",
+      "opciones": [
+        "will go",
+        "are going to go",
+        "go"
+      ],
+      "correcta": 1,
+      "porque": "Plan ya decidido y con evidencia (boletos comprados) → going to."
+    },
+    {
+      "id": "S024",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "I promise I ___ (not/tell) anyone your secret.",
+      "opciones": [
+        "don't tell",
+        "am not going to tell",
+        "will not tell"
+      ],
+      "correcta": 2,
+      "porque": "Promesa → will."
+    },
+    {
+      "id": "S025",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "Look! That tree ___ (fall).",
+      "opciones": [
+        "will fall",
+        "is going to fall",
+        "falls"
+      ],
+      "correcta": 1,
+      "porque": "Evidencia visible inmediata → going to."
+    },
+    {
+      "id": "S026",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "I don't know yet, maybe I ___ (stay) home this weekend.",
+      "opciones": [
+        "stay",
+        "staying",
+        "will stay"
+      ],
+      "correcta": 2,
+      "porque": "Decisión no confirmada / posibilidad con \"maybe\" → will."
+    },
+    {
+      "id": "S027",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "She has already chosen her outfit, she ___ (wear) the blue dress to the party.",
+      "opciones": [
+        "will wear",
+        "is going to wear",
+        "wears"
+      ],
+      "correcta": 1,
+      "porque": "Plan ya decidido de antemano → going to."
+    },
+    {
+      "id": "S028",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "A: The printer is out of paper again. B: Ok, I ___ (buy) more this afternoon.",
+      "opciones": [
+        "buy",
+        "am going to buy",
+        "will buy"
+      ],
+      "correcta": 2,
+      "porque": "Decisión tomada en el momento de hablar → will."
+    },
+    {
+      "id": "S029",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "According to the forecast, it ___ (be) sunny all weekend.",
+      "opciones": [
+        "be",
+        "is going to be",
+        "is"
+      ],
+      "correcta": 1,
+      "porque": "Predicción basada en evidencia (el pronóstico) → going to."
+    },
+    {
+      "id": "S030",
+      "tema": "futuro",
+      "tipo": "opcion",
+      "enunciado": "I'm sure everything ___ (be) fine tomorrow.",
+      "opciones": [
+        "will be",
+        "being",
+        "be"
+      ],
+      "correcta": 0,
+      "porque": "Predicción/opinión personal sin evidencia concreta → will."
+    },
+    {
+      "id": "S031",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "You ___ wear a seatbelt in the car. (regla obligatoria)",
+      "opciones": [
+        "can",
+        "must",
+        "should",
+        "could"
+      ],
+      "correcta": 1,
+      "porque": "Obligación fuerte, es una regla → must."
+    },
+    {
+      "id": "S032",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "She ___ speak three languages.",
+      "opciones": [
+        "must",
+        "should",
+        "can",
+        "has to"
+      ],
+      "correcta": 2,
+      "porque": "Habilidad → can."
+    },
+    {
+      "id": "S033",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "You ___ see a doctor about that cough. (consejo)",
+      "opciones": [
+        "must",
+        "should",
+        "can",
+        "have"
+      ],
+      "correcta": 1,
+      "porque": "Consejo, no es obligatorio → should."
+    },
+    {
+      "id": "S034",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "I ___ finish this report by Friday. (mi jefe lo pide)",
+      "opciones": [
+        "should",
+        "can",
+        "have to",
+        "could"
+      ],
+      "correcta": 2,
+      "porque": "Obligación externa → have to."
+    },
+    {
+      "id": "S035",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "___ you help me, please?",
+      "opciones": [
+        "Must",
+        "Could",
+        "Should",
+        "Can't"
+      ],
+      "correcta": 1,
+      "porque": "Petición cortés → could."
+    },
+    {
+      "id": "S036",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "You ___ come if you're busy. (no es obligatorio)",
+      "opciones": [
+        "must not",
+        "don't have to",
+        "should not",
+        "can not"
+      ],
+      "correcta": 1,
+      "porque": "Falta de obligación → don't have to."
+    },
+    {
+      "id": "S037",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "In this library, you ___ talk loudly. (está prohibido)",
+      "opciones": [
+        "must not",
+        "don't have to",
+        "should",
+        "can"
+      ],
+      "correcta": 0,
+      "porque": "Prohibición fuerte → must not."
+    },
+    {
+      "id": "S038",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "You ___ bring your own laptop, there are computers here already. (no es necesario)",
+      "opciones": [
+        "must not",
+        "don't have to",
+        "should not",
+        "can't"
+      ],
+      "correcta": 1,
+      "porque": "Falta de obligación → don't have to."
+    },
+    {
+      "id": "S039",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "When my grandfather was young, he ___ run for hours without getting tired.",
+      "opciones": [
+        "must",
+        "could",
+        "should",
+        "has to"
+      ],
+      "correcta": 1,
+      "porque": "Habilidad en el pasado → could."
+    },
+    {
+      "id": "S040",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "___ I open the window? It's a bit hot in here. (petición cortés)",
+      "opciones": [
+        "Must",
+        "Could",
+        "Should",
+        "Have to"
+      ],
+      "correcta": 1,
+      "porque": "Petición cortés → could."
+    },
+    {
+      "id": "S041",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "All passengers ___ fasten their seatbelt before takeoff. (regla de la aerolínea)",
+      "opciones": [
+        "should",
+        "can",
+        "have to",
+        "could"
+      ],
+      "correcta": 2,
+      "porque": "Obligación externa/regla → have to."
+    },
+    {
+      "id": "S042",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "You look exhausted, you ___ get some rest. (consejo)",
+      "opciones": [
+        "must",
+        "should",
+        "can",
+        "have to"
+      ],
+      "correcta": 1,
+      "porque": "Consejo → should."
+    },
+    {
+      "id": "S043",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "This is an emergency, you ___ call the police right now. (obligación urgente)",
+      "opciones": [
+        "should",
+        "can",
+        "must",
+        "could"
+      ],
+      "correcta": 2,
+      "porque": "Obligación urgente y fuerte → must."
+    },
+    {
+      "id": "S044",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "My little brother ___ tie his shoes by himself now.",
+      "opciones": [
+        "must",
+        "should",
+        "can",
+        "has to"
+      ],
+      "correcta": 2,
+      "porque": "Habilidad adquirida → can."
+    },
+    {
+      "id": "S045",
+      "tema": "modales",
+      "tipo": "opcion",
+      "enunciado": "You ___ smoke inside the building. (prohibido por reglamento)",
+      "opciones": [
+        "don't have to",
+        "must not",
+        "should not",
+        "could"
+      ],
+      "correcta": 1,
+      "porque": "Prohibición → must not."
+    },
+    {
+      "id": "S046",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "I like coffee ___ tea.",
+      "opciones": [
+        "but",
+        "because",
+        "and",
+        "so"
+      ],
+      "correcta": 2,
+      "porque": "Suma dos ideas → and."
+    },
+    {
+      "id": "S047",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "She is tired ___ she keeps working anyway.",
+      "opciones": [
+        "but",
+        "so",
+        "because",
+        "or"
+      ],
+      "correcta": 0,
+      "porque": "Contraste → but."
+    },
+    {
+      "id": "S048",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "He stayed home ___ he was sick.",
+      "opciones": [
+        "so",
+        "although",
+        "because",
+        "but"
+      ],
+      "correcta": 2,
+      "porque": "Da la razón → because."
+    },
+    {
+      "id": "S049",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "It was raining, ___ we stayed inside.",
+      "opciones": [
+        "because",
+        "so",
+        "but",
+        "and"
+      ],
+      "correcta": 1,
+      "porque": "Da la consecuencia → so."
+    },
+    {
+      "id": "S050",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "___ it was raining, we went for a walk.",
+      "opciones": [
+        "Because",
+        "So",
+        "Although",
+        "And"
+      ],
+      "correcta": 2,
+      "porque": "Contraste fuerte con la idea completa → although."
+    },
+    {
+      "id": "S051",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "He can't come ___ he is working late.",
+      "opciones": [
+        "so",
+        "although",
+        "because",
+        "but"
+      ],
+      "correcta": 2,
+      "porque": "Da la razón → because."
+    },
+    {
+      "id": "S052",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "I wanted to buy the jacket, ___ it was too expensive.",
+      "opciones": [
+        "and",
+        "but",
+        "because",
+        "so"
+      ],
+      "correcta": 1,
+      "porque": "Contraste → but."
+    },
+    {
+      "id": "S053",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "She practices every day, ___ she has improved a lot.",
+      "opciones": [
+        "because",
+        "so",
+        "but",
+        "although"
+      ],
+      "correcta": 1,
+      "porque": "Da la consecuencia → so."
+    },
+    {
+      "id": "S054",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "He passed the exam ___ he studied very hard.",
+      "opciones": [
+        "so",
+        "but",
+        "because",
+        "although"
+      ],
+      "correcta": 2,
+      "porque": "Da la razón → because."
+    },
+    {
+      "id": "S055",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "___ she was very busy, she helped me with my homework.",
+      "opciones": [
+        "Because",
+        "So",
+        "Although",
+        "And"
+      ],
+      "correcta": 2,
+      "porque": "Contraste fuerte → although."
+    },
+    {
+      "id": "S056",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "We ordered pizza ___ salad for dinner.",
+      "opciones": [
+        "but",
+        "because",
+        "and",
+        "so"
+      ],
+      "correcta": 2,
+      "porque": "Suma dos ideas → and."
+    },
+    {
+      "id": "S057",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "The traffic was terrible, ___ we arrived late.",
+      "opciones": [
+        "because",
+        "so",
+        "but",
+        "and"
+      ],
+      "correcta": 1,
+      "porque": "Da la consecuencia → so."
+    },
+    {
+      "id": "S058",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "I like the design of the house ___ I don't like its location.",
+      "opciones": [
+        "and",
+        "so",
+        "but",
+        "because"
+      ],
+      "correcta": 2,
+      "porque": "Contraste simple → but."
+    },
+    {
+      "id": "S059",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "They lost the game ___ they played really well.",
+      "opciones": [
+        "because",
+        "so",
+        "although",
+        "and"
+      ],
+      "correcta": 2,
+      "porque": "Contraste fuerte → although."
+    },
+    {
+      "id": "S060",
+      "tema": "conectores",
+      "tipo": "opcion",
+      "enunciado": "He didn't call me ___ he lost his phone.",
+      "opciones": [
+        "although",
+        "so",
+        "but",
+        "because"
+      ],
+      "correcta": 3,
+      "porque": "Da la razón → because."
+    },
+    {
+      "id": "S061",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "My sister ___ a nurse.",
+      "opciones": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correcta": 1,
+      "porque": "Sujeto singular femenino → is."
+    },
+    {
+      "id": "S062",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "They ___ from Spain.",
+      "opciones": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "correcta": 2,
+      "porque": "Sujeto plural → are."
+    },
+    {
+      "id": "S063",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "He is ___ engineer.",
+      "opciones": [
+        "a",
+        "an",
+        "-"
+      ],
+      "correcta": 1,
+      "porque": "\"Engineer\" empieza con sonido vocal → an."
+    },
+    {
+      "id": "S064",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "There isn't ___ sugar left.",
+      "opciones": [
+        "any",
+        "some",
+        "many",
+        "a"
+      ],
+      "correcta": 0,
+      "porque": "Oración negativa con sustantivo incontable → any."
+    },
+    {
+      "id": "S065",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "He ___ every night.",
+      "opciones": [
+        "study",
+        "studys",
+        "studies",
+        "studying"
+      ],
+      "correcta": 2,
+      "porque": "Tercera persona singular en presente simple → studies."
+    },
+    {
+      "id": "S066",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "Yesterday, I ___ to the market.",
+      "opciones": [
+        "go",
+        "goes",
+        "went",
+        "going"
+      ],
+      "correcta": 2,
+      "porque": "Pasado simple del verbo irregular \"go\" → went."
+    },
+    {
+      "id": "S067",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "This car is ___ than mine.",
+      "opciones": [
+        "fast",
+        "faster",
+        "fastest",
+        "more fast"
+      ],
+      "correcta": 1,
+      "porque": "Comparativo de adjetivo corto: adjetivo + er → faster."
+    },
+    {
+      "id": "S068",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "My birthday is ___ July.",
+      "opciones": [
+        "in",
+        "on",
+        "at",
+        "-"
+      ],
+      "correcta": 0,
+      "porque": "Con meses se usa la preposición in."
+    },
+    {
+      "id": "S069",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "We ___ very happy with the results.",
+      "opciones": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "correcta": 2,
+      "porque": "Sujeto plural \"we\" → are."
+    },
+    {
+      "id": "S070",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "She is ___ honest person.",
+      "opciones": [
+        "a",
+        "an",
+        "-"
+      ],
+      "correcta": 1,
+      "porque": "\"Honest\" empieza con sonido vocal → an."
+    },
+    {
+      "id": "S071",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "There ___ many books on the shelf.",
+      "opciones": [
+        "is",
+        "are",
+        "was",
+        "be"
+      ],
+      "correcta": 1,
+      "porque": "Sustantivo plural \"books\" → are."
+    },
+    {
+      "id": "S072",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "He usually ___ breakfast at 7am.",
+      "opciones": [
+        "have",
+        "has",
+        "having",
+        "had"
+      ],
+      "correcta": 1,
+      "porque": "Tercera persona singular en presente simple → has."
+    },
+    {
+      "id": "S073",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "Last summer, we ___ to the beach every weekend.",
+      "opciones": [
+        "go",
+        "goes",
+        "went",
+        "going"
+      ],
+      "correcta": 2,
+      "porque": "Acción repetida en el pasado, ya terminada → pasado simple (went)."
+    },
+    {
+      "id": "S074",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "This exercise is ___ than the last one.",
+      "opciones": [
+        "difficult",
+        "more difficult",
+        "most difficult",
+        "difficulter"
+      ],
+      "correcta": 1,
+      "porque": "Comparativo de adjetivos largos: more + adjetivo."
+    },
+    {
+      "id": "S075",
+      "tema": "repaso",
+      "tipo": "opcion",
+      "enunciado": "The meeting starts ___ 9 o'clock.",
+      "opciones": [
+        "in",
+        "on",
+        "at",
+        "-"
+      ],
+      "correcta": 2,
+      "porque": "Con una hora exacta se usa la preposición at."
+    }
+  ]
+}

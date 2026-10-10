@@ -69,7 +69,7 @@
     {
       "id": "e04",
       "tipo": "opcion",
-      "enunciado": "La casa es tuya. This is ___ house.",
+      "enunciado": "La casa es mía. This is ___ house.",
       "opciones": ["my", "I", "me"],
       "correcta": 0,
       "porque": "Antes de un sustantivo va el posesivo: my house."
