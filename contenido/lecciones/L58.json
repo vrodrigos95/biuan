@@ -1,0 +1,273 @@
+{
+  "id": "L58",
+  "subnivel": "B1.1",
+  "unidad": 15,
+  "titulo": "Si pasa, haré",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **primer condicional** habla de algo que puede pasar y de su consecuencia. Tiene dos partes: la condición con **if** y el resultado con **will**."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Condición",
+        "Resultado"
+      ],
+      "filas": [
+        [
+          "If + presente simple,",
+          "will + verbo"
+        ],
+        [
+          "If it rains,",
+          "we will stay home."
+        ],
+        [
+          "If you don't study,",
+          "you won't pass the exam."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Después de **if** nunca va will, aunque hables del futuro: *If it rains tomorrow*, no *If it will rain tomorrow*."
+    },
+    {
+      "tipo": "tip",
+      "md": "Las dos partes se pueden invertir. Si empieza con if, lleva coma; si if va en medio, no: *We will stay home if it rains.*"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "What will you do if you don't get the job?",
+      "es": "¿Qué vas a hacer si no consigues el trabajo?"
+    },
+    {
+      "tipo": "texto",
+      "md": "Decisiones y consecuencias:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "decision",
+          "decisión"
+        ],
+        [
+          "make a decision",
+          "tomar una decisión"
+        ],
+        [
+          "decide",
+          "decidir"
+        ],
+        [
+          "consequence",
+          "consecuencia"
+        ],
+        [
+          "risk",
+          "riesgo"
+        ],
+        [
+          "miss",
+          "perder (el camión, un vuelo, una clase)"
+        ],
+        [
+          "waste",
+          "desperdiciar"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Una decisión se «hace» en inglés: **make a decision**, no *take a decision*."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "If it ___ tomorrow, we will stay home.",
+      "opciones": [
+        "rains",
+        "will rain",
+        "rained"
+      ],
+      "correcta": 0,
+      "porque": "Después de if va el presente simple, no will."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "If you study, you ___ the exam.",
+      "opciones": [
+        "will pass",
+        "passing",
+        "passed"
+      ],
+      "correcta": 0,
+      "porque": "El resultado va con will + verbo."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "If she ___ (not / leave) now, she will miss the bus.",
+      "aceptadas": [
+        "doesn't leave",
+        "does not leave"
+      ],
+      "pista": "presente simple, negativo",
+      "porque": "La condición va en presente simple; en negativo con she: doesn't leave."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "If I save money, I ___ (buy) a car.",
+      "aceptadas": [
+        "will buy",
+        "'ll buy"
+      ],
+      "pista": "resultado",
+      "porque": "El resultado va con will + verbo."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "What ___ you do if you don't get the job?",
+      "opciones": [
+        "will",
+        "do",
+        "did"
+      ],
+      "correcta": 0,
+      "porque": "La pregunta sobre el resultado va con will."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "If we ___ the bus, we will be late.",
+      "opciones": [
+        "miss",
+        "will miss",
+        "missed"
+      ],
+      "correcta": 0,
+      "porque": "Después de if va el presente simple."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "If",
+        "it",
+        "rains,",
+        "I",
+        "will",
+        "stay",
+        "home."
+      ],
+      "traduccion": "Si llueve, me quedaré en casa.",
+      "porque": "If + presente, coma, will + verbo."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "We",
+        "will",
+        "be",
+        "late",
+        "if",
+        "we",
+        "miss",
+        "the",
+        "bus."
+      ],
+      "traduccion": "Llegaremos tarde si perdemos el camión.",
+      "porque": "Cuando if va en medio no lleva coma."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "decision",
+          "decisión"
+        ],
+        [
+          "consequence",
+          "consecuencia"
+        ],
+        [
+          "risk",
+          "riesgo"
+        ],
+        [
+          "miss",
+          "perder (el camión)"
+        ],
+        [
+          "waste",
+          "desperdiciar"
+        ]
+      ],
+      "porque": "Vocabulario de decisiones."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "If I see her, I will call her.",
+        "If I will see her, I will call her.",
+        "If I see her, I call her will."
+      ],
+      "correcta": 0,
+      "porque": "Después de if no va will; will va solo en el resultado."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál lleva bien la coma?",
+      "opciones": [
+        "If it rains, we will stay home.",
+        "If it rains we, will stay home.",
+        "If, it rains we will stay home."
+      ],
+      "correcta": 0,
+      "porque": "La coma separa la condición del resultado."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Carlos has to make a decision. A company in Canada wants to hire him. If he takes the job, he will have a better salary and he will learn a lot. But if he moves to Canada, he won't see his family every week. If he stays in Mexico, he won't have a better salary, but he will be near his family.",
+      "pregunta": "¿Qué pasará si Carlos se muda a Canadá?",
+      "opciones": [
+        "No verá a su familia cada semana",
+        "Tendrá un sueldo más bajo",
+        "No aprenderá nada"
+      ],
+      "correcta": 0,
+      "porque": "«If he moves to Canada, he won't see his family every week»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "If we don't leave now, we'll miss the flight. OK, I'll call a taxi.",
+      "pregunta": "¿Qué pasará si no salen ahora?",
+      "opciones": [
+        "Perderán el vuelo",
+        "Perderán el camión",
+        "Llegarán temprano"
+      ],
+      "correcta": 0,
+      "porque": "«If we don't leave now, we'll miss the flight»."
+    }
+  ]
+}

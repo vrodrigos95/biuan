@@ -1,0 +1,299 @@
+{
+  "id": "L50",
+  "subnivel": "B1.1",
+  "unidad": 13,
+  "titulo": "Desde hace",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El presente perfecto también habla de algo que **empezó en el pasado y sigue hasta hoy**. Para decir cuánto lleva se usan **for** y **since**."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Palabra",
+        "Significado",
+        "Ejemplos"
+      ],
+      "filas": [
+        [
+          "**for** + duración",
+          "durante, desde hace",
+          "for five years, for two months, for a long time"
+        ],
+        [
+          "**since** + punto de inicio",
+          "desde",
+          "since 2020, since Monday, since I was a child"
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I have lived here for five years.",
+      "es": "Vivo aquí desde hace cinco años."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "She has worked at this company since 2020.",
+      "es": "Trabaja en esta empresa desde 2020."
+    },
+    {
+      "tipo": "tip",
+      "md": "En español se usa el presente («vivo aquí desde 2020»), pero en inglés va el presente perfecto: *I have lived here since 2020*, nunca *I live here since 2020*."
+    },
+    {
+      "tipo": "texto",
+      "md": "Para preguntar cuánto tiempo se usa **How long…?**"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "How long have you studied English? For two years.",
+      "es": "¿Cuánto tiempo llevas estudiando inglés? Dos años."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Verbo",
+        "Participio"
+      ],
+      "filas": [
+        [
+          "be",
+          "been"
+        ],
+        [
+          "have",
+          "had"
+        ],
+        [
+          "know",
+          "known"
+        ],
+        [
+          "live",
+          "lived"
+        ],
+        [
+          "work",
+          "worked"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Estudios y empleo:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "university",
+          "universidad"
+        ],
+        [
+          "company",
+          "empresa"
+        ],
+        [
+          "position",
+          "puesto"
+        ],
+        [
+          "employee",
+          "empleado"
+        ],
+        [
+          "full-time",
+          "de tiempo completo"
+        ],
+        [
+          "part-time",
+          "de medio tiempo"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I have worked here ___ five years.",
+      "opciones": [
+        "for",
+        "since",
+        "ago"
+      ],
+      "correcta": 0,
+      "porque": "Five years es una duración: for."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She has lived in Puebla ___ 2019.",
+      "opciones": [
+        "since",
+        "for",
+        "in"
+      ],
+      "correcta": 0,
+      "porque": "2019 es el punto de inicio: since."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "I have known Ana ___ a long time.",
+      "opciones": [
+        "for",
+        "since",
+        "ago"
+      ],
+      "correcta": 0,
+      "porque": "A long time es una duración: for."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "He has studied English ___ January.",
+      "aceptadas": [
+        "since"
+      ],
+      "pista": "punto de inicio",
+      "porque": "January es el punto de inicio: since."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "They have been friends ___ ten years.",
+      "aceptadas": [
+        "for"
+      ],
+      "pista": "duración",
+      "porque": "Ten years es una duración: for."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "How ___ have you worked at this company?",
+      "opciones": [
+        "long",
+        "much",
+        "many"
+      ],
+      "correcta": 0,
+      "porque": "«Cuánto tiempo» se pregunta con How long."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «Vivo aquí desde 2020»?",
+      "opciones": [
+        "I have lived here since 2020.",
+        "I live here since 2020.",
+        "I am living here from 2020."
+      ],
+      "correcta": 0,
+      "porque": "Algo que empezó antes y sigue hoy va en presente perfecto."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "How",
+        "long",
+        "have",
+        "you",
+        "studied",
+        "English?"
+      ],
+      "traduccion": "¿Cuánto tiempo llevas estudiando inglés?",
+      "porque": "How long + have + sujeto + participio."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "have",
+        "had",
+        "this",
+        "job",
+        "for",
+        "two",
+        "years."
+      ],
+      "traduccion": "Tengo este trabajo desde hace dos años.",
+      "porque": "El participio de have es had: have had."
+    },
+    {
+      "id": "e10",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "university",
+          "universidad"
+        ],
+        [
+          "company",
+          "empresa"
+        ],
+        [
+          "position",
+          "puesto"
+        ],
+        [
+          "full-time",
+          "de tiempo completo"
+        ],
+        [
+          "part-time",
+          "de medio tiempo"
+        ]
+      ],
+      "porque": "Vocabulario de estudios y empleo."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál va con since?",
+      "opciones": [
+        "last Monday",
+        "three days",
+        "a long time"
+      ],
+      "correcta": 0,
+      "porque": "Last Monday es un punto de inicio; las otras dos son duraciones y van con for."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Rosa is an engineer. She has worked at a car company for eight years. She started in 2018 with a part-time position, and she has had a full-time position since 2020. She has studied English for two years because she wants a job abroad.",
+      "pregunta": "¿Desde cuándo tiene Rosa un puesto de tiempo completo?",
+      "opciones": [
+        "Desde 2020",
+        "Desde 2018",
+        "Desde hace dos años"
+      ],
+      "correcta": 0,
+      "porque": "«She has had a full-time position since 2020»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "How long have you lived in Guadalajara? I've lived here since I was a child, but I've worked in Zapopan for three years.",
+      "pregunta": "¿Cuánto tiempo lleva trabajando en Zapopan?",
+      "opciones": [
+        "Tres años",
+        "Desde niño",
+        "Un año"
+      ],
+      "correcta": 0,
+      "porque": "«I've worked in Zapopan for three years»."
+    }
+  ]
+}

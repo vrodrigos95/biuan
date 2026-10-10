@@ -1,0 +1,300 @@
+{
+  "id": "L49",
+  "subnivel": "B1.1",
+  "unidad": 13,
+  "titulo": "Ya, todavía, apenas",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Con el presente perfecto, **just**, **already** y **yet** dicen qué tan reciente es algo o si ya se hizo."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Palabra",
+        "Significado",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "**just**",
+          "acabar de",
+          "I've **just** finished the report."
+        ],
+        [
+          "**already**",
+          "ya (antes de lo esperado)",
+          "I've **already** paid the bills."
+        ],
+        [
+          "**yet**",
+          "todavía (negativo) / ya (pregunta)",
+          "I haven't finished **yet**. Have you finished **yet**?"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**just** y **already** van entre have y el participio. **yet** va al final de la oración."
+    },
+    {
+      "tipo": "tip",
+      "md": "**yet** solo se usa en negativos y preguntas. En afirmativo se usa already: *I've already eaten*, no *I've eaten yet*."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "Have you sent the email yet? Yes, I've just sent it.",
+      "es": "¿Ya mandaste el correo? Sí, lo acabo de mandar."
+    },
+    {
+      "tipo": "texto",
+      "md": "Participios que necesitas para hablar de pendientes:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Verbo",
+        "Participio"
+      ],
+      "filas": [
+        [
+          "do",
+          "done"
+        ],
+        [
+          "make",
+          "made"
+        ],
+        [
+          "pay",
+          "paid"
+        ],
+        [
+          "send",
+          "sent"
+        ],
+        [
+          "buy",
+          "bought"
+        ],
+        [
+          "take",
+          "taken"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Pendientes y logros:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "to-do list",
+          "lista de pendientes"
+        ],
+        [
+          "pay the bills",
+          "pagar las cuentas"
+        ],
+        [
+          "homework",
+          "tarea"
+        ],
+        [
+          "complete",
+          "completar"
+        ],
+        [
+          "achieve",
+          "lograr"
+        ],
+        [
+          "achievement",
+          "logro"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I've ___ finished the report. It's on your desk.",
+      "opciones": [
+        "just",
+        "yet",
+        "ago"
+      ],
+      "correcta": 0,
+      "porque": "Lo acaba de terminar: just, entre have y el participio."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "Have you paid the bills ___?",
+      "opciones": [
+        "yet",
+        "just",
+        "ago"
+      ],
+      "correcta": 0,
+      "porque": "En una pregunta, «ya» se dice yet y va al final."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "I haven't called her ___.",
+      "opciones": [
+        "yet",
+        "already",
+        "just"
+      ],
+      "correcta": 0,
+      "porque": "En negativo, «todavía» es yet."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "She has ___ sent the email. You don't have to send it.",
+      "opciones": [
+        "already",
+        "yet",
+        "ago"
+      ],
+      "correcta": 0,
+      "porque": "Ya lo mandó, antes de lo esperado: already."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "We haven't finished ___.",
+      "aceptadas": [
+        "yet"
+      ],
+      "pista": "todavía",
+      "porque": "«Todavía no» se dice con yet al final."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "have",
+        "already",
+        "done",
+        "my",
+        "homework."
+      ],
+      "traduccion": "Ya hice mi tarea.",
+      "porque": "Already va entre have y el participio."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Have",
+        "you",
+        "sent",
+        "the",
+        "report",
+        "yet?"
+      ],
+      "traduccion": "¿Ya mandaste el reporte?",
+      "porque": "Yet va al final de la pregunta."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada expresión con su significado.",
+      "pares": [
+        [
+          "just",
+          "acabar de"
+        ],
+        [
+          "already",
+          "ya"
+        ],
+        [
+          "not yet",
+          "todavía no"
+        ],
+        [
+          "achievement",
+          "logro"
+        ],
+        [
+          "to-do list",
+          "lista de pendientes"
+        ]
+      ],
+      "porque": "Las tres palabras clave y dos de vocabulario."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "He has just ___ (make) dinner.",
+      "aceptadas": [
+        "made"
+      ],
+      "pista": "participio",
+      "porque": "El participio de make es made."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Dónde va «yet»?",
+      "opciones": [
+        "Al final de la oración",
+        "Entre have y el participio",
+        "Al principio de la oración"
+      ],
+      "correcta": 0,
+      "porque": "Yet siempre va al final."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "I've already paid.",
+        "I've paid yet.",
+        "I already have pay."
+      ],
+      "correcta": 0,
+      "porque": "Already va entre have y el participio; yet no se usa en afirmativo."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Marta's to-do list for today: She has already sent the report and paid the bills. She has just called the bank. She hasn't bought the tickets yet, and she hasn't answered her boss's email yet.",
+      "pregunta": "¿Qué no ha hecho Marta todavía?",
+      "opciones": [
+        "Comprar los boletos",
+        "Enviar el reporte",
+        "Pagar las cuentas"
+      ],
+      "correcta": 0,
+      "porque": "«She hasn't bought the tickets yet»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Have you finished your homework yet? Not yet. I've just started.",
+      "pregunta": "¿Ya terminó la tarea?",
+      "opciones": [
+        "No, apenas la empezó",
+        "Sí, ya la terminó",
+        "No, y no la va a hacer"
+      ],
+      "correcta": 0,
+      "porque": "«Not yet. I've just started»: todavía no, la acaba de empezar."
+    }
+  ]
+}

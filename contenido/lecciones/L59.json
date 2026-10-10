@@ -1,0 +1,289 @@
+{
+  "id": "L59",
+  "subnivel": "B1.1",
+  "unidad": 15,
+  "titulo": "Tal vez",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "**may**, **might** y **could** + verbo expresan que algo es **posible**, pero no seguro. Equivalen a «tal vez», «puede que» o «podría»."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "It may rain later.",
+          "Puede que llueva más tarde."
+        ],
+        [
+          "It might rain later.",
+          "Tal vez llueva más tarde."
+        ],
+        [
+          "It could rain later.",
+          "Podría llover más tarde."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Son iguales para todas las personas y el verbo va solo: *She might come*, nunca *She mights come* ni *She might to come*."
+    },
+    {
+      "tipo": "texto",
+      "md": "Para decir que tal vez **no** pase algo se usa **may not** o **might not**:"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I might not go to the party. I'm tired.",
+      "es": "Tal vez no vaya a la fiesta. Estoy cansado."
+    },
+    {
+      "tipo": "texto",
+      "md": "De más seguro a menos seguro:"
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "It will definitely rain.",
+          "Seguro va a llover."
+        ],
+        [
+          "It will probably rain.",
+          "Probablemente llueva."
+        ],
+        [
+          "It may / might / could rain.",
+          "Tal vez llueva."
+        ],
+        [
+          "It probably won't rain.",
+          "Probablemente no llueva."
+        ],
+        [
+          "It definitely won't rain.",
+          "Seguro no va a llover."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**maybe** (una palabra) es un adverbio y va al principio: *Maybe I'll go.* **may be** (dos palabras) es verbo: *She may be late.*"
+    },
+    {
+      "tipo": "texto",
+      "md": "Probabilidad:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "maybe",
+          "tal vez"
+        ],
+        [
+          "probably",
+          "probablemente"
+        ],
+        [
+          "definitely",
+          "definitivamente, seguro"
+        ],
+        [
+          "possible",
+          "posible"
+        ],
+        [
+          "chance",
+          "probabilidad"
+        ],
+        [
+          "sure",
+          "seguro (de algo)"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "It ___ rain later. Take an umbrella.",
+      "opciones": [
+        "might",
+        "mights",
+        "might to"
+      ],
+      "correcta": 0,
+      "porque": "Might no lleva -s ni to."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She may ___ late.",
+      "opciones": [
+        "be",
+        "is",
+        "to be"
+      ],
+      "correcta": 0,
+      "porque": "Después de may el verbo va en forma base."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "I'm not sure. I ___ go to the party.",
+      "aceptadas": [
+        "may",
+        "might",
+        "could"
+      ],
+      "pista": "tal vez",
+      "porque": "No está seguro: may, might o could."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "He ___ not come tomorrow. He's sick.",
+      "opciones": [
+        "might",
+        "does",
+        "is"
+      ],
+      "correcta": 0,
+      "porque": "Tal vez no venga: might not + verbo."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál expresa más seguridad?",
+      "opciones": [
+        "It will definitely rain.",
+        "It might rain.",
+        "It could rain."
+      ],
+      "correcta": 0,
+      "porque": "Will definitely es certeza; might y could solo son posibilidad."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "___ I'll go to the beach this weekend.",
+      "opciones": [
+        "Maybe",
+        "May be",
+        "Might"
+      ],
+      "correcta": 0,
+      "porque": "Al principio de la oración va el adverbio maybe, en una sola palabra."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "It",
+        "might",
+        "be",
+        "cold",
+        "tonight."
+      ],
+      "traduccion": "Tal vez haga frío esta noche.",
+      "porque": "Sujeto + might + be + adjetivo."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "We",
+        "may",
+        "not",
+        "have",
+        "enough",
+        "time."
+      ],
+      "traduccion": "Puede que no tengamos suficiente tiempo.",
+      "porque": "Sujeto + may not + verbo."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "maybe",
+          "tal vez"
+        ],
+        [
+          "probably",
+          "probablemente"
+        ],
+        [
+          "definitely",
+          "definitivamente"
+        ],
+        [
+          "sure",
+          "seguro"
+        ],
+        [
+          "chance",
+          "probabilidad"
+        ]
+      ],
+      "porque": "Vocabulario para hablar de qué tan probable es algo."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "«I might not go» significa ___.",
+      "opciones": [
+        "Tal vez no vaya",
+        "No puedo ir",
+        "No debo ir"
+      ],
+      "correcta": 0,
+      "porque": "Might not expresa que tal vez no pase."
+    },
+    {
+      "id": "e11",
+      "tipo": "hueco",
+      "frase": "There's a 90% chance. It will ___ rain.",
+      "aceptadas": [
+        "probably"
+      ],
+      "pista": "probablemente",
+      "porque": "Con 90 % es muy probable, pero no seguro: probably."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Weather for the weekend: On Saturday it will definitely be sunny in the morning, but it might rain in the afternoon. On Sunday it will probably be cloudy all day. There is a small chance of rain, so it may be a good idea to take an umbrella.",
+      "pregunta": "¿Qué puede pasar el sábado en la tarde?",
+      "opciones": [
+        "Tal vez llueva",
+        "Seguro va a llover",
+        "Seguro estará soleado"
+      ],
+      "correcta": 0,
+      "porque": "«It might rain in the afternoon»: might es posibilidad, no certeza."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Are you coming to the meeting? I'm not sure. I might be late because I have a doctor's appointment.",
+      "pregunta": "¿Por qué podría llegar tarde?",
+      "opciones": [
+        "Porque tiene una cita con el doctor",
+        "Porque tiene mucho trabajo",
+        "Porque perdió el camión"
+      ],
+      "correcta": 0,
+      "porque": "«I have a doctor's appointment»: tiene una cita con el doctor."
+    }
+  ]
+}

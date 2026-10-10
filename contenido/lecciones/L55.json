@@ -1,0 +1,278 @@
+{
+  "id": "L55",
+  "subnivel": "B1.1",
+  "unidad": 14,
+  "titulo": "Antes solía",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "**used to** + verbo habla de hábitos o situaciones del pasado que **ya no** son así. Equivale a «solía» o al copretérito del español (jugaba, vivía)."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Afirmativo",
+          "I used to play soccer.",
+          "Yo jugaba futbol."
+        ],
+        [
+          "Negativo",
+          "I didn't use to like vegetables.",
+          "No me gustaban las verduras."
+        ],
+        [
+          "Pregunta",
+          "Did you use to live here?",
+          "¿Vivías aquí?"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Con **did** y **didn't** se escribe **use to**, sin la d: *Did you use to…?*, *I didn't use to…*"
+    },
+    {
+      "tipo": "tip",
+      "md": "**used to** solo existe en pasado. Para un hábito de hoy se usa el presente con usually: *I usually get up early*, nunca *I use to get up early*."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I used to live in Puebla, but now I live in Guadalajara.",
+      "es": "Antes vivía en Puebla, pero ahora vivo en Guadalajara."
+    },
+    {
+      "tipo": "texto",
+      "md": "**anymore** va al final de una oración negativa y significa «ya no»:"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I don't play video games anymore.",
+      "es": "Ya no juego videojuegos."
+    },
+    {
+      "tipo": "texto",
+      "md": "Infancia y cambios:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "childhood",
+          "infancia"
+        ],
+        [
+          "when I was a child",
+          "cuando era niño"
+        ],
+        [
+          "grow up",
+          "crecer"
+        ],
+        [
+          "toy",
+          "juguete"
+        ],
+        [
+          "cartoon",
+          "caricatura"
+        ],
+        [
+          "neighborhood",
+          "colonia, barrio"
+        ],
+        [
+          "change",
+          "cambiar"
+        ],
+        [
+          "anymore",
+          "ya no"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ play soccer every day, but now I don't.",
+      "opciones": [
+        "used to",
+        "use to",
+        "was used"
+      ],
+      "correcta": 0,
+      "porque": "Un hábito del pasado que ya no existe: used to."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She used to ___ in Puebla.",
+      "opciones": [
+        "live",
+        "lived",
+        "living"
+      ],
+      "correcta": 0,
+      "porque": "Después de used to el verbo va en forma base."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "We didn't ___ to have a car.",
+      "aceptadas": [
+        "use"
+      ],
+      "pista": "sin la d",
+      "porque": "Con didn't se escribe use to, sin la d."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "___ you use to watch cartoons?",
+      "opciones": [
+        "Did",
+        "Were",
+        "Have"
+      ],
+      "correcta": 0,
+      "porque": "La pregunta se hace con Did: Did you use to…?"
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "He ___ to smoke, but he stopped two years ago.",
+      "opciones": [
+        "used",
+        "use",
+        "uses"
+      ],
+      "correcta": 0,
+      "porque": "Un hábito pasado que terminó: used to."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "used",
+        "to",
+        "live",
+        "in",
+        "a",
+        "small",
+        "town."
+      ],
+      "traduccion": "Yo vivía en un pueblo pequeño.",
+      "porque": "Sujeto + used to + verbo."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Did",
+        "you",
+        "use",
+        "to",
+        "play",
+        "video",
+        "games?"
+      ],
+      "traduccion": "¿Jugabas videojuegos?",
+      "porque": "Did + sujeto + use to + verbo."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada expresión con su significado.",
+      "pares": [
+        [
+          "childhood",
+          "infancia"
+        ],
+        [
+          "grow up",
+          "crecer"
+        ],
+        [
+          "toy",
+          "juguete"
+        ],
+        [
+          "cartoon",
+          "caricatura"
+        ],
+        [
+          "neighborhood",
+          "colonia"
+        ]
+      ],
+      "porque": "Vocabulario para hablar de la infancia."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "«I don't live there anymore» significa ___.",
+      "opciones": [
+        "Ya no vivo ahí",
+        "Nunca viví ahí",
+        "Todavía vivo ahí"
+      ],
+      "correcta": 0,
+      "porque": "Anymore, en una oración negativa, es «ya no»."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "My grandfather ___ to work in a bank.",
+      "aceptadas": [
+        "used"
+      ],
+      "pista": "solía",
+      "porque": "Una situación del pasado que ya no es así: used to."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice un hábito de hoy?",
+      "opciones": [
+        "I usually get up early.",
+        "I use to get up early.",
+        "I used to get up early."
+      ],
+      "correcta": 0,
+      "porque": "Used to solo sirve para el pasado; para hoy se usa usually."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "When I was a child, I lived in a small town. We used to play in the street every afternoon, and my grandmother used to make bread on Sundays. We didn't use to have a TV. Now I live in the city, and I don't see my neighbors anymore.",
+      "pregunta": "¿Qué no tenían cuando era niño?",
+      "opciones": [
+        "Televisión",
+        "Pan",
+        "Vecinos"
+      ],
+      "correcta": 0,
+      "porque": "«We didn't use to have a TV»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Did you use to like vegetables when you were a child? No, I didn't. I used to hate them, but now I love them.",
+      "pregunta": "¿Qué piensa ahora de las verduras?",
+      "opciones": [
+        "Le encantan",
+        "Las odia",
+        "Nunca las come"
+      ],
+      "correcta": 0,
+      "porque": "«I used to hate them, but now I love them»: antes las odiaba, ahora le encantan."
+    }
+  ]
+}
