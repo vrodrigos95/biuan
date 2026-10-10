@@ -1,0 +1,151 @@
+{
+  "id": "L24",
+  "subnivel": "A1.2",
+  "unidad": 6,
+  "titulo": "Sigue derecho",
+  "explicacion": [
+    { "tipo": "texto", "md": "El **imperativo** sirve para dar instrucciones. Es el verbo solo, sin sujeto." },
+    {
+      "tipo": "tabla",
+      "columnas": ["", "Inglés", "Español"],
+      "filas": [
+        ["Afirmativo", "Open the door.", "Abre la puerta."],
+        ["Negativo", "Don't open the door.", "No abras la puerta."],
+        ["Amable", "Sit down, please.", "Siéntate, por favor."]
+      ]
+    },
+    { "tipo": "tip", "md": "No se pone you: se dice *Open the door*, no *You open the door*." },
+    { "tipo": "tip", "md": "El negativo es siempre **Don't** + verbo, hables con una persona o con varias." },
+    { "tipo": "texto", "md": "Para dar indicaciones en la calle:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["go straight", "sigue derecho"],
+        ["turn left", "da vuelta a la izquierda"],
+        ["turn right", "da vuelta a la derecha"],
+        ["cross the street", "cruza la calle"],
+        ["stop", "detente"],
+        ["corner", "esquina"],
+        ["block", "cuadra"],
+        ["traffic light", "semáforo"],
+        ["near", "cerca"],
+        ["far", "lejos"]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "Excuse me, how do I get to the bank?", "es": "Disculpe, ¿cómo llego al banco?" },
+    { "tipo": "ejemplo", "en": "Go straight for two blocks and turn left.", "es": "Sigue derecho dos cuadras y da vuelta a la izquierda." },
+    { "tipo": "tip", "md": "**It's on the left** significa «está a la izquierda» e **It's on the right**, «está a la derecha»." }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «Abre la puerta»?",
+      "opciones": ["Open the door.", "You open the door.", "Opens the door."],
+      "correcta": 0,
+      "porque": "El imperativo es el verbo solo, sin you y sin -s."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el negativo de «Turn left»?",
+      "opciones": ["Don't turn left.", "Not turn left.", "Doesn't turn left."],
+      "correcta": 0,
+      "porque": "El imperativo negativo siempre es Don't + verbo."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "¿Qué significa «Go straight»?",
+      "opciones": ["Sigue derecho", "Da vuelta a la derecha", "Detente"],
+      "correcta": 0,
+      "porque": "Go straight es seguir derecho. Dar vuelta a la derecha es turn right."
+    },
+    {
+      "id": "e04",
+      "tipo": "emparejar",
+      "enunciado": "Une cada indicación con su significado.",
+      "pares": [
+        ["turn left", "da vuelta a la izquierda"],
+        ["turn right", "da vuelta a la derecha"],
+        ["go straight", "sigue derecho"],
+        ["cross the street", "cruza la calle"],
+        ["traffic light", "semáforo"]
+      ],
+      "porque": "Left es izquierda y right es derecha; con eso ya puedes seguir casi cualquier indicación."
+    },
+    {
+      "id": "e05",
+      "tipo": "ordenar",
+      "respuesta": ["Don't", "cross", "the", "street."],
+      "traduccion": "No cruces la calle.",
+      "porque": "El negativo empieza con Don't y luego va el verbo."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "Go straight and ___ right at the bank.",
+      "aceptadas": ["turn"],
+      "pista": "dar vuelta",
+      "porque": "Dar vuelta a la derecha se dice turn right."
+    },
+    {
+      "id": "e07",
+      "tipo": "hueco",
+      "frase": "___ park here. It's a hospital.",
+      "opciones": ["Don't", "Doesn't", "Not"],
+      "correcta": 0,
+      "porque": "Para prohibir algo se usa Don't + verbo: Don't park here."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es la forma amable?",
+      "opciones": ["Sit down, please.", "You sit down.", "Sitting down."],
+      "correcta": 0,
+      "porque": "Para suavizar un imperativo se agrega please."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": ["Turn", "left", "at", "the", "corner."],
+      "traduccion": "Da vuelta a la izquierda en la esquina.",
+      "porque": "Primero va la indicación (turn left) y luego el lugar (at the corner)."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "The bank is two blocks from here. It's ___.",
+      "opciones": ["near", "far", "straight"],
+      "correcta": 0,
+      "porque": "Dos cuadras es poca distancia: near (cerca)."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Go straight for two blocks. Turn right at the traffic light. Cross the street. The pharmacy is on the left, next to the bank.",
+      "pregunta": "¿Dónde hay que dar vuelta a la derecha?",
+      "opciones": ["En el semáforo", "En el banco", "En la farmacia"],
+      "correcta": 0,
+      "porque": "«Turn right at the traffic light»: en el semáforo."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "Excuse me, how do I get to the park? Go straight and turn left at the corner. It's on the right.",
+      "pregunta": "¿Hacia dónde hay que dar vuelta en la esquina?",
+      "opciones": ["A la izquierda", "A la derecha", "No hay que dar vuelta"],
+      "correcta": 0,
+      "porque": "«Turn left at the corner»: a la izquierda. El parque queda después a la derecha."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "Le dices a un grupo: «No hablen.»",
+      "opciones": ["Don't talk.", "Doesn't talk.", "Not talk."],
+      "correcta": 0,
+      "porque": "El negativo es Don't + verbo aunque hables con varias personas. Talk es hablar."
+    }
+  ]
+}

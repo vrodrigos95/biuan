@@ -1,0 +1,151 @@
+{
+  "id": "L19",
+  "subnivel": "A1.2",
+  "unidad": 5,
+  "titulo": "Puedo y no puedo",
+  "explicacion": [
+    { "tipo": "texto", "md": "**can** significa «poder» o «saber hacer algo». Es igual para todas las personas: nunca lleva -s." },
+    {
+      "tipo": "tabla",
+      "columnas": ["", "Inglés", "Español"],
+      "filas": [
+        ["Afirmativo", "I can swim.", "Sé nadar."],
+        ["Negativo", "I can't swim.", "No sé nadar."],
+        ["Pregunta", "Can you swim?", "¿Sabes nadar?"],
+        ["Respuesta corta", "Yes, I can. / No, I can't.", "Sí. / No."]
+      ]
+    },
+    { "tipo": "tip", "md": "Después de can el verbo va solo, sin to: *I can swim*, nunca *I can to swim*." },
+    { "tipo": "tip", "md": "Con he, she, it tampoco cambia: *She can drive*, nunca *She cans drive*." },
+    { "tipo": "tip", "md": "Las preguntas con can no usan do: *Can you drive?*, no *Do you can drive?*" },
+    { "tipo": "texto", "md": "También sirve para pedir y dar permiso:" },
+    { "tipo": "ejemplo", "en": "Can I use your phone? Yes, you can.", "es": "¿Puedo usar tu teléfono? Sí, puedes." },
+    { "tipo": "ejemplo", "en": "You can't park here.", "es": "No puedes estacionarte aquí." },
+    { "tipo": "texto", "md": "Habilidades:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["swim", "nadar"],
+        ["drive", "manejar"],
+        ["cook", "cocinar"],
+        ["sing", "cantar"],
+        ["speak English", "hablar inglés"],
+        ["ride a bike", "andar en bicicleta"],
+        ["play the piano", "tocar el piano"],
+        ["use a computer", "usar una computadora"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "My brother ___ drive.",
+      "opciones": ["can", "cans", "can to"],
+      "correcta": 0,
+      "porque": "Can no lleva -s con ninguna persona y va seguido del verbo sin to."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["I can cook.", "I can to cook.", "I can cooking."],
+      "correcta": 0,
+      "porque": "Después de can el verbo va en su forma simple: can cook."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "Can you sing? No, ___.",
+      "opciones": ["I can't", "I don't", "I'm not"],
+      "correcta": 0,
+      "porque": "La respuesta corta repite can: No, I can't."
+    },
+    {
+      "id": "e04",
+      "tipo": "ordenar",
+      "respuesta": ["Can", "you", "speak", "English?"],
+      "traduccion": "¿Hablas inglés?",
+      "porque": "En la pregunta, can va antes del sujeto: Can you…?"
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "She ___ ride a bike.",
+      "aceptadas": ["can't", "cannot", "can not"],
+      "pista": "negativo de can",
+      "porque": "El negativo de can es can't (o cannot)."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["Can he play the piano?", "Does he can play the piano?", "Can he plays the piano?"],
+      "correcta": 0,
+      "porque": "La pregunta con can no usa does, y el verbo va sin -s."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada habilidad con su significado.",
+      "pares": [
+        ["sing", "cantar"],
+        ["drive", "manejar"],
+        ["swim", "nadar"],
+        ["ride a bike", "andar en bicicleta"],
+        ["speak English", "hablar inglés"]
+      ],
+      "porque": "Todas pueden ir después de can: I can sing, I can drive, I can swim."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "Quieres pedir permiso para usar un teléfono. ¿Qué dices?",
+      "opciones": ["Can I use your phone?", "Do I use your phone?", "I can use your phone?"],
+      "correcta": 0,
+      "porque": "Para pedir permiso se pregunta con Can I…?"
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "You ___ park here. It's a hospital.",
+      "opciones": ["can't", "can", "aren't"],
+      "correcta": 0,
+      "porque": "Frente a un hospital no está permitido estacionarse: You can't park here."
+    },
+    {
+      "id": "e10",
+      "tipo": "ordenar",
+      "respuesta": ["He", "can't", "cook."],
+      "traduccion": "Él no sabe cocinar.",
+      "porque": "El orden es sujeto + can't + verbo."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "My name is Elena. I can speak English and Spanish. I can cook very well. I can't drive, so I take the bus.",
+      "pregunta": "¿Qué no sabe hacer Elena?",
+      "opciones": ["Manejar", "Cocinar", "Hablar inglés"],
+      "correcta": 0,
+      "porque": "«I can't drive»: no sabe manejar, por eso toma el camión."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "Can your sister play the piano? No, she can't, but she can sing very well.",
+      "pregunta": "¿Qué sabe hacer la hermana?",
+      "opciones": ["Cantar", "Tocar el piano", "Bailar"],
+      "correcta": 0,
+      "porque": "«She can sing very well»: sabe cantar. El piano no lo sabe tocar."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "Can they swim? Yes, ___.",
+      "opciones": ["they can", "they do", "they are"],
+      "correcta": 0,
+      "porque": "La respuesta corta repite can: Yes, they can."
+    }
+  ]
+}

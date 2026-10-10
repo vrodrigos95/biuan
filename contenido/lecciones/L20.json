@@ -1,0 +1,161 @@
+{
+  "id": "L20",
+  "subnivel": "A1.2",
+  "unidad": 5,
+  "titulo": "Qué, quién, dónde",
+  "explicacion": [
+    { "tipo": "texto", "md": "Las preguntas con **Wh-** piden información, no un sí o un no." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["What", "qué / cuál"],
+        ["Where", "dónde"],
+        ["When", "cuándo"],
+        ["Who", "quién"],
+        ["Why", "por qué"],
+        ["How", "cómo"]
+      ]
+    },
+    { "tipo": "texto", "md": "La palabra de pregunta va al principio. Después sigue el orden normal de una pregunta." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Tipo", "Estructura", "Ejemplo"],
+      "filas": [
+        ["Con to be", "Wh- + am / is / are + sujeto", "Where are you from?"],
+        ["Con otros verbos", "Wh- + do / does + sujeto + verbo", "Where do you live?"]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "What do you do? I'm a teacher.", "es": "¿A qué te dedicas? Soy maestro." },
+    { "tipo": "tip", "md": "**What do you do?** pregunta por tu trabajo, no por lo que haces en este momento." },
+    { "tipo": "ejemplo", "en": "Why do you study English? Because I like it.", "es": "¿Por qué estudias inglés? Porque me gusta." },
+    { "tipo": "tip", "md": "A **Why…?** se contesta con **Because…** (porque)." },
+    { "tipo": "texto", "md": "Datos personales:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["first name", "nombre"],
+        ["last name", "apellido"],
+        ["address", "dirección"],
+        ["phone number", "número de teléfono"],
+        ["email", "correo"],
+        ["age", "edad"],
+        ["job", "trabajo"],
+        ["birthday", "cumpleaños"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "___ do you live? In Guadalajara.",
+      "opciones": ["Where", "When", "Who"],
+      "correcta": 0,
+      "porque": "La respuesta es un lugar, así que la pregunta es Where (dónde)."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "___ is your birthday? In May.",
+      "opciones": ["When", "Where", "Who"],
+      "correcta": 0,
+      "porque": "La respuesta es una fecha, así que la pregunta es When (cuándo)."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "___ is your teacher? Mr. Lopez.",
+      "opciones": ["Who", "When", "Where"],
+      "correcta": 0,
+      "porque": "La respuesta es una persona, así que la pregunta es Who (quién)."
+    },
+    {
+      "id": "e04",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra de pregunta con su significado.",
+      "pares": [
+        ["What", "qué"],
+        ["Where", "dónde"],
+        ["When", "cuándo"],
+        ["Who", "quién"],
+        ["Why", "por qué"],
+        ["How", "cómo"]
+      ],
+      "porque": "Cuidado con where (dónde) y when (cuándo): solo cambia una letra."
+    },
+    {
+      "id": "e05",
+      "tipo": "ordenar",
+      "respuesta": ["Where", "do", "you", "work?"],
+      "traduccion": "¿Dónde trabajas?",
+      "porque": "El orden es Wh- + do + sujeto + verbo."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["Where does she live?", "Where she lives?", "Where does she lives?"],
+      "correcta": 0,
+      "porque": "Con she la pregunta lleva does, y el verbo queda sin -s."
+    },
+    {
+      "id": "e07",
+      "tipo": "hueco",
+      "frase": "___ do you study English? Because I like it.",
+      "aceptadas": ["Why"],
+      "pista": "se contesta con because",
+      "porque": "Si la respuesta empieza con Because, la pregunta es Why (por qué)."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "What do you do?",
+      "opciones": ["I'm a nurse.", "I'm fine, thank you.", "I'm in the kitchen."],
+      "correcta": 0,
+      "porque": "What do you do? pregunta por tu trabajo: I'm a nurse."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "What ___ your phone number?",
+      "opciones": ["is", "are", "do"],
+      "correcta": 0,
+      "porque": "Your phone number es una sola cosa: What is…?"
+    },
+    {
+      "id": "e10",
+      "tipo": "ordenar",
+      "respuesta": ["What", "is", "your", "last", "name?"],
+      "traduccion": "¿Cuál es tu apellido?",
+      "porque": "Con to be el orden es Wh- + is + sujeto. Last name es apellido."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "First name: Carla. Last name: Ruiz. Age: 29. Job: engineer. Address: 15 Juarez Street. Birthday: March 3.",
+      "pregunta": "¿Cuál es el apellido de Carla?",
+      "opciones": ["Ruiz", "Juarez", "Carla"],
+      "correcta": 0,
+      "porque": "Last name es apellido: Ruiz. Juarez es la calle de su dirección."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "Where do you work? I work in a bank. And when do you start? I start at nine.",
+      "pregunta": "¿A qué hora empieza a trabajar?",
+      "opciones": ["A las nueve", "A las cinco", "A las siete"],
+      "correcta": 0,
+      "porque": "A la pregunta «when do you start?» contesta «I start at nine»."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "___ are you? I'm fine, thanks.",
+      "opciones": ["How", "Who", "Where"],
+      "correcta": 0,
+      "porque": "La respuesta dice cómo está la persona: How are you?"
+    }
+  ]
+}

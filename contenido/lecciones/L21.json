@@ -1,0 +1,162 @@
+{
+  "id": "L21",
+  "subnivel": "A1.2",
+  "unidad": 6,
+  "titulo": "Algo de comer",
+  "explicacion": [
+    { "tipo": "texto", "md": "Los sustantivos **contables** se pueden contar uno por uno y tienen plural: an apple, two apples. Los **incontables** no se cuentan y no tienen plural: water, rice, money." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Contables", "Incontables"],
+      "filas": [
+        ["an egg, two eggs", "water"],
+        ["an apple, three apples", "milk"],
+        ["a tomato, four tomatoes", "bread"],
+        ["a sandwich, two sandwiches", "rice"]
+      ]
+    },
+    { "tipo": "tip", "md": "Los incontables no llevan a ni an: se dice *some water*, nunca *a water*." },
+    { "tipo": "texto", "md": "**some** y **any** significan «algo de» o «unos». Se usan con contables en plural y con incontables." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Uso", "Palabra", "Ejemplo"],
+      "filas": [
+        ["Afirmativo", "some", "I have some bread."],
+        ["Negativo", "any", "I don't have any bread."],
+        ["Pregunta", "any", "Do you have any bread?"],
+        ["Ofrecer o pedir", "some", "Would you like some coffee?"]
+      ]
+    },
+    { "tipo": "tip", "md": "**Would you like…?** significa «¿Quieres…?» o «¿Gustas…?». Es la forma amable de ofrecer algo." },
+    { "tipo": "texto", "md": "Comida y bebida:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["bread", "pan"],
+        ["rice", "arroz"],
+        ["meat", "carne"],
+        ["chicken", "pollo"],
+        ["cheese", "queso"],
+        ["milk", "leche"],
+        ["water", "agua"],
+        ["juice", "jugo"],
+        ["sugar", "azúcar"],
+        ["fruit", "fruta"],
+        ["vegetables", "verduras"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "There isn't ___ cheese in the fridge.",
+      "opciones": ["any", "some", "a"],
+      "correcta": 0,
+      "porque": "En oraciones negativas se usa any."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "Would you like ___ tea?",
+      "opciones": ["some", "any", "many"],
+      "correcta": 0,
+      "porque": "Cuando ofreces algo se usa some, aunque sea pregunta."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es incontable?",
+      "opciones": ["rice", "egg", "apple"],
+      "correcta": 0,
+      "porque": "El arroz no se cuenta grano por grano: rice es incontable y no tiene plural."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["I have some water.", "I have a water.", "I have some waters."],
+      "correcta": 0,
+      "porque": "Water es incontable: no lleva a ni plural. Se dice some water."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "Do you have ___ questions?",
+      "aceptadas": ["any"],
+      "pista": "some o any",
+      "porque": "En preguntas se usa any."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "I need ___ information about the class.",
+      "aceptadas": ["some"],
+      "pista": "some o any",
+      "porque": "En oraciones afirmativas se usa some. Need significa necesitar."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada alimento con su significado.",
+      "pares": [
+        ["bread", "pan"],
+        ["cheese", "queso"],
+        ["chicken", "pollo"],
+        ["juice", "jugo"],
+        ["vegetables", "verduras"]
+      ],
+      "porque": "Bread, cheese, chicken y juice son incontables; vegetables es contable y va en plural."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": ["I", "don't", "have", "any", "money."],
+      "traduccion": "No tengo dinero.",
+      "porque": "En negativo se usa any, y va antes del sustantivo."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "We have ___ eggs and some milk.",
+      "opciones": ["some", "any", "a"],
+      "correcta": 0,
+      "porque": "Es una oración afirmativa y eggs está en plural: some eggs."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo ofreces café de forma amable?",
+      "opciones": ["Would you like some coffee?", "Do you like any coffee?", "You like some coffee?"],
+      "correcta": 0,
+      "porque": "Para ofrecer algo se usa Would you like some…?"
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "In my fridge there is some milk and some cheese. There are some eggs, too. There isn't any juice and there aren't any vegetables.",
+      "pregunta": "¿Qué falta en el refrigerador?",
+      "opciones": ["Jugo y verduras", "Leche y queso", "Huevos"],
+      "correcta": 0,
+      "porque": "«There isn't any juice and there aren't any vegetables»: no hay jugo ni verduras."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "Would you like some juice? No, thank you. Can I have some water, please?",
+      "pregunta": "¿Qué quiere tomar?",
+      "opciones": ["Agua", "Jugo", "Café"],
+      "correcta": 0,
+      "porque": "Dice «No, thank you» al jugo y pide «some water»."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "There are ___ apples on the table.",
+      "opciones": ["some", "any", "a"],
+      "correcta": 0,
+      "porque": "Es una oración afirmativa con un contable en plural: some apples."
+    }
+  ]
+}

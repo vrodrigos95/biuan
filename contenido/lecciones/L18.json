@@ -1,0 +1,161 @@
+{
+  "id": "L18",
+  "subnivel": "A1.2",
+  "unidad": 5,
+  "titulo": "Me gusta",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para hablar de gustos se usan **like** (gustar), **love** (encantar) y **hate** (odiar). Funcionan como cualquier verbo: llevan -s con he, she, it." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["I love pizza.", "Me encanta la pizza."],
+        ["I like pizza.", "Me gusta la pizza."],
+        ["I don't like pizza.", "No me gusta la pizza."],
+        ["I hate pizza.", "Odio la pizza."]
+      ]
+    },
+    { "tipo": "tip", "md": "No traduzcas «me gusta» palabra por palabra. En inglés la persona va primero: **I like pizza**, nunca *Me like pizza*." },
+    { "tipo": "texto", "md": "Cuando lo que te gusta es una actividad, el verbo lleva **-ing**." },
+    { "tipo": "ejemplo", "en": "I like swimming.", "es": "Me gusta nadar." },
+    { "tipo": "ejemplo", "en": "She loves dancing.", "es": "A ella le encanta bailar." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Regla para -ing", "Ejemplo"],
+      "filas": [
+        ["La mayoría: + ing", "play → playing, read → reading"],
+        ["Termina en -e: se quita la e", "dance → dancing"],
+        ["Vocal corta + consonante: se duplica", "swim → swimming, run → running"]
+      ]
+    },
+    { "tipo": "texto", "md": "Pasatiempos y deportes:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["soccer", "futbol"],
+        ["basketball", "basquetbol"],
+        ["tennis", "tenis"],
+        ["running", "correr"],
+        ["swimming", "nadar"],
+        ["reading", "leer"],
+        ["traveling", "viajar"],
+        ["watching movies", "ver películas"],
+        ["playing the guitar", "tocar la guitarra"]
+      ]
+    },
+    { "tipo": "tip", "md": "Los deportes van con **play** y sin the: play soccer. Los instrumentos sí llevan the: play the guitar." }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I like ___.",
+      "opciones": ["swimming", "swim", "swims"],
+      "correcta": 0,
+      "porque": "Después de like, la actividad va con -ing: swimming."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She ___ dancing.",
+      "opciones": ["loves", "love", "loving"],
+      "correcta": 0,
+      "porque": "Love es un verbo normal: con she lleva -s."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «Me gusta la pizza»?",
+      "opciones": ["I like pizza.", "Me like pizza.", "Pizza likes me."],
+      "correcta": 0,
+      "porque": "En inglés la persona es el sujeto: I like pizza."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se escribe «dance» con -ing?",
+      "opciones": ["dancing", "danceing", "dancinng"],
+      "correcta": 0,
+      "porque": "Dance termina en -e: se quita la e y se agrega -ing."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se escribe «run» con -ing?",
+      "opciones": ["running", "runing", "runeing"],
+      "correcta": 0,
+      "porque": "Run termina en vocal corta + consonante: se duplica la n."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "My brother hates ___ the house.",
+      "aceptadas": ["cleaning"],
+      "pista": "verbo: clean",
+      "porque": "Después de hate, la actividad va con -ing: cleaning."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        ["love", "encantar"],
+        ["like", "gustar"],
+        ["hate", "odiar"],
+        ["traveling", "viajar"],
+        ["running", "correr"]
+      ],
+      "porque": "Love es más fuerte que like: I love traveling es «me encanta viajar»."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": ["I", "don't", "like", "cooking."],
+      "traduccion": "No me gusta cocinar.",
+      "porque": "El negativo se forma con don't antes de like."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "We play ___ on Saturdays.",
+      "opciones": ["soccer", "the soccer", "a soccer"],
+      "correcta": 0,
+      "porque": "Los deportes van sin artículo: play soccer."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "My parents ___ traveling.",
+      "opciones": ["love", "loves", "loving"],
+      "correcta": 0,
+      "porque": "My parents equivale a they, y con they el verbo va sin -s."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Diego loves sports. He plays soccer on Saturdays and he likes running in the morning. He doesn't like swimming. His sister Paula hates sports, but she loves reading.",
+      "pregunta": "¿Qué le gusta a Paula?",
+      "opciones": ["Leer", "Correr", "Nadar"],
+      "correcta": 0,
+      "porque": "«She loves reading»: a Paula le encanta leer. Los deportes los odia."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "I like watching movies, but I don't like going to the movies. I watch them at home.",
+      "pregunta": "¿Qué no le gusta?",
+      "opciones": ["Ir al cine", "Ver películas", "Estar en casa"],
+      "correcta": 0,
+      "porque": "«I don't like going to the movies»: no le gusta ir al cine. Las películas sí le gustan."
+    },
+    {
+      "id": "e13",
+      "tipo": "hueco",
+      "frase": "She likes ___ the guitar.",
+      "aceptadas": ["playing"],
+      "pista": "verbo: play",
+      "porque": "Después de like, la actividad va con -ing: playing the guitar."
+    }
+  ]
+}
