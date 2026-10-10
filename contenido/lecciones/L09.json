@@ -1,0 +1,161 @@
+{
+  "id": "L09",
+  "subnivel": "A1.1",
+  "unidad": 3,
+  "titulo": "Hay y no hay",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para decir que algo existe o está en un lugar se usa **there is** (una cosa) y **there are** (varias). Las dos significan «hay»." },
+    {
+      "tipo": "tabla",
+      "columnas": ["", "Inglés", "Español"],
+      "filas": [
+        ["Una cosa", "There is a bed.", "Hay una cama."],
+        ["Varias", "There are two beds.", "Hay dos camas."],
+        ["Negativo, una", "There isn't a sofa.", "No hay sofá."],
+        ["Negativo, varias", "There aren't any chairs.", "No hay sillas."]
+      ]
+    },
+    { "tipo": "tip", "md": "En español «hay» nunca cambia. En inglés sí: **is** para una cosa, **are** para varias." },
+    { "tipo": "texto", "md": "Para preguntar, **is** o **are** pasa al principio. Se contesta con una respuesta corta." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pregunta", "Sí", "No"],
+      "filas": [
+        ["Is there a table?", "Yes, there is.", "No, there isn't."],
+        ["Are there any chairs?", "Yes, there are.", "No, there aren't."]
+      ]
+    },
+    { "tipo": "tip", "md": "En plural, el negativo y la pregunta llevan **any**: There aren't any chairs. Are there any chairs?" },
+    { "tipo": "tip", "md": "Al hablar es muy común la forma corta **there's**: There's a lamp." },
+    { "tipo": "texto", "md": "La casa y sus muebles:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["house", "casa"],
+        ["room", "cuarto"],
+        ["bedroom", "recámara"],
+        ["kitchen", "cocina"],
+        ["bathroom", "baño"],
+        ["living room", "sala"],
+        ["garden", "jardín"],
+        ["bed", "cama"],
+        ["table", "mesa"],
+        ["sofa", "sofá"],
+        ["lamp", "lámpara"],
+        ["fridge", "refrigerador"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "There ___ a lamp in the bedroom.",
+      "opciones": ["is", "are", "am"],
+      "correcta": 0,
+      "porque": "A lamp es una sola cosa: there is."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "There ___ three chairs in the kitchen.",
+      "opciones": ["are", "is", "am"],
+      "correcta": 0,
+      "porque": "Three chairs es plural: there are."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "___ there a bathroom?",
+      "opciones": ["Is", "Are", "Am"],
+      "correcta": 0,
+      "porque": "A bathroom es una sola cosa, y en la pregunta is va al principio: Is there…?"
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "Is there a sofa? No, ___.",
+      "opciones": ["there isn't", "there aren't", "it isn't"],
+      "correcta": 0,
+      "porque": "La respuesta corta repite there y el verbo de la pregunta: No, there isn't."
+    },
+    {
+      "id": "e05",
+      "tipo": "emparejar",
+      "enunciado": "Une cada parte de la casa con su significado.",
+      "pares": [
+        ["kitchen", "cocina"],
+        ["bedroom", "recámara"],
+        ["bathroom", "baño"],
+        ["living room", "sala"],
+        ["fridge", "refrigerador"]
+      ],
+      "porque": "Bedroom viene de bed (cama) y bathroom de bath (baño): son los cuartos de esas cosas."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": ["There", "are", "two", "beds."],
+      "traduccion": "Hay dos camas.",
+      "porque": "Two beds es plural, por eso va there are."
+    },
+    {
+      "id": "e07",
+      "tipo": "hueco",
+      "frase": "There ___ a table in the kitchen.",
+      "aceptadas": ["is"],
+      "pista": "es una sola cosa",
+      "porque": "A table es una sola cosa: there is."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["There aren't any chairs.", "There isn't any chairs.", "There not are chairs."],
+      "correcta": 0,
+      "porque": "Chairs es plural, así que el negativo es there aren't, con any."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "Are there any lamps? Yes, ___.",
+      "opciones": ["there are", "there is", "they are"],
+      "correcta": 0,
+      "porque": "La pregunta usa are there, así que la respuesta corta es Yes, there are."
+    },
+    {
+      "id": "e10",
+      "tipo": "lectura",
+      "texto": "My house is small. There is a living room, a kitchen and a bathroom. There are two bedrooms. There isn't a garden.",
+      "pregunta": "¿Qué no tiene la casa?",
+      "opciones": ["Jardín", "Cocina", "Baño"],
+      "correcta": 0,
+      "porque": "«There isn't a garden»: no hay jardín."
+    },
+    {
+      "id": "e11",
+      "tipo": "escucha",
+      "audio": "In my bedroom there is a bed and a lamp, but there isn't a table.",
+      "pregunta": "¿Qué no hay en la recámara?",
+      "opciones": ["Una mesa", "Una cama", "Una lámpara"],
+      "correcta": 0,
+      "porque": "«There isn't a table»: no hay mesa."
+    },
+    {
+      "id": "e12",
+      "tipo": "hueco",
+      "frase": "There ___ four rooms in my house.",
+      "aceptadas": ["are"],
+      "pista": "son varias cosas",
+      "porque": "Four rooms es plural: there are."
+    },
+    {
+      "id": "e13",
+      "tipo": "ordenar",
+      "respuesta": ["Is", "there", "a", "fridge?"],
+      "traduccion": "¿Hay un refrigerador?",
+      "porque": "En la pregunta, is va antes de there: Is there a fridge?"
+    }
+  ]
+}

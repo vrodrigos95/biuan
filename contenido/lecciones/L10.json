@@ -1,0 +1,155 @@
+{
+  "id": "L10",
+  "subnivel": "A1.1",
+  "unidad": 3,
+  "titulo": "¿Dónde está?",
+  "explicacion": [
+    { "tipo": "texto", "md": "Las preposiciones de lugar dicen dónde está algo. Van antes del lugar." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español", "Ejemplo"],
+      "filas": [
+        ["in", "en, dentro de", "The keys are in the bag."],
+        ["on", "sobre, encima de", "The book is on the table."],
+        ["under", "debajo de", "The cat is under the bed."],
+        ["next to", "junto a", "The bank is next to the school."],
+        ["in front of", "enfrente de", "The car is in front of the house."],
+        ["behind", "detrás de", "The garden is behind the house."],
+        ["between", "entre", "The park is between the bank and the school."]
+      ]
+    },
+    { "tipo": "tip", "md": "**in** es dentro de un espacio y **on** es sobre una superficie. En español las dos pueden ser «en»: en la mochila es *in the bag*; en la mesa es *on the table*." },
+    { "tipo": "texto", "md": "Para preguntar dónde está algo se usa **Where is…?** con una cosa y **Where are…?** con varias." },
+    { "tipo": "ejemplo", "en": "Where is the bank? It's next to the park.", "es": "¿Dónde está el banco? Está junto al parque." },
+    { "tipo": "ejemplo", "en": "Where are my keys? They're on the table.", "es": "¿Dónde están mis llaves? Están sobre la mesa." },
+    { "tipo": "texto", "md": "Lugares de la ciudad:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["bank", "banco"],
+        ["school", "escuela"],
+        ["park", "parque"],
+        ["hospital", "hospital"],
+        ["supermarket", "supermercado"],
+        ["restaurant", "restaurante"],
+        ["store", "tienda"],
+        ["street", "calle"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "El libro está sobre la mesa. The book is ___ the table.",
+      "opciones": ["on", "in", "under"],
+      "correcta": 0,
+      "porque": "Sobre una superficie se usa on."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "Las llaves están dentro de la mochila. The keys are ___ the bag.",
+      "opciones": ["in", "on", "behind"],
+      "correcta": 0,
+      "porque": "Dentro de un espacio se usa in."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "El gato está debajo de la cama. The cat is ___ the bed.",
+      "opciones": ["under", "on", "next to"],
+      "correcta": 0,
+      "porque": "Debajo de se dice under."
+    },
+    {
+      "id": "e04",
+      "tipo": "emparejar",
+      "enunciado": "Une cada preposición con su significado.",
+      "pares": [
+        ["under", "debajo de"],
+        ["behind", "detrás de"],
+        ["next to", "junto a"],
+        ["between", "entre"],
+        ["in front of", "enfrente de"]
+      ],
+      "porque": "Next to e in front of son frases de varias palabras: se aprenden completas."
+    },
+    {
+      "id": "e05",
+      "tipo": "ordenar",
+      "respuesta": ["Where", "is", "the", "bank?"],
+      "traduccion": "¿Dónde está el banco?",
+      "porque": "La pregunta es Where + is + la cosa que buscas."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "Where ___ my keys?",
+      "opciones": ["are", "is", "am"],
+      "correcta": 0,
+      "porque": "My keys es plural, así que la pregunta es Where are…?"
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "The park is ___ the bank and the school.",
+      "opciones": ["between", "under", "in"],
+      "correcta": 0,
+      "porque": "Between significa «entre» y se usa con dos cosas unidas por and."
+    },
+    {
+      "id": "e08",
+      "tipo": "hueco",
+      "enunciado": "El carro está detrás de la casa.",
+      "frase": "The car is ___ the house.",
+      "aceptadas": ["behind"],
+      "pista": "detrás de",
+      "porque": "Detrás de se dice behind."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "¿Qué significa «store»?",
+      "opciones": ["Tienda", "Calle", "Escuela"],
+      "correcta": 0,
+      "porque": "Store es tienda. Calle es street y escuela es school."
+    },
+    {
+      "id": "e10",
+      "tipo": "lectura",
+      "texto": "My street is small. There is a supermarket next to my house. In front of the supermarket there is a park. The school is behind the park.",
+      "pregunta": "¿Qué hay junto a la casa?",
+      "opciones": ["Un supermercado", "Un parque", "Una escuela"],
+      "correcta": 0,
+      "porque": "«There is a supermarket next to my house»: next to significa junto a."
+    },
+    {
+      "id": "e11",
+      "tipo": "escucha",
+      "audio": "Excuse me, where is the hospital? It's on Juarez Street, next to the bank.",
+      "pregunta": "¿Junto a qué está el hospital?",
+      "opciones": ["Junto al banco", "Junto a la escuela", "Junto al parque"],
+      "correcta": 0,
+      "porque": "Se escucha «next to the bank»: junto al banco."
+    },
+    {
+      "id": "e12",
+      "tipo": "opcion",
+      "enunciado": "Where are the children? ___ in the park.",
+      "opciones": ["They're", "It's", "There"],
+      "correcta": 0,
+      "porque": "The children es plural, así que se contesta con They're (they are)."
+    },
+    {
+      "id": "e13",
+      "tipo": "lectura",
+      "texto": "The phone is on the desk. The bag is under the desk. The umbrella is in the bag.",
+      "pregunta": "¿Dónde está el paraguas?",
+      "opciones": ["Dentro de la mochila", "Sobre el escritorio", "Debajo de la cama"],
+      "correcta": 0,
+      "porque": "«The umbrella is in the bag»: in es dentro de."
+    }
+  ]
+}
