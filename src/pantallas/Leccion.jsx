@@ -3,7 +3,7 @@ import { ir } from '../App.jsx'
 import { cargarJSON } from '../lib/contenido.js'
 import { prepararVoz, callar } from '../lib/voz.js'
 import { estaLista, evaluar, preparar, respuestaCorrecta } from '../lib/ejercicios.js'
-import { guardarProgreso, leerProgreso } from '../lib/progreso.js'
+import { registrarLeccion } from '../lib/logros.js'
 import Explicacion from '../componentes/Explicacion.jsx'
 import Ejercicio from '../ejercicios/Ejercicio.jsx'
 
@@ -17,6 +17,7 @@ export default function Leccion({ id }) {
   const [respuesta, setRespuesta] = useState(null)
   const [revelado, setRevelado] = useState(null)
   const [primerIntento, setPrimerIntento] = useState({})
+  const [logro, setLogro] = useState(null)
 
   useEffect(() => {
     let vivo = true
@@ -60,7 +61,7 @@ export default function Leccion({ id }) {
     return (
       <main className="pantalla leccion">
         <header className="barra-examen">
-          <button className="cerrar" onClick={() => ir('')} aria-label="Salir de la lección">✕</button>
+          <button className="cerrar" onClick={() => ir('ruta')} aria-label="Salir de la lección">✕</button>
           <span className="etiqueta">{leccion.subnivel} · Lección {Number(leccion.id.slice(1))}</span>
         </header>
         <h1>{leccion.titulo}</h1>
@@ -83,7 +84,14 @@ export default function Leccion({ id }) {
           <p className="nivel-grande">{aciertos}/{total}</p>
           <p>{aciertos === total ? '¡Perfecta! Sin un solo error.' : aciertos >= total * 0.75 ? '¡Muy bien! Repasaste lo que fallaste.' : 'Buen trabajo. Lo que fallaste volverá en tus repasos.'}</p>
         </div>
-        <button className="boton boton-primario boton-grande" onClick={() => ir('')}>Continuar</button>
+        {logro && (
+          <div className="logros">
+            <div className="logro"><span>⭐</span><strong>+{logro.xpGanada} XP</strong></div>
+            <div className="logro"><span>🔥</span><strong>{logro.racha} {logro.racha === 1 ? 'día' : 'días'} de racha</strong></div>
+          </div>
+        )}
+        {logro?.primeraDelDia && <p className="nota centrado-texto">¡Ya estudiaste hoy! Vuelve mañana para mantener tu racha.</p>}
+        <button className="boton boton-primario boton-grande" onClick={() => ir('ruta')}>Continuar</button>
         <button className="enlace centrado" onClick={() => { setFase('explicacion'); window.scrollTo(0, 0) }}>Repetir la lección</button>
       </main>
     )
@@ -103,18 +111,7 @@ export default function Leccion({ id }) {
 
   function continuar() {
     if (pos + 1 >= cola.length) {
-      const anterior = leerProgreso().lecciones[leccion.id]
-      guardarProgreso({
-        lecciones: {
-          ...leerProgreso().lecciones,
-          [leccion.id]: {
-            aciertos,
-            total,
-            mejor: Math.max(aciertos, anterior?.mejor || 0),
-            fecha: new Date().toISOString(),
-          },
-        },
-      })
+      setLogro(registrarLeccion(leccion.id, aciertos, total))
       setFase('fin')
       window.scrollTo(0, 0)
       return
@@ -130,7 +127,7 @@ export default function Leccion({ id }) {
   return (
     <main className="pantalla examen leccion">
       <header className="barra-examen">
-        <button className="cerrar" onClick={() => confirm('¿Salir de la lección? Perderás tu avance en ella.') && ir('')} aria-label="Salir de la lección">✕</button>
+        <button className="cerrar" onClick={() => confirm('¿Salir de la lección? Perderás tu avance en ella.') && ir('ruta')} aria-label="Salir de la lección">✕</button>
         <div className="progreso" aria-hidden>
           <div style={{ width: `${(pos / cola.length) * 100}%` }} />
         </div>

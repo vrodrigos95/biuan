@@ -3,6 +3,8 @@ import Inicio from './pantallas/Inicio.jsx'
 import ExamenNivel from './pantallas/ExamenNivel.jsx'
 import Resultado from './pantallas/Resultado.jsx'
 import Leccion from './pantallas/Leccion.jsx'
+import Ruta from './pantallas/Ruta.jsx'
+import { tieneProgreso } from './lib/progreso.js'
 
 function leerRuta() {
   const h = location.hash.replace(/^#\/?/, '')
@@ -54,7 +56,11 @@ export default function App() {
       return <Resultado />
     case 'leccion':
       return <Leccion key={ruta.param} id={ruta.param} />
-    default:
+    case 'ruta':
+      return <Ruta />
+    case 'bienvenida':
       return <Inicio />
+    default:
+      return tieneProgreso() && ruta.pantalla !== 'reto' ? <Ruta /> : <Inicio />
   }
 }

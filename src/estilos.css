@@ -260,3 +260,47 @@ button { font: inherit; color: inherit; }
 .retro-mal .boton-retro { background: var(--rojo); }
 .leccion.examen { padding-bottom: calc(260px + env(safe-area-inset-bottom)); }
 .fin .boton-grande { margin-top: 8px; }
+
+/* Ruta */
+.barra-fija { position: sticky; top: 0; z-index: 5; margin: 0 -16px 12px; padding: 8px 16px; background: var(--bg); }
+.barra-nivel { background: var(--superficie); border: 1px solid var(--linea); border-radius: 18px; padding: 12px 14px; box-shadow: 0 4px 14px rgba(61, 58, 78, 0.06); }
+.barra-nivel-fila { display: flex; align-items: center; gap: 12px; }
+.barra-nivel-avance { flex: 1; min-width: 0; }
+.barra-nivel-texto { display: flex; justify-content: space-between; gap: 8px; font-size: 0.9rem; margin-bottom: 6px; }
+.barra-nivel-texto strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.barra-nivel-texto span { color: var(--tinta-suave); font-weight: 800; }
+.barra-nivel-datos { display: flex; justify-content: space-between; gap: 8px; margin-top: 10px; font-size: 0.85rem; font-weight: 800; color: var(--tinta-suave); }
+.racha.activa { color: #c2571a; }
+.meta.cumplida { color: var(--menta-fuerte); }
+.chip-nivel { font-family: 'Baloo 2', sans-serif; font-weight: 700; background: var(--lav-fuerte); color: #fff; border-radius: 10px; padding: 4px 10px; font-size: 1rem; flex-shrink: 0; }
+.boton-continuar { margin-bottom: 20px; }
+
+.subnivel { margin-bottom: 26px; scroll-margin-top: 140px; }
+.subnivel-cabeza { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.subnivel-cabeza h2 { margin: 0; flex: 1; }
+.subnivel.cerrado .chip-nivel { background: var(--tinta-suave); }
+.insignia { font-size: 0.75rem; font-weight: 800; background: var(--linea); color: var(--tinta-suave); border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
+.insignia-gratis { background: var(--menta); color: var(--menta-tinta); margin-left: 8px; vertical-align: middle; }
+.unidad h3 { font-size: 1rem; color: var(--tinta-suave); margin: 14px 0 8px; }
+.lecciones { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.nodo {
+  display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
+  background: var(--superficie); border: 2px solid var(--linea); border-bottom-width: 4px; border-radius: 16px;
+  padding: 10px 12px; cursor: pointer; min-height: 60px;
+}
+.nodo:disabled, .nodo.inactiva { cursor: default; opacity: 0.55; }
+.nodo.siguiente { border-color: var(--lav-fuerte); }
+.nodo-num { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--lav); color: var(--lav-tinta); font-weight: 800; flex-shrink: 0; }
+.nodo.hecha .nodo-num { background: var(--menta-fuerte); color: #fff; }
+.nodo-texto { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.nodo-texto small { color: var(--tinta-suave); font-size: 0.82rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nodo-puntos { font-size: 0.8rem; font-weight: 800; color: var(--menta-tinta); }
+.nodo-control { margin-top: 12px; border-style: dashed; }
+.nodo-control .nodo-num { background: var(--amarillo); }
+.respaldo { margin-top: 10px; }
+
+/* Fin de lección */
+.logros { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+.logro { background: var(--superficie); border: 1px solid var(--linea); border-radius: 16px; padding: 14px; text-align: center; }
+.logro span { display: block; font-size: 1.6rem; }
+.centrado-texto { text-align: center; }

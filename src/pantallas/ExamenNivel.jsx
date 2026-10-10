@@ -49,6 +49,7 @@ export default function ExamenNivel() {
       guardarProgreso({
         colocacion: { fecha: new Date().toISOString(), ...r },
         subnivelActual: r.arranque || SUBNIVEL_SI_B1,
+        arranque: r.arranque || SUBNIVEL_SI_B1,
       })
       ir('resultado')
       return

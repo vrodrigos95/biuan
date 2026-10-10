@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { ir, leerReto } from '../App.jsx'
 import { cargarBancoNivel, cargarEstructura } from '../lib/contenido.js'
-import { leerProgreso } from '../lib/progreso.js'
+import { guardarProgreso, leerProgreso } from '../lib/progreso.js'
 import { etiquetaNivel } from '../lib/examenNivel.js'
 import { prepararVoz } from '../lib/voz.js'
 import Marca from '../componentes/Marca.jsx'
@@ -9,6 +9,11 @@ import Marca from '../componentes/Marca.jsx'
 export default function Inicio() {
   const reto = leerReto()
   const { colocacion } = leerProgreso()
+
+  function empezarDeCero() {
+    if (!leerProgreso().arranque) guardarProgreso({ arranque: 'A1.1', subnivelActual: 'A1.1' })
+    ir('ruta')
+  }
 
   useEffect(() => {
     // Precarga para que la primera pregunta aparezca al instante.
@@ -43,16 +48,15 @@ export default function Inicio() {
       </section>
 
       {colocacion && (
-        <button className="tarjeta ultimo" onClick={() => ir('resultado')}>
-          <span>Tu último resultado</span>
+        <button className="tarjeta ultimo" onClick={() => ir('ruta')}>
+          <span>Ir a mi ruta · nivel</span>
           <strong>{etiquetaNivel(colocacion.nivel)}</strong>
           <span className="flecha" aria-hidden>›</span>
         </button>
       )}
 
-      <button className="tarjeta ultimo" onClick={() => ir('leccion/L04')}>
-        <span>Lección de muestra: ¿De dónde eres?</span>
-        <span className="flecha" aria-hidden>›</span>
+      <button className="enlace centrado" onClick={empezarDeCero}>
+        Prefiero empezar desde cero (A1.1)
       </button>
 
       <p className="pie">El resultado es una estimación de nivel. Biuan no emite certificaciones oficiales.</p>

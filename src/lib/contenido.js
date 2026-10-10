@@ -21,3 +21,12 @@ export async function cargarBancoNivel() {
   const archivos = await Promise.all(niveles.map((n) => cargarJSON(`examen-nivel/${n.toLowerCase()}.json`)))
   return Object.fromEntries(niveles.map((n, i) => [n, archivos[i].preguntas]))
 }
+
+export async function cargarIndice() {
+  try {
+    const i = await cargarJSON('indice.json')
+    return new Set(i.lecciones || [])
+  } catch {
+    return new Set()
+  }
+}

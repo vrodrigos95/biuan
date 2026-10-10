@@ -90,7 +90,7 @@ export default function Resultado() {
   return (
     <main className="pantalla resultado">
       <header className="cabecera">
-        <button className="enlace" onClick={() => ir('')}>‹ Inicio</button>
+        <button className="enlace" onClick={() => ir('ruta')}>‹ Mi ruta</button>
         <Marca />
       </header>
 
@@ -195,6 +195,9 @@ export default function Resultado() {
         </section>
       )}
 
+      <button className="boton boton-primario boton-grande" onClick={() => ir('ruta')}>
+        {r.alcanzaB1 ? 'Ver la ruta' : `Empezar mi ruta en ${r.arranque}`}
+      </button>
       <button className="enlace centrado" onClick={() => ir('examen')}>Repetir el examen</button>
     </main>
   )
