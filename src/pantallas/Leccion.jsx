@@ -7,7 +7,7 @@ import Bloqueado from '../componentes/Bloqueado.jsx'
 import { prepararVoz, callar } from '../lib/voz.js'
 import { preparar } from '../lib/ejercicios.js'
 import { agregarAlRepaso } from '../lib/repaso.js'
-import { registrarLeccion } from '../lib/logros.js'
+import { registrarLeccion, XP_POR_ACIERTO } from '../lib/logros.js'
 import Explicacion from '../componentes/Explicacion.jsx'
 import Ronda from '../componentes/Ronda.jsx'
 
@@ -20,6 +20,8 @@ export default function Leccion({ id }) {
   const [pos, setPos] = useState(0)
   const [primerIntento, setPrimerIntento] = useState({})
   const [logro, setLogro] = useState(null)
+  const [seguidas, setSeguidas] = useState(0)
+  const [xpSesion, setXpSesion] = useState(0)
 
   useEffect(() => {
     let vivo = true
@@ -58,6 +60,8 @@ export default function Leccion({ id }) {
     setCola(leccion.ejercicios.map((ej) => ({ ej: preparar(ej), repaso: false })))
     setPos(0)
     setPrimerIntento({})
+    setSeguidas(0)
+    setXpSesion(0)
     setFase('ejercicios')
     window.scrollTo(0, 0)
   }
@@ -105,6 +109,8 @@ export default function Leccion({ id }) {
   const { ej, repaso } = cola[pos]
 
   function calificar(correcto) {
+    setSeguidas((n) => (correcto ? n + 1 : 0))
+    if (correcto && !repaso) setXpSesion((x) => x + XP_POR_ACIERTO)
     if (repaso) return
     setPrimerIntento((p) => ({ ...p, [ej.id]: correcto }))
     // Lo que se falla regresa una vez al final de la lección.
@@ -129,6 +135,9 @@ export default function Leccion({ id }) {
       key={`${pos}-${ej.id}`}
       ej={ej}
       etiqueta={repaso ? 'Otra vez' : null}
+      racha={seguidas}
+      xp={xpSesion}
+      xpPorAcierto={repaso ? 0 : XP_POR_ACIERTO}
       avance={pos / cola.length}
       hayVoz={hayVoz}
       onSalir={() => confirm('¿Salir de la lección? Perderás tu avance en ella.') && ir('ruta')}

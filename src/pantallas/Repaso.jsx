@@ -6,7 +6,7 @@ import { prepararVoz, callar } from '../lib/voz.js'
 import { preparar } from '../lib/ejercicios.js'
 import { leerProgreso } from '../lib/progreso.js'
 import { calificarRepaso, MAX_POR_SESION, pendientes, separar } from '../lib/repaso.js'
-import { registrarRepaso } from '../lib/logros.js'
+import { registrarRepaso, XP_POR_REPASO } from '../lib/logros.js'
 import Ronda from '../componentes/Ronda.jsx'
 
 const ORIGEN_VALIDO = /^(L\d{2}|control:(A1|A2|B1)|simulacro)$/
@@ -26,6 +26,7 @@ export default function Repaso() {
   const [hayVoz, setHayVoz] = useState(false)
   const [pos, setPos] = useState(0)
   const [aciertos, setAciertos] = useState(0)
+  const [seguidas, setSeguidas] = useState(0)
   const [logro, setLogro] = useState(null)
 
   useEffect(() => {
@@ -94,6 +95,7 @@ export default function Repaso() {
   function calificar(ok) {
     calificarRepaso(clave, ok)
     if (ok) setAciertos((a) => a + 1)
+    setSeguidas((n) => (ok ? n + 1 : 0))
   }
 
   function continuar() {
@@ -111,6 +113,9 @@ export default function Repaso() {
       key={clave}
       ej={ej}
       etiqueta={`Repaso · ${pos + 1} de ${cola.length}`}
+      racha={seguidas}
+      xp={aciertos * XP_POR_REPASO}
+      xpPorAcierto={XP_POR_REPASO}
       avance={pos / cola.length}
       hayVoz={hayVoz}
       onSalir={() => ir('ruta')}
