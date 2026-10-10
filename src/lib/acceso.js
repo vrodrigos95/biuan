@@ -2,6 +2,7 @@
 // Modos: 'servidor' (producción, con API PHP), 'demo' (pruebas, clave de demostración) y 'abierto' (todo libre).
 import { getConfig } from './config.js'
 import { guardarProgreso, leerProgreso } from './progreso.js'
+import { cargarJSON } from './contenido.js'
 
 export const CLAVE_DEMO = 'BIUAN-DEMO-2026'
 const RENOVAR_ANTES = 7 * 86400 // segundos antes del vencimiento
@@ -68,6 +69,7 @@ export async function activar(claveEscrita) {
   }
   const { permiso, vence } = await pedirPermiso(clave)
   guardarProgreso({ licencia: { clave, permiso, vence } })
+  descargarParaSinConexion()
 }
 
 // Con internet, renueva el permiso antes de que venza. Si Gumroad dice que se reembolsó, se quita.
@@ -103,4 +105,21 @@ export async function pedirContenidoPago(ruta, reintentar = true) {
   if (r.status === 401) throw new ErrorLicencia('sin_licencia', 'Activa tu clave para ver este contenido.')
   if (!r.ok) throw new Error(`No se pudo cargar ${ruta}`)
   return r.json()
+}
+
+// Con la licencia activa, baja todo el contenido de pago para que funcione sin conexión
+// (el service worker lo guarda). Se llama al activar y al abrir la app con internet.
+export async function descargarParaSinConexion() {
+  if (modoLicencia() !== 'servidor' || !tieneAcceso() || !navigator.onLine) return
+  try {
+    const indice = await cargarJSON('indice.json')
+    const rutas = [
+      ...(indice.lecciones || []).map((id) => `lecciones/${id}.json`),
+      ...(indice.controles || []).map((c) => `controles/${c}.json`),
+      ...(indice.simulacro ? ['simulacro.json'] : []),
+    ]
+    for (const r of rutas) await cargarJSON(r).catch(() => {})
+  } catch {
+    // Sin conexión o sin índice: se intentará la próxima vez.
+  }
 }

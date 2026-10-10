@@ -14,6 +14,11 @@ function cargarPublico(ruta) {
 // En producción el contenido de pago llega por la API con el permiso; lo gratis es público.
 async function cargar(ruta) {
   if (modoLicencia() !== 'servidor' || ruta === 'estructura.json') return cargarPublico(ruta)
+  // En producción el índice lo arma el servidor leyendo sus carpetas.
+  if (ruta === 'indice.json') {
+    const url = new URL('indice.php', new URL(getConfig().apiUrl, location.href)).href
+    return fetch(url).then((r) => (r.ok ? r.json() : cargarPublico(ruta))).catch(() => cargarPublico(ruta))
+  }
   const estructura = await cargarJSON('estructura.json')
   return rutaGratis(ruta, estructura) ? cargarPublico(ruta) : pedirContenidoPago(ruta)
 }

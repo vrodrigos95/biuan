@@ -323,3 +323,13 @@ button { font: inherit; color: inherit; }
 .incluye li { margin-bottom: 4px; }
 .licencia-estado { text-align: center; font-weight: 800; color: var(--menta-tinta); margin: 12px 0 0; }
 .desbloquear form { margin-top: 0; }
+
+/* PWA */
+.aviso-global { position: sticky; top: 0; z-index: 20; background: var(--lav-tinta); color: #fff; text-align: center; font-size: 0.88rem; font-weight: 700; padding: calc(8px + env(safe-area-inset-top)) 12px 8px; }
+.aviso-global .enlace { color: #fff; text-decoration: underline; margin-left: 8px; padding: 0; }
+.aviso-offline { background: var(--tinta-suave); }
+.instalar { position: relative; border-color: var(--lav); }
+.instalar h2 { padding-right: 32px; }
+.cerrar-chico { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 1rem; color: var(--tinta-suave); min-width: 40px; min-height: 40px; cursor: pointer; }
+.pasos { padding-left: 20px; margin: 8px 0 0; }
+.pasos li { margin-bottom: 6px; }

@@ -4,6 +4,7 @@
 // El contenido se toma de CONTENIDO_DIR (por omisión, ./contenido).
 import fs from 'node:fs'
 import path from 'node:path'
+import { generarSW } from './generar-sw.mjs'
 
 const CONTENIDO = path.resolve(process.env.CONTENIDO_DIR || 'contenido')
 const DIST = path.resolve('dist')
@@ -43,8 +44,12 @@ copiar(path.join(CONTENIDO, 'examen-nivel'), path.join(pubContenido, 'examen-niv
 for (const f of lecciones) if (gratis.has(f.slice(0, 3))) copiar(path.join(CONTENIDO, 'lecciones', f), path.join(pubContenido, 'lecciones', f))
 fs.writeFileSync(
   path.join(pubContenido, 'indice.json'),
-  JSON.stringify({ lecciones: lecciones.map((f) => f.slice(0, 3)), controles: controles.map((f) => f.slice(0, 2)) }, null, 2) + '\n',
+  JSON.stringify({ lecciones: lecciones.map((f) => f.slice(0, 3)), controles: controles.map((f) => f.slice(0, 2)), simulacro: fs.existsSync(path.join(CONTENIDO, 'simulacro.json')) }, null, 2) + '\n',
 )
+
+// La lista de archivos para usar sin conexión cambia: se regenera el service worker.
+generarSW(PUBLICO)
+copiar(path.resolve('servidor/public_html.htaccess'), path.join(PUBLICO, '.htaccess'))
 
 // 3. Privado: todo el contenido de pago, configuración de ejemplo y carpeta de datos
 for (const f of lecciones) if (!gratis.has(f.slice(0, 3))) copiar(path.join(CONTENIDO, 'lecciones', f), path.join(PRIVADO, 'contenido', 'lecciones', f))

@@ -8,12 +8,16 @@ import '@fontsource/nunito/latin-800.css'
 import './estilos.css'
 import App from './App.jsx'
 import { cargarConfig } from './lib/config.js'
-import { renovarSiToca } from './lib/acceso.js'
+import { descargarParaSinConexion, renovarSiToca } from './lib/acceso.js'
+import { registrarSW } from './lib/pwa.js'
+import Avisos from './componentes/Avisos.jsx'
 
 cargarConfig().then(() => {
-  renovarSiToca()
+  registrarSW()
+  renovarSiToca().then(descargarParaSinConexion)
   createRoot(document.getElementById('root')).render(
     <StrictMode>
+      <Avisos />
       <App />
     </StrictMode>,
   )

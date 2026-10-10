@@ -10,6 +10,7 @@ import { modoLicencia, puedeAbrirLeccion, tieneAcceso } from '../lib/acceso.js'
 import { etiquetaNivel } from '../lib/examenNivel.js'
 import BarraNivel from '../componentes/BarraNivel.jsx'
 import Marca from '../componentes/Marca.jsx'
+import Instalar from '../componentes/Instalar.jsx'
 
 export default function Ruta() {
   const [estructura, setEstructura] = useState(null)
@@ -174,6 +175,8 @@ export default function Ruta() {
           </section>
         )
       })}
+
+      <Instalar />
 
       <section className="tarjeta respaldo">
         <h2>Tu progreso</h2>

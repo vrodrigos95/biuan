@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import fs from 'node:fs'
 import path from 'node:path'
+import { generarSW } from './scripts/generar-sw.mjs'
 
 const CONTENIDO = path.resolve(process.env.CONTENIDO_DIR || 'contenido')
 
@@ -13,7 +14,8 @@ function listar(carpeta, patron) {
 function indice() {
   const lecciones = listar('lecciones', /^L\d{2}\.json$/)
   const controles = listar('controles', /^(A1|A2|B1)\.json$/)
-  return JSON.stringify({ lecciones, controles }, null, 2) + '\n'
+  const simulacro = fs.existsSync(path.join(CONTENIDO, 'simulacro.json'))
+  return JSON.stringify({ lecciones, controles, simulacro }, null, 2) + '\n'
 }
 
 // Sirve /contenido en desarrollo y lo copia a dist/ al compilar, con su índice.
@@ -34,6 +36,7 @@ function contenido() {
       const destino = path.resolve('dist/contenido')
       fs.cpSync(CONTENIDO, destino, { recursive: true, filter: (f) => !f.endsWith('.md') })
       fs.writeFileSync(path.join(destino, 'indice.json'), indice())
+      generarSW(path.resolve('dist'))
     },
   }
 }
