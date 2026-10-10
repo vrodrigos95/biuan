@@ -1,0 +1,303 @@
+{
+  "id": "L41",
+  "subnivel": "A2.2",
+  "unidad": 11,
+  "titulo": "Voy a hacerlo",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Para hablar de **planes** que ya decidiste se usa **to be + going to + verbo** en forma base. Equivale a «voy a…»."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Afirmativo",
+          "I am going to study.",
+          "Voy a estudiar."
+        ],
+        [
+          "Negativo",
+          "She isn't going to travel.",
+          "No va a viajar."
+        ],
+        [
+          "Pregunta",
+          "Are you going to work?",
+          "¿Vas a trabajar?"
+        ],
+        [
+          "Respuesta corta",
+          "Yes, I am. / No, I'm not.",
+          "Sí. / No."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "No olvides ninguna de las tres partes: **am / is / are** + **going to** + verbo. No se dice *I going to study* ni *I am going study*."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "What are you going to do tomorrow? I'm going to visit my parents.",
+      "es": "¿Qué vas a hacer mañana? Voy a visitar a mis papás."
+    },
+    {
+      "tipo": "tip",
+      "md": "También sirve para predecir algo cuando ya ves la señal: *Look at those clouds! It's going to rain.*"
+    },
+    {
+      "tipo": "texto",
+      "md": "Expresiones de futuro:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "tomorrow",
+          "mañana"
+        ],
+        [
+          "tonight",
+          "esta noche"
+        ],
+        [
+          "next week",
+          "la próxima semana"
+        ],
+        [
+          "next year",
+          "el próximo año"
+        ],
+        [
+          "soon",
+          "pronto"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Planes y metas:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "plan",
+          "plan"
+        ],
+        [
+          "goal",
+          "meta"
+        ],
+        [
+          "save money",
+          "ahorrar dinero"
+        ],
+        [
+          "get a job",
+          "conseguir trabajo"
+        ],
+        [
+          "start a business",
+          "poner un negocio"
+        ],
+        [
+          "move",
+          "mudarse"
+        ],
+        [
+          "exercise",
+          "hacer ejercicio"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "She ___ visit her parents tomorrow.",
+      "opciones": [
+        "is going to",
+        "going to",
+        "is going"
+      ],
+      "correcta": 0,
+      "porque": "Las tres partes: is + going to + verbo."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "We are going to ___ a car.",
+      "opciones": [
+        "buy",
+        "buying",
+        "bought"
+      ],
+      "correcta": 0,
+      "porque": "Después de going to el verbo va en forma base."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "They ___ (not / be) going to travel this year.",
+      "aceptadas": [
+        "aren't",
+        "are not",
+        "'re not"
+      ],
+      "pista": "negativo de are",
+      "porque": "El negativo se hace con to be: they aren't going to."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "___ you going to work tomorrow?",
+      "opciones": [
+        "Are",
+        "Do",
+        "Did"
+      ],
+      "correcta": 0,
+      "porque": "La pregunta empieza con to be: Are you going to…?"
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "Is he going to move? No, he ___.",
+      "opciones": [
+        "isn't",
+        "doesn't",
+        "didn't"
+      ],
+      "correcta": 0,
+      "porque": "La respuesta corta repite el to be: No, he isn't."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "am",
+        "going",
+        "to",
+        "save",
+        "money."
+      ],
+      "traduccion": "Voy a ahorrar dinero.",
+      "porque": "Sujeto + am + going to + verbo."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "What",
+        "are",
+        "you",
+        "going",
+        "to",
+        "do",
+        "tomorrow?"
+      ],
+      "traduccion": "¿Qué vas a hacer mañana?",
+      "porque": "Wh- + are + sujeto + going to + verbo."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada expresión con su significado.",
+      "pares": [
+        [
+          "tomorrow",
+          "mañana"
+        ],
+        [
+          "tonight",
+          "esta noche"
+        ],
+        [
+          "next week",
+          "la próxima semana"
+        ],
+        [
+          "soon",
+          "pronto"
+        ],
+        [
+          "goal",
+          "meta"
+        ]
+      ],
+      "porque": "Expresiones para hablar del futuro."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "I'm going ___ learn English this year.",
+      "aceptadas": [
+        "to"
+      ],
+      "pista": "falta una palabra",
+      "porque": "Going to siempre lleva to antes del verbo."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "He is going to start a business.",
+        "He going to start a business.",
+        "He is going start a business."
+      ],
+      "correcta": 0,
+      "porque": "No puede faltar el to be ni el to."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "«Next month» significa ___.",
+      "opciones": [
+        "el próximo mes",
+        "el mes pasado",
+        "este mes"
+      ],
+      "correcta": 0,
+      "porque": "Next es «próximo»; last es «pasado»."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "This year I have three goals. First, I'm going to save money: I'm not going to buy a new phone. Then I'm going to study English every day. Finally, in December my sister and I are going to travel to Canada.",
+      "pregunta": "¿Qué van a hacer en diciembre?",
+      "opciones": [
+        "Viajar a Canadá",
+        "Comprar un teléfono",
+        "Poner un negocio"
+      ],
+      "correcta": 0,
+      "porque": "«In December my sister and I are going to travel to Canada»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "What are you going to do tonight? I'm going to stay home and watch a movie. I'm very tired.",
+      "pregunta": "¿Qué va a hacer esta noche?",
+      "opciones": [
+        "Quedarse en casa y ver una película",
+        "Ir al cine",
+        "Trabajar"
+      ],
+      "correcta": 0,
+      "porque": "«I'm going to stay home and watch a movie»."
+    }
+  ]
+}

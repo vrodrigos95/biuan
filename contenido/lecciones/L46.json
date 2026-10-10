@@ -1,0 +1,275 @@
+{
+  "id": "L46",
+  "subnivel": "A2.2",
+  "unidad": 12,
+  "titulo": "Deberías",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "**should** + verbo sirve para dar **consejos**. Equivale a «deberías». Es igual para todas las personas."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Afirmativo",
+          "You should see a doctor.",
+          "Deberías ir al doctor."
+        ],
+        [
+          "Negativo",
+          "You shouldn't work today.",
+          "No deberías trabajar hoy."
+        ],
+        [
+          "Pregunta",
+          "Should I take this medicine?",
+          "¿Debería tomar esta medicina?"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Después de should el verbo va solo: *You should rest*, nunca *You should to rest* ni *He shoulds rest*."
+    },
+    {
+      "tipo": "tip",
+      "md": "Para suavizar el consejo se empieza con **I think**: *I think you should rest.*"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I have a headache. What should I do? You should drink some water and rest.",
+      "es": "Me duele la cabeza. ¿Qué debería hacer? Deberías tomar agua y descansar."
+    },
+    {
+      "tipo": "texto",
+      "md": "Salud:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "sick",
+          "enfermo"
+        ],
+        [
+          "feel",
+          "sentirse"
+        ],
+        [
+          "headache",
+          "dolor de cabeza"
+        ],
+        [
+          "stomachache",
+          "dolor de estómago"
+        ],
+        [
+          "fever",
+          "fiebre"
+        ],
+        [
+          "cough",
+          "tos"
+        ],
+        [
+          "have a cold",
+          "tener un resfriado"
+        ],
+        [
+          "medicine",
+          "medicina"
+        ],
+        [
+          "healthy",
+          "saludable"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Los malestares van con **have**: *I have a headache*, *She has a fever*. Y ojo: *I have a cold* es «tengo un resfriado»; «tengo frío» es *I am cold*."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "You ___ see a doctor.",
+      "opciones": [
+        "should",
+        "shoulds",
+        "should to"
+      ],
+      "correcta": 0,
+      "porque": "Should no lleva -s ni to."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "You should ___ more water.",
+      "opciones": [
+        "drink",
+        "drinks",
+        "to drink"
+      ],
+      "correcta": 0,
+      "porque": "Después de should el verbo va en forma base."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "You ___ (not) eat a lot of sugar.",
+      "aceptadas": [
+        "shouldn't",
+        "should not"
+      ],
+      "pista": "negativo de should",
+      "porque": "El negativo de should es shouldn't."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "___ I take this medicine?",
+      "opciones": [
+        "Should",
+        "Am",
+        "Have"
+      ],
+      "correcta": 0,
+      "porque": "Para pedir consejo: Should I…?"
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "A: I have a headache. B: You ___ rest.",
+      "opciones": [
+        "should",
+        "shouldn't",
+        "don't"
+      ],
+      "correcta": 0,
+      "porque": "Descansar es un buen consejo: should."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "You",
+        "should",
+        "go",
+        "to",
+        "bed",
+        "early."
+      ],
+      "traduccion": "Deberías acostarte temprano.",
+      "porque": "Sujeto + should + verbo."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "You",
+        "shouldn't",
+        "go",
+        "to",
+        "work",
+        "today."
+      ],
+      "traduccion": "No deberías ir a trabajar hoy.",
+      "porque": "Sujeto + shouldn't + verbo."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "headache",
+          "dolor de cabeza"
+        ],
+        [
+          "fever",
+          "fiebre"
+        ],
+        [
+          "cough",
+          "tos"
+        ],
+        [
+          "medicine",
+          "medicina"
+        ],
+        [
+          "sick",
+          "enfermo"
+        ]
+      ],
+      "porque": "Vocabulario de salud."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "«I have a cold» significa ___.",
+      "opciones": [
+        "Tengo un resfriado",
+        "Tengo frío",
+        "Hace frío"
+      ],
+      "correcta": 0,
+      "porque": "Have a cold es estar resfriado. «Tengo frío» es I am cold."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "I feel sick. What ___ I do?",
+      "aceptadas": [
+        "should"
+      ],
+      "pista": "pedir consejo",
+      "porque": "Para pedir consejo: What should I do?"
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es un buen consejo para alguien con fiebre?",
+      "opciones": [
+        "You should rest.",
+        "You should run.",
+        "You shouldn't drink water."
+      ],
+      "correcta": 0,
+      "porque": "Con fiebre lo recomendable es descansar."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Hi, Ana. I'm sorry you feel sick. You have a fever and a cough, so you shouldn't go to work tomorrow. You should stay in bed and drink a lot of water. I think you should see a doctor on Monday.",
+      "pregunta": "¿Qué no debería hacer Ana mañana?",
+      "opciones": [
+        "Ir a trabajar",
+        "Tomar agua",
+        "Quedarse en cama"
+      ],
+      "correcta": 0,
+      "porque": "«You shouldn't go to work tomorrow»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "I have a stomachache. You shouldn't eat pizza tonight. You should eat some rice and drink water.",
+      "pregunta": "¿Qué no debería comer?",
+      "opciones": [
+        "Pizza",
+        "Arroz",
+        "Fruta"
+      ],
+      "correcta": 0,
+      "porque": "«You shouldn't eat pizza tonight»."
+    }
+  ]
+}

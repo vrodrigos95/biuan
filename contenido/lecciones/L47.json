@@ -1,0 +1,321 @@
+{
+  "id": "L47",
+  "subnivel": "A2.2",
+  "unidad": 12,
+  "titulo": "Prohibido",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "**must** + verbo expresa una obligación fuerte, como una regla. **mustn't** (must not) expresa una **prohibición**."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Obligación",
+          "You must wear a seat belt.",
+          "Debes usar el cinturón."
+        ],
+        [
+          "Prohibición",
+          "You mustn't smoke here.",
+          "Está prohibido fumar aquí."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Después de must el verbo va solo: *You must stop*, nunca *You must to stop*. Y no lleva -s: *He must stop*."
+    },
+    {
+      "tipo": "texto",
+      "md": "No confundas la prohibición con la falta de obligación:"
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "You mustn't park here.",
+          "Está prohibido estacionarse aquí."
+        ],
+        [
+          "You don't have to park here.",
+          "No es necesario que te estaciones aquí."
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Letreros y señales:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Letrero",
+        "Significado"
+      ],
+      "filas": [
+        [
+          "No smoking",
+          "Prohibido fumar"
+        ],
+        [
+          "No parking",
+          "Prohibido estacionarse"
+        ],
+        [
+          "No entry",
+          "Prohibido el paso"
+        ],
+        [
+          "Exit",
+          "Salida"
+        ],
+        [
+          "Danger",
+          "Peligro"
+        ],
+        [
+          "Push / Pull",
+          "Empuje / Jale"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Reglas:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "rule",
+          "regla"
+        ],
+        [
+          "sign",
+          "letrero, señal"
+        ],
+        [
+          "smoke",
+          "fumar"
+        ],
+        [
+          "seat belt",
+          "cinturón de seguridad"
+        ],
+        [
+          "helmet",
+          "casco"
+        ],
+        [
+          "turn off",
+          "apagar"
+        ],
+        [
+          "allowed",
+          "permitido"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "You ___ wear a seat belt in the car.",
+      "opciones": [
+        "must",
+        "musts",
+        "must to"
+      ],
+      "correcta": 0,
+      "porque": "Must no lleva -s ni to."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "You mustn't ___ here.",
+      "opciones": [
+        "smoke",
+        "smokes",
+        "smoking"
+      ],
+      "correcta": 0,
+      "porque": "Después de mustn't el verbo va en forma base."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "You ___ (prohibido) use your phone in the exam.",
+      "aceptadas": [
+        "mustn't",
+        "must not"
+      ],
+      "pista": "está prohibido",
+      "porque": "La prohibición se expresa con mustn't."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "«You mustn't park here» significa ___.",
+      "opciones": [
+        "Está prohibido estacionarse aquí",
+        "No es necesario estacionarse aquí",
+        "Puedes estacionarte aquí"
+      ],
+      "correcta": 0,
+      "porque": "Mustn't es prohibición."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "It's Sunday. You ___ get up early.",
+      "opciones": [
+        "don't have to",
+        "mustn't",
+        "must"
+      ],
+      "correcta": 0,
+      "porque": "No es necesario levantarse temprano: don't have to. No está prohibido."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "It's a hospital. You ___ be quiet.",
+      "opciones": [
+        "must",
+        "mustn't",
+        "don't have to"
+      ],
+      "correcta": 0,
+      "porque": "En un hospital es obligatorio guardar silencio: must."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "You",
+        "must",
+        "turn",
+        "off",
+        "your",
+        "phone."
+      ],
+      "traduccion": "Debes apagar tu teléfono.",
+      "porque": "Sujeto + must + verbo."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "You",
+        "must",
+        "not",
+        "open",
+        "this",
+        "door."
+      ],
+      "traduccion": "No debes abrir esta puerta.",
+      "porque": "Sujeto + must not + verbo."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada letrero con su significado.",
+      "pares": [
+        [
+          "No smoking",
+          "Prohibido fumar"
+        ],
+        [
+          "No parking",
+          "Prohibido estacionarse"
+        ],
+        [
+          "Exit",
+          "Salida"
+        ],
+        [
+          "Danger",
+          "Peligro"
+        ],
+        [
+          "Push",
+          "Empuje"
+        ]
+      ],
+      "porque": "Letreros que verás en cualquier lugar público."
+    },
+    {
+      "id": "e10",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "rule",
+          "regla"
+        ],
+        [
+          "sign",
+          "letrero"
+        ],
+        [
+          "helmet",
+          "casco"
+        ],
+        [
+          "seat belt",
+          "cinturón de seguridad"
+        ],
+        [
+          "allowed",
+          "permitido"
+        ]
+      ],
+      "porque": "Vocabulario de reglas."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "When you ride a bike, you ___ wear a helmet.",
+      "opciones": [
+        "must",
+        "mustn't",
+        "don't have to"
+      ],
+      "correcta": 0,
+      "porque": "Usar casco es una obligación: must."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Exam rules: You must be here at 8:45. You must bring a pencil and your student card. You mustn't use your phone. You mustn't talk. You don't have to bring water: there is water in the room.",
+      "pregunta": "Según las reglas, ¿qué está prohibido?",
+      "opciones": [
+        "Usar el teléfono",
+        "Llevar un lápiz",
+        "Llevar agua"
+      ],
+      "correcta": 0,
+      "porque": "«You mustn't use your phone»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Excuse me, you mustn't park here. This is the hospital exit. Oh, sorry! I didn't see the sign.",
+      "pregunta": "¿Por qué no puede estacionarse ahí?",
+      "opciones": [
+        "Porque es la salida del hospital",
+        "Porque es muy caro",
+        "Porque no hay lugar"
+      ],
+      "correcta": 0,
+      "porque": "«This is the hospital exit»: es la salida del hospital."
+    }
+  ]
+}

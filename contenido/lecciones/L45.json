@@ -1,0 +1,289 @@
+{
+  "id": "L45",
+  "subnivel": "A2.2",
+  "unidad": 12,
+  "titulo": "Tengo que",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "**have to** + verbo significa «tener que». Expresa una obligación. Con he, she, it cambia a **has to**."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "I / You / We / They",
+          "have to",
+          "I have to work on Saturday."
+        ],
+        [
+          "He / She / It",
+          "has to",
+          "She has to wear a uniform."
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "El negativo **don't have to** no es una prohibición: significa «no es necesario»."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "I don't have to work tomorrow.",
+          "No tengo que trabajar mañana."
+        ],
+        [
+          "He doesn't have to wear a uniform.",
+          "No tiene que usar uniforme."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Después de **doesn't** y de **does** se usa **have to**, no has to: *He doesn't have to*, *Does he have to?*"
+    },
+    {
+      "tipo": "texto",
+      "md": "La pregunta se hace con Do o Does:"
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Do you have to work tonight?",
+          "Yes, I do.",
+          "No, I don't."
+        ],
+        [
+          "Does she have to study?",
+          "Yes, she does.",
+          "No, she doesn't."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "El pasado es **had to** para todas las personas: *Yesterday I had to work late.*"
+    },
+    {
+      "tipo": "texto",
+      "md": "Trabajo y pendientes:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "task",
+          "pendiente, tarea"
+        ],
+        [
+          "report",
+          "reporte"
+        ],
+        [
+          "send",
+          "enviar"
+        ],
+        [
+          "answer",
+          "contestar"
+        ],
+        [
+          "print",
+          "imprimir"
+        ],
+        [
+          "uniform",
+          "uniforme"
+        ],
+        [
+          "on time",
+          "a tiempo"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ work on Saturday.",
+      "opciones": [
+        "have to",
+        "has to",
+        "having to"
+      ],
+      "correcta": 0,
+      "porque": "Con I se usa have to."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She ___ wear a uniform.",
+      "opciones": [
+        "has to",
+        "have to",
+        "haves to"
+      ],
+      "correcta": 0,
+      "porque": "Con she, have to cambia a has to."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "It's Sunday. We ___ (not / have to) work today.",
+      "aceptadas": [
+        "don't have to",
+        "do not have to"
+      ],
+      "pista": "no es necesario",
+      "porque": "No es necesario: don't have to."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "___ you have to get up early?",
+      "opciones": [
+        "Do",
+        "Are",
+        "Have"
+      ],
+      "correcta": 0,
+      "porque": "La pregunta se hace con Do: Do you have to…?"
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "Does he have to send the report? Yes, he ___.",
+      "opciones": [
+        "does",
+        "has",
+        "is"
+      ],
+      "correcta": 0,
+      "porque": "La respuesta corta repite does: Yes, he does."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "«You don't have to come» significa ___.",
+      "opciones": [
+        "No es necesario que vengas",
+        "Está prohibido que vengas",
+        "Tienes que venir"
+      ],
+      "correcta": 0,
+      "porque": "Don't have to es falta de obligación, no prohibición."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "have",
+        "to",
+        "finish",
+        "this",
+        "report."
+      ],
+      "traduccion": "Tengo que terminar este reporte.",
+      "porque": "Sujeto + have to + verbo."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Do",
+        "you",
+        "have",
+        "to",
+        "work",
+        "tonight?"
+      ],
+      "traduccion": "¿Tienes que trabajar esta noche?",
+      "porque": "Do + sujeto + have to + verbo."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "task",
+          "pendiente"
+        ],
+        [
+          "report",
+          "reporte"
+        ],
+        [
+          "send",
+          "enviar"
+        ],
+        [
+          "answer",
+          "contestar"
+        ],
+        [
+          "on time",
+          "a tiempo"
+        ]
+      ],
+      "porque": "Vocabulario del trabajo."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "Yesterday I ___ to work late.",
+      "aceptadas": [
+        "had"
+      ],
+      "pista": "pasado de have",
+      "porque": "El pasado de have to es had to."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "He doesn't ___ to wear a uniform.",
+      "opciones": [
+        "have",
+        "has",
+        "having"
+      ],
+      "correcta": 0,
+      "porque": "Después de doesn't va have, sin -s."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Diego works in an office. He has to start at eight, so he gets up at six. He has to answer a lot of emails and send a report every Friday. He doesn't have to wear a uniform, and he doesn't have to work on weekends.",
+      "pregunta": "¿Qué no tiene que hacer Diego?",
+      "opciones": [
+        "Usar uniforme",
+        "Contestar correos",
+        "Enviar un reporte"
+      ],
+      "correcta": 0,
+      "porque": "«He doesn't have to wear a uniform»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Do you have to work tomorrow? No, I don't. But I have to study: I have an exam on Monday.",
+      "pregunta": "¿Qué tiene que hacer mañana?",
+      "opciones": [
+        "Estudiar",
+        "Trabajar",
+        "Nada"
+      ],
+      "correcta": 0,
+      "porque": "«I have to study: I have an exam on Monday»."
+    }
+  ]
+}

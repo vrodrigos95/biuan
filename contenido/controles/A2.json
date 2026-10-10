@@ -1,0 +1,415 @@
+{
+  "id": "A2",
+  "titulo": "Examen de control A2",
+  "minutos": 20,
+  "aprobacion": 70,
+  "espera_horas_reintento": 12,
+  "desbloquea": "B1.1",
+  "secciones": [
+    {
+      "habilidad": "gramatica",
+      "titulo": "Gramática",
+      "preguntas": [
+        {
+          "id": "g01",
+          "tipo": "opcion",
+          "enunciado": "Listen! They ___ in the kitchen.",
+          "opciones": [
+            "are talking",
+            "talk",
+            "talking"
+          ],
+          "correcta": 0,
+          "porque": "Listen! anuncia algo que pasa ahora: presente continuo."
+        },
+        {
+          "id": "g02",
+          "tipo": "opcion",
+          "enunciado": "I usually walk to work, but today I ___ the bus.",
+          "opciones": [
+            "am taking",
+            "take",
+            "takes"
+          ],
+          "correcta": 0,
+          "porque": "Today marca algo temporal, distinto de la rutina: presente continuo."
+        },
+        {
+          "id": "g03",
+          "tipo": "ordenar",
+          "respuesta": [
+            "She",
+            "has",
+            "long",
+            "black",
+            "hair."
+          ],
+          "traduccion": "Ella tiene el pelo negro largo.",
+          "porque": "Para el pelo se usa have, y el tamaño va antes del color."
+        },
+        {
+          "id": "g04",
+          "tipo": "opcion",
+          "enunciado": "This isn't my jacket. It's ___.",
+          "opciones": [
+            "hers",
+            "her",
+            "she"
+          ],
+          "correcta": 0,
+          "porque": "Sin sustantivo después va el pronombre posesivo: hers."
+        },
+        {
+          "id": "g05",
+          "tipo": "opcion",
+          "enunciado": "Where ___ you last night?",
+          "opciones": [
+            "were",
+            "was",
+            "did"
+          ],
+          "correcta": 0,
+          "porque": "Pasado de to be con you: were."
+        },
+        {
+          "id": "g06",
+          "tipo": "hueco",
+          "frase": "Last year we ___ (go) to Oaxaca.",
+          "aceptadas": [
+            "went"
+          ],
+          "porque": "Go es irregular: su pasado es went."
+        },
+        {
+          "id": "g07",
+          "tipo": "opcion",
+          "enunciado": "I didn't ___ the museum.",
+          "opciones": [
+            "visit",
+            "visited",
+            "visiting"
+          ],
+          "correcta": 0,
+          "porque": "Después de didn't el verbo va en forma base."
+        },
+        {
+          "id": "g08",
+          "tipo": "opcion",
+          "enunciado": "I started this job three months ___.",
+          "opciones": [
+            "ago",
+            "last",
+            "yesterday"
+          ],
+          "correcta": 0,
+          "porque": "«Hace tres meses» es three months ago."
+        },
+        {
+          "id": "g09",
+          "tipo": "opcion",
+          "enunciado": "I was sick, ___ I didn't go to work.",
+          "opciones": [
+            "so",
+            "because",
+            "but"
+          ],
+          "correcta": 0,
+          "porque": "No ir a trabajar es el resultado de estar enfermo: so."
+        },
+        {
+          "id": "g10",
+          "tipo": "opcion",
+          "enunciado": "There ___ any cars in the town in 1900.",
+          "opciones": [
+            "weren't",
+            "wasn't",
+            "didn't"
+          ],
+          "correcta": 0,
+          "porque": "Pasado, plural y negativo: there weren't any."
+        },
+        {
+          "id": "g11",
+          "tipo": "hueco",
+          "frase": "My car is ___ (fast) than your car.",
+          "aceptadas": [
+            "faster"
+          ],
+          "porque": "Fast es corto: el comparativo es faster."
+        },
+        {
+          "id": "g12",
+          "tipo": "opcion",
+          "enunciado": "It is ___ restaurant in the city.",
+          "opciones": [
+            "the best",
+            "better",
+            "the most good"
+          ],
+          "correcta": 0,
+          "porque": "Uno entre todos: superlativo. El de good es the best."
+        },
+        {
+          "id": "g13",
+          "tipo": "opcion",
+          "enunciado": "She drives very ___.",
+          "opciones": [
+            "well",
+            "good",
+            "goodly"
+          ],
+          "correcta": 0,
+          "porque": "El adverbio de good es well."
+        },
+        {
+          "id": "g14",
+          "tipo": "opcion",
+          "enunciado": "The pants aren't long ___.",
+          "opciones": [
+            "enough",
+            "too",
+            "very"
+          ],
+          "correcta": 0,
+          "porque": "Enough va después del adjetivo: long enough."
+        },
+        {
+          "id": "g15",
+          "tipo": "ordenar",
+          "respuesta": [
+            "We",
+            "are",
+            "going",
+            "to",
+            "move",
+            "next",
+            "year."
+          ],
+          "traduccion": "Nos vamos a mudar el próximo año.",
+          "porque": "Sujeto + are + going to + verbo + tiempo."
+        },
+        {
+          "id": "g16",
+          "tipo": "opcion",
+          "enunciado": "A: It's hot in here. B: I ___ open the window.",
+          "opciones": [
+            "will",
+            "am",
+            "going"
+          ],
+          "correcta": 0,
+          "porque": "Decisión que se toma en el momento: will."
+        },
+        {
+          "id": "g17",
+          "tipo": "opcion",
+          "enunciado": "Tomorrow is Sunday. I ___ work.",
+          "opciones": [
+            "don't have to",
+            "mustn't",
+            "should"
+          ],
+          "correcta": 0,
+          "porque": "No es necesario trabajar: don't have to."
+        },
+        {
+          "id": "g18",
+          "tipo": "opcion",
+          "enunciado": "Have you ever ___ to Canada?",
+          "opciones": [
+            "been",
+            "went",
+            "be"
+          ],
+          "correcta": 0,
+          "porque": "Después de have va el participio: been."
+        },
+        {
+          "id": "g19",
+          "tipo": "opcion",
+          "enunciado": "You have a fever. You ___ go to work.",
+          "opciones": [
+            "shouldn't",
+            "should",
+            "have to"
+          ],
+          "correcta": 0,
+          "porque": "Es un consejo en negativo: shouldn't."
+        }
+      ]
+    },
+    {
+      "habilidad": "vocabulario",
+      "titulo": "Vocabulario",
+      "preguntas": [
+        {
+          "id": "v01",
+          "tipo": "emparejar",
+          "enunciado": "Une cada palabra con su traducción.",
+          "pares": [
+            [
+              "cloudy",
+              "nublado"
+            ],
+            [
+              "suitcase",
+              "maleta"
+            ],
+            [
+              "tight",
+              "apretado"
+            ],
+            [
+              "appointment",
+              "cita"
+            ],
+            [
+              "headache",
+              "dolor de cabeza"
+            ]
+          ],
+          "porque": "Clima, viajes, compras, agenda y salud: vocabulario de A2."
+        },
+        {
+          "id": "v02",
+          "tipo": "opcion",
+          "enunciado": "«No parking» significa ___.",
+          "opciones": [
+            "Prohibido estacionarse",
+            "Salida",
+            "Peligro"
+          ],
+          "correcta": 0,
+          "porque": "No parking es prohibido estacionarse; salida es exit y peligro es danger."
+        },
+        {
+          "id": "v03",
+          "tipo": "opcion",
+          "enunciado": "¿Cuál es el pasado de buy?",
+          "opciones": [
+            "bought",
+            "buyed",
+            "buy"
+          ],
+          "correcta": 0,
+          "porque": "Buy es irregular: bought."
+        },
+        {
+          "id": "v04",
+          "tipo": "opcion",
+          "enunciado": "¿Qué necesitas para subir al avión?",
+          "opciones": [
+            "boarding pass",
+            "schedule",
+            "sweater"
+          ],
+          "correcta": 0,
+          "porque": "El pase de abordar es boarding pass."
+        }
+      ]
+    },
+    {
+      "habilidad": "lectura",
+      "titulo": "Lectura",
+      "preguntas": [
+        {
+          "id": "l01",
+          "tipo": "lectura",
+          "texto": "Last Saturday was Elena's birthday. First, she had breakfast with her parents. Then she went shopping and bought a blue dress. After that, she met her friends at a restaurant. Finally, they went to a concert. It was the best day of the year!",
+          "pregunta": "¿Qué hizo Elena después de desayunar?",
+          "opciones": [
+            "Fue de compras",
+            "Fue a un concierto",
+            "Vio a sus amigos"
+          ],
+          "correcta": 0,
+          "porque": "«Then she went shopping»: then marca lo que siguió al desayuno."
+        },
+        {
+          "id": "l02",
+          "tipo": "lectura",
+          "texto": "Last Saturday was Elena's birthday. First, she had breakfast with her parents. Then she went shopping and bought a blue dress. After that, she met her friends at a restaurant. Finally, they went to a concert. It was the best day of the year!",
+          "pregunta": "¿Qué fue lo último que hicieron?",
+          "opciones": [
+            "Ir a un concierto",
+            "Comer en un restaurante",
+            "Comprar un vestido"
+          ],
+          "correcta": 0,
+          "porque": "«Finally, they went to a concert»: finally marca el final."
+        },
+        {
+          "id": "l03",
+          "tipo": "lectura",
+          "texto": "Hotel rules: You must leave your room at twelve on your last day. You mustn't smoke in the rooms. You don't have to bring your luggage to the room: we will do it.",
+          "pregunta": "¿Qué está prohibido en el hotel?",
+          "opciones": [
+            "Fumar en las habitaciones",
+            "Dejar el equipaje",
+            "Salir a las doce"
+          ],
+          "correcta": 0,
+          "porque": "«You mustn't smoke in the rooms»: mustn't es prohibición."
+        },
+        {
+          "id": "l04",
+          "tipo": "lectura",
+          "texto": "Hotel rules: You must leave your room at twelve on your last day. You mustn't smoke in the rooms. You don't have to bring your luggage to the room: we will do it.",
+          "pregunta": "¿Qué no es necesario hacer?",
+          "opciones": [
+            "Llevar el equipaje a la habitación",
+            "Dejar la habitación a las doce",
+            "Apagar el teléfono"
+          ],
+          "correcta": 0,
+          "porque": "«You don't have to bring your luggage to the room»: don't have to es «no es necesario»."
+        }
+      ]
+    },
+    {
+      "habilidad": "escucha",
+      "titulo": "Listening",
+      "preguntas": [
+        {
+          "id": "e01",
+          "tipo": "escucha",
+          "audio": "Are you free tomorrow? No, I'm seeing the doctor at four. Let's meet on Thursday.",
+          "pregunta": "¿Qué va a hacer mañana a las cuatro?",
+          "opciones": [
+            "Ir al doctor",
+            "Verse con su amigo",
+            "Trabajar"
+          ],
+          "correcta": 0,
+          "porque": "«I'm seeing the doctor at four»: una cita ya agendada."
+        },
+        {
+          "id": "e02",
+          "tipo": "escucha",
+          "audio": "Good evening. I'd like a double room for two nights, please. Would you like breakfast? Yes, please.",
+          "pregunta": "¿Para cuántas noches es la habitación?",
+          "opciones": [
+            "Dos",
+            "Una",
+            "Tres"
+          ],
+          "correcta": 0,
+          "porque": "«For two nights»: dos noches."
+        },
+        {
+          "id": "e03",
+          "tipo": "escucha",
+          "audio": "How was your vacation? It was good, but the weather was bad. It was cold and rainy every day.",
+          "pregunta": "¿Cómo estuvo el clima?",
+          "opciones": [
+            "Frío y lluvioso",
+            "Caluroso y soleado",
+            "Nublado y con viento"
+          ],
+          "correcta": 0,
+          "porque": "«It was cold and rainy every day»."
+        }
+      ]
+    }
+  ]
+}

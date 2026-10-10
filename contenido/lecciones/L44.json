@@ -1,0 +1,287 @@
+{
+  "id": "L44",
+  "subnivel": "A2.2",
+  "unidad": 11,
+  "titulo": "Me gustaría",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "**would like** significa «me gustaría» o «quisiera». Es la forma amable de pedir, ofrecer e invitar. La forma corta es **'d like**."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Pedir algo",
+          "I'd like + sustantivo",
+          "I'd like a coffee, please."
+        ],
+        [
+          "Pedir hacer algo",
+          "I'd like to + verbo",
+          "I'd like to check in."
+        ],
+        [
+          "Ofrecer",
+          "Would you like + sustantivo?",
+          "Would you like some water?"
+        ],
+        [
+          "Invitar",
+          "Would you like to + verbo?",
+          "Would you like to come?"
+        ]
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Would you like some coffee?",
+          "Yes, please.",
+          "No, thank you."
+        ],
+        [
+          "Would you like to come?",
+          "Yes, I'd love to.",
+          "Sorry, I can't."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "No confundas: **I like coffee** es un gusto de siempre (me gusta el café). **I'd like a coffee** es lo que quieres ahora (quisiera un café)."
+    },
+    {
+      "tipo": "tip",
+      "md": "*I want* no es incorrecto, pero con desconocidos suena brusco. En hoteles, restaurantes y aeropuertos usa *I'd like*."
+    },
+    {
+      "tipo": "texto",
+      "md": "En el hotel y el aeropuerto:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "reservation",
+          "reservación"
+        ],
+        [
+          "single room",
+          "habitación sencilla"
+        ],
+        [
+          "double room",
+          "habitación doble"
+        ],
+        [
+          "check in",
+          "registrarse"
+        ],
+        [
+          "luggage",
+          "equipaje"
+        ],
+        [
+          "seat",
+          "asiento"
+        ],
+        [
+          "window seat",
+          "asiento de ventana"
+        ],
+        [
+          "gate",
+          "puerta de embarque"
+        ],
+        [
+          "boarding pass",
+          "pase de abordar"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ a coffee, please.",
+      "opciones": [
+        "would like",
+        "like would",
+        "would to like"
+      ],
+      "correcta": 0,
+      "porque": "La forma amable de pedir: would like."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "I'd like ___ in, please.",
+      "opciones": [
+        "to check",
+        "check",
+        "checking"
+      ],
+      "correcta": 0,
+      "porque": "Con un verbo va to: I'd like to + verbo."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "Would you like ___ coffee?",
+      "opciones": [
+        "some",
+        "a",
+        "many"
+      ],
+      "correcta": 0,
+      "porque": "Al ofrecer se usa some; coffee es incontable."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "___ you like a window seat?",
+      "aceptadas": [
+        "would"
+      ],
+      "pista": "ofrecer",
+      "porque": "Para ofrecer: Would you like…?"
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "I ___ like to go to the beach.",
+      "aceptadas": [
+        "would",
+        "'d"
+      ],
+      "pista": "me gustaría",
+      "porque": "«Me gustaría» es I would like, o I'd like."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "Would you like to come to my party? ___",
+      "opciones": [
+        "Yes, I'd love to.",
+        "Yes, I like.",
+        "Yes, I do."
+      ],
+      "correcta": 0,
+      "porque": "Una invitación se acepta con Yes, I'd love to."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "would",
+        "like",
+        "a",
+        "single",
+        "room."
+      ],
+      "traduccion": "Quisiera una habitación sencilla.",
+      "porque": "Sujeto + would like + sustantivo."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Would",
+        "you",
+        "like",
+        "to",
+        "have",
+        "dinner",
+        "tonight?"
+      ],
+      "traduccion": "¿Te gustaría cenar esta noche?",
+      "porque": "Would + sujeto + like + to + verbo."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "reservation",
+          "reservación"
+        ],
+        [
+          "luggage",
+          "equipaje"
+        ],
+        [
+          "gate",
+          "puerta de embarque"
+        ],
+        [
+          "boarding pass",
+          "pase de abordar"
+        ],
+        [
+          "seat",
+          "asiento"
+        ]
+      ],
+      "porque": "Vocabulario de hotel y aeropuerto."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es la forma más amable?",
+      "opciones": [
+        "I'd like the menu, please.",
+        "I want the menu.",
+        "Give me the menu."
+      ],
+      "correcta": 0,
+      "porque": "I'd like, con please, es la forma amable de pedir."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Con cuál pides un café en este momento?",
+      "opciones": [
+        "I'd like a coffee.",
+        "I like coffee.",
+        "I liked coffee."
+      ],
+      "correcta": 0,
+      "porque": "I'd like es lo que quieres ahora; I like es un gusto de siempre."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Good afternoon. I have a reservation. My name is Daniel Ruiz. I'd like a double room for three nights, please. And I'd like breakfast every morning. Would you like to pay by card? Yes, please.",
+      "pregunta": "¿Qué tipo de habitación pide Daniel?",
+      "opciones": [
+        "Doble",
+        "Sencilla",
+        "No lo dice"
+      ],
+      "correcta": 0,
+      "porque": "«I'd like a double room for three nights»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Here is your boarding pass. Your flight leaves from gate twelve at ten thirty. Would you like a window seat? Yes, please.",
+      "pregunta": "¿De qué puerta sale el vuelo?",
+      "opciones": [
+        "De la 12",
+        "De la 10",
+        "De la 20"
+      ],
+      "correcta": 0,
+      "porque": "«Gate twelve»: puerta 12. Ten thirty es la hora."
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "L43",
+  "subnivel": "A2.2",
+  "unidad": 11,
+  "titulo": "Ya quedamos",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **presente continuo** también habla del futuro cuando algo **ya está agendado**: ya quedaste con alguien y hay día, hora o lugar."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I'm meeting Ana at five tomorrow.",
+      "es": "Mañana a las cinco me veo con Ana."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "We're flying to Cancún on Friday.",
+      "es": "Volamos a Cancún el viernes."
+    },
+    {
+      "tipo": "tip",
+      "md": "Lo que lo vuelve futuro es la **expresión de tiempo**: *I'm working now* es ahora; *I'm working on Saturday* es un compromiso futuro."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "going to",
+          "plan o intención que ya decidiste",
+          "I'm going to study more."
+        ],
+        [
+          "Presente continuo",
+          "cita o compromiso ya agendado",
+          "I'm seeing the doctor at ten."
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Para ponerse de acuerdo:"
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Are you free on Friday?",
+          "¿Estás libre el viernes?"
+        ],
+        [
+          "What are you doing tonight?",
+          "¿Qué vas a hacer esta noche?"
+        ],
+        [
+          "Sorry, I'm working.",
+          "Perdón, voy a trabajar."
+        ],
+        [
+          "Let's meet at six.",
+          "Veámonos a las seis."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**Let's** + verbo sirve para proponer algo: *Let's go*, *Let's have lunch*."
+    },
+    {
+      "tipo": "texto",
+      "md": "Citas y agenda:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "appointment",
+          "cita (con el doctor, en una oficina)"
+        ],
+        [
+          "schedule",
+          "horario, agenda"
+        ],
+        [
+          "free",
+          "libre"
+        ],
+        [
+          "busy",
+          "ocupado"
+        ],
+        [
+          "cancel",
+          "cancelar"
+        ],
+        [
+          "confirm",
+          "confirmar"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ the doctor tomorrow at ten.",
+      "opciones": [
+        "am seeing",
+        "see",
+        "seeing"
+      ],
+      "correcta": 0,
+      "porque": "Cita ya agendada, con día y hora: presente continuo."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "«I'm meeting Ana on Friday» habla de ___.",
+      "opciones": [
+        "una cita ya agendada",
+        "algo que pasa ahora",
+        "una rutina"
+      ],
+      "correcta": 0,
+      "porque": "On Friday lo ubica en el futuro: es un compromiso ya agendado."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "We ___ (have) dinner with my parents tonight.",
+      "aceptadas": [
+        "are having",
+        "'re having"
+      ],
+      "pista": "ya está agendado",
+      "porque": "Compromiso para esta noche: are + verbo-ing."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "She ___ (not / work) on Saturday.",
+      "aceptadas": [
+        "isn't working",
+        "is not working",
+        "'s not working"
+      ],
+      "porque": "Negativo del presente continuo: isn't + verbo-ing."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "What ___ you doing on Friday night?",
+      "opciones": [
+        "are",
+        "do",
+        "will"
+      ],
+      "correcta": 0,
+      "porque": "Presente continuo en pregunta: are + sujeto + verbo-ing."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "I can't go. I ___ my grandmother on Sunday.",
+      "opciones": [
+        "am visiting",
+        "visit",
+        "visited"
+      ],
+      "correcta": 0,
+      "porque": "Compromiso ya agendado para el domingo: am visiting."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "am",
+        "meeting",
+        "my",
+        "boss",
+        "at",
+        "nine."
+      ],
+      "traduccion": "Me reúno con mi jefe a las nueve.",
+      "porque": "Sujeto + am + verbo-ing + persona + hora."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Are",
+        "you",
+        "working",
+        "next",
+        "Saturday?"
+      ],
+      "traduccion": "¿Trabajas el próximo sábado?",
+      "porque": "Are + sujeto + verbo-ing + tiempo."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "appointment",
+          "cita"
+        ],
+        [
+          "schedule",
+          "horario"
+        ],
+        [
+          "free",
+          "libre"
+        ],
+        [
+          "cancel",
+          "cancelar"
+        ],
+        [
+          "confirm",
+          "confirmar"
+        ]
+      ],
+      "porque": "Vocabulario para organizar tu agenda."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "«Are you free on Friday?» significa ___.",
+      "opciones": [
+        "¿Estás libre el viernes?",
+        "¿Trabajas gratis el viernes?",
+        "¿Te gusta el viernes?"
+      ],
+      "correcta": 0,
+      "porque": "Free aquí es «libre», sin compromisos."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál habla del futuro?",
+      "opciones": [
+        "I'm flying to Tijuana next Monday.",
+        "I'm flying to Tijuana now.",
+        "I fly to Tijuana a lot."
+      ],
+      "correcta": 0,
+      "porque": "Next Monday lo vuelve un compromiso futuro."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Laura's week is very busy. On Monday she is having lunch with her boss. On Wednesday at five she is seeing the doctor. On Friday night she is going to the movies with Carlos. She is free on Saturday.",
+      "pregunta": "¿Qué va a hacer Laura el miércoles?",
+      "opciones": [
+        "Ir al doctor",
+        "Comer con su jefe",
+        "Ir al cine"
+      ],
+      "correcta": 0,
+      "porque": "«On Wednesday at five she is seeing the doctor»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Are you free on Thursday? No, sorry. I'm working on Thursday. But I'm free on Friday.",
+      "pregunta": "¿Qué día está libre?",
+      "opciones": [
+        "El viernes",
+        "El jueves",
+        "Ningún día"
+      ],
+      "correcta": 0,
+      "porque": "«I'm free on Friday»: el viernes. El jueves trabaja."
+    }
+  ]
+}

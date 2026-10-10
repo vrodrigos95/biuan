@@ -1,0 +1,292 @@
+{
+  "id": "L42",
+  "subnivel": "A2.2",
+  "unidad": 11,
+  "titulo": "Lo haré",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "**will** + verbo en forma base es otra forma de hablar del futuro. Es igual para todas las personas."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Afirmativo",
+          "I will call you. / I'll call you.",
+          "Te llamaré."
+        ],
+        [
+          "Negativo",
+          "I will not call. / I won't call.",
+          "No llamaré."
+        ],
+        [
+          "Pregunta",
+          "Will you call me?",
+          "¿Me llamarás?"
+        ],
+        [
+          "Respuesta corta",
+          "Yes, I will. / No, I won't.",
+          "Sí. / No."
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Se usa en tres situaciones:"
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Predicción u opinión",
+          "I think it will rain tomorrow."
+        ],
+        [
+          "Decisión del momento",
+          "That bag is heavy. I'll help you."
+        ],
+        [
+          "Promesa",
+          "I will call you tonight."
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "Don't worry, I'll help you.",
+      "es": "No te preocupes, yo te ayudo."
+    },
+    {
+      "tipo": "tip",
+      "md": "Después de will el verbo va solo: *I will go*, nunca *I will to go* ni *She wills go*."
+    },
+    {
+      "tipo": "tip",
+      "md": "Las predicciones suelen empezar con **I think…** Para un plan que ya tenías decidido se usa *going to*, no will."
+    },
+    {
+      "tipo": "texto",
+      "md": "Tecnología y futuro:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "future",
+          "futuro"
+        ],
+        [
+          "technology",
+          "tecnología"
+        ],
+        [
+          "robot",
+          "robot"
+        ],
+        [
+          "app",
+          "aplicación"
+        ],
+        [
+          "screen",
+          "pantalla"
+        ],
+        [
+          "password",
+          "contraseña"
+        ],
+        [
+          "battery",
+          "batería"
+        ],
+        [
+          "online",
+          "en línea"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I think it ___ rain tomorrow.",
+      "opciones": [
+        "will",
+        "wills",
+        "is"
+      ],
+      "correcta": 0,
+      "porque": "Predicción con I think: will + verbo."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She will ___ you later.",
+      "opciones": [
+        "call",
+        "calls",
+        "to call"
+      ],
+      "correcta": 0,
+      "porque": "Después de will el verbo va en forma base."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "I'm busy tomorrow. I ___ go to the party. (negativo)",
+      "aceptadas": [
+        "won't",
+        "will not"
+      ],
+      "pista": "negativo de will",
+      "porque": "El negativo de will es will not, o la forma corta won't."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "That bag is heavy. I ___ help you.",
+      "aceptadas": [
+        "will",
+        "'ll"
+      ],
+      "pista": "decisión del momento",
+      "porque": "Decisión que se toma en el momento: will."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "___ robots do our jobs in the future?",
+      "opciones": [
+        "Will",
+        "Are",
+        "Did"
+      ],
+      "correcta": 0,
+      "porque": "La pregunta sobre el futuro empieza con Will."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "Will you be at home tonight? Yes, I ___.",
+      "opciones": [
+        "will",
+        "am",
+        "do"
+      ],
+      "correcta": 0,
+      "porque": "La respuesta corta repite will: Yes, I will."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "will",
+        "call",
+        "you",
+        "tomorrow."
+      ],
+      "traduccion": "Te llamaré mañana.",
+      "porque": "Sujeto + will + verbo + objeto + tiempo."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Phones",
+        "will",
+        "be",
+        "cheaper",
+        "soon."
+      ],
+      "traduccion": "Los teléfonos serán más baratos pronto.",
+      "porque": "Sujeto + will + be + comparativo."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "future",
+          "futuro"
+        ],
+        [
+          "password",
+          "contraseña"
+        ],
+        [
+          "screen",
+          "pantalla"
+        ],
+        [
+          "battery",
+          "batería"
+        ],
+        [
+          "online",
+          "en línea"
+        ]
+      ],
+      "porque": "Vocabulario de tecnología."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es la forma corta de will not?",
+      "opciones": [
+        "won't",
+        "willn't",
+        "don't"
+      ],
+      "correcta": 0,
+      "porque": "Will not se contrae como won't."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "A: I forgot my wallet. B: Don't worry, I ___ pay.",
+      "opciones": [
+        "will",
+        "am",
+        "do"
+      ],
+      "correcta": 0,
+      "porque": "Decisión del momento para ayudar: I will pay."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "What will the world be like in 2050? I think we will work at home and study online. Robots will clean our houses and cook our food. Phones won't have screens. But I think we will have teachers, not robots, in our schools.",
+      "pregunta": "Según el texto, ¿quién va a limpiar las casas en 2050?",
+      "opciones": [
+        "Los robots",
+        "Los maestros",
+        "Nadie"
+      ],
+      "correcta": 0,
+      "porque": "«Robots will clean our houses and cook our food»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "My phone has no battery! Don't worry, I'll give you my charger.",
+      "pregunta": "¿Qué le va a dar?",
+      "opciones": [
+        "Su cargador",
+        "Su teléfono",
+        "Su contraseña"
+      ],
+      "correcta": 0,
+      "porque": "«I'll give you my charger»: su cargador."
+    }
+  ]
+}
