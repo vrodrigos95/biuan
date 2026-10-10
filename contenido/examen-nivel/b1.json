@@ -180,6 +180,201 @@
       ],
       "correcta": 0,
       "porque": "«I promised my mom I'd help her move»: va a ayudar a su mamá con la mudanza."
+    },
+    {
+      "id": "B1-013",
+      "nivel": "B1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "I haven't finished my homework ___.",
+      "opciones": [
+        "yet",
+        "already",
+        "just",
+        "ever"
+      ],
+      "correcta": 0,
+      "porque": "En negativo, yet (todavía) va al final de la oración."
+    },
+    {
+      "id": "B1-014",
+      "nivel": "B1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "If I ___ more money, I would buy a new car.",
+      "opciones": [
+        "had",
+        "have",
+        "would have",
+        "will have"
+      ],
+      "correcta": 0,
+      "porque": "Segundo condicional: if + pasado simple, would + verbo."
+    },
+    {
+      "id": "B1-015",
+      "nivel": "B1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "The man ___ lives next door is a doctor.",
+      "opciones": [
+        "who",
+        "which",
+        "whose",
+        "where"
+      ],
+      "correcta": 0,
+      "porque": "Para referirse a una persona como sujeto se usa who."
+    },
+    {
+      "id": "B1-016",
+      "nivel": "B1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "___ it was raining heavily, we decided to go for a walk anyway.",
+      "opciones": [
+        "Although",
+        "Because",
+        "Despite",
+        "However"
+      ],
+      "correcta": 0,
+      "porque": "Although (aunque) une dos ideas que contrastan y va seguido de sujeto + verbo."
+    },
+    {
+      "id": "B1-017",
+      "nivel": "B1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "I can't ___ a new phone right now; they're too expensive.",
+      "opciones": [
+        "afford",
+        "spend",
+        "cost",
+        "pay"
+      ],
+      "correcta": 0,
+      "porque": "Can't afford significa que no te alcanza el dinero para algo."
+    },
+    {
+      "id": "B1-018",
+      "nivel": "B1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "We ran ___ of gas on the highway.",
+      "opciones": [
+        "out",
+        "off",
+        "away",
+        "over"
+      ],
+      "correcta": 0,
+      "porque": "Run out of significa quedarse sin algo."
+    },
+    {
+      "id": "B1-019",
+      "nivel": "B1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "She ___ a mistake in the report and had to correct it.",
+      "opciones": [
+        "made",
+        "did",
+        "had",
+        "took"
+      ],
+      "correcta": 0,
+      "porque": "En inglés los errores se «hacen» con make: make a mistake."
+    },
+    {
+      "id": "B1-020",
+      "nivel": "B1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "«Actually» significa…",
+      "opciones": [
+        "en realidad",
+        "actualmente",
+        "activamente",
+        "exactamente"
+      ],
+      "correcta": 0,
+      "porque": "Actually es un falso amigo: significa en realidad. Actualmente se dice currently."
+    },
+    {
+      "id": "B1-021",
+      "nivel": "B1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "The city council has announced that the main street will be closed to cars every Sunday starting next month. Shop owners are worried about losing customers, but many residents have welcomed the idea.",
+      "enunciado": "¿Cómo reaccionaron los dueños de las tiendas?",
+      "opciones": [
+        "Les preocupa perder clientes",
+        "Están contentos con la medida",
+        "Pidieron cerrar la calle más días"
+      ],
+      "correcta": 0,
+      "porque": "«Shop owners are worried about losing customers»: les preocupa perder clientes."
+    },
+    {
+      "id": "B1-022",
+      "nivel": "B1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "I used to hate cooking, but everything changed when I moved abroad. I couldn't find the food I grew up with, so I had to learn to make it myself. Now it's my favorite hobby.",
+      "enunciado": "¿Por qué empezó a cocinar?",
+      "opciones": [
+        "Porque no encontraba la comida de su país",
+        "Porque quería ahorrar dinero",
+        "Porque tomó un curso de cocina"
+      ],
+      "correcta": 0,
+      "porque": "«I couldn't find the food I grew up with»: no encontraba la comida con la que creció."
+    },
+    {
+      "id": "B1-023",
+      "nivel": "B1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Please note that tickets cannot be refunded. However, you may exchange them for another date up to 24 hours before the event.",
+      "enunciado": "¿Qué se puede hacer con los boletos?",
+      "opciones": [
+        "Cambiarlos por otra fecha, con un día de anticipación",
+        "Pedir que devuelvan el dinero",
+        "Cambiarlos el mismo día del evento"
+      ],
+      "correcta": 0,
+      "porque": "No hay reembolso (cannot be refunded), pero se pueden cambiar hasta 24 horas antes."
+    },
+    {
+      "id": "B1-024",
+      "nivel": "B1",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "Hi, this is Daniel from the dental clinic. I'm calling to let you know that your appointment on Thursday has been moved to Friday at the same time.",
+      "enunciado": "¿Qué cambió de la cita?",
+      "opciones": [
+        "El día",
+        "La hora",
+        "El consultorio"
+      ],
+      "correcta": 0,
+      "porque": "Pasa de Thursday a Friday «at the same time»: cambia el día, no la hora."
+    },
+    {
+      "id": "B1-025",
+      "nivel": "B1",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "I was going to buy the red jacket, but it was too small, so in the end I took the blue one.",
+      "enunciado": "¿Qué chamarra compró?",
+      "opciones": [
+        "La azul",
+        "La roja",
+        "Ninguna"
+      ],
+      "correcta": 0,
+      "porque": "«In the end I took the blue one»: al final se llevó la azul."
     }
   ]
 }

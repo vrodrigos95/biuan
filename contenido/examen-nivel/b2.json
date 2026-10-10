@@ -21,15 +21,15 @@
       "nivel": "B2",
       "habilidad": "gramatica",
       "tipo": "opcion",
-      "enunciado": "Hardly ___ the house when it started to rain.",
+      "enunciado": "I'm exhausted. I ___ have stayed up so late last night.",
       "opciones": [
-        "had I left",
-        "I had left",
-        "did I leave",
-        "I left"
+        "shouldn't",
+        "mustn't",
+        "can't",
+        "won't"
       ],
       "correcta": 0,
-      "porque": "Hardly al inicio invierte el orden y pide pasado perfecto: had I left."
+      "porque": "Shouldn't have + participio expresa arrepentimiento por algo que sí se hizo."
     },
     {
       "id": "B2-003",
@@ -156,7 +156,7 @@
       "nivel": "B2",
       "habilidad": "escucha",
       "tipo": "opcion",
-      "audio": "Had the manager responded to the complaints sooner, the company wouldn't have lost so many customers.",
+      "audio": "If the manager had responded to the complaints sooner, the company wouldn't have lost so many customers.",
       "enunciado": "¿Qué se entiende?",
       "opciones": [
         "El gerente respondió tarde y se perdieron clientes",
@@ -164,7 +164,7 @@
         "La empresa ganó clientes nuevos"
       ],
       "correcta": 0,
-      "porque": "«Had the manager responded sooner…» = si hubiera respondido antes, no se habrían perdido clientes."
+      "porque": "Tercer condicional: como no respondió antes, sí se perdieron clientes."
     },
     {
       "id": "B2-012",
@@ -180,6 +180,201 @@
       ],
       "correcta": 0,
       "porque": "«We should have a backup»: conviene tener un plan de respaldo."
+    },
+    {
+      "id": "B2-013",
+      "nivel": "B2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "I'm having my car ___ tomorrow.",
+      "opciones": [
+        "repaired",
+        "repair",
+        "repairing",
+        "to repair"
+      ],
+      "correcta": 0,
+      "porque": "Have something done: have + objeto + participio, cuando otra persona hace el trabajo."
+    },
+    {
+      "id": "B2-014",
+      "nivel": "B2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "___ the heavy rain, the match continued.",
+      "opciones": [
+        "Despite",
+        "Although",
+        "However",
+        "Even"
+      ],
+      "correcta": 0,
+      "porque": "Despite va seguido de un sustantivo; although necesitaría sujeto y verbo."
+    },
+    {
+      "id": "B2-015",
+      "nivel": "B2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "All applications ___ before the deadline.",
+      "opciones": [
+        "must be submitted",
+        "must submit",
+        "must be submitting",
+        "must have submit"
+      ],
+      "correcta": 0,
+      "porque": "Las solicitudes no entregan nada: se entregan. Voz pasiva con modal: must be + participio."
+    },
+    {
+      "id": "B2-016",
+      "nivel": "B2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "My boss, ___ office is next to mine, is retiring next month.",
+      "opciones": [
+        "whose",
+        "who",
+        "which",
+        "that"
+      ],
+      "correcta": 0,
+      "porque": "Whose indica posesión: la oficina es del jefe."
+    },
+    {
+      "id": "B2-017",
+      "nivel": "B2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "The company had to lay ___ fifty employees due to falling sales.",
+      "opciones": [
+        "off",
+        "out",
+        "down",
+        "up"
+      ],
+      "correcta": 0,
+      "porque": "Lay off significa despedir personal por recorte."
+    },
+    {
+      "id": "B2-018",
+      "nivel": "B2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "I couldn't ___ what he was saying because of the noise.",
+      "opciones": [
+        "make out",
+        "make up",
+        "make for",
+        "make off"
+      ],
+      "correcta": 0,
+      "porque": "Make out significa alcanzar a distinguir o entender algo."
+    },
+    {
+      "id": "B2-019",
+      "nivel": "B2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "She has a real ___ for languages; she picked up Italian in three months.",
+      "opciones": [
+        "gift",
+        "present",
+        "prize",
+        "reward"
+      ],
+      "correcta": 0,
+      "porque": "Have a gift for something es tener un don o talento natural."
+    },
+    {
+      "id": "B2-020",
+      "nivel": "B2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "The results were ___ with our expectations.",
+      "opciones": [
+        "consistent",
+        "according",
+        "similar",
+        "agreed"
+      ],
+      "correcta": 0,
+      "porque": "Consistent with significa que coincide con algo. Similar va con to, no con with."
+    },
+    {
+      "id": "B2-021",
+      "nivel": "B2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "While remote work was initially praised for boosting productivity, several firms have since reversed course, arguing that innovation suffers when employees rarely meet face to face.",
+      "enunciado": "¿Por qué algunas empresas cambiaron de postura?",
+      "opciones": [
+        "Creen que la innovación baja sin contacto presencial",
+        "La productividad bajó desde el primer día",
+        "Los empleados pidieron volver a la oficina"
+      ],
+      "correcta": 0,
+      "porque": "«Innovation suffers when employees rarely meet face to face»: la innovación se resiente sin trato en persona."
+    },
+    {
+      "id": "B2-022",
+      "nivel": "B2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "The author does not claim that social media is harmful in itself; rather, she argues that the way platforms are designed encourages compulsive use.",
+      "enunciado": "Según la autora, ¿dónde está el problema?",
+      "opciones": [
+        "En el diseño de las plataformas",
+        "En las redes sociales en sí mismas",
+        "En la falta de supervisión de los padres"
+      ],
+      "correcta": 0,
+      "porque": "No dice que las redes sean dañinas «in itself»; el problema es «the way platforms are designed»."
+    },
+    {
+      "id": "B2-023",
+      "nivel": "B2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Sales rose by 12% in the first quarter, yet profits fell slightly, largely because of higher shipping costs.",
+      "enunciado": "¿Qué pasó con las ganancias?",
+      "opciones": [
+        "Bajaron un poco por los costos de envío",
+        "Subieron 12%",
+        "Se mantuvieron iguales"
+      ],
+      "correcta": 0,
+      "porque": "Lo que subió 12% fueron las ventas (sales); las ganancias (profits) «fell slightly»."
+    },
+    {
+      "id": "B2-024",
+      "nivel": "B2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "To be honest, I was expecting the movie to be a disappointment, but it turned out to be far better than the reviews suggested.",
+      "enunciado": "¿Qué le pareció la película?",
+      "opciones": [
+        "Mejor de lo que esperaba",
+        "Tan mala como decían las críticas",
+        "Decepcionante"
+      ],
+      "correcta": 0,
+      "porque": "«It turned out to be far better»: resultó mucho mejor de lo esperado."
+    },
+    {
+      "id": "B2-025",
+      "nivel": "B2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "We could have taken the highway, but given the roadworks, we'd probably have got there later anyway.",
+      "enunciado": "¿Qué se entiende?",
+      "opciones": [
+        "No tomaron la autopista y creen que por ahí habrían tardado más",
+        "Tomaron la autopista y llegaron tarde",
+        "Tomaron la autopista y llegaron temprano"
+      ],
+      "correcta": 0,
+      "porque": "«We could have taken» indica que no la tomaron; por las obras habrían llegado más tarde."
     }
   ]
 }

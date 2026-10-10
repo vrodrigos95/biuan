@@ -1,0 +1,164 @@
+{
+  "id": "L11",
+  "subnivel": "A1.1",
+  "unidad": 3,
+  "titulo": "Fechas y horas",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para preguntar la hora se dice **What time is it?** Se contesta con **It's** + la hora." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Hora", "Forma fácil", "Otra forma"],
+      "filas": [
+        ["7:00", "It's seven o'clock.", ""],
+        ["7:15", "It's seven fifteen.", "a quarter past seven"],
+        ["7:30", "It's seven thirty.", "half past seven"],
+        ["7:45", "It's seven forty-five.", "a quarter to eight"]
+      ]
+    },
+    { "tipo": "tip", "md": "La forma fácil es decir la hora y luego los minutos: 9:20 es *nine twenty*. Con eso siempre te entienden." },
+    { "tipo": "tip", "md": "**a.m.** va de medianoche a mediodía y **p.m.** de mediodía a medianoche. En inglés casi no se usa el formato de 24 horas." },
+    { "tipo": "texto", "md": "Los días de la semana:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["Monday", "lunes"],
+        ["Tuesday", "martes"],
+        ["Wednesday", "miércoles"],
+        ["Thursday", "jueves"],
+        ["Friday", "viernes"],
+        ["Saturday", "sábado"],
+        ["Sunday", "domingo"]
+      ]
+    },
+    { "tipo": "texto", "md": "Los meses del año:" },
+    {
+      "tipo": "tabla",
+      "filas": [
+        ["January", "February", "March"],
+        ["April", "May", "June"],
+        ["July", "August", "September"],
+        ["October", "November", "December"]
+      ]
+    },
+    { "tipo": "tip", "md": "Los días y los meses se escriben siempre con **mayúscula**." },
+    { "tipo": "texto", "md": "Para la fecha se usan los números ordinales: **first** (1), **second** (2), **third** (3), **fourth** (4), **fifth** (5). Casi todos los demás terminan en -th." },
+    { "tipo": "ejemplo", "en": "What day is it today? It's Monday.", "es": "¿Qué día es hoy? Es lunes." },
+    { "tipo": "ejemplo", "en": "Today is May fifth.", "es": "Hoy es cinco de mayo." },
+    { "tipo": "tip", "md": "En Estados Unidos la fecha se escribe mes/día: 5/10 es el 10 de mayo, no el 5 de octubre." }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice que son las 8:00?",
+      "opciones": ["It's eight o'clock.", "It's eight hours.", "It's eight thirty."],
+      "correcta": 0,
+      "porque": "La hora en punto se dice con o'clock."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "It's half past six. ¿Qué hora es?",
+      "opciones": ["6:30", "6:15", "7:30"],
+      "correcta": 0,
+      "porque": "Half past six es «las seis y media»: 6:30."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "¿Qué día va después de «Tuesday»?",
+      "opciones": ["Wednesday", "Thursday", "Monday"],
+      "correcta": 0,
+      "porque": "Después de Tuesday (martes) va Wednesday (miércoles)."
+    },
+    {
+      "id": "e04",
+      "tipo": "emparejar",
+      "enunciado": "Une cada día con su significado.",
+      "pares": [
+        ["Monday", "lunes"],
+        ["Wednesday", "miércoles"],
+        ["Thursday", "jueves"],
+        ["Saturday", "sábado"],
+        ["Sunday", "domingo"]
+      ],
+      "porque": "Cuidado con Tuesday (martes) y Thursday (jueves): se parecen mucho."
+    },
+    {
+      "id": "e05",
+      "tipo": "ordenar",
+      "respuesta": ["What", "time", "is", "it?"],
+      "traduccion": "¿Qué hora es?",
+      "porque": "La pregunta fija es What time is it?"
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "enunciado": "Son las 10:00 en punto.",
+      "frase": "It's ten ___.",
+      "opciones": ["o'clock", "hours", "time"],
+      "correcta": 0,
+      "porque": "La hora en punto se dice con o'clock: ten o'clock."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "¿Qué mes va antes de «March»?",
+      "opciones": ["February", "April", "January"],
+      "correcta": 0,
+      "porque": "Antes de March (marzo) va February (febrero)."
+    },
+    {
+      "id": "e08",
+      "tipo": "hueco",
+      "frase": "The first month of the year is ___.",
+      "aceptadas": ["January"],
+      "pista": "empieza con J",
+      "porque": "El primer mes del año es January (enero)."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "It's a quarter to nine. ¿Qué hora es?",
+      "opciones": ["8:45", "9:15", "9:45"],
+      "correcta": 0,
+      "porque": "A quarter to nine es «cuarto para las nueve»: 8:45."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "En Estados Unidos, la fecha 3/12 es…",
+      "opciones": ["el 12 de marzo", "el 3 de diciembre", "el 3 de marzo"],
+      "correcta": 0,
+      "porque": "En Estados Unidos primero va el mes: 3 es marzo y 12 es el día."
+    },
+    {
+      "id": "e11",
+      "tipo": "escucha",
+      "audio": "The movie starts at seven thirty p.m.",
+      "pregunta": "¿A qué hora empieza la película?",
+      "opciones": ["7:30 p. m.", "7:13 p. m.", "6:30 p. m."],
+      "correcta": 0,
+      "porque": "Seven thirty es 7:30. El 13 sería thirteen."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Today is Friday, March second. My English class is on Mondays and Wednesdays at six o'clock.",
+      "pregunta": "¿Qué días tiene clase de inglés?",
+      "opciones": ["Lunes y miércoles", "Solo los viernes", "Lunes y viernes"],
+      "correcta": 0,
+      "porque": "«On Mondays and Wednesdays»: lunes y miércoles. Friday es el día de hoy."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "What day is it today? It's Thursday.",
+      "pregunta": "¿Qué día es hoy?",
+      "opciones": ["Jueves", "Martes", "Sábado"],
+      "correcta": 0,
+      "porque": "Thursday es jueves. Martes es Tuesday."
+    }
+  ]
+}

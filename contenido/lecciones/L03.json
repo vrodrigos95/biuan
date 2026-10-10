@@ -1,0 +1,169 @@
+{
+  "id": "L03",
+  "subnivel": "A1.1",
+  "unidad": 1,
+  "titulo": "¿Eres tú?",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para negar con **to be** solo se agrega **not** después del verbo." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Afirmativo", "Negativo", "Forma corta"],
+      "filas": [
+        ["I am", "I am not", "I'm not"],
+        ["You / We / They are", "are not", "aren't"],
+        ["He / She / It is", "is not", "isn't"]
+      ]
+    },
+    { "tipo": "tip", "md": "**am not** no se contrae: se dice *I'm not*, nunca *I amn't*." },
+    { "tipo": "texto", "md": "Para preguntar, el verbo **to be** pasa al principio. No se agrega ninguna otra palabra." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Afirmación", "Pregunta"],
+      "filas": [
+        ["You are tired.", "Are you tired?"],
+        ["She is happy.", "Is she happy?"],
+        ["They are ready.", "Are they ready?"]
+      ]
+    },
+    { "tipo": "texto", "md": "Se contesta con una respuesta corta: **Yes / No + pronombre + to be**." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pregunta", "Sí", "No"],
+      "filas": [
+        ["Are you tired?", "Yes, I am.", "No, I'm not."],
+        ["Is he sad?", "Yes, he is.", "No, he isn't."],
+        ["Are they angry?", "Yes, they are.", "No, they aren't."]
+      ]
+    },
+    { "tipo": "tip", "md": "En la respuesta corta afirmativa no se contrae: *Yes, I am*, no *Yes, I'm*." },
+    { "tipo": "texto", "md": "Con **to be** puedes decir cómo te sientes:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["happy", "feliz"],
+        ["sad", "triste"],
+        ["tired", "cansado"],
+        ["angry", "enojado"],
+        ["bored", "aburrido"],
+        ["nervous", "nervioso"],
+        ["hungry", "con hambre"],
+        ["thirsty", "con sed"]
+      ]
+    },
+    { "tipo": "tip", "md": "En inglés el hambre y la sed van con **to be**: *I am hungry* (tengo hambre), no *I have hungry*." }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "hueco",
+      "frase": "She ___ not from Canada.",
+      "opciones": ["is", "are", "am"],
+      "correcta": 0,
+      "porque": "Con she se usa is, y el not va después: She is not from Canada."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "___ we late for class?",
+      "opciones": ["Are", "Is", "Am"],
+      "correcta": 0,
+      "porque": "Con we se usa are, y en la pregunta va al principio: Are we late? (¿Llegamos tarde?)"
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el negativo de «He is happy»?",
+      "opciones": ["He isn't happy.", "He not is happy.", "He no is happy."],
+      "correcta": 0,
+      "porque": "El not va después de is: He is not happy, o en corto, He isn't happy."
+    },
+    {
+      "id": "e04",
+      "tipo": "ordenar",
+      "respuesta": ["Are", "you", "tired?"],
+      "traduccion": "¿Estás cansado?",
+      "porque": "En la pregunta, el verbo to be va antes del pronombre: Are you…?"
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "Are you hungry? Yes, ___.",
+      "opciones": ["I am", "I'm", "I are"],
+      "correcta": 0,
+      "porque": "La respuesta corta afirmativa no se contrae: Yes, I am."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "Is Maria sad? No, ___.",
+      "opciones": ["she isn't", "she aren't", "he isn't"],
+      "correcta": 0,
+      "porque": "Maria es she, y con she el negativo corto es isn't."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada estado de ánimo con su significado.",
+      "pares": [
+        ["happy", "feliz"],
+        ["sad", "triste"],
+        ["tired", "cansado"],
+        ["angry", "enojado"],
+        ["bored", "aburrido"]
+      ],
+      "porque": "Todos estos adjetivos se usan con to be: I am happy, she is tired."
+    },
+    {
+      "id": "e08",
+      "tipo": "hueco",
+      "frase": "I ___ not a doctor.",
+      "aceptadas": ["am"],
+      "pista": "to be con I",
+      "porque": "Con I se usa am: I am not a doctor."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "enunciado": "Escribe el negativo de are.",
+      "frase": "They ___ ready.",
+      "aceptadas": ["aren't", "are not"],
+      "pista": "are + not",
+      "porque": "El negativo de are es are not, o en corto, aren't."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «Tengo sed»?",
+      "opciones": ["I am thirsty.", "I have thirsty.", "I am thirst."],
+      "correcta": 0,
+      "porque": "La sed va con to be y con el adjetivo thirsty: I am thirsty."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Tom is at home. He isn't sad, but he is very tired. His sister Amy isn't tired. She is bored.",
+      "pregunta": "¿Cómo está Amy?",
+      "opciones": ["Aburrida", "Cansada", "Triste"],
+      "correcta": 0,
+      "porque": "«She is bored»: Amy está aburrida. El cansado es Tom."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "Are you angry? No, I'm not. I'm just hungry.",
+      "pregunta": "¿Qué le pasa a la persona?",
+      "opciones": ["Tiene hambre", "Está enojada", "Está cansada"],
+      "correcta": 0,
+      "porque": "Dice «No, I'm not» a estar enojada, y luego «I'm just hungry»: solo tiene hambre."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "___ I late?",
+      "opciones": ["Am", "Is", "Are"],
+      "correcta": 0,
+      "porque": "Con I se usa am, y en la pregunta va al principio: Am I late? (¿Llego tarde?)"
+    }
+  ]
+}

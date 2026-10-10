@@ -1,0 +1,159 @@
+{
+  "id": "L06",
+  "subnivel": "A1.1",
+  "unidad": 2,
+  "titulo": "Esto y aquello",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para formar el plural casi siempre se agrega **-s**. Hay tres casos especiales:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Regla", "Ejemplo"],
+      "filas": [
+        ["La mayoría: + s", "book → books"],
+        ["Termina en -s, -x, -ch, -sh: + es", "box → boxes, watch → watches"],
+        ["Consonante + y: cambia a -ies", "city → cities"],
+        ["Irregulares", "man → men, woman → women, child → children"]
+      ]
+    },
+    { "tipo": "texto", "md": "Para señalar cosas hay cuatro palabras, según estén cerca o lejos y sean una o varias:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["", "Cerca", "Lejos"],
+      "filas": [
+        ["Una", "this (este, esta)", "that (ese, esa)"],
+        ["Varias", "these (estos, estas)", "those (esos, esas)"]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "This is my pen.", "es": "Esta es mi pluma." },
+    { "tipo": "ejemplo", "en": "Those are my books.", "es": "Esos son mis libros." },
+    { "tipo": "tip", "md": "Con **this** y **that** el verbo es **is**. Con **these** y **those** es **are**." },
+    { "tipo": "texto", "md": "Cosas del salón y la oficina:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["desk", "escritorio"],
+        ["chair", "silla"],
+        ["board", "pizarrón"],
+        ["notebook", "cuaderno"],
+        ["pencil", "lápiz"],
+        ["computer", "computadora"],
+        ["window", "ventana"],
+        ["door", "puerta"],
+        ["box", "caja"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el plural de «box»?",
+      "opciones": ["boxes", "boxs", "boxies"],
+      "correcta": 0,
+      "porque": "Box termina en -x, así que el plural se forma con -es: boxes."
+    },
+    {
+      "id": "e02",
+      "tipo": "hueco",
+      "frase": "One child, two ___.",
+      "aceptadas": ["children"],
+      "pista": "es un plural irregular",
+      "porque": "El plural de child es irregular: children."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "Tienes el cuaderno en la mano. ___ is my notebook.",
+      "opciones": ["This", "These", "Those"],
+      "correcta": 0,
+      "porque": "Es una sola cosa y está cerca: this."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "Tus amigos están al otro lado de la calle. ___ are my friends.",
+      "opciones": ["Those", "That", "This"],
+      "correcta": 0,
+      "porque": "Son varios y están lejos: those."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "These ___ my keys.",
+      "opciones": ["are", "is", "am"],
+      "correcta": 0,
+      "porque": "These es plural, y con plural el verbo to be es are."
+    },
+    {
+      "id": "e06",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        ["desk", "escritorio"],
+        ["chair", "silla"],
+        ["window", "ventana"],
+        ["door", "puerta"],
+        ["pencil", "lápiz"]
+      ],
+      "porque": "Son las cosas que verás en cualquier salón u oficina."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": ["That", "is", "my", "chair."],
+      "traduccion": "Esa es mi silla.",
+      "porque": "That señala una cosa que está lejos y va con is."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el plural de «city»?",
+      "opciones": ["cities", "citys", "cityes"],
+      "correcta": 0,
+      "porque": "City termina en consonante + y: la y cambia a -ies."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "One woman, two ___.",
+      "aceptadas": ["women"],
+      "pista": "es un plural irregular",
+      "porque": "El plural de woman es irregular: women."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Qué frase es correcta?",
+      "opciones": ["These are pencils.", "These is pencils.", "This are pencils."],
+      "correcta": 0,
+      "porque": "Pencils es plural: lleva these y are."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "This is my classroom. These are my notebooks. That is the board and those are the computers.",
+      "pregunta": "¿Qué cosas están lejos de quien habla?",
+      "opciones": ["El pizarrón y las computadoras", "Los cuadernos", "El salón y los cuadernos"],
+      "correcta": 0,
+      "porque": "That y those señalan lo que está lejos: the board y the computers."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "I have two watches, three pens and one notebook.",
+      "pregunta": "¿Cuántas plumas tiene?",
+      "opciones": ["Tres", "Dos", "Una"],
+      "correcta": 0,
+      "porque": "Se escucha «three pens»: tres plumas."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el plural de «watch»?",
+      "opciones": ["watches", "watchs", "watchies"],
+      "correcta": 0,
+      "porque": "Watch termina en -ch, así que el plural se forma con -es: watches."
+    }
+  ]
+}

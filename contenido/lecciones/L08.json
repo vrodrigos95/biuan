@@ -1,0 +1,148 @@
+{
+  "id": "L08",
+  "subnivel": "A1.1",
+  "unidad": 2,
+  "titulo": "Lo que tengo",
+  "explicacion": [
+    { "tipo": "texto", "md": "**have** significa «tener». Con he, she, it cambia a **has**." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pronombre", "Verbo", "Ejemplo"],
+      "filas": [
+        ["I / You / We / They", "have", "I have a car."],
+        ["He / She / It", "has", "She has a car."]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "I have two brothers.", "es": "Tengo dos hermanos." },
+    { "tipo": "ejemplo", "en": "My sister has a dog.", "es": "Mi hermana tiene un perro." },
+    { "tipo": "texto", "md": "Los números del 21 al 99 se forman con la decena, un guion y la unidad: twenty-one, thirty-five." },
+    {
+      "tipo": "tabla",
+      "filas": [
+        ["20 twenty", "30 thirty", "40 forty"],
+        ["50 fifty", "60 sixty", "70 seventy"],
+        ["80 eighty", "90 ninety", "100 one hundred"]
+      ]
+    },
+    { "tipo": "tip", "md": "No confundas **-teen** con **-ty**: thirteen es 13 y thirty es 30. Además, forty se escribe sin u." },
+    { "tipo": "texto", "md": "La edad **no** se dice con have. En inglés se usa **to be**:" },
+    { "tipo": "ejemplo", "en": "How old are you?", "es": "¿Cuántos años tienes?" },
+    { "tipo": "ejemplo", "en": "I am twenty-five years old.", "es": "Tengo veinticinco años." },
+    { "tipo": "tip", "md": "Nunca digas *I have 25 years*. Lo correcto es **I am 25 years old**." },
+    { "tipo": "texto", "md": "El número de teléfono se dice dígito por dígito:" },
+    { "tipo": "ejemplo", "en": "What's your phone number? It's five, five, three, eight.", "es": "¿Cuál es tu número de teléfono? Es 5538." }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "My brother ___ a new phone.",
+      "opciones": ["has", "have", "haves"],
+      "correcta": 0,
+      "porque": "My brother equivale a he, y con he se usa has."
+    },
+    {
+      "id": "e02",
+      "tipo": "hueco",
+      "frase": "We ___ two daughters.",
+      "opciones": ["have", "has", "haves"],
+      "correcta": 0,
+      "porque": "Con we se usa have."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se escribe 45?",
+      "opciones": ["forty-five", "fourty-five", "fifty-four"],
+      "correcta": 0,
+      "porque": "40 es forty, sin u, y se une a la unidad con guion: forty-five."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "¿Qué número es «thirty»?",
+      "opciones": ["30", "13", "33"],
+      "correcta": 0,
+      "porque": "Thirty es 30. El 13 es thirteen."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «Tengo 30 años»?",
+      "opciones": ["I am thirty years old.", "I have thirty years.", "I am thirty years."],
+      "correcta": 0,
+      "porque": "La edad va con to be y termina en years old."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": ["How", "old", "are", "you?"],
+      "traduccion": "¿Cuántos años tienes?",
+      "porque": "La pregunta fija para la edad es How old are you?"
+    },
+    {
+      "id": "e07",
+      "tipo": "hueco",
+      "frase": "She ___ a sister and two brothers.",
+      "aceptadas": ["has"],
+      "pista": "tener, con she",
+      "porque": "Con she se usa has."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada número con su cifra.",
+      "pares": [
+        ["twenty", "20"],
+        ["fifty", "50"],
+        ["seventy", "70"],
+        ["ninety", "90"],
+        ["one hundred", "100"]
+      ],
+      "porque": "Las decenas terminan en -ty: twenty, fifty, seventy, ninety."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "I ___ twenty-two years old.",
+      "aceptadas": ["am"],
+      "pista": "la edad va con to be",
+      "porque": "La edad se dice con to be, no con have: I am twenty-two years old."
+    },
+    {
+      "id": "e10",
+      "tipo": "escucha",
+      "audio": "My phone number is five, five, three, eight, zero, nine.",
+      "pregunta": "¿Cuál es el número?",
+      "opciones": ["553809", "553890", "533809"],
+      "correcta": 0,
+      "porque": "Se escucha five, five, three, eight, zero, nine: 553809."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "My name is Sofia. I am thirty-four years old. I have a husband and two sons. My husband is forty years old. He has a sister in Canada.",
+      "pregunta": "¿Cuántos años tiene el esposo de Sofía?",
+      "opciones": ["40", "34", "14"],
+      "correcta": 0,
+      "porque": "«My husband is forty years old»: forty es 40. Los 34 son de Sofía."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "My grandfather is eighty years old and my grandmother is seventy-six.",
+      "pregunta": "¿Cuántos años tiene la abuela?",
+      "opciones": ["76", "80", "67"],
+      "correcta": 0,
+      "porque": "«My grandmother is seventy-six»: 76. Los 80 son del abuelo."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "They ___ a big house.",
+      "opciones": ["have", "has", "haves"],
+      "correcta": 0,
+      "porque": "Con they se usa have."
+    }
+  ]
+}

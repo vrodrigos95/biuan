@@ -179,6 +179,201 @@
       ],
       "correcta": 0,
       "porque": "Nine o'clock in the morning son las 9 de la mañana."
+    },
+    {
+      "id": "A1-013",
+      "nivel": "A1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "He ___ in a bank.",
+      "opciones": [
+        "works",
+        "work",
+        "working",
+        "is work"
+      ],
+      "correcta": 0,
+      "porque": "Con he, she o it el verbo en presente lleva -s: works."
+    },
+    {
+      "id": "A1-014",
+      "nivel": "A1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "I ___ like coffee.",
+      "opciones": [
+        "don't",
+        "doesn't",
+        "isn't",
+        "no"
+      ],
+      "correcta": 0,
+      "porque": "Con I, el negativo del presente simple es don't + verbo."
+    },
+    {
+      "id": "A1-015",
+      "nivel": "A1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "___ she speak English?",
+      "opciones": [
+        "Does",
+        "Do",
+        "Is",
+        "Are"
+      ],
+      "correcta": 0,
+      "porque": "Con she, las preguntas en presente simple empiezan con Does."
+    },
+    {
+      "id": "A1-016",
+      "nivel": "A1",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "She ___ swim very well.",
+      "opciones": [
+        "can",
+        "cans",
+        "is can",
+        "can to"
+      ],
+      "correcta": 0,
+      "porque": "Can no cambia con ninguna persona y va seguido del verbo sin to."
+    },
+    {
+      "id": "A1-017",
+      "nivel": "A1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "¿Qué número es «fifteen»?",
+      "opciones": [
+        "15",
+        "50",
+        "5",
+        "55"
+      ],
+      "correcta": 0,
+      "porque": "Fifteen es 15; fifty es 50."
+    },
+    {
+      "id": "A1-018",
+      "nivel": "A1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "The opposite of «big» is ___.",
+      "opciones": [
+        "small",
+        "tall",
+        "long",
+        "old"
+      ],
+      "correcta": 0,
+      "porque": "Big es grande; su contrario es small (pequeño)."
+    },
+    {
+      "id": "A1-019",
+      "nivel": "A1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "I drink ___ every morning.",
+      "opciones": [
+        "coffee",
+        "bread",
+        "rice",
+        "chicken"
+      ],
+      "correcta": 0,
+      "porque": "Drink es beber, y de las cuatro opciones solo el café (coffee) se bebe."
+    },
+    {
+      "id": "A1-020",
+      "nivel": "A1",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "A ___ works in a hospital.",
+      "opciones": [
+        "doctor",
+        "teacher",
+        "driver",
+        "waiter"
+      ],
+      "correcta": 0,
+      "porque": "En un hospital trabaja un doctor; teacher es maestro, driver es chofer y waiter es mesero."
+    },
+    {
+      "id": "A1-021",
+      "nivel": "A1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Ana gets up at six. She has breakfast at seven and goes to work by bus. She starts work at eight.",
+      "enunciado": "¿Cómo va Ana al trabajo?",
+      "opciones": [
+        "En autobús",
+        "En carro",
+        "Caminando"
+      ],
+      "correcta": 0,
+      "porque": "«She goes to work by bus»: va en autobús."
+    },
+    {
+      "id": "A1-022",
+      "nivel": "A1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "My family is small. I have one brother and no sisters. My brother's name is Luis and he is a student.",
+      "enunciado": "¿A qué se dedica Luis?",
+      "opciones": [
+        "Es estudiante",
+        "Es maestro",
+        "Es doctor"
+      ],
+      "correcta": 0,
+      "porque": "«He is a student»: es estudiante."
+    },
+    {
+      "id": "A1-023",
+      "nivel": "A1",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "The supermarket is open from Monday to Saturday. It opens at 8 a.m. and closes at 9 p.m. It is closed on Sundays.",
+      "enunciado": "¿Qué día está cerrado el supermercado?",
+      "opciones": [
+        "El domingo",
+        "El sábado",
+        "El lunes"
+      ],
+      "correcta": 0,
+      "porque": "«It is closed on Sundays»: cierra los domingos."
+    },
+    {
+      "id": "A1-024",
+      "nivel": "A1",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "Hello. Can I have a coffee and two sandwiches, please?",
+      "enunciado": "¿Qué pide la persona?",
+      "opciones": [
+        "Un café y dos sándwiches",
+        "Dos cafés y un sándwich",
+        "Un té y dos sándwiches"
+      ],
+      "correcta": 0,
+      "porque": "Se escucha «a coffee and two sandwiches»: un café y dos sándwiches."
+    },
+    {
+      "id": "A1-025",
+      "nivel": "A1",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "My name is Karen. I am from Canada and I am twenty years old.",
+      "enunciado": "¿Cuántos años tiene Karen?",
+      "opciones": [
+        "20",
+        "12",
+        "22"
+      ],
+      "correcta": 0,
+      "porque": "Twenty es 20; twelve es 12."
     }
   ]
 }

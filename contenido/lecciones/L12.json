@@ -1,0 +1,157 @@
+{
+  "id": "L12",
+  "subnivel": "A1.1",
+  "unidad": 3,
+  "titulo": "In, on, at",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para decir cuándo pasa algo se usan **in**, **on** y **at**. La regla va de lo más amplio a lo más exacto." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Preposición", "Se usa con", "Ejemplos"],
+      "filas": [
+        ["in", "meses, años, estaciones y partes del día", "in May, in 2025, in summer, in the morning"],
+        ["on", "días y fechas", "on Monday, on May fifth"],
+        ["at", "horas", "at seven o'clock, at noon"]
+      ]
+    },
+    { "tipo": "tip", "md": "Una excepción que hay que memorizar: **at night** (en la noche)." },
+    { "tipo": "tip", "md": "En español decimos «el lunes». En inglés no lleva the: **on Monday**." },
+    { "tipo": "ejemplo", "en": "My class is on Monday at eight o'clock.", "es": "Mi clase es el lunes a las ocho." },
+    { "tipo": "ejemplo", "en": "My birthday is in July.", "es": "Mi cumpleaños es en julio." },
+    { "tipo": "texto", "md": "Las partes del día:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["in the morning", "en la mañana"],
+        ["at noon", "al mediodía"],
+        ["in the afternoon", "en la tarde"],
+        ["in the evening", "al anochecer"],
+        ["at night", "en la noche"],
+        ["at midnight", "a medianoche"]
+      ]
+    },
+    { "tipo": "texto", "md": "Las estaciones del año:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["spring", "primavera"],
+        ["summer", "verano"],
+        ["fall", "otoño"],
+        ["winter", "invierno"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "My birthday is ___ July.",
+      "opciones": ["in", "on", "at"],
+      "correcta": 0,
+      "porque": "Con los meses se usa in."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "The class is ___ Monday.",
+      "opciones": ["on", "in", "at"],
+      "correcta": 0,
+      "porque": "Con los días de la semana se usa on."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "My class is ___ nine o'clock.",
+      "opciones": ["at", "in", "on"],
+      "correcta": 0,
+      "porque": "Con las horas se usa at."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "It is cold ___ winter.",
+      "opciones": ["in", "on", "at"],
+      "correcta": 0,
+      "porque": "Con las estaciones se usa in: in winter (en invierno). Cold significa frío."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "My English class is ___ the morning.",
+      "aceptadas": ["in"],
+      "pista": "es una parte del día",
+      "porque": "Con las partes del día se usa in: in the morning."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["at night", "in night", "on night"],
+      "correcta": 0,
+      "porque": "At night es la excepción: las otras partes del día van con in."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada estación con su significado.",
+      "pares": [
+        ["spring", "primavera"],
+        ["summer", "verano"],
+        ["fall", "otoño"],
+        ["winter", "invierno"]
+      ],
+      "porque": "Todas las estaciones van con in: in spring, in summer, in fall, in winter."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": ["My", "class", "is", "on", "Friday."],
+      "traduccion": "Mi clase es el viernes.",
+      "porque": "El día va con on y sin the: on Friday."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "The party is ___ May fifth.",
+      "aceptadas": ["on"],
+      "pista": "es una fecha",
+      "porque": "Con las fechas completas se usa on: on May fifth."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «el lunes»?",
+      "opciones": ["on Monday", "on the Monday", "in Monday"],
+      "correcta": 0,
+      "porque": "Los días van con on y sin the."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "My name is Daniel. My birthday is in December. This year it is on a Saturday. The party is at my house at eight o'clock at night.",
+      "pregunta": "¿A qué hora es la fiesta?",
+      "opciones": ["A las 8 de la noche", "A las 8 de la mañana", "A mediodía"],
+      "correcta": 0,
+      "porque": "«At eight o'clock at night»: a las ocho de la noche."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "My English class is on Tuesday at five o'clock in the afternoon.",
+      "pregunta": "¿Cuándo es la clase?",
+      "opciones": ["El martes a las 5 de la tarde", "El jueves a las 5 de la tarde", "El martes a las 5 de la mañana"],
+      "correcta": 0,
+      "porque": "Tuesday es martes, y «in the afternoon» es en la tarde."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "The party is ___ noon.",
+      "opciones": ["at", "in", "on"],
+      "correcta": 0,
+      "porque": "Noon (mediodía) es una hora exacta, así que va con at."
+    }
+  ]
+}
