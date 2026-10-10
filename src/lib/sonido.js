@@ -1,6 +1,10 @@
 // Sonido corto al acertar, generado en el navegador (sin archivos). Se puede apagar.
+// Se reproduce como audio de "reproducción" (igual que música o video), así suena aunque el
+// iPhone esté en silencio. A cambio, pausa la música que esté sonando en otras apps.
 const CLAVE = 'biuan:sonido'
-let ctx = null
+const MUESTREO = 22050
+let reproductor = null
+const cache = new Map()
 
 export function sonidoActivo() {
   try {
@@ -19,31 +23,63 @@ export function cambiarSonido(activo) {
   if (activo) despertar()
 }
 
-function contexto() {
-  if (!ctx) {
-    const AC = window.AudioContext || window.webkitAudioContext
-    if (!AC) return null
-    ctx = new AC()
-  }
-  return ctx
+// Convierte muestras (-1…1) en un archivo WAV de 16 bits.
+function wav(muestras) {
+  const datos = new DataView(new ArrayBuffer(44 + muestras.length * 2))
+  const texto = (o, s) => [...s].forEach((c, i) => datos.setUint8(o + i, c.charCodeAt(0)))
+  texto(0, 'RIFF')
+  datos.setUint32(4, 36 + muestras.length * 2, true)
+  texto(8, 'WAVEfmt ')
+  datos.setUint32(16, 16, true)
+  datos.setUint16(20, 1, true)
+  datos.setUint16(22, 1, true)
+  datos.setUint32(24, MUESTREO, true)
+  datos.setUint32(28, MUESTREO * 2, true)
+  datos.setUint16(32, 2, true)
+  datos.setUint16(34, 16, true)
+  texto(36, 'data')
+  datos.setUint32(40, muestras.length * 2, true)
+  muestras.forEach((m, i) => datos.setInt16(44 + i * 2, Math.max(-1, Math.min(1, m)) * 0x7fff, true))
+  return URL.createObjectURL(new Blob([datos], { type: 'audio/wav' }))
 }
 
-// Safari solo deja sonar el audio si se activó durante un toque del usuario:
-// en el primer toque se crea el contexto y se reproduce un instante de silencio.
+// Dos notas (la segunda una quinta arriba) con ataque rápido y caída suave.
+function campanita(base) {
+  if (cache.has(base)) return cache.get(base)
+  const total = Math.floor(MUESTREO * 0.6)
+  const m = new Float32Array(total)
+  ;[base, base * 1.5].forEach((f, n) => {
+    const inicio = Math.floor(MUESTREO * 0.1 * n)
+    for (let i = 0; i < MUESTREO * 0.45 && inicio + i < total; i++) {
+      const t = i / MUESTREO
+      const onda = (2 / Math.PI) * Math.asin(Math.sin(2 * Math.PI * f * t)) // triangular
+      const env = Math.min(1, t / 0.015) * Math.exp(-t * 9)
+      m[inicio + i] += onda * env * 0.45
+    }
+  })
+  const url = wav(m)
+  cache.set(base, url)
+  return url
+}
+
+function obtenerReproductor() {
+  if (!reproductor) {
+    reproductor = new Audio()
+    reproductor.preload = 'auto'
+    reproductor.setAttribute('playsinline', '')
+  }
+  return reproductor
+}
+
+// Safari solo deja reproducir si el primer play ocurre durante un toque del usuario.
 function despertar() {
   try {
-    // iPhone: que suene aunque el interruptor de silencio esté activado (iOS 17+), sin pausar la música de otras apps.
-    if (navigator.audioSession && navigator.audioSession.type !== 'transient') navigator.audioSession.type = 'transient'
-    const c = contexto()
-    if (!c) return
-    if (c.state !== 'running') c.resume().catch(() => {})
-    const b = c.createBuffer(1, 1, 22050)
-    const s = c.createBufferSource()
-    s.buffer = b
-    s.connect(c.destination)
-    s.start(0)
+    const a = obtenerReproductor()
+    a.src = wav(new Float32Array(200))
+    a.volume = 0
+    a.play().then(() => { a.volume = 1 }).catch(() => { a.volume = 1 })
   } catch {
-    // Sin Web Audio.
+    // Sin audio.
   }
 }
 
@@ -59,34 +95,18 @@ export function prepararSonido() {
   window.addEventListener('keydown', al, true)
 }
 
-function tocar(c, base) {
-  const t = c.currentTime + 0.02
-  ;[base, base * 1.5].forEach((f, i) => {
-    const osc = c.createOscillator()
-    const vol = c.createGain()
-    osc.type = 'triangle'
-    osc.frequency.value = f
-    const inicio = t + i * 0.1
-    vol.gain.setValueAtTime(0.0001, inicio)
-    vol.gain.exponentialRampToValueAtTime(0.35, inicio + 0.02)
-    vol.gain.exponentialRampToValueAtTime(0.0001, inicio + 0.4)
-    osc.connect(vol).connect(c.destination)
-    osc.start(inicio)
-    osc.stop(inicio + 0.45)
-  })
-}
-
-// Dos notas; con más aciertos seguidos el tono sube un poco.
+// Con más aciertos seguidos el tono sube un poco.
 export function sonarAcierto(racha = 1) {
   if (!sonidoActivo()) return
   try {
-    const c = contexto()
-    if (!c) return
-    const base = 660 * Math.pow(2, Math.min(racha - 1, 6) / 12)
-    if (c.state === 'running') tocar(c, base)
-    else c.resume().then(() => tocar(c, base)).catch(() => {})
+    const base = Math.round(660 * Math.pow(2, Math.min(racha - 1, 6) / 12))
+    const a = obtenerReproductor()
+    a.src = campanita(base)
+    a.volume = 1
+    a.currentTime = 0
+    a.play().catch(() => {})
   } catch {
-    // Navegador sin Web Audio: sin sonido.
+    // Navegador sin audio: sin sonido.
   }
 }
 
