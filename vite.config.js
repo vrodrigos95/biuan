@@ -41,7 +41,11 @@ function contenido() {
   }
 }
 
+// Fecha de compilación (hora del centro de México), visible al final de la ruta.
+const VERSION = new Date().toLocaleString('sv-SE', { timeZone: 'America/Mexico_City' }).slice(0, 16)
+
 export default defineConfig({
   base: './',
+  define: { __VERSION__: JSON.stringify(VERSION) },
   plugins: [react(), contenido()],
 })

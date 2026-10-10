@@ -375,3 +375,4 @@ button { font: inherit; color: inherit; }
   .chispa { display: none; }
   .mas-xp { opacity: 1; }
 }
+.version { text-align: center; font-size: 0.75rem; color: var(--tinta-suave); margin: 10px 0 0; }

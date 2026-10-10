@@ -204,6 +204,7 @@ export default function Ruta() {
           </p>
         )}
         <button className="enlace centrado" onClick={() => ir('examen')}>Repetir el examen de nivel</button>
+        <p className="version">Versión {__VERSION__}</p>
       </section>
     </main>
   )
