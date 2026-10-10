@@ -333,3 +333,9 @@ button { font: inherit; color: inherit; }
 .cerrar-chico { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 1rem; color: var(--tinta-suave); min-width: 40px; min-height: 40px; cursor: pointer; }
 .pasos { padding-left: 20px; margin: 8px 0 0; }
 .pasos li { margin-bottom: 6px; }
+
+/* Simulacro */
+.modos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.modo { display: flex; flex-direction: column; gap: 4px; cursor: pointer; text-align: center; border: 2px solid var(--lav); }
+.modo strong { font-family: 'Baloo 2', sans-serif; font-size: 1.3rem; color: var(--lav-tinta); }
+.modo span { font-size: 0.85rem; color: var(--tinta-suave); font-weight: 700; }

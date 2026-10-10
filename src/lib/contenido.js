@@ -43,7 +43,7 @@ export async function cargarBancoNivel() {
 export async function cargarIndice() {
   try {
     const i = await cargarJSON('indice.json')
-    return new Set([...(i.lecciones || []), ...(i.controles || []).map((c) => `control:${c}`)])
+    return new Set([...(i.lecciones || []), ...(i.controles || []).map((c) => `control:${c}`), ...(i.simulacro ? ['simulacro'] : [])])
   } catch {
     return new Set()
   }

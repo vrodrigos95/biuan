@@ -1,0 +1,218 @@
+{
+  "id": "L60",
+  "subnivel": "B1.1",
+  "unidad": 15,
+  "titulo": "Modales en contexto",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Los **verbos modales** se agrupan mejor por lo que expresan, no como una lista suelta."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Modal",
+        "Qué expresa",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "**can / could**",
+          "Habilidad o permiso. *Could* es más formal o el pasado de *can*.",
+          "She **can** speak French."
+        ],
+        [
+          "**must**",
+          "Obligación fuerte, casi siempre una regla o algo urgente.",
+          "You **must** wear a seatbelt."
+        ],
+        [
+          "**have to**",
+          "Obligación que viene de afuera (una regla externa, no tu opinión).",
+          "I **have to** finish this by Friday."
+        ],
+        [
+          "**should**",
+          "Consejo o recomendación; no es obligatorio.",
+          "You **should** see a doctor."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "*Have to* y *must* se traducen parecido, pero fíjate si la obligación es una regla externa (*have to*) o algo que tú sientes urgente (*must*). Es un matiz que se pregunta seguido en exámenes B1."
+    },
+    {
+      "tipo": "tip",
+      "md": "*Don't have to* = no es necesario. *Mustn't* = está prohibido. No son lo mismo."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "She ___ speak three languages.",
+      "opciones": [
+        "can",
+        "must",
+        "should"
+      ],
+      "correcta": 0,
+      "porque": "Habilidad → can."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "You ___ wear a seatbelt in the car. (regla obligatoria)",
+      "opciones": [
+        "can",
+        "must",
+        "should"
+      ],
+      "correcta": 1,
+      "porque": "Obligación fuerte → must."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "You ___ (deber/consejo) study more for the exam.",
+      "aceptadas": [
+        "should",
+        "ought to"
+      ],
+      "porque": "Es un consejo, no una obligación → should."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "You ___ see a doctor about that cough. (consejo)",
+      "opciones": [
+        "must",
+        "should",
+        "can"
+      ],
+      "correcta": 1,
+      "porque": "Consejo → should."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "I ___ finish this report by Friday. (mi jefe lo pide)",
+      "opciones": [
+        "have to",
+        "should",
+        "can"
+      ],
+      "correcta": 0,
+      "porque": "Obligación externa → have to."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "Employees ___ (obligación externa) wear a uniform here.",
+      "aceptadas": [
+        "have to"
+      ],
+      "porque": "Una regla del lugar de trabajo: obligación externa → have to."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "___ you help me with this bag, please?",
+      "opciones": [
+        "Must",
+        "Could",
+        "Should"
+      ],
+      "correcta": 1,
+      "porque": "Petición cortés → could."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "Students ___ bring their ID to the exam. (regla del examen)",
+      "opciones": [
+        "should",
+        "have to",
+        "can"
+      ],
+      "correcta": 1,
+      "porque": "Obligación externa/regla → have to."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "I ___ (habilidad) swim very well.",
+      "aceptadas": [
+        "can"
+      ],
+      "porque": "Habilidad → can."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "You ___ smoke in the hospital. (prohibido)",
+      "opciones": [
+        "don't have to",
+        "must not",
+        "should not"
+      ],
+      "correcta": 1,
+      "porque": "Prohibición fuerte → must not."
+    },
+    {
+      "id": "e11",
+      "tipo": "hueco",
+      "frase": "We ___ (obligación fuerte) finish this today, it's urgent.",
+      "aceptadas": [
+        "must"
+      ],
+      "porque": "Algo urgente: obligación fuerte → must."
+    },
+    {
+      "id": "e12",
+      "tipo": "opcion",
+      "enunciado": "You ___ come if you don't want to. (no es obligatorio)",
+      "opciones": [
+        "don't have to",
+        "must not",
+        "should not"
+      ],
+      "correcta": 0,
+      "porque": "Falta de obligación → don't have to."
+    },
+    {
+      "id": "e13",
+      "tipo": "hueco",
+      "frase": "___ (petición cortés) I borrow your pen?",
+      "aceptadas": [
+        "could",
+        "may",
+        "can"
+      ],
+      "porque": "Petición cortés → could (también se acepta may o can)."
+    },
+    {
+      "id": "e14",
+      "tipo": "opcion",
+      "enunciado": "When I was a child, I ___ climb trees easily.",
+      "opciones": [
+        "can",
+        "could",
+        "must"
+      ],
+      "correcta": 1,
+      "porque": "Habilidad en el pasado → could."
+    },
+    {
+      "id": "e15",
+      "tipo": "hueco",
+      "frase": "You ___ (no es necesario) bring food, we already have some.",
+      "aceptadas": [
+        "don't have to",
+        "do not have to"
+      ],
+      "porque": "No es necesario → don't have to."
+    }
+  ]
+}

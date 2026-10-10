@@ -1,0 +1,300 @@
+{
+  "id": "L72",
+  "subnivel": "B1.2",
+  "unidad": 18,
+  "titulo": "Repaso general",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "En B1 las estructuras se mezclan (pasado simple contra continuo, *will* contra *going to*). El reto ya no es memorizar reglas, sino **reconocer cuál usar** en cada situación."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Técnica",
+        "Cómo aplicarla"
+      ],
+      "filas": [
+        [
+          "**Práctica intercalada**",
+          "Mezcla pasado simple, pasado continuo, *will* y *going to* en el mismo repaso. Así entrenas a decidir cuál usar."
+        ],
+        [
+          "**Agrupar por función**",
+          "Modales por lo que expresan: obligación (*must / have to*), consejo (*should*), habilidad (*can*)."
+        ],
+        [
+          "**Recuperación activa**",
+          "Antes de ver la regla, intenta responder de memoria cuál forma va."
+        ],
+        [
+          "**Repetición espaciada**",
+          "Repasa conectores y modales a los 2–3 días, no solo el mismo día."
+        ],
+        [
+          "**Input comprensible**",
+          "Lee o escucha algo corto en inglés y subraya cada conector que encuentres."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "En el examen: *while* suele ir con pasado continuo y *when* con la acción que interrumpe. Si hay un plan o evidencia visible, la respuesta suele ser *going to*; si es una decisión del momento o una promesa, *will*."
+    },
+    {
+      "tipo": "tip",
+      "md": "Usa eliminación de opciones y no te atores en una sola pregunta: márcala y regresa si el tiempo lo permite."
+    },
+    {
+      "tipo": "texto",
+      "md": "Vocabulario para este nivel:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "celebration",
+          "celebración"
+        ],
+        [
+          "illness",
+          "enfermedad"
+        ],
+        [
+          "improvement",
+          "mejora"
+        ],
+        [
+          "challenge",
+          "reto"
+        ],
+        [
+          "choice",
+          "elección"
+        ],
+        [
+          "rule",
+          "regla"
+        ],
+        [
+          "solution",
+          "solución"
+        ],
+        [
+          "expense",
+          "gasto"
+        ],
+        [
+          "departure",
+          "salida (viaje)"
+        ],
+        [
+          "arrival",
+          "llegada"
+        ],
+        [
+          "receipt",
+          "recibo"
+        ],
+        [
+          "announcement",
+          "anuncio"
+        ],
+        [
+          "promise",
+          "promesa"
+        ],
+        [
+          "storm",
+          "tormenta"
+        ],
+        [
+          "reminder",
+          "recordatorio"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "What does \"challenge\" mean?",
+      "opciones": [
+        "reto",
+        "celebración",
+        "regla"
+      ],
+      "correcta": 0,
+      "porque": "«reto» es la traducción correcta."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "What does \"solution\" mean?",
+      "opciones": [
+        "solución",
+        "problema",
+        "gasto"
+      ],
+      "correcta": 0,
+      "porque": "«solución» es la traducción correcta."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "What does \"promise\" mean?",
+      "opciones": [
+        "promesa",
+        "anuncio",
+        "recordatorio"
+      ],
+      "correcta": 0,
+      "porque": "«promesa» es la traducción correcta."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "What does \"arrival\" mean?",
+      "opciones": [
+        "llegada",
+        "salida",
+        "viaje"
+      ],
+      "correcta": 0,
+      "porque": "«llegada» es la traducción correcta."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "What does \"illness\" mean?",
+      "opciones": [
+        "enfermedad",
+        "mejora",
+        "salud"
+      ],
+      "correcta": 0,
+      "porque": "«enfermedad» es la traducción correcta."
+    },
+    {
+      "id": "e06",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su traducción.",
+      "pares": [
+        [
+          "departure",
+          "salida (de viaje)"
+        ],
+        [
+          "arrival",
+          "llegada"
+        ],
+        [
+          "receipt",
+          "recibo"
+        ],
+        [
+          "reminder",
+          "recordatorio"
+        ],
+        [
+          "choice",
+          "elección"
+        ]
+      ],
+      "porque": "Vocabulario de viajes y trámites que aparece seguido en exámenes B1."
+    },
+    {
+      "id": "e07",
+      "tipo": "hueco",
+      "frase": "___",
+      "aceptadas": [
+        "announcement"
+      ],
+      "porque": "Anuncio = announcement.",
+      "enunciado": "¿Cómo se dice \"anuncio\" en inglés?"
+    },
+    {
+      "id": "e08",
+      "tipo": "hueco",
+      "frase": "___",
+      "aceptadas": [
+        "celebration"
+      ],
+      "porque": "Celebración = celebration.",
+      "enunciado": "¿Cómo se dice \"celebración\" en inglés?"
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "What does \"expense\" mean?",
+      "opciones": [
+        "gasto",
+        "recibo",
+        "elección"
+      ],
+      "correcta": 0,
+      "porque": "«gasto» es la traducción correcta."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "What does \"rule\" mean?",
+      "opciones": [
+        "regla",
+        "tormenta",
+        "anuncio"
+      ],
+      "correcta": 0,
+      "porque": "«regla» es la traducción correcta."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "What does \"storm\" mean?",
+      "opciones": [
+        "tormenta",
+        "clima",
+        "viaje"
+      ],
+      "correcta": 0,
+      "porque": "«tormenta» es la traducción correcta."
+    },
+    {
+      "id": "e12",
+      "tipo": "opcion",
+      "enunciado": "What does \"improvement\" mean?",
+      "opciones": [
+        "mejora",
+        "reto",
+        "elección"
+      ],
+      "correcta": 0,
+      "porque": "«mejora» es la traducción correcta."
+    },
+    {
+      "id": "e13",
+      "tipo": "hueco",
+      "frase": "___",
+      "aceptadas": [
+        "reminder"
+      ],
+      "porque": "Recordatorio = reminder.",
+      "enunciado": "¿Cómo se dice \"recordatorio\" en inglés?"
+    },
+    {
+      "id": "e14",
+      "tipo": "hueco",
+      "frase": "___",
+      "aceptadas": [
+        "departure"
+      ],
+      "porque": "La salida de un viaje = departure (la llegada es arrival).",
+      "enunciado": "¿Cómo se dice \"salida\" (de viaje) en inglés?"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import Ruta from './pantallas/Ruta.jsx'
 import Control from './pantallas/Control.jsx'
 import Repaso from './pantallas/Repaso.jsx'
 import Desbloquear from './pantallas/Desbloquear.jsx'
+import Simulacro from './pantallas/Simulacro.jsx'
 import { tieneProgreso } from './lib/progreso.js'
 
 function leerRuta() {
@@ -61,6 +62,8 @@ export default function App() {
       return <Leccion key={ruta.param} id={ruta.param} />
     case 'ruta':
       return <Ruta />
+    case 'simulacro':
+      return <Simulacro />
     case 'desbloquear':
       return <Desbloquear />
     case 'repaso':

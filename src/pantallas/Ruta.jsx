@@ -38,7 +38,7 @@ export default function Ruta() {
   const siguiente = siguienteLeccion(estructura, progreso, disponibles)
   const subs = subnivelesPlanos(estructura)
   const pendiente = siguiente ? null : leccionPendienteAbierta(estructura, progreso, disponibles)
-  const repaso = resumenRepaso(progreso, (o) => tieneAcceso(progreso) || (!o.startsWith('control:') && puedeAbrirLeccion(estructura, o, progreso)))
+  const repaso = resumenRepaso(progreso, (o) => tieneAcceso(progreso) || (/^L\d{2}$/.test(o) && puedeAbrirLeccion(estructura, o, progreso)))
 
   function exportar() {
     descargar(exportarProgreso(), `biuan-progreso-${hoy()}.json`)
@@ -172,6 +172,15 @@ export default function Ruta() {
                 </button>
               )
             })()}
+            {sub.id === 'B1.2' && disponibles.has('simulacro') && (
+              <button className="nodo nodo-control" onClick={() => ir(tieneAcceso(progreso) ? 'simulacro' : 'desbloquear')}>
+                <span className="nodo-num">{tieneAcceso(progreso) ? '⏱️' : '🔒'}</span>
+                <span className="nodo-texto">
+                  <strong>Simulacro tipo TOEFL</strong>
+                  <small>{progreso.simulacro?.length ? `Mejor resultado: ${Math.max(...progreso.simulacro.map((h) => h.puntaje))}%` : 'Práctica de 10 preguntas o examen completo de 75'}</small>
+                </span>
+              </button>
+            )}
           </section>
         )
       })}

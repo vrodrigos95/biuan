@@ -193,10 +193,34 @@ for (const nivel of ['A1', 'A2', 'B1']) {
   validarEjercicios(archivo, todas)
 }
 
+// --- Simulacro ---
+let totalSimulacro = 0
+if (fs.existsSync(path.join(RAIZ, 'simulacro.json'))) {
+  const archivo = 'simulacro.json'
+  const sim = leer(archivo)
+  if (sim) {
+    const temas = sim.temas || {}
+    if (!Array.isArray(sim.modos) || !sim.modos.length) err(archivo, 'falta "modos"')
+    for (const m of sim.modos || []) {
+      if (!texto(m.id) || !texto(m.titulo) || !Number.isInteger(m.preguntas) || !Number.isInteger(m.minutos)) err(archivo, 'cada modo necesita id, titulo, preguntas y minutos')
+    }
+    const ids = new Set()
+    for (const p of sim.preguntas || []) {
+      totalSimulacro++
+      if (!texto(p.id) || ids.has(p.id)) err(archivo, `id vacío o repetido: ${p.id}`)
+      ids.add(p.id)
+      if (!temas[p.tema]) err(archivo, `${p.id}: el tema "${p.tema}" no está en "temas"`)
+      if (p.tipo !== 'opcion') err(archivo, `${p.id}: el tipo debe ser "opcion"`)
+      if (!texto(p.enunciado)) err(archivo, `${p.id}: falta "enunciado"`)
+      validarOpcion(archivo, p)
+    }
+  }
+}
+
 for (const a of avisos) console.log(a)
 for (const e of errores) console.log(e)
 if (errores.length) {
   console.log(`\n${errores.length} error(es). Corrígelos antes de publicar.`)
   process.exit(1)
 }
-console.log(`Contenido válido (${idsPreguntas.size} preguntas del examen de nivel, ${totalLecciones} lecciones, ${totalControles} exámenes de control).`)
+console.log(`Contenido válido (${idsPreguntas.size} preguntas del examen de nivel, ${totalLecciones} lecciones, ${totalControles} exámenes de control, ${totalSimulacro} preguntas del simulacro).`)

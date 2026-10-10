@@ -9,9 +9,10 @@ import { calificarRepaso, MAX_POR_SESION, pendientes, separar } from '../lib/rep
 import { registrarRepaso } from '../lib/logros.js'
 import Ronda from '../componentes/Ronda.jsx'
 
-const ORIGEN_VALIDO = /^(L\d{2}|control:(A1|A2|B1))$/
+const ORIGEN_VALIDO = /^(L\d{2}|control:(A1|A2|B1)|simulacro)$/
 
 async function cargarOrigen(origen) {
+  if (origen === 'simulacro') return (await cargarJSON('simulacro.json')).preguntas
   if (origen.startsWith('control:')) {
     const c = await cargarJSON(`controles/${origen.slice(8)}.json`)
     return c.secciones.flatMap((s) => s.preguntas)
@@ -30,7 +31,7 @@ export default function Repaso() {
   useEffect(() => {
     let vivo = true
     // Sin licencia solo se repasa lo gratis.
-    const permitido = (o, est) => tieneAcceso() || (!o.startsWith('control:') && leccionGratis(est, o))
+    const permitido = (o, est) => tieneAcceso() || (/^L\d{2}$/.test(o) && leccionGratis(est, o))
     cargarEstructura().then((est) => {
     const claves = pendientes(leerProgreso(), undefined, (o) => permitido(o, est)).slice(0, MAX_POR_SESION)
     const origenes = [...new Set(claves.map((c) => separar(c).origen))].filter((o) => ORIGEN_VALIDO.test(o))

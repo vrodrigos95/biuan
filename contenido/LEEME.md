@@ -102,3 +102,26 @@ Si el archivo existe, el examen aparece en la ruta al final del nivel. Ver
 - `aprobacion` es el porcentaje mínimo de aciertos.
 - `espera_horas_reintento`: horas que hay que esperar para repetirlo si se reprueba.
 - Aprobarlo abre el siguiente nivel y permite descargar la constancia en PDF.
+
+## Simulacro (`simulacro.json`)
+
+```json
+{
+  "titulo": "Simulacro tipo TOEFL",
+  "descripcion": "…",
+  "modos": [
+    { "id": "practica", "titulo": "Práctica", "preguntas": 10, "minutos": 5 },
+    { "id": "completo", "titulo": "Completo", "preguntas": 75, "minutos": 60 }
+  ],
+  "temas": { "pascont": "Pasado continuo", "futuro": "Futuro (will / going to)" },
+  "preguntas": [
+    { "id": "S001", "tema": "pascont", "tipo": "opcion", "enunciado": "I ___ TV when she called.",
+      "opciones": ["watched", "was watching", "watch"], "correcta": 1, "porque": "…" }
+  ]
+}
+```
+
+- Cada pregunta lleva un `tema` que debe existir en `temas`; el análisis de errores se
+  agrupa por tema.
+- En el modo práctica las preguntas se reparten entre los temas.
+- Lo que se falla entra al repaso espaciado.

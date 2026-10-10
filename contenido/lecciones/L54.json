@@ -1,0 +1,140 @@
+{
+  "id": "L54",
+  "subnivel": "B1.1",
+  "unidad": 14,
+  "titulo": "Cuando y mientras",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Cuando dos acciones se cruzan en el pasado, la que estaba **en progreso** va en **pasado continuo** y la **corta que interrumpe** va en **pasado simple**."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "🎬 Pasado continuo",
+        "📸 Pasado simple"
+      ],
+      "filas": [
+        [
+          "was/were + verbo-ing",
+          "verbo en pasado"
+        ],
+        [
+          "I **was watching** TV…",
+          "…**when** she **called**."
+        ],
+        [
+          "La acción «en pausa», de fondo",
+          "La acción corta que interrumpe"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Piensa en el pasado continuo como una **película en pausa** y en el pasado simple como una **foto**. *While* casi siempre va con la película (continuo); *when* casi siempre va con la foto (simple)."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "While I was cooking, he was reading the newspaper.",
+      "es": "Mientras yo cocinaba, él leía el periódico."
+    },
+    {
+      "tipo": "tip",
+      "md": "En el examen, busca la palabra *while* (mientras): normalmente va con pasado continuo. *When* (cuando) suele introducir la acción que interrumpe."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ (watch) TV when she called.",
+      "opciones": [
+        "watched",
+        "was watching",
+        "watch"
+      ],
+      "correcta": 1,
+      "porque": "Acción en progreso interrumpida → pasado continuo."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "While I was cooking, he ___ (read) the newspaper.",
+      "opciones": [
+        "read",
+        "was reading",
+        "reads"
+      ],
+      "correcta": 1,
+      "porque": "\"While\" + dos acciones en progreso → continuo."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "We ___ (drive) home when we saw the accident.",
+      "aceptadas": [
+        "were driving"
+      ],
+      "porque": "La acción en progreso (manejar) se interrumpe con otra corta (ver el accidente) → were + -ing.",
+      "pista": "acción en progreso"
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "She ___ (sleep) when the phone rang.",
+      "opciones": [
+        "slept",
+        "was sleeping",
+        "sleeps"
+      ],
+      "correcta": 1,
+      "porque": "Acción en progreso interrumpida → continuo."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "We ___ (walk) in the park when it started to rain.",
+      "opciones": [
+        "walked",
+        "were walking",
+        "walk"
+      ],
+      "correcta": 1,
+      "porque": "Acción en progreso → continuo."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "The phone ___ (ring) while she was sleeping.",
+      "opciones": [
+        "rang",
+        "was ringing",
+        "rings"
+      ],
+      "correcta": 0,
+      "porque": "Acción corta que interrumpe → pasado simple."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "He broke his leg while he ___ (ski).",
+      "opciones": [
+        "skied",
+        "was skiing",
+        "skis"
+      ],
+      "correcta": 1,
+      "porque": "Acción en progreso interrumpida → continuo."
+    },
+    {
+      "id": "e08",
+      "tipo": "hueco",
+      "frase": "They ___ (play) soccer when it started to rain.",
+      "aceptadas": [
+        "were playing"
+      ],
+      "porque": "Jugaban (en progreso) cuando empezó a llover (interrupción) → were + -ing.",
+      "pista": "acción en progreso"
+    }
+  ]
+}
