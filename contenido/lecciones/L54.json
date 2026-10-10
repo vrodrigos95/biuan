@@ -129,7 +129,8 @@
       "aceptadas": [
         "were driving"
       ],
-      "porque": "Manejar era la acción en progreso; ver el accidente la interrumpe: were + verbo-ing."
+      "porque": "Manejar era la acción en progreso; ver el accidente la interrumpe: were + verbo-ing.",
+      "pista": "acción en progreso"
     },
     {
       "id": "e04",
@@ -214,7 +215,8 @@
       "aceptadas": [
         "were playing"
       ],
-      "porque": "Jugar era la acción en progreso cuando empezó a llover: were + verbo-ing."
+      "porque": "Jugar era la acción en progreso cuando empezó a llover: were + verbo-ing.",
+      "pista": "acción en progreso"
     },
     {
       "id": "e10",
