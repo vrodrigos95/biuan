@@ -1,0 +1,283 @@
+{
+  "id": "L30",
+  "subnivel": "A2.1",
+  "unidad": 8,
+  "titulo": "Verbos regulares",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **pasado simple** cuenta acciones que ya terminaron. Con los verbos regulares solo se agrega **-ed**, y es igual para todas las personas: I worked, she worked, they worked."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "La mayoría: + ed",
+          "work → worked, clean → cleaned"
+        ],
+        [
+          "Termina en -e: + d",
+          "dance → danced, live → lived"
+        ],
+        [
+          "Consonante + y: cambia a -ied",
+          "study → studied"
+        ],
+        [
+          "Vocal corta + consonante: se duplica",
+          "stop → stopped"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Si antes de la y hay vocal, solo se agrega -ed: play → played, stay → stayed."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I watched a movie last night.",
+      "es": "Vi una película anoche."
+    },
+    {
+      "tipo": "texto",
+      "md": "La terminación -ed se pronuncia de tres formas. Casi nunca es una sílaba extra:"
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Suena «t»",
+          "worked, watched, cooked"
+        ],
+        [
+          "Suena «d»",
+          "played, cleaned, lived"
+        ],
+        [
+          "Suena «id» (sílaba extra)",
+          "visited, wanted, invited"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Solo suena «id» cuando el verbo termina en **t** o **d**. *Worked* suena «uerkt», en una sola sílaba."
+    },
+    {
+      "tipo": "texto",
+      "md": "El fin de semana:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "weekend",
+          "fin de semana"
+        ],
+        [
+          "stay home",
+          "quedarse en casa"
+        ],
+        [
+          "rest",
+          "descansar"
+        ],
+        [
+          "clean",
+          "limpiar"
+        ],
+        [
+          "visit",
+          "visitar"
+        ],
+        [
+          "invite",
+          "invitar"
+        ],
+        [
+          "watch a movie",
+          "ver una película"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "Yesterday I ___ soccer.",
+      "opciones": [
+        "played",
+        "play",
+        "playing"
+      ],
+      "correcta": 0,
+      "porque": "Yesterday pide pasado: play + ed."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el pasado de study?",
+      "opciones": [
+        "studied",
+        "studyed",
+        "studed"
+      ],
+      "correcta": 0,
+      "porque": "Consonante + y: la y cambia a -ied."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "She ___ (dance) at the party last night.",
+      "aceptadas": [
+        "danced"
+      ],
+      "pista": "termina en -e",
+      "porque": "Dance termina en -e: solo se agrega -d."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "We ___ (stop) at the store.",
+      "aceptadas": [
+        "stopped"
+      ],
+      "pista": "se duplica la p",
+      "porque": "Vocal corta + consonante: se duplica la p y se agrega -ed."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "He ___ TV last night.",
+      "opciones": [
+        "watched",
+        "watches",
+        "watch"
+      ],
+      "correcta": 0,
+      "porque": "Last night pide pasado: watched. En pasado no hay -s para he."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "¿En cuál se pronuncia el -ed como sílaba extra?",
+      "opciones": [
+        "visited",
+        "worked",
+        "played"
+      ],
+      "correcta": 0,
+      "porque": "Solo suena «id» después de t o d: visit termina en t."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada verbo con su significado.",
+      "pares": [
+        [
+          "stay",
+          "quedarse"
+        ],
+        [
+          "rest",
+          "descansar"
+        ],
+        [
+          "invite",
+          "invitar"
+        ],
+        [
+          "clean",
+          "limpiar"
+        ],
+        [
+          "visit",
+          "visitar"
+        ]
+      ],
+      "porque": "Verbos para contar tu fin de semana."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "cleaned",
+        "the",
+        "house",
+        "on",
+        "Saturday."
+      ],
+      "traduccion": "Limpié la casa el sábado.",
+      "porque": "Sujeto + verbo en pasado + objeto, y el día al final."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "We",
+        "stayed",
+        "home",
+        "last",
+        "weekend."
+      ],
+      "traduccion": "Nos quedamos en casa el fin de semana pasado.",
+      "porque": "Stay lleva vocal antes de la y: stayed."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "My parents ___ in Puebla in 2010.",
+      "opciones": [
+        "lived",
+        "live",
+        "living"
+      ],
+      "correcta": 0,
+      "porque": "In 2010 es pasado: live + d."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "She worked yesterday.",
+        "She workeds yesterday.",
+        "She was work yesterday."
+      ],
+      "correcta": 0,
+      "porque": "El pasado es igual para todas las personas y no lleva was: she worked."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "My weekend was good. On Saturday I cleaned my room and cooked dinner for my family. On Sunday I rested in the morning. In the afternoon I visited my grandmother and we watched a movie.",
+      "pregunta": "¿Qué hizo el domingo en la tarde?",
+      "opciones": [
+        "Visitó a su abuela",
+        "Limpió su cuarto",
+        "Cocinó la cena"
+      ],
+      "correcta": 0,
+      "porque": "«In the afternoon I visited my grandmother»: visitó a su abuela. Limpiar y cocinar fueron el sábado."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "I stayed home last night. I listened to music and talked to my sister.",
+      "pregunta": "¿Qué hizo anoche?",
+      "opciones": [
+        "Se quedó en casa",
+        "Visitó a su hermana",
+        "Vio una película"
+      ],
+      "correcta": 0,
+      "porque": "«I stayed home last night»: se quedó en casa."
+    }
+  ]
+}
