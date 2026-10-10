@@ -1,0 +1,152 @@
+{
+  "id": "L05",
+  "subnivel": "A1.1",
+  "unidad": 2,
+  "titulo": "Un, una, el",
+  "explicacion": [
+    { "tipo": "texto", "md": "**a** y **an** significan «un» o «una». Se usan con una sola cosa, cuando la mencionas por primera vez o no importa cuál es." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Artículo", "Cuándo se usa", "Ejemplo"],
+      "filas": [
+        ["a", "antes de sonido de consonante", "a book, a pen"],
+        ["an", "antes de sonido de vocal", "an apple, an umbrella"]
+      ]
+    },
+    { "tipo": "tip", "md": "Lo que cuenta es el **sonido**, no la letra: se dice *an hour* porque la h es muda." },
+    { "tipo": "texto", "md": "**the** significa «el, la, los, las». Se usa cuando los dos saben de qué cosa se habla, o cuando solo existe una." },
+    { "tipo": "ejemplo", "en": "I have a dog. The dog is black.", "es": "Tengo un perro. El perro es negro." },
+    { "tipo": "ejemplo", "en": "The sun is hot.", "es": "El sol está caliente." },
+    { "tipo": "tip", "md": "Las profesiones llevan a o an: She is **a** nurse. He is **an** engineer." },
+    { "tipo": "tip", "md": "**a** y **an** solo van con singular. En plural no se ponen: a book, pero books." },
+    { "tipo": "texto", "md": "Objetos de todos los días:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["book", "libro"],
+        ["pen", "pluma"],
+        ["phone", "teléfono"],
+        ["bag", "bolsa / mochila"],
+        ["key", "llave"],
+        ["umbrella", "paraguas"],
+        ["watch", "reloj de pulsera"],
+        ["apple", "manzana"],
+        ["orange", "naranja"],
+        ["egg", "huevo"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I have ___ apple.",
+      "opciones": ["an", "a"],
+      "correcta": 0,
+      "porque": "Apple empieza con sonido de vocal, por eso lleva an."
+    },
+    {
+      "id": "e02",
+      "tipo": "hueco",
+      "frase": "This is ___ umbrella.",
+      "opciones": ["an", "a"],
+      "correcta": 0,
+      "porque": "Umbrella empieza con sonido de vocal: an umbrella."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "___ sun is hot today.",
+      "opciones": ["The", "A", "An"],
+      "correcta": 0,
+      "porque": "Solo existe un sol, así que es algo único: the sun."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "She is ___ nurse.",
+      "opciones": ["a", "an"],
+      "correcta": 0,
+      "porque": "Las profesiones llevan artículo, y nurse empieza con sonido de consonante: a nurse."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "He is ___ engineer.",
+      "aceptadas": ["an"],
+      "pista": "a o an",
+      "porque": "Engineer empieza con sonido de vocal: an engineer."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["an hour", "a hour"],
+      "correcta": 0,
+      "porque": "La h de hour es muda, así que la palabra empieza con sonido de vocal: an hour."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "I have a cat. ___ cat is white.",
+      "opciones": ["The", "A", "An"],
+      "correcta": 0,
+      "porque": "La segunda vez que mencionas algo ya se sabe cuál es, y se usa the."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada objeto con su significado.",
+      "pares": [
+        ["key", "llave"],
+        ["umbrella", "paraguas"],
+        ["watch", "reloj"],
+        ["bag", "mochila"],
+        ["pen", "pluma"]
+      ],
+      "porque": "Aprende cada objeto junto con su artículo: a key, an umbrella, a watch."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": ["She", "is", "a", "teacher."],
+      "traduccion": "Ella es maestra.",
+      "porque": "En inglés la profesión lleva a: She is a teacher."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto en plural?",
+      "opciones": ["They are students.", "They are a students.", "They are an students."],
+      "correcta": 0,
+      "porque": "a y an solo se usan en singular; en plural no se pone artículo."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "On my desk I have a phone, an umbrella and a book. The book is new.",
+      "pregunta": "¿Qué cosa es nueva?",
+      "opciones": ["El libro", "El teléfono", "El paraguas"],
+      "correcta": 0,
+      "porque": "«The book is new»: el libro es nuevo."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "I have an orange and an egg in my bag.",
+      "pregunta": "¿Qué hay en la mochila?",
+      "opciones": ["Una naranja y un huevo", "Una manzana y un huevo", "Una naranja y una llave"],
+      "correcta": 0,
+      "porque": "Se escucha «an orange and an egg»: una naranja y un huevo."
+    },
+    {
+      "id": "e13",
+      "tipo": "hueco",
+      "frase": "I have ___ orange.",
+      "aceptadas": ["an"],
+      "pista": "a o an",
+      "porque": "Orange empieza con sonido de vocal: an orange."
+    }
+  ]
+}
