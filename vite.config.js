@@ -5,13 +5,15 @@ import path from 'node:path'
 
 const CONTENIDO = path.resolve('contenido')
 
-// Lista de lecciones disponibles: las que tienen archivo en contenido/lecciones.
+// Contenido disponible: las lecciones y exámenes de control que tienen archivo.
+function listar(carpeta, patron) {
+  const dir = path.join(CONTENIDO, carpeta)
+  return fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => patron.test(f)).map((f) => f.replace(/\.json$/, '')).sort() : []
+}
 function indice() {
-  const dir = path.join(CONTENIDO, 'lecciones')
-  const lecciones = fs.existsSync(dir)
-    ? fs.readdirSync(dir).filter((f) => /^L\d{2}\.json$/.test(f)).map((f) => f.slice(0, 3)).sort()
-    : []
-  return JSON.stringify({ lecciones }, null, 2) + '\n'
+  const lecciones = listar('lecciones', /^L\d{2}\.json$/)
+  const controles = listar('controles', /^(A1|A2|B1)\.json$/)
+  return JSON.stringify({ lecciones, controles }, null, 2) + '\n'
 }
 
 // Sirve /contenido en desarrollo y lo copia a dist/ al compilar, con su índice.

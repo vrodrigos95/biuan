@@ -82,7 +82,7 @@ export function importarProgreso(texto) {
     throw new Error('El archivo no es un respaldo de Biuan.')
   const e = datos.progreso
   const limpio = {}
-  if (typeof e.nombre === 'string') limpio.nombre = e.nombre.slice(0, 24)
+  if (typeof e.nombre === 'string') limpio.nombre = e.nombre.slice(0, 40)
   if (esObjeto(e.colocacion) && typeof e.colocacion.nivel === 'string') limpio.colocacion = e.colocacion
   for (const k of ['subnivelActual', 'arranque']) if (SUBNIVEL.test(e[k] || '')) limpio[k] = e[k]
   if (esObjeto(e.lecciones)) {

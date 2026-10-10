@@ -75,3 +75,30 @@ Reglas:
   se muestra el audio como texto.
 - Al escribir, no importan mayúsculas, espacios de más ni el punto final.
 - Lo que el usuario falla regresa una vez al final de la lección.
+
+## Exámenes de control (`controles/A1.json`, `A2.json`, `B1.json`)
+
+Si el archivo existe, el examen aparece en la ruta al final del nivel. Ver
+`controles/A1.json` como ejemplo.
+
+```json
+{
+  "id": "A1",
+  "titulo": "Examen de control A1",
+  "minutos": 15,
+  "aprobacion": 70,
+  "espera_horas_reintento": 12,
+  "desbloquea": "A2.1",
+  "secciones": [
+    { "habilidad": "gramatica", "titulo": "Gramática", "preguntas": [ ...ejercicios... ] },
+    { "habilidad": "escucha", "titulo": "Listening", "preguntas": [ ...ejercicios... ] }
+  ]
+}
+```
+
+- Las preguntas usan exactamente los mismos tipos y campos que los ejercicios de
+  las lecciones. Los `id` no se pueden repetir dentro del examen.
+- `minutos` es opcional: si se pone, hay cronómetro y al llegar a cero se entrega solo.
+- `aprobacion` es el porcentaje mínimo de aciertos.
+- `espera_horas_reintento`: horas que hay que esperar para repetirlo si se reprueba.
+- Aprobarlo abre el siguiente nivel y permite descargar la constancia en PDF.

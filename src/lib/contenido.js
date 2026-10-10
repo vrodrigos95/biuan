@@ -22,10 +22,11 @@ export async function cargarBancoNivel() {
   return Object.fromEntries(niveles.map((n, i) => [n, archivos[i].preguntas]))
 }
 
+// Conjunto con los ids disponibles: lecciones (L04) y exámenes de control (control:A1).
 export async function cargarIndice() {
   try {
     const i = await cargarJSON('indice.json')
-    return new Set(i.lecciones || [])
+    return new Set([...(i.lecciones || []), ...(i.controles || []).map((c) => `control:${c}`)])
   } catch {
     return new Set()
   }

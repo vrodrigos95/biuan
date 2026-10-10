@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { ir } from '../App.jsx'
 import { cargarEstructura, cargarIndice } from '../lib/contenido.js'
 import { leerProgreso, exportarProgreso, importarProgreso } from '../lib/progreso.js'
-import { leccionHecha, nivelAbierto, siguienteLeccion, subnivelActual, subnivelesPlanos } from '../lib/ruta.js'
+import { leccionHecha, leccionPendienteAbierta, nivelAbierto, siguienteLeccion, subnivelActual, subnivelesPlanos } from '../lib/ruta.js'
 import { descargar } from '../lib/compartir.js'
 import { hoy } from '../lib/logros.js'
 import { etiquetaNivel } from '../lib/examenNivel.js'
@@ -34,6 +34,7 @@ export default function Ruta() {
   const actual = subnivelActual(estructura, progreso)
   const siguiente = siguienteLeccion(estructura, progreso, disponibles)
   const subs = subnivelesPlanos(estructura)
+  const pendiente = siguiente ? null : leccionPendienteAbierta(estructura, progreso, disponibles)
 
   function exportar() {
     descargar(exportarProgreso(), `biuan-progreso-${hoy()}.json`)
@@ -67,10 +68,29 @@ export default function Ruta() {
       <div className="barra-fija">
         <BarraNivel sub={actual} progreso={progreso} />
       </div>
-      {siguiente && (
+      {siguiente ? (
         <button className="boton boton-primario boton-grande boton-continuar" onClick={() => ir(`leccion/${siguiente.id}`)}>
           Continuar: {siguiente.titulo}
         </button>
+      ) : (
+        <div className="aviso aviso-ruta">
+          {pendiente ? (
+            <>
+              <p>
+                <strong>Tu subnivel ({actual.id}) todavía no tiene lecciones.</strong> Estamos preparándolas. Mientras tanto,
+                puedes repasar las de niveles anteriores.
+              </p>
+              <button className="boton boton-ancho" onClick={() => ir(`leccion/${pendiente.id}`)}>
+                Repasar: {pendiente.titulo}
+              </button>
+            </>
+          ) : (
+            <p>
+              <strong>¡Hiciste todas las lecciones disponibles!</strong> Pronto llegarán más. Puedes repetir cualquiera para
+              reforzar.
+            </p>
+          )}
+        </div>
       )}
 
       {subs.map((sub) => {
@@ -114,15 +134,24 @@ export default function Ruta() {
                 </ol>
               </div>
             ))}
-            {control && (
-              <div className="nodo nodo-control inactiva">
-                <span className="nodo-num">🏁</span>
-                <span className="nodo-texto">
-                  <strong>{control.titulo}</strong>
-                  <small>Próximamente</small>
-                </span>
-              </div>
-            )}
+            {control && (() => {
+              const hay = disponibles.has(`control:${control.id}`)
+              const registro = progreso.controles?.[control.id]
+              return (
+                <button
+                  className={`nodo nodo-control ${hay && abierto ? '' : 'inactiva'} ${registro?.aprobado ? 'hecha' : ''}`}
+                  disabled={!hay || !abierto}
+                  onClick={() => ir(`control/${control.id}`)}
+                >
+                  <span className="nodo-num">{registro?.aprobado ? '✓' : '🏁'}</span>
+                  <span className="nodo-texto">
+                    <strong>{control.titulo}</strong>
+                    <small>{!hay ? 'Próximamente' : registro?.aprobado ? 'Aprobado · descarga tu constancia' : 'Apruébalo para abrir el siguiente nivel'}</small>
+                  </span>
+                  {registro?.aprobado && <span className="nodo-puntos">{registro.puntaje}%</span>}
+                </button>
+              )
+            })()}
           </section>
         )
       })}

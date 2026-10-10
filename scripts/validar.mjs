@@ -89,36 +89,7 @@ if (est) for (const s of est.subniveles || []) for (const u of s.unidades || [])
 
 const BLOQUES = ['texto', 'tip', 'ejemplo', 'tabla']
 const TIPOS = ['opcion', 'hueco', 'ordenar', 'emparejar', 'lectura', 'escucha']
-let totalLecciones = 0
-const dirLecciones = path.join(RAIZ, 'lecciones')
-const archivosLeccion = fs.existsSync(dirLecciones) ? fs.readdirSync(dirLecciones).filter((f) => f.endsWith('.json')).sort() : []
-
-for (const nombre of archivosLeccion) {
-  const archivo = `lecciones/${nombre}`
-  const l = leer(archivo)
-  if (!l) continue
-  totalLecciones++
-  const idArchivo = nombre.replace(/\.json$/, '')
-  if (l.id !== idArchivo) err(archivo, `"id" debe ser ${idArchivo}, igual que el nombre del archivo`)
-  const lugar = leccionesEstructura.get(l.id)
-  if (!lugar) err(archivo, `${l.id} no está en estructura.json`)
-  else {
-    if (l.subnivel !== lugar.subnivel) err(archivo, `"subnivel" debe ser ${lugar.subnivel}`)
-    if (l.unidad !== lugar.unidad) err(archivo, `"unidad" debe ser ${lugar.unidad}`)
-  }
-  if (!texto(l.titulo)) err(archivo, 'falta "titulo"')
-
-  if (!Array.isArray(l.explicacion) || !l.explicacion.length) err(archivo, 'falta "explicacion"')
-  for (const [i, b] of (l.explicacion || []).entries()) {
-    const donde = `explicación, bloque ${i + 1}`
-    if (!BLOQUES.includes(b.tipo)) err(archivo, `${donde}: "tipo" debe ser ${BLOQUES.join(', ')}`)
-    if ((b.tipo === 'texto' || b.tipo === 'tip') && !texto(b.md)) err(archivo, `${donde}: falta "md"`)
-    if (b.tipo === 'ejemplo' && !texto(b.en)) err(archivo, `${donde}: falta "en"`)
-    if (b.tipo === 'tabla' && (!Array.isArray(b.filas) || !b.filas.length || b.filas.some((f) => !Array.isArray(f)))) err(archivo, `${donde}: "filas" debe ser una lista de filas`)
-  }
-
-  const ejercicios = l.ejercicios || []
-  if (ejercicios.length < 8 || ejercicios.length > 16) aviso(archivo, `tiene ${ejercicios.length} ejercicios (lo recomendado es unos 12)`)
+function validarEjercicios(archivo, ejercicios) {
   const ids = new Set()
   for (const ej of ejercicios) {
     const id = ej.id || '(sin id)'
@@ -166,10 +137,66 @@ for (const nombre of archivosLeccion) {
   }
 }
 
+let totalLecciones = 0
+const dirLecciones = path.join(RAIZ, 'lecciones')
+const archivosLeccion = fs.existsSync(dirLecciones) ? fs.readdirSync(dirLecciones).filter((f) => f.endsWith('.json')).sort() : []
+
+for (const nombre of archivosLeccion) {
+  const archivo = `lecciones/${nombre}`
+  const l = leer(archivo)
+  if (!l) continue
+  totalLecciones++
+  const idArchivo = nombre.replace(/\.json$/, '')
+  if (l.id !== idArchivo) err(archivo, `"id" debe ser ${idArchivo}, igual que el nombre del archivo`)
+  const lugar = leccionesEstructura.get(l.id)
+  if (!lugar) err(archivo, `${l.id} no está en estructura.json`)
+  else {
+    if (l.subnivel !== lugar.subnivel) err(archivo, `"subnivel" debe ser ${lugar.subnivel}`)
+    if (l.unidad !== lugar.unidad) err(archivo, `"unidad" debe ser ${lugar.unidad}`)
+  }
+  if (!texto(l.titulo)) err(archivo, 'falta "titulo"')
+
+  if (!Array.isArray(l.explicacion) || !l.explicacion.length) err(archivo, 'falta "explicacion"')
+  for (const [i, b] of (l.explicacion || []).entries()) {
+    const donde = `explicación, bloque ${i + 1}`
+    if (!BLOQUES.includes(b.tipo)) err(archivo, `${donde}: "tipo" debe ser ${BLOQUES.join(', ')}`)
+    if ((b.tipo === 'texto' || b.tipo === 'tip') && !texto(b.md)) err(archivo, `${donde}: falta "md"`)
+    if (b.tipo === 'ejemplo' && !texto(b.en)) err(archivo, `${donde}: falta "en"`)
+    if (b.tipo === 'tabla' && (!Array.isArray(b.filas) || !b.filas.length || b.filas.some((f) => !Array.isArray(f)))) err(archivo, `${donde}: "filas" debe ser una lista de filas`)
+  }
+
+  const ejercicios = l.ejercicios || []
+  if (ejercicios.length < 8 || ejercicios.length > 16) aviso(archivo, `tiene ${ejercicios.length} ejercicios (lo recomendado es unos 12)`)
+  validarEjercicios(archivo, ejercicios)
+}
+
+// --- Exámenes de control ---
+let totalControles = 0
+for (const nivel of ['A1', 'A2', 'B1']) {
+  const archivo = `controles/${nivel}.json`
+  if (!fs.existsSync(path.join(RAIZ, archivo))) continue
+  const c = leer(archivo)
+  if (!c) continue
+  totalControles++
+  if (c.id !== nivel) err(archivo, `"id" debe ser ${nivel}`)
+  if (!texto(c.titulo)) err(archivo, 'falta "titulo"')
+  if (!Number.isInteger(c.aprobacion) || c.aprobacion < 1 || c.aprobacion > 100) err(archivo, '"aprobacion" debe ser un porcentaje entero de 1 a 100')
+  if (c.minutos !== undefined && (!Number.isInteger(c.minutos) || c.minutos < 1)) err(archivo, '"minutos" debe ser un entero positivo')
+  if (c.espera_horas_reintento !== undefined && (typeof c.espera_horas_reintento !== 'number' || c.espera_horas_reintento < 0)) err(archivo, '"espera_horas_reintento" debe ser un número de horas')
+  if (!Array.isArray(c.secciones) || !c.secciones.length) { err(archivo, 'falta "secciones"'); continue }
+  const todas = []
+  for (const sec of c.secciones) {
+    if (!texto(sec.titulo)) err(archivo, 'una sección no tiene "titulo"')
+    if (!Array.isArray(sec.preguntas) || !sec.preguntas.length) err(archivo, `la sección ${sec.titulo || ''} no tiene preguntas`)
+    else todas.push(...sec.preguntas)
+  }
+  validarEjercicios(archivo, todas)
+}
+
 for (const a of avisos) console.log(a)
 for (const e of errores) console.log(e)
 if (errores.length) {
   console.log(`\n${errores.length} error(es). Corrígelos antes de publicar.`)
   process.exit(1)
 }
-console.log(`Contenido válido (${idsPreguntas.size} preguntas del examen de nivel, ${totalLecciones} lecciones).`)
+console.log(`Contenido válido (${idsPreguntas.size} preguntas del examen de nivel, ${totalLecciones} lecciones, ${totalControles} exámenes de control).`)

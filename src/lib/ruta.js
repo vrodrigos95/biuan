@@ -26,9 +26,21 @@ export function subnivelActual(estructura, progreso) {
   const arranque = progreso.arranque || progreso.subnivelActual || 'A1.1'
   const desde = Math.max(0, subs.findIndex((s) => s.id === arranque))
   for (let i = desde; i < subs.length; i++) {
+    // Un nivel con examen de control aprobado se da por terminado.
+    if (progreso.controles?.[subs[i].nivel]?.aprobado) continue
     if (subs[i].lecciones.some((l) => !leccionHecha(progreso, l.id))) return subs[i]
   }
   return subs[subs.length - 1]
+}
+
+// Primera lección disponible y sin hacer en cualquier nivel abierto (para repasar mientras llega contenido).
+export function leccionPendienteAbierta(estructura, progreso, disponibles) {
+  for (const s of subnivelesPlanos(estructura)) {
+    if (!nivelAbierto(s.nivel, progreso)) continue
+    const l = s.lecciones.find((x) => disponibles.has(x.id) && !leccionHecha(progreso, x.id))
+    if (l) return l
+  }
+  return null
 }
 
 export function avanceSubnivel(sub, progreso) {

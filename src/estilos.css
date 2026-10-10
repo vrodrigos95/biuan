@@ -304,3 +304,11 @@ button { font: inherit; color: inherit; }
 .logro { background: var(--superficie); border: 1px solid var(--linea); border-radius: 16px; padding: 14px; text-align: center; }
 .logro span { display: block; font-size: 1.6rem; }
 .centrado-texto { text-align: center; }
+.aviso-ruta { margin-bottom: 20px; }
+.aviso-ruta .boton { background: var(--superficie); }
+
+/* Examen de control */
+.contador.urgente { color: var(--rojo); }
+.reprobado { background: linear-gradient(135deg, var(--amarillo), var(--durazno)); }
+.constancia { border-color: var(--menta); }
+.control .etiqueta { margin-bottom: 8px; }
