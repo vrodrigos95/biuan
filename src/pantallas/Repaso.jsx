@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { ir } from '../App.jsx'
-import { cargarJSON } from '../lib/contenido.js'
+import { cargarEstructura, cargarJSON } from '../lib/contenido.js'
+import { leccionGratis, tieneAcceso } from '../lib/acceso.js'
 import { prepararVoz, callar } from '../lib/voz.js'
 import { preparar } from '../lib/ejercicios.js'
 import { leerProgreso } from '../lib/progreso.js'
@@ -28,9 +29,12 @@ export default function Repaso() {
 
   useEffect(() => {
     let vivo = true
-    const claves = pendientes(leerProgreso()).slice(0, MAX_POR_SESION)
+    // Sin licencia solo se repasa lo gratis.
+    const permitido = (o, est) => tieneAcceso() || (!o.startsWith('control:') && leccionGratis(est, o))
+    cargarEstructura().then((est) => {
+    const claves = pendientes(leerProgreso(), undefined, (o) => permitido(o, est)).slice(0, MAX_POR_SESION)
     const origenes = [...new Set(claves.map((c) => separar(c).origen))].filter((o) => ORIGEN_VALIDO.test(o))
-    Promise.all([Promise.all(origenes.map((o) => cargarOrigen(o).then((ejs) => [o, ejs]).catch(() => [o, []]))), prepararVoz()]).then(
+    return Promise.all([Promise.all(origenes.map((o) => cargarOrigen(o).then((ejs) => [o, ejs]).catch(() => [o, []]))), prepararVoz()]).then(
       ([fuentes, voz]) => {
         if (!vivo) return
         const mapa = Object.fromEntries(fuentes)
@@ -46,6 +50,7 @@ export default function Repaso() {
         setCola(lista)
       },
     )
+    })
     return () => {
       vivo = false
       callar()

@@ -6,3 +6,4 @@ dist/
 servidor/config.php
 *.log
 .DS_Store
+produccion/

@@ -172,6 +172,7 @@ export default function Resultado() {
             </button>
           )}
           <p className="nota">Pago único. La primera unidad es gratis.</p>
+          <button className="enlace centrado" onClick={() => ir('desbloquear')}>Ya compré: tengo una clave</button>
         </section>
       )}
 

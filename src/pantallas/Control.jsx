@@ -8,6 +8,8 @@ import { crearFolio, dibujarConstancia, pdfDesdeJpeg } from '../lib/constancia.j
 import { descargar } from '../lib/compartir.js'
 import { nivelAbierto } from '../lib/ruta.js'
 import { agregarAlRepaso } from '../lib/repaso.js'
+import { esErrorLicencia, tieneAcceso } from '../lib/acceso.js'
+import Bloqueado from '../componentes/Bloqueado.jsx'
 import Ejercicio from '../ejercicios/Ejercicio.jsx'
 
 function textoRespuesta(ej, r) {
@@ -43,13 +45,17 @@ export default function Control({ nivel }) {
       setError('Este examen no existe.')
       return
     }
+    if (!tieneAcceso()) {
+      setError('bloqueo')
+      return
+    }
     Promise.all([cargarJSON(`controles/${nivel}.json`), prepararVoz()])
       .then(([c, voz]) => {
         if (!vivo) return
         setExamen(c)
         setHayVoz(voz)
       })
-      .catch(() => vivo && setError('Este examen todavía no está disponible.'))
+      .catch((e) => vivo && setError(esErrorLicencia(e) ? 'bloqueo' : 'Este examen todavía no está disponible.'))
     return () => {
       vivo = false
       callar()
@@ -72,6 +78,7 @@ export default function Control({ nivel }) {
     return () => clearInterval(t)
   }, [fase, examen])
 
+  if (error === 'bloqueo') return <Bloqueado que="Este examen" />
   if (error)
     return (
       <main className="pantalla">

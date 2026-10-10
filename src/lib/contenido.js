@@ -1,14 +1,26 @@
 import { getConfig } from './config.js'
+import { modoLicencia, pedirContenidoPago, rutaGratis } from './acceso.js'
 
 const cache = new Map()
 
-export async function cargarJSON(ruta) {
-  if (cache.has(ruta)) return cache.get(ruta)
+function cargarPublico(ruta) {
   const url = new URL(ruta, new URL(getConfig().contenidoUrl, location.href)).href
-  const promesa = fetch(url).then((r) => {
+  return fetch(url).then((r) => {
     if (!r.ok) throw new Error(`No se pudo cargar ${ruta}`)
     return r.json()
   })
+}
+
+// En producción el contenido de pago llega por la API con el permiso; lo gratis es público.
+async function cargar(ruta) {
+  if (modoLicencia() !== 'servidor' || ruta === 'estructura.json') return cargarPublico(ruta)
+  const estructura = await cargarJSON('estructura.json')
+  return rutaGratis(ruta, estructura) ? cargarPublico(ruta) : pedirContenidoPago(ruta)
+}
+
+export async function cargarJSON(ruta) {
+  if (cache.has(ruta)) return cache.get(ruta)
+  const promesa = cargar(ruta)
   cache.set(ruta, promesa)
   promesa.catch(() => cache.delete(ruta))
   return promesa

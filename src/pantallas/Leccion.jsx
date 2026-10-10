@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import { ir } from '../App.jsx'
-import { cargarJSON } from '../lib/contenido.js'
+import { cargarEstructura, cargarJSON } from '../lib/contenido.js'
+import { esErrorLicencia, puedeAbrirLeccion } from '../lib/acceso.js'
+import { leerProgreso } from '../lib/progreso.js'
+import Bloqueado from '../componentes/Bloqueado.jsx'
 import { prepararVoz, callar } from '../lib/voz.js'
 import { preparar } from '../lib/ejercicios.js'
 import { agregarAlRepaso } from '../lib/repaso.js'
@@ -24,19 +27,24 @@ export default function Leccion({ id }) {
       setError('Esta lección no existe.')
       return
     }
-    Promise.all([cargarJSON(`lecciones/${id}.json`), prepararVoz()])
+    cargarEstructura()
+      .then((est) => {
+        if (!puedeAbrirLeccion(est, id, leerProgreso())) return Promise.reject(Object.assign(new Error(), { bloqueo: true }))
+        return Promise.all([cargarJSON(`lecciones/${id}.json`), prepararVoz()])
+      })
       .then(([l, voz]) => {
         if (!vivo) return
         setLeccion(l)
         setHayVoz(voz)
       })
-      .catch(() => vivo && setError('Esta lección todavía no está disponible.'))
+      .catch((e) => vivo && setError(e?.bloqueo || esErrorLicencia(e) ? 'bloqueo' : 'Esta lección todavía no está disponible.'))
     return () => {
       vivo = false
       callar()
     }
   }, [id])
 
+  if (error === 'bloqueo') return <Bloqueado />
   if (error)
     return (
       <main className="pantalla">

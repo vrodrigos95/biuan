@@ -2,7 +2,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-const RAIZ = path.resolve('contenido')
+const RAIZ = path.resolve(process.env.CONTENIDO_DIR || 'contenido')
 const errores = []
 const avisos = []
 const err = (archivo, msg) => errores.push(`✗ ${archivo}: ${msg}`)

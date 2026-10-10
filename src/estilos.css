@@ -317,3 +317,9 @@ button { font: inherit; color: inherit; }
 .repaso-hoy { display: flex; align-items: center; gap: 12px; cursor: pointer; border: 2px solid var(--durazno); background: #fff7f0; }
 .repaso-icono { font-size: 1.6rem; }
 .repaso-proximo { margin: -4px 0 14px; }
+
+/* Licencia */
+.incluye { padding-left: 20px; margin: 8px 0 12px; }
+.incluye li { margin-bottom: 4px; }
+.licencia-estado { text-align: center; font-weight: 800; color: var(--menta-tinta); margin: 12px 0 0; }
+.desbloquear form { margin-top: 0; }

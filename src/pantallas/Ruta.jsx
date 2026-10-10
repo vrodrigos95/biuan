@@ -6,6 +6,7 @@ import { leccionHecha, leccionPendienteAbierta, nivelAbierto, siguienteLeccion, 
 import { descargar } from '../lib/compartir.js'
 import { hoy } from '../lib/logros.js'
 import { resumenRepaso } from '../lib/repaso.js'
+import { modoLicencia, puedeAbrirLeccion, tieneAcceso } from '../lib/acceso.js'
 import { etiquetaNivel } from '../lib/examenNivel.js'
 import BarraNivel from '../componentes/BarraNivel.jsx'
 import Marca from '../componentes/Marca.jsx'
@@ -36,7 +37,7 @@ export default function Ruta() {
   const siguiente = siguienteLeccion(estructura, progreso, disponibles)
   const subs = subnivelesPlanos(estructura)
   const pendiente = siguiente ? null : leccionPendienteAbierta(estructura, progreso, disponibles)
-  const repaso = resumenRepaso(progreso)
+  const repaso = resumenRepaso(progreso, (o) => tieneAcceso(progreso) || (!o.startsWith('control:') && puedeAbrirLeccion(estructura, o, progreso)))
 
   function exportar() {
     descargar(exportarProgreso(), `biuan-progreso-${hoy()}.json`)
@@ -83,8 +84,11 @@ export default function Ruta() {
         <p className="nota repaso-proximo">🔁 Próximo repaso: {repaso.proxima === hoy() ? 'hoy' : new Date(repaso.proxima + 'T12:00').toLocaleDateString('es-MX', { weekday: 'long', day: 'numeric', month: 'long' })} · {repaso.total} {repaso.total === 1 ? 'ejercicio' : 'ejercicios'} en repaso</p>
       ) : null}
       {siguiente ? (
-        <button className="boton boton-primario boton-grande boton-continuar" onClick={() => ir(`leccion/${siguiente.id}`)}>
-          Continuar: {siguiente.titulo}
+        <button
+          className="boton boton-primario boton-grande boton-continuar"
+          onClick={() => ir(puedeAbrirLeccion(estructura, siguiente.id, progreso) ? `leccion/${siguiente.id}` : 'desbloquear')}
+        >
+          {puedeAbrirLeccion(estructura, siguiente.id, progreso) ? `Continuar: ${siguiente.titulo}` : '🔒 Desbloquea el curso para continuar'}
         </button>
       ) : (
         <div className="aviso aviso-ruta">
@@ -127,15 +131,16 @@ export default function Ruta() {
                     const hecha = leccionHecha(progreso, l.id)
                     const hay = disponibles.has(l.id)
                     const puede = hay && abierto
+                    const bloqueada = puede && !puedeAbrirLeccion(estructura, l.id, progreso)
                     const r = progreso.lecciones?.[l.id]
                     return (
                       <li key={l.id}>
                         <button
                           className={`nodo ${hecha ? 'hecha' : ''} ${puede ? '' : 'inactiva'} ${siguiente?.id === l.id ? 'siguiente' : ''}`}
                           disabled={!puede}
-                          onClick={() => ir(`leccion/${l.id}`)}
+                          onClick={() => ir(bloqueada ? 'desbloquear' : `leccion/${l.id}`)}
                         >
-                          <span className="nodo-num">{hecha ? '✓' : l.numero}</span>
+                          <span className="nodo-num">{hecha ? '✓' : bloqueada ? '🔒' : l.numero}</span>
                           <span className="nodo-texto">
                             <strong>{l.titulo}</strong>
                             <small>{hay ? l.gramatica : 'Próximamente'}</small>
@@ -155,9 +160,9 @@ export default function Ruta() {
                 <button
                   className={`nodo nodo-control ${hay && abierto ? '' : 'inactiva'} ${registro?.aprobado ? 'hecha' : ''}`}
                   disabled={!hay || !abierto}
-                  onClick={() => ir(`control/${control.id}`)}
+                  onClick={() => ir(tieneAcceso(progreso) ? `control/${control.id}` : 'desbloquear')}
                 >
-                  <span className="nodo-num">{registro?.aprobado ? '✓' : '🏁'}</span>
+                  <span className="nodo-num">{registro?.aprobado ? '✓' : hay && !tieneAcceso(progreso) ? '🔒' : '🏁'}</span>
                   <span className="nodo-texto">
                     <strong>{control.titulo}</strong>
                     <small>{!hay ? 'Próximamente' : registro?.aprobado ? 'Aprobado · descarga tu constancia' : 'Apruébalo para abrir el siguiente nivel'}</small>
@@ -179,6 +184,13 @@ export default function Ruta() {
         </div>
         <input ref={archivoRef} type="file" accept="application/json,.json" hidden onChange={importar} />
         {aviso && <p className="aviso">{aviso}</p>}
+        {modoLicencia() !== 'abierto' && (
+          <p className="licencia-estado">
+            {tieneAcceso(progreso) ? '✓ Curso completo activado en este dispositivo' : (
+              <button className="enlace" onClick={() => ir('desbloquear')}>Desbloquear el curso completo / tengo una clave</button>
+            )}
+          </p>
+        )}
         <button className="enlace centrado" onClick={() => ir('examen')}>Repetir el examen de nivel</button>
       </section>
     </main>

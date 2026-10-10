@@ -2,5 +2,6 @@
   "contenidoUrl": "contenido/",
   "apiUrl": "",
   "sitioUrl": "",
-  "gumroadUrl": ""
+  "gumroadUrl": "",
+  "demoLicencia": true
 }

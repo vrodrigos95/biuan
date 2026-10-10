@@ -8,8 +8,10 @@ import '@fontsource/nunito/latin-800.css'
 import './estilos.css'
 import App from './App.jsx'
 import { cargarConfig } from './lib/config.js'
+import { renovarSiToca } from './lib/acceso.js'
 
 cargarConfig().then(() => {
+  renovarSiToca()
   createRoot(document.getElementById('root')).render(
     <StrictMode>
       <App />

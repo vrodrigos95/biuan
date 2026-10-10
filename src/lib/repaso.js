@@ -37,16 +37,17 @@ export function agregarAlRepaso(origen, ids) {
   guardarProgreso({ repaso })
 }
 
-export function pendientes(progreso, dia = hoy()) {
+export function pendientes(progreso, dia = hoy(), permitido = () => true) {
   return Object.entries(progreso.repaso || {})
-    .filter(([, r]) => r.proxima <= dia)
+    .filter(([c, r]) => r.proxima <= dia && permitido(separar(c).origen))
     .sort(([, a], [, b]) => a.proxima.localeCompare(b.proxima) || a.caja - b.caja)
     .map(([c]) => c)
 }
 
-export function resumenRepaso(progreso) {
-  const todos = Object.values(progreso.repaso || {})
-  const deHoy = pendientes(progreso).length
+// permitido(origen): sin licencia solo cuenta lo gratis.
+export function resumenRepaso(progreso, permitido = () => true) {
+  const todos = Object.entries(progreso.repaso || {}).filter(([c]) => permitido(separar(c).origen)).map(([, r]) => r)
+  const deHoy = pendientes(progreso, hoy(), permitido).length
   const proxima = todos.map((r) => r.proxima).sort()[0] || null
   return { deHoy, total: todos.length, proxima }
 }

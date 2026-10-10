@@ -14,6 +14,7 @@ export async function cargarConfig() {
     contenidoUrl: datos.contenidoUrl || 'contenido/',
     apiUrl: datos.apiUrl || '',
     gumroadUrl: datos.gumroadUrl || '',
+    demoLicencia: datos.demoLicencia === true,
     sitioUrl: sitio.endsWith('/') ? sitio : sitio + '/',
   }
   return config

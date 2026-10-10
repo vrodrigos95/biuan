@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import fs from 'node:fs'
 import path from 'node:path'
 
-const CONTENIDO = path.resolve('contenido')
+const CONTENIDO = path.resolve(process.env.CONTENIDO_DIR || 'contenido')
 
 // Contenido disponible: las lecciones y exámenes de control que tienen archivo.
 function listar(carpeta, patron) {
