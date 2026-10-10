@@ -12,13 +12,13 @@
       "tipo": "tabla",
       "columnas": [
         "Conector",
-        "Función",
+        "Relación",
         "Ejemplo"
       ],
       "filas": [
         [
           "**and**",
-          "suma / agrega",
+          "suma",
           "I like tea **and** coffee."
         ],
         [
@@ -28,8 +28,13 @@
         ],
         [
           "**because**",
-          "razón / causa",
+          "causa (+ oración)",
           "He stayed home **because** he was sick."
+        ],
+        [
+          "**because of**",
+          "causa (+ sustantivo)",
+          "He stayed home **because of** the rain."
         ],
         [
           "**so**",
@@ -38,35 +43,69 @@
         ],
         [
           "**although**",
-          "contraste fuerte",
+          "aunque",
           "**Although** it was raining, we went for a walk."
+        ],
+        [
+          "**however**",
+          "sin embargo",
+          "It was raining. **However**, we went for a walk."
         ]
       ]
     },
     {
       "tipo": "tip",
-      "md": "Antes de elegir, pregúntate qué relación hay entre las ideas: ¿sumo (*and*), contrasto (*but / although*), doy la razón (*because*) o doy el resultado (*so*)?"
+      "md": "**because** va seguido de una oración con sujeto y verbo: *because it was raining*. **because of** va seguido de un sustantivo: *because of the rain*."
     },
     {
       "tipo": "tip",
-      "md": "*Although* va al inicio o en medio de la oración, seguido de una **idea completa**, no de una sola palabra. Es el error más común al usarlo."
+      "md": "**although** une dos ideas en la misma oración. **however** empieza una oración nueva y lleva coma después: *However, …*"
+    },
+    {
+      "tipo": "tip",
+      "md": "Antes de elegir, pregúntate qué relación hay entre las ideas: ¿sumo, contrasto, doy la razón o doy el resultado?"
+    },
+    {
+      "tipo": "texto",
+      "md": "Para dar tu opinión:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "in my opinion",
+          "en mi opinión"
+        ],
+        [
+          "I think",
+          "creo que"
+        ],
+        [
+          "I agree",
+          "estoy de acuerdo"
+        ],
+        [
+          "I disagree",
+          "no estoy de acuerdo"
+        ],
+        [
+          "advantage",
+          "ventaja"
+        ],
+        [
+          "disadvantage",
+          "desventaja"
+        ]
+      ]
     }
   ],
   "ejercicios": [
     {
       "id": "e01",
-      "tipo": "opcion",
-      "enunciado": "I like coffee ___ tea.",
-      "opciones": [
-        "and",
-        "but",
-        "so"
-      ],
-      "correcta": 0,
-      "porque": "Suma dos ideas → and."
-    },
-    {
-      "id": "e02",
       "tipo": "opcion",
       "enunciado": "She is tired ___ happy.",
       "opciones": [
@@ -75,150 +114,171 @@
         "so"
       ],
       "correcta": 0,
-      "porque": "Contraste simple → but."
+      "porque": "Contraste simple entre dos ideas: but."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "He stayed home ___ he was sick.",
+      "opciones": [
+        "because",
+        "so",
+        "although"
+      ],
+      "correcta": 0,
+      "porque": "Da la razón, y sigue una oración completa: because."
     },
     {
       "id": "e03",
-      "tipo": "hueco",
-      "frase": "He can't come ___ he is working late.",
-      "aceptadas": [
+      "tipo": "opcion",
+      "enunciado": "It was raining, ___ we stayed inside.",
+      "opciones": [
+        "so",
         "because",
-        "since",
-        "as"
+        "but"
       ],
-      "porque": "Da la razón de que no pueda venir → because."
+      "correcta": 0,
+      "porque": "Quedarse adentro es la consecuencia de la lluvia: so."
     },
     {
       "id": "e04",
       "tipo": "opcion",
-      "enunciado": "He stayed home ___ he was sick.",
+      "enunciado": "___ it was raining, we went for a walk.",
       "opciones": [
-        "so",
-        "because",
-        "although"
+        "Although",
+        "Because",
+        "However"
       ],
-      "correcta": 1,
-      "porque": "Da la razón → because."
+      "correcta": 0,
+      "porque": "Contraste dentro de la misma oración: although. However empezaría una oración aparte y llevaría coma."
     },
     {
       "id": "e05",
       "tipo": "opcion",
-      "enunciado": "It was raining, ___ we stayed inside.",
+      "enunciado": "We stayed home ___ the rain.",
       "opciones": [
+        "because of",
         "because",
-        "so",
-        "but"
+        "although"
       ],
-      "correcta": 1,
-      "porque": "Da la consecuencia → so."
+      "correcta": 0,
+      "porque": "The rain es un sustantivo, no una oración: because of."
     },
     {
       "id": "e06",
-      "tipo": "hueco",
-      "frase": "I was tired, ___ I went to bed early.",
-      "aceptadas": [
-        "so"
+      "tipo": "opcion",
+      "enunciado": "The phone is expensive. ___, it is very good.",
+      "opciones": [
+        "However",
+        "Although",
+        "Because"
       ],
-      "porque": "Estar cansado tiene como resultado irse a dormir → so."
+      "correcta": 0,
+      "porque": "Oración nueva, con coma después, que contrasta con la anterior: However."
     },
     {
       "id": "e07",
-      "tipo": "opcion",
-      "enunciado": "___ it was raining, we went for a walk.",
+      "tipo": "hueco",
+      "frase": "I was tired, ___ I went to bed early.",
       "opciones": [
-        "Because",
-        "So",
-        "Although"
+        "so",
+        "but",
+        "because of"
       ],
-      "correcta": 2,
-      "porque": "Contraste fuerte con la idea completa → although."
+      "correcta": 0,
+      "porque": "Irse a dormir es el resultado de estar cansado: so."
     },
     {
       "id": "e08",
       "tipo": "hueco",
-      "frase": "She likes swimming ___ running.",
+      "frase": "The flight was late because ___ the storm.",
       "aceptadas": [
-        "and"
+        "of"
       ],
-      "porque": "Suma dos actividades que le gustan → and."
+      "pista": "va antes de un sustantivo",
+      "porque": "The storm es un sustantivo: because of."
     },
     {
       "id": "e09",
-      "tipo": "opcion",
-      "enunciado": "I was hungry, ___ I made a sandwich.",
-      "opciones": [
-        "so",
-        "but",
-        "and"
+      "tipo": "ordenar",
+      "respuesta": [
+        "Although",
+        "he",
+        "is",
+        "young,",
+        "he",
+        "is",
+        "responsible."
       ],
-      "correcta": 0,
-      "porque": "Consecuencia → so."
+      "traduccion": "Aunque es joven, es responsable.",
+      "porque": "Although va al inicio, seguido de una idea completa; después de la coma va la otra idea."
     },
     {
       "id": "e10",
-      "tipo": "opcion",
-      "enunciado": "She studied hard ___ she failed the exam.",
-      "opciones": [
-        "so",
-        "because",
-        "but"
+      "tipo": "emparejar",
+      "enunciado": "Une cada expresión con su significado.",
+      "pares": [
+        [
+          "although",
+          "aunque"
+        ],
+        [
+          "however",
+          "sin embargo"
+        ],
+        [
+          "so",
+          "así que"
+        ],
+        [
+          "because of",
+          "debido a"
+        ],
+        [
+          "I agree",
+          "estoy de acuerdo"
+        ]
       ],
-      "correcta": 2,
-      "porque": "Contraste → but."
+      "porque": "Conectores y frases para opinar."
     },
     {
       "id": "e11",
-      "tipo": "hueco",
-      "frase": "___ the movie was long, I enjoyed it.",
-      "aceptadas": [
-        "although",
-        "even though",
-        "though"
+      "tipo": "lectura",
+      "texto": "In my opinion, working from home is a good idea. You save time and money because you don't travel. However, there is a disadvantage: you don't see your coworkers. Although I like my house, I sometimes feel alone.",
+      "pregunta": "Según el texto, ¿cuál es la desventaja de trabajar en casa?",
+      "opciones": [
+        "No ves a tus compañeros",
+        "Gastas más dinero",
+        "Pierdes tiempo"
       ],
-      "porque": "Contraste fuerte con una idea completa al inicio → although."
+      "correcta": 0,
+      "porque": "«However, there is a disadvantage: you don't see your coworkers»."
     },
     {
       "id": "e12",
-      "tipo": "opcion",
-      "enunciado": "We can't go out ___ it's raining.",
+      "tipo": "lectura",
+      "texto": "In my opinion, working from home is a good idea. You save time and money because you don't travel. However, there is a disadvantage: you don't see your coworkers. Although I like my house, I sometimes feel alone.",
+      "pregunta": "¿Por qué se ahorra tiempo y dinero?",
       "opciones": [
-        "because",
-        "so",
-        "and"
+        "Porque no hay que trasladarse",
+        "Porque se trabaja menos",
+        "Porque la casa es grande"
       ],
       "correcta": 0,
-      "porque": "Da la razón → because."
+      "porque": "«You save time and money because you don't travel»."
     },
     {
       "id": "e13",
-      "tipo": "hueco",
-      "frase": "I wanted to go, ___ I had no money.",
-      "aceptadas": [
-        "but",
-        "although"
-      ],
-      "porque": "Contraste entre querer ir y no tener dinero → but."
-    },
-    {
-      "id": "e14",
-      "tipo": "opcion",
-      "enunciado": "___ he is young, he is very responsible.",
+      "tipo": "escucha",
+      "audio": "I wanted to buy the jacket. However, it was very expensive, so I didn't buy it.",
+      "pregunta": "¿Por qué no compró la chamarra?",
       "opciones": [
-        "Because",
-        "So",
-        "Although"
+        "Porque era muy cara",
+        "Porque no le gustó",
+        "Porque la tienda estaba cerrada"
       ],
-      "correcta": 2,
-      "porque": "Contraste fuerte → although."
-    },
-    {
-      "id": "e15",
-      "tipo": "hueco",
-      "frase": "It was cold, ___ we wore jackets.",
-      "aceptadas": [
-        "so"
-      ],
-      "porque": "Hacía frío; el resultado: se pusieron chamarras → so."
+      "correcta": 0,
+      "porque": "«It was very expensive, so I didn't buy it»: era muy cara."
     }
   ]
 }

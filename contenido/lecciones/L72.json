@@ -6,34 +6,35 @@
   "explicacion": [
     {
       "tipo": "texto",
-      "md": "En B1 las estructuras se mezclan (pasado simple contra continuo, *will* contra *going to*). El reto ya no es memorizar reglas, sino **reconocer cuál usar** en cada situación."
+      "md": "En B1 las estructuras se mezclan. El reto ya no es memorizar reglas, sino **reconocer cuál usar** en cada situación."
     },
     {
       "tipo": "tabla",
       "columnas": [
-        "Técnica",
-        "Cómo aplicarla"
+        "Tema",
+        "Regla",
+        "Ejemplo"
       ],
       "filas": [
         [
-          "**Práctica intercalada**",
-          "Mezcla pasado simple, pasado continuo, *will* y *going to* en el mismo repaso. Así entrenas a decidir cuál usar."
+          "Pasado continuo y simple",
+          "*was / were + -ing* para la acción en progreso; pasado simple para la que interrumpe.",
+          "I **was sleeping** when the storm **started**."
         ],
         [
-          "**Agrupar por función**",
-          "Modales por lo que expresan: obligación (*must / have to*), consejo (*should*), habilidad (*can*)."
+          "Futuro",
+          "*will*: decisión del momento o promesa. *going to*: plan o evidencia. Presente continuo: cita agendada.",
+          "Look! It's **going to** rain."
         ],
         [
-          "**Recuperación activa**",
-          "Antes de ver la regla, intenta responder de memoria cuál forma va."
+          "Conectores",
+          "*although*, *however*, *so*, *because* + oración, *because of* + sustantivo.",
+          "We were late **because of** the storm."
         ],
         [
-          "**Repetición espaciada**",
-          "Repasa conectores y modales a los 2–3 días, no solo el mismo día."
-        ],
-        [
-          "**Input comprensible**",
-          "Lee o escucha algo corto en inglés y subraya cada conector que encuentres."
+          "Modales",
+          "*must / have to*: obligación. *should*: consejo. *don't have to*: no es necesario. *must not*: prohibido.",
+          "You **don't have to** pay now."
         ]
       ]
     },
@@ -123,178 +124,180 @@
     {
       "id": "e01",
       "tipo": "opcion",
-      "enunciado": "What does \"challenge\" mean?",
+      "enunciado": "I ___ TV when she called.",
       "opciones": [
-        "reto",
-        "celebración",
-        "regla"
+        "was watching",
+        "watched",
+        "am watching"
       ],
       "correcta": 0,
-      "porque": "«reto» es la traducción correcta."
+      "porque": "Acción en progreso interrumpida por otra: pasado continuo."
     },
     {
       "id": "e02",
       "tipo": "opcion",
-      "enunciado": "What does \"solution\" mean?",
+      "enunciado": "While we were having dinner, the lights ___ out.",
       "opciones": [
-        "solución",
-        "problema",
-        "gasto"
+        "went",
+        "were going",
+        "go"
       ],
       "correcta": 0,
-      "porque": "«solución» es la traducción correcta."
+      "porque": "Es la acción corta que interrumpe: pasado simple, went."
     },
     {
       "id": "e03",
       "tipo": "opcion",
-      "enunciado": "What does \"promise\" mean?",
+      "enunciado": "Look at that car! It ___ crash.",
       "opciones": [
-        "promesa",
-        "anuncio",
-        "recordatorio"
+        "is going to",
+        "will to",
+        "going"
       ],
       "correcta": 0,
-      "porque": "«promesa» es la traducción correcta."
+      "porque": "Hay evidencia visible: is going to + verbo."
     },
     {
       "id": "e04",
-      "tipo": "opcion",
-      "enunciado": "What does \"arrival\" mean?",
-      "opciones": [
-        "llegada",
-        "salida",
-        "viaje"
+      "tipo": "hueco",
+      "frase": "I promise I ___ (send) you a reminder.",
+      "aceptadas": [
+        "will send",
+        "'ll send"
       ],
-      "correcta": 0,
-      "porque": "«llegada» es la traducción correcta."
+      "porque": "Una promesa va con will."
     },
     {
       "id": "e05",
       "tipo": "opcion",
-      "enunciado": "What does \"illness\" mean?",
+      "enunciado": "___ the storm was strong, the plane left on time.",
       "opciones": [
-        "enfermedad",
-        "mejora",
-        "salud"
+        "Although",
+        "Because",
+        "So"
       ],
       "correcta": 0,
-      "porque": "«enfermedad» es la traducción correcta."
+      "porque": "Contraste entre dos ideas de la misma oración: although."
     },
     {
       "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "The departure was late ___ the storm.",
+      "opciones": [
+        "because of",
+        "because",
+        "although"
+      ],
+      "correcta": 0,
+      "porque": "The storm es un sustantivo: because of."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "You ___ pay now; you can pay tomorrow.",
+      "opciones": [
+        "don't have to",
+        "must not",
+        "should"
+      ],
+      "correcta": 0,
+      "porque": "No es necesario pagar ahora: don't have to."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "She",
+        "was",
+        "sleeping",
+        "when",
+        "the",
+        "storm",
+        "started."
+      ],
+      "traduccion": "Ella estaba durmiendo cuando empezó la tormenta.",
+      "porque": "Acción en progreso (was sleeping) + when + acción que interrumpe (started)."
+    },
+    {
+      "id": "e09",
       "tipo": "emparejar",
       "enunciado": "Une cada palabra con su traducción.",
       "pares": [
         [
-          "departure",
-          "salida (de viaje)"
+          "challenge",
+          "reto"
         ],
         [
-          "arrival",
-          "llegada"
+          "improvement",
+          "mejora"
+        ],
+        [
+          "expense",
+          "gasto"
         ],
         [
           "receipt",
           "recibo"
         ],
         [
-          "reminder",
-          "recordatorio"
+          "arrival",
+          "llegada"
         ],
         [
-          "choice",
-          "elección"
+          "departure",
+          "salida"
         ]
       ],
       "porque": "Vocabulario de viajes y trámites que aparece seguido en exámenes B1."
     },
     {
-      "id": "e07",
+      "id": "e10",
       "tipo": "hueco",
-      "frase": "___",
+      "frase": "The ___ said the flight was late.",
       "aceptadas": [
         "announcement"
       ],
-      "porque": "Anuncio = announcement.",
-      "enunciado": "¿Cómo se dice \"anuncio\" en inglés?"
-    },
-    {
-      "id": "e08",
-      "tipo": "hueco",
-      "frase": "___",
-      "aceptadas": [
-        "celebration"
-      ],
-      "porque": "Celebración = celebration.",
-      "enunciado": "¿Cómo se dice \"celebración\" en inglés?"
-    },
-    {
-      "id": "e09",
-      "tipo": "opcion",
-      "enunciado": "What does \"expense\" mean?",
-      "opciones": [
-        "gasto",
-        "recibo",
-        "elección"
-      ],
-      "correcta": 0,
-      "porque": "«gasto» es la traducción correcta."
-    },
-    {
-      "id": "e10",
-      "tipo": "opcion",
-      "enunciado": "What does \"rule\" mean?",
-      "opciones": [
-        "regla",
-        "tormenta",
-        "anuncio"
-      ],
-      "correcta": 0,
-      "porque": "«regla» es la traducción correcta."
+      "pista": "anuncio",
+      "porque": "Anuncio se dice announcement."
     },
     {
       "id": "e11",
-      "tipo": "opcion",
-      "enunciado": "What does \"storm\" mean?",
+      "tipo": "lectura",
+      "texto": "Dear passengers: because of the storm, the departure of flight 204 is late. The new departure time is 9:30 p.m. You don't have to change your ticket. However, you must keep your receipt. We will make another announcement in thirty minutes.",
+      "pregunta": "¿Por qué se retrasó el vuelo?",
       "opciones": [
-        "tormenta",
-        "clima",
-        "viaje"
+        "Por la tormenta",
+        "Por una enfermedad",
+        "Por una celebración"
       ],
       "correcta": 0,
-      "porque": "«tormenta» es la traducción correcta."
+      "porque": "«Because of the storm, the departure of flight 204 is late»."
     },
     {
       "id": "e12",
-      "tipo": "opcion",
-      "enunciado": "What does \"improvement\" mean?",
+      "tipo": "lectura",
+      "texto": "Dear passengers: because of the storm, the departure of flight 204 is late. The new departure time is 9:30 p.m. You don't have to change your ticket. However, you must keep your receipt. We will make another announcement in thirty minutes.",
+      "pregunta": "¿Qué deben hacer los pasajeros?",
       "opciones": [
-        "mejora",
-        "reto",
-        "elección"
+        "Guardar su recibo",
+        "Cambiar su boleto",
+        "Pagar otra vez"
       ],
       "correcta": 0,
-      "porque": "«mejora» es la traducción correcta."
+      "porque": "«You must keep your receipt»: deben guardar su recibo. Cambiar el boleto no es necesario (don't have to)."
     },
     {
       "id": "e13",
-      "tipo": "hueco",
-      "frase": "___",
-      "aceptadas": [
-        "reminder"
+      "tipo": "escucha",
+      "audio": "Don't forget: we are meeting at five tomorrow. I'll send you a reminder.",
+      "pregunta": "¿Qué le va a mandar?",
+      "opciones": [
+        "Un recordatorio",
+        "Un recibo",
+        "Un anuncio"
       ],
-      "porque": "Recordatorio = reminder.",
-      "enunciado": "¿Cómo se dice \"recordatorio\" en inglés?"
-    },
-    {
-      "id": "e14",
-      "tipo": "hueco",
-      "frase": "___",
-      "aceptadas": [
-        "departure"
-      ],
-      "porque": "La salida de un viaje = departure (la llegada es arrival).",
-      "enunciado": "¿Cómo se dice \"salida\" (de viaje) en inglés?"
+      "correcta": 0,
+      "porque": "«I'll send you a reminder»: un recordatorio."
     }
   ]
 }

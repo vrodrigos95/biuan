@@ -1,0 +1,366 @@
+{
+  "id": "L27",
+  "subnivel": "A2.1",
+  "unidad": 7,
+  "titulo": "¿Cómo es?",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "En inglés el adjetivo va **antes** del sustantivo y **no cambia** en plural: a red shirt, two red shirts."
+    },
+    {
+      "tipo": "texto",
+      "md": "Si hay varios adjetivos, el orden es: **opinión → tamaño → color**."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "a nice red dress",
+          "un bonito vestido rojo"
+        ],
+        [
+          "a big black bag",
+          "una bolsa negra grande"
+        ],
+        [
+          "long brown hair",
+          "pelo café largo"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Para preguntar cómo es alguien físicamente se usa **look like**:"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "What does he look like? He is tall and has brown eyes.",
+      "es": "¿Cómo es él? Es alto y tiene ojos cafés."
+    },
+    {
+      "tipo": "tip",
+      "md": "En la respuesta no se repite look like. Se usa **to be** para la estatura y la edad, y **have** para el pelo y los ojos."
+    },
+    {
+      "tipo": "texto",
+      "md": "Descripción física:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "tall",
+          "alto"
+        ],
+        [
+          "short",
+          "bajo; corto"
+        ],
+        [
+          "young",
+          "joven"
+        ],
+        [
+          "old",
+          "viejo, grande de edad"
+        ],
+        [
+          "hair",
+          "pelo"
+        ],
+        [
+          "eyes",
+          "ojos"
+        ],
+        [
+          "blond",
+          "rubio"
+        ],
+        [
+          "beard",
+          "barba"
+        ],
+        [
+          "glasses",
+          "lentes"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Colores:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "red",
+          "rojo"
+        ],
+        [
+          "blue",
+          "azul"
+        ],
+        [
+          "green",
+          "verde"
+        ],
+        [
+          "yellow",
+          "amarillo"
+        ],
+        [
+          "black",
+          "negro"
+        ],
+        [
+          "white",
+          "blanco"
+        ],
+        [
+          "brown",
+          "café"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Ropa:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "shirt",
+          "camisa"
+        ],
+        [
+          "T-shirt",
+          "playera"
+        ],
+        [
+          "pants",
+          "pantalón"
+        ],
+        [
+          "dress",
+          "vestido"
+        ],
+        [
+          "skirt",
+          "falda"
+        ],
+        [
+          "jacket",
+          "chamarra"
+        ],
+        [
+          "sweater",
+          "suéter"
+        ],
+        [
+          "shoes",
+          "zapatos"
+        ],
+        [
+          "wear",
+          "traer puesto, usar"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Lo que alguien trae puesto hoy va en presente continuo: She is wearing a blue dress."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "a red shirt",
+        "a shirt red",
+        "a reds shirt"
+      ],
+      "correcta": 0,
+      "porque": "El adjetivo va antes del sustantivo y no lleva plural."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She has ___.",
+      "opciones": [
+        "long black hair",
+        "black long hair",
+        "hair long black"
+      ],
+      "correcta": 0,
+      "porque": "El tamaño va antes del color: long black hair."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "They are two ___.",
+      "opciones": [
+        "black jackets",
+        "blacks jackets",
+        "jackets black"
+      ],
+      "correcta": 0,
+      "porque": "El adjetivo no cambia en plural: solo jackets lleva -s."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "What does he look ___?",
+      "aceptadas": [
+        "like"
+      ],
+      "pista": "pregunta por el aspecto",
+      "porque": "La pregunta por el aspecto físico es What does he look like?"
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "What does your sister look like?",
+      "opciones": [
+        "She is tall and has brown eyes.",
+        "She likes pizza.",
+        "She is watching TV."
+      ],
+      "correcta": 0,
+      "porque": "Look like pregunta por el aspecto físico, no por gustos ni por lo que hace."
+    },
+    {
+      "id": "e06",
+      "tipo": "emparejar",
+      "enunciado": "Une cada prenda con su significado.",
+      "pares": [
+        [
+          "pants",
+          "pantalón"
+        ],
+        [
+          "dress",
+          "vestido"
+        ],
+        [
+          "jacket",
+          "chamarra"
+        ],
+        [
+          "skirt",
+          "falda"
+        ],
+        [
+          "sweater",
+          "suéter"
+        ]
+      ],
+      "porque": "Vocabulario de ropa."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "Lo contrario de «tall» es ___.",
+      "opciones": [
+        "short",
+        "long",
+        "young"
+      ],
+      "correcta": 0,
+      "porque": "Tall es alto y short es bajo. Short también significa corto."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "He",
+        "is",
+        "wearing",
+        "a",
+        "white",
+        "shirt."
+      ],
+      "traduccion": "Él trae puesta una camisa blanca.",
+      "porque": "Lo que alguien trae puesto hoy: is wearing. El color va antes de la prenda."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "She",
+        "has",
+        "short",
+        "brown",
+        "hair."
+      ],
+      "traduccion": "Ella tiene el pelo café corto.",
+      "porque": "Para el pelo se usa have; el tamaño (short) va antes del color (brown)."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "He ___ blue eyes.",
+      "opciones": [
+        "has",
+        "is",
+        "looks"
+      ],
+      "correcta": 0,
+      "porque": "Para los ojos y el pelo se usa have: he has blue eyes."
+    },
+    {
+      "id": "e11",
+      "tipo": "hueco",
+      "frase": "My father ___ tall.",
+      "opciones": [
+        "is",
+        "has",
+        "looks like"
+      ],
+      "correcta": 0,
+      "porque": "Para la estatura se usa to be: he is tall."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "This is my friend Carlos. He is tall and young. He has short black hair and green eyes. Today he is wearing a blue jacket, black pants and white shoes. He never wears glasses.",
+      "pregunta": "¿De qué color es la chamarra de Carlos?",
+      "opciones": [
+        "Azul",
+        "Negra",
+        "Blanca"
+      ],
+      "correcta": 0,
+      "porque": "«He is wearing a blue jacket, black pants and white shoes»: la chamarra es azul."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "What does your teacher look like? She is short and has long blond hair. She wears glasses.",
+      "pregunta": "¿Cómo es el pelo de la maestra?",
+      "opciones": [
+        "Largo y rubio",
+        "Corto y rubio",
+        "Largo y negro"
+      ],
+      "correcta": 0,
+      "porque": "«She has long blond hair»: largo y rubio. Short se refiere a su estatura."
+    }
+  ]
+}

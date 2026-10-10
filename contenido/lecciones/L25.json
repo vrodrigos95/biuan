@@ -1,0 +1,320 @@
+{
+  "id": "L25",
+  "subnivel": "A2.1",
+  "unidad": 7,
+  "titulo": "Ahora mismo",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **presente continuo** dice lo que está pasando **ahora mismo**. Se forma con **to be** (am, is, are) + el verbo con **-ing**."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Afirmativo",
+          "I am working.",
+          "Estoy trabajando."
+        ],
+        [
+          "Negativo",
+          "She isn't working.",
+          "No está trabajando."
+        ],
+        [
+          "Pregunta",
+          "Are you working?",
+          "¿Estás trabajando?"
+        ],
+        [
+          "Respuesta corta",
+          "Yes, I am. / No, I'm not.",
+          "Sí. / No."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "No olvides el to be: se dice **I am working**, nunca *I working*."
+    },
+    {
+      "tipo": "texto",
+      "md": "El -ing se escribe con las mismas reglas que ya viste con like:"
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "La mayoría: + ing",
+          "work → working, eat → eating"
+        ],
+        [
+          "Termina en -e: se quita la e",
+          "write → writing"
+        ],
+        [
+          "Vocal corta + consonante: se duplica",
+          "run → running, sit → sitting"
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "What are you doing? I'm cooking dinner.",
+      "es": "¿Qué estás haciendo? Estoy cocinando la cena."
+    },
+    {
+      "tipo": "texto",
+      "md": "Estas expresiones casi siempre van con presente continuo:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "now",
+          "ahora"
+        ],
+        [
+          "right now",
+          "ahora mismo"
+        ],
+        [
+          "at the moment",
+          "en este momento"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Acciones en curso:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "talk",
+          "hablar"
+        ],
+        [
+          "wait",
+          "esperar"
+        ],
+        [
+          "sleep",
+          "dormir"
+        ],
+        [
+          "eat",
+          "comer"
+        ],
+        [
+          "drink",
+          "beber"
+        ],
+        [
+          "sit",
+          "sentarse"
+        ],
+        [
+          "run",
+          "correr"
+        ],
+        [
+          "write",
+          "escribir"
+        ],
+        [
+          "call",
+          "llamar"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Esperar algo o a alguien es **wait for**: I'm waiting for the bus."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "She ___ TV right now.",
+      "opciones": [
+        "is watching",
+        "watches",
+        "watching"
+      ],
+      "correcta": 0,
+      "porque": "Right now indica algo que pasa ahora: is + verbo-ing."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "I am working.",
+        "I working.",
+        "I am work."
+      ],
+      "correcta": 0,
+      "porque": "El presente continuo lleva to be y el verbo con -ing."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "They ___ (play) soccer now.",
+      "aceptadas": [
+        "are playing",
+        "'re playing"
+      ],
+      "porque": "Con they va are, y el verbo lleva -ing: are playing."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "___ you listening to music?",
+      "opciones": [
+        "Are",
+        "Do",
+        "Is"
+      ],
+      "correcta": 0,
+      "porque": "La pregunta en presente continuo empieza con to be: Are you…?"
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "He ___ sleeping. He's reading.",
+      "opciones": [
+        "isn't",
+        "doesn't",
+        "aren't"
+      ],
+      "correcta": 0,
+      "porque": "El negativo se hace con to be: he isn't + verbo-ing."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "What",
+        "are",
+        "you",
+        "doing",
+        "now?"
+      ],
+      "traduccion": "¿Qué estás haciendo ahora?",
+      "porque": "Wh- + are + sujeto + verbo-ing."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada verbo con su significado.",
+      "pares": [
+        [
+          "wait",
+          "esperar"
+        ],
+        [
+          "sleep",
+          "dormir"
+        ],
+        [
+          "drink",
+          "beber"
+        ],
+        [
+          "sit",
+          "sentarse"
+        ],
+        [
+          "write",
+          "escribir"
+        ]
+      ],
+      "porque": "Verbos para decir lo que alguien está haciendo."
+    },
+    {
+      "id": "e08",
+      "tipo": "hueco",
+      "frase": "I am ___ (write) an email.",
+      "aceptadas": [
+        "writing"
+      ],
+      "pista": "se quita la e",
+      "porque": "Write termina en -e: se quita la e y se agrega -ing."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se escribe run con -ing?",
+      "opciones": [
+        "running",
+        "runing",
+        "runeing"
+      ],
+      "correcta": 0,
+      "porque": "Vocal corta + consonante: se duplica la n."
+    },
+    {
+      "id": "e10",
+      "tipo": "ordenar",
+      "respuesta": [
+        "We",
+        "are",
+        "waiting",
+        "for",
+        "the",
+        "bus."
+      ],
+      "traduccion": "Estamos esperando el camión.",
+      "porque": "Sujeto + are + verbo-ing. Esperar algo es wait for."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "It's Saturday morning. My father is cooking breakfast in the kitchen. My sister is talking on the phone. My brother isn't studying: he is playing video games. I'm sitting in the living room and writing this email.",
+      "pregunta": "¿Qué está haciendo el hermano?",
+      "opciones": [
+        "Jugando videojuegos",
+        "Estudiando",
+        "Cocinando"
+      ],
+      "correcta": 0,
+      "porque": "«My brother isn't studying: he is playing video games»."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "Hi, Ana. What are you doing? I'm working at the moment. Can I call you later?",
+      "pregunta": "¿Qué está haciendo Ana?",
+      "opciones": [
+        "Trabajando",
+        "Durmiendo",
+        "Comiendo"
+      ],
+      "correcta": 0,
+      "porque": "«I'm working at the moment»: está trabajando."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "Are they eating?",
+      "opciones": [
+        "Yes, they are.",
+        "Yes, they do.",
+        "Yes, they eating."
+      ],
+      "correcta": 0,
+      "porque": "La respuesta corta repite el to be: Yes, they are."
+    }
+  ]
+}
