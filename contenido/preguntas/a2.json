@@ -1,0 +1,380 @@
+{
+  "nivel": "A2",
+  "preguntas": [
+    {
+      "id": "A2-001",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "Yesterday we ___ to the beach.",
+      "opciones": [
+        "went",
+        "go",
+        "goes",
+        "going"
+      ],
+      "correcta": 0,
+      "porque": "Yesterday pide pasado simple; el pasado de go es went."
+    },
+    {
+      "id": "A2-002",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "___ you see the game last night?",
+      "opciones": [
+        "Did",
+        "Do",
+        "Were",
+        "Are"
+      ],
+      "correcta": 0,
+      "porque": "Last night es pasado: las preguntas en pasado simple usan did."
+    },
+    {
+      "id": "A2-003",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "My brother is ___ than me.",
+      "opciones": [
+        "taller",
+        "more tall",
+        "tallest",
+        "tall"
+      ],
+      "correcta": 0,
+      "porque": "Tall es corto: el comparativo se forma con -er: taller."
+    },
+    {
+      "id": "A2-004",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "Look! The children ___ in the garden.",
+      "opciones": [
+        "are playing",
+        "play",
+        "plays",
+        "played"
+      ],
+      "correcta": 0,
+      "porque": "Look! indica que pasa en este momento: presente continuo."
+    },
+    {
+      "id": "A2-005",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "I'm ___ visit my grandmother next weekend.",
+      "opciones": [
+        "going to",
+        "will",
+        "go to",
+        "going"
+      ],
+      "correcta": 0,
+      "porque": "Después de I'm, el futuro planeado es going to + verbo."
+    },
+    {
+      "id": "A2-006",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "The opposite of «cheap» is ___.",
+      "opciones": [
+        "expensive",
+        "poor",
+        "cheaper",
+        "low"
+      ],
+      "correcta": 0,
+      "porque": "Cheap es barato; su contrario es expensive (caro)."
+    },
+    {
+      "id": "A2-007",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "I need some medicine. I'll go to the ___.",
+      "opciones": [
+        "pharmacy",
+        "bakery",
+        "library",
+        "stadium"
+      ],
+      "correcta": 0,
+      "porque": "Las medicinas se compran en la farmacia: pharmacy."
+    },
+    {
+      "id": "A2-008",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "You show your ___ at the border to enter another country.",
+      "opciones": [
+        "passport",
+        "menu",
+        "receipt",
+        "umbrella"
+      ],
+      "correcta": 0,
+      "porque": "En la frontera se muestra el pasaporte: passport."
+    },
+    {
+      "id": "A2-009",
+      "nivel": "A2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Last Saturday, Pedro wanted to go to the cinema, but it was closed. So he went to the park with his sister and they had ice cream.",
+      "enunciado": "¿Por qué Pedro no vio una película?",
+      "opciones": [
+        "El cine estaba cerrado",
+        "No tenía dinero",
+        "Estaba lloviendo"
+      ],
+      "correcta": 0,
+      "porque": "«It was closed»: el cine estaba cerrado."
+    },
+    {
+      "id": "A2-010",
+      "nivel": "A2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Notice: The library will be closed on Monday. On Tuesday it opens at 10 a.m. instead of 8 a.m.",
+      "enunciado": "¿Qué pasa el martes?",
+      "opciones": [
+        "La biblioteca abre más tarde de lo normal",
+        "La biblioteca está cerrada todo el día",
+        "La biblioteca abre a las 8 a. m."
+      ],
+      "correcta": 0,
+      "porque": "El martes abre a las 10 «instead of 8»: más tarde de lo normal."
+    },
+    {
+      "id": "A2-011",
+      "nivel": "A2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "Excuse me, is there a bank near here? Yes, go straight and turn left. It's next to the supermarket.",
+      "enunciado": "¿Dónde está el banco?",
+      "opciones": [
+        "Junto al supermercado",
+        "Frente al supermercado",
+        "Detrás del parque"
+      ],
+      "correcta": 0,
+      "porque": "«It's next to the supermarket»: next to significa junto a."
+    },
+    {
+      "id": "A2-012",
+      "nivel": "A2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "I usually take the bus to work, but today I'm walking because the bus drivers are on strike.",
+      "enunciado": "¿Cómo va hoy al trabajo?",
+      "opciones": [
+        "Caminando",
+        "En autobús",
+        "En carro"
+      ],
+      "correcta": 0,
+      "porque": "Normalmente va en autobús, pero «today I'm walking»: hoy camina."
+    },
+    {
+      "id": "A2-013",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "There isn't ___ milk in the fridge.",
+      "opciones": [
+        "any",
+        "some",
+        "a",
+        "many"
+      ],
+      "correcta": 0,
+      "porque": "En oraciones negativas se usa any; milk es incontable, así que no lleva a ni many."
+    },
+    {
+      "id": "A2-014",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "This is the ___ restaurant in the city.",
+      "opciones": [
+        "best",
+        "better",
+        "good",
+        "most good"
+      ],
+      "correcta": 0,
+      "porque": "El superlativo de good es irregular: the best."
+    },
+    {
+      "id": "A2-015",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "You ___ smoke here. It's a hospital.",
+      "opciones": [
+        "mustn't",
+        "don't have to",
+        "should",
+        "have to"
+      ],
+      "correcta": 0,
+      "porque": "Mustn't expresa prohibición; don't have to solo dice que no es obligatorio."
+    },
+    {
+      "id": "A2-016",
+      "nivel": "A2",
+      "habilidad": "gramatica",
+      "tipo": "opcion",
+      "enunciado": "Have you ever ___ sushi?",
+      "opciones": [
+        "eaten",
+        "ate",
+        "eat",
+        "eating"
+      ],
+      "correcta": 0,
+      "porque": "Have you ever + participio pasado; el participio de eat es eaten."
+    },
+    {
+      "id": "A2-017",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "It's very cold today. Put on your ___.",
+      "opciones": [
+        "coat",
+        "shorts",
+        "sandals",
+        "sunglasses"
+      ],
+      "correcta": 0,
+      "porque": "Para el frío se usa un abrigo: coat."
+    },
+    {
+      "id": "A2-018",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "Can we have the ___, please? We'd like to pay.",
+      "opciones": [
+        "bill",
+        "menu",
+        "tip",
+        "plate"
+      ],
+      "correcta": 0,
+      "porque": "Para pagar en un restaurante se pide la cuenta: the bill."
+    },
+    {
+      "id": "A2-019",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "My sister's son is my ___.",
+      "opciones": [
+        "nephew",
+        "niece",
+        "uncle",
+        "cousin"
+      ],
+      "correcta": 0,
+      "porque": "El hijo de tu hermana es tu sobrino: nephew. Niece es sobrina."
+    },
+    {
+      "id": "A2-020",
+      "nivel": "A2",
+      "habilidad": "vocabulario",
+      "tipo": "opcion",
+      "enunciado": "I ___ my keys and now I can't open the door.",
+      "opciones": [
+        "lost",
+        "found",
+        "bought",
+        "cleaned"
+      ],
+      "correcta": 0,
+      "porque": "Si no puede abrir la puerta es porque perdió las llaves: lost."
+    },
+    {
+      "id": "A2-021",
+      "nivel": "A2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Hi Marta, I can't meet you at 5 because I have to work late. Can we meet at 7 instead? See you at the café. Dan",
+      "enunciado": "¿Qué quiere Dan?",
+      "opciones": [
+        "Cambiar la hora de la cita",
+        "Cancelar la cita",
+        "Cambiar el lugar de la cita"
+      ],
+      "correcta": 0,
+      "porque": "Pide verse a las 7 «instead», en el mismo café: solo cambia la hora."
+    },
+    {
+      "id": "A2-022",
+      "nivel": "A2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Our hotel was near the beach, but we didn't swim because the water was too cold. We visited a museum and ate a lot of seafood.",
+      "enunciado": "¿Por qué no nadaron?",
+      "opciones": [
+        "El agua estaba muy fría",
+        "El hotel estaba lejos de la playa",
+        "No tuvieron tiempo"
+      ],
+      "correcta": 0,
+      "porque": "«The water was too cold»: el agua estaba demasiado fría."
+    },
+    {
+      "id": "A2-023",
+      "nivel": "A2",
+      "habilidad": "lectura",
+      "tipo": "opcion",
+      "texto": "Carlos is taller than his brother Miguel, but Miguel is older. Their sister Sofía is the youngest in the family.",
+      "enunciado": "¿Quién es el mayor de los tres?",
+      "opciones": [
+        "Miguel",
+        "Carlos",
+        "Sofía"
+      ],
+      "correcta": 0,
+      "porque": "Miguel es mayor que Carlos (older) y Sofía es la menor (the youngest)."
+    },
+    {
+      "id": "A2-024",
+      "nivel": "A2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "The bus to Guadalajara leaves at half past ten from gate four.",
+      "enunciado": "¿A qué hora sale el autobús?",
+      "opciones": [
+        "10:30",
+        "10:15",
+        "4:30"
+      ],
+      "correcta": 0,
+      "porque": "Half past ten son las diez y media: 10:30."
+    },
+    {
+      "id": "A2-025",
+      "nivel": "A2",
+      "habilidad": "escucha",
+      "tipo": "opcion",
+      "audio": "I went to the supermarket this morning. I bought eggs and bread, but I forgot the milk.",
+      "enunciado": "¿Qué le faltó comprar?",
+      "opciones": [
+        "Leche",
+        "Huevos",
+        "Pan"
+      ],
+      "correcta": 0,
+      "porque": "«I forgot the milk»: se le olvidó la leche."
+    }
+  ]
+}

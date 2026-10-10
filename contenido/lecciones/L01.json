@@ -1,0 +1,159 @@
+{
+  "id": "L01",
+  "subnivel": "A1.1",
+  "unidad": 1,
+  "titulo": "Hola y adiós",
+  "explicacion": [
+    { "tipo": "texto", "md": "En inglés el saludo cambia según la hora del día. **Hello** y **Hi** sirven a cualquier hora; *Hi* es más informal." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["Hello / Hi", "Hola"],
+        ["Good morning", "Buenos días"],
+        ["Good afternoon", "Buenas tardes"],
+        ["Good evening", "Buenas noches (al llegar)"],
+        ["Good night", "Buenas noches (al despedirte)"],
+        ["Goodbye / Bye", "Adiós"],
+        ["See you later", "Hasta luego"],
+        ["See you tomorrow", "Hasta mañana"]
+      ]
+    },
+    { "tipo": "tip", "md": "**Good evening** se dice al llegar. **Good night** se dice solo al despedirte o al irte a dormir. En español las dos son «buenas noches»." },
+    { "tipo": "texto", "md": "Para presentarte y preguntar cómo está alguien se usan estas frases fijas. Apréndelas completas, tal cual:" },
+    { "tipo": "ejemplo", "en": "What's your name?", "es": "¿Cómo te llamas?" },
+    { "tipo": "ejemplo", "en": "My name is Ana.", "es": "Me llamo Ana." },
+    { "tipo": "ejemplo", "en": "Nice to meet you.", "es": "Mucho gusto." },
+    { "tipo": "ejemplo", "en": "How are you?", "es": "¿Cómo estás?" },
+    { "tipo": "ejemplo", "en": "I'm fine, thank you.", "es": "Estoy bien, gracias." },
+    { "tipo": "texto", "md": "Para deletrear tu nombre necesitas el alfabeto. Estas son las letras que más se confunden, con su sonido aproximado:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Letra", "Suena como"],
+      "filas": [
+        ["A", "ei"],
+        ["E", "i"],
+        ["I", "ai"],
+        ["G", "yi"],
+        ["J", "yei"],
+        ["H", "eich"],
+        ["W", "dábliu"],
+        ["Y", "uai"]
+      ]
+    },
+    { "tipo": "tip", "md": "Cuidado con las vocales: la **E** en inglés suena como nuestra «i», y la **I** suena «ai»." },
+    { "tipo": "ejemplo", "en": "How do you spell your name?", "es": "¿Cómo se deletrea tu nombre?" }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "Son las 8 de la mañana y llegas al trabajo. ¿Qué dices?",
+      "opciones": ["Good morning", "Good afternoon", "Good night"],
+      "correcta": 0,
+      "porque": "En la mañana se saluda con Good morning."
+    },
+    {
+      "id": "e02",
+      "tipo": "emparejar",
+      "enunciado": "Une cada frase con su significado.",
+      "pares": [
+        ["Good morning", "Buenos días"],
+        ["Good afternoon", "Buenas tardes"],
+        ["Goodbye", "Adiós"],
+        ["Nice to meet you", "Mucho gusto"]
+      ],
+      "porque": "Son frases fijas: conviene aprenderlas completas, no palabra por palabra."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "What's ___ name?",
+      "opciones": ["your", "you", "is"],
+      "correcta": 0,
+      "porque": "La pregunta completa es What's your name? Your significa «tu»."
+    },
+    {
+      "id": "e04",
+      "tipo": "ordenar",
+      "respuesta": ["My", "name", "is", "Ana."],
+      "traduccion": "Me llamo Ana.",
+      "porque": "El orden es My name is + tu nombre. Literalmente: «Mi nombre es Ana»."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "Te vas a dormir. ¿Cómo te despides?",
+      "opciones": ["Good night", "Good evening", "Good morning"],
+      "correcta": 0,
+      "porque": "Good night es para despedirse de noche. Good evening es para saludar al llegar."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "How are you? I'm ___, thank you.",
+      "opciones": ["fine", "name", "hello"],
+      "correcta": 0,
+      "porque": "I'm fine, thank you significa «Estoy bien, gracias»."
+    },
+    {
+      "id": "e07",
+      "tipo": "escucha",
+      "audio": "Hello. My name is David. Nice to meet you.",
+      "pregunta": "¿Cómo se llama la persona?",
+      "opciones": ["David", "Daniel", "Diego"],
+      "correcta": 0,
+      "porque": "Dice «My name is David»: se llama David."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Qué letra del alfabeto inglés suena «ai»?",
+      "opciones": ["I", "A", "E"],
+      "correcta": 0,
+      "porque": "La I suena «ai». La A suena «ei» y la E suena «i»."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "En inglés, la letra E suena como…",
+      "opciones": ["la «i» del español", "la «e» del español", "«ei»"],
+      "correcta": 0,
+      "porque": "La E inglesa suena como nuestra «i». «Ei» es el sonido de la A."
+    },
+    {
+      "id": "e10",
+      "tipo": "lectura",
+      "texto": "Good afternoon. What's your name? — My name is Laura. — Nice to meet you, Laura. — Nice to meet you too.",
+      "pregunta": "¿En qué momento del día ocurre la conversación?",
+      "opciones": ["En la tarde", "En la mañana", "En la noche"],
+      "correcta": 0,
+      "porque": "Se saludan con Good afternoon, que significa «buenas tardes»."
+    },
+    {
+      "id": "e11",
+      "tipo": "ordenar",
+      "respuesta": ["How", "are", "you?"],
+      "traduccion": "¿Cómo estás?",
+      "porque": "La pregunta fija es How are you?, con are antes de you."
+    },
+    {
+      "id": "e12",
+      "tipo": "hueco",
+      "enunciado": "Completa el saludo «Buenos días».",
+      "frase": "Good ___.",
+      "aceptadas": ["morning"],
+      "pista": "es el saludo de la mañana",
+      "porque": "Buenos días se dice Good morning."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Goodbye, Maria. See you tomorrow.",
+      "pregunta": "¿Cuándo se van a volver a ver?",
+      "opciones": ["Mañana", "Más tarde, hoy mismo", "La próxima semana"],
+      "correcta": 0,
+      "porque": "See you tomorrow significa «hasta mañana»."
+    }
+  ]
+}
