@@ -1,0 +1,156 @@
+{
+  "id": "L16",
+  "subnivel": "A1.2",
+  "unidad": 4,
+  "titulo": "¿Lo haces?",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para preguntar en presente simple se pone **Do** o **Does** al principio de la oración." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Estructura", "Ejemplo"],
+      "filas": [
+        ["Do + I / you / we / they + verbo", "Do you work here?"],
+        ["Does + he / she / it + verbo", "Does she work here?"]
+      ]
+    },
+    { "tipo": "tip", "md": "Igual que en el negativo, con **does** el verbo va sin -s: *Does she work?*, no *Does she works?*" },
+    { "tipo": "texto", "md": "Se contesta con una respuesta corta, repitiendo do o does:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pregunta", "Sí", "No"],
+      "filas": [
+        ["Do you drive?", "Yes, I do.", "No, I don't."],
+        ["Does he drive?", "Yes, he does.", "No, he doesn't."]
+      ]
+    },
+    { "tipo": "texto", "md": "Medios de transporte:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["car", "carro"],
+        ["bus", "camión, autobús"],
+        ["train", "tren"],
+        ["subway", "metro"],
+        ["bike", "bicicleta"],
+        ["plane", "avión"],
+        ["drive", "manejar"],
+        ["walk", "caminar"],
+        ["take the bus", "tomar el camión"]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "I go to work by bus.", "es": "Voy al trabajo en camión." },
+    { "tipo": "tip", "md": "El medio de transporte va con **by** y sin the: by car, by bus, by train. La excepción es **on foot** (a pie)." }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "___ your brother play soccer?",
+      "opciones": ["Does", "Do", "Is"],
+      "correcta": 0,
+      "porque": "Your brother equivale a he, y con he la pregunta empieza con Does."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "___ they work on weekends?",
+      "opciones": ["Do", "Does", "Are"],
+      "correcta": 0,
+      "porque": "Con they la pregunta empieza con Do."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "Do you drive? Yes, ___.",
+      "opciones": ["I do", "I does", "I am"],
+      "correcta": 0,
+      "porque": "La respuesta corta repite el auxiliar de la pregunta: Yes, I do."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "Does she take the bus? No, ___.",
+      "opciones": ["she doesn't", "she don't", "she isn't"],
+      "correcta": 0,
+      "porque": "La pregunta usa does, así que la respuesta corta negativa es she doesn't."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "___ you walk to work?",
+      "aceptadas": ["Do"],
+      "pista": "pregunta con you",
+      "porque": "Con you la pregunta empieza con Do."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "___ your sister live near here?",
+      "aceptadas": ["Does"],
+      "pista": "your sister = she",
+      "porque": "Your sister equivale a she, y con she la pregunta empieza con Does."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["Does he drive to work?", "Does he drives to work?", "Do he drive to work?"],
+      "correcta": 0,
+      "porque": "Con he va Does, y el verbo queda sin -s: drive."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada transporte con su significado.",
+      "pares": [
+        ["car", "carro"],
+        ["train", "tren"],
+        ["subway", "metro"],
+        ["bike", "bicicleta"],
+        ["plane", "avión"]
+      ],
+      "porque": "Todos van con by: by car, by train, by subway, by bike, by plane."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": ["Do", "you", "take", "the", "bus?"],
+      "traduccion": "¿Tomas el camión?",
+      "porque": "El orden de la pregunta es Do + pronombre + verbo."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "I go to school ___ bus.",
+      "opciones": ["by", "in", "on"],
+      "correcta": 0,
+      "porque": "El medio de transporte va con by y sin the: by bus."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Ana doesn't have a car. She takes the subway to work in the morning. In the afternoon she walks home. Her husband drives to work.",
+      "pregunta": "¿Cómo regresa Ana a su casa?",
+      "opciones": ["Caminando", "En metro", "En carro"],
+      "correcta": 0,
+      "porque": "«In the afternoon she walks home»: regresa caminando. El metro lo toma en la mañana."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "Do you go to work by car? No, I don't. I go by bike.",
+      "pregunta": "¿Cómo va al trabajo?",
+      "opciones": ["En bicicleta", "En carro", "En camión"],
+      "correcta": 0,
+      "porque": "Contesta «No, I don't» al carro y luego dice «I go by bike»."
+    },
+    {
+      "id": "e13",
+      "tipo": "ordenar",
+      "respuesta": ["Does", "she", "work", "here?"],
+      "traduccion": "¿Ella trabaja aquí?",
+      "porque": "Con she la pregunta empieza con Does, y el verbo va sin -s."
+    }
+  ]
+}

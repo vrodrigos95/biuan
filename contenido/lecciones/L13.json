@@ -1,0 +1,152 @@
+{
+  "id": "L13",
+  "subnivel": "A1.2",
+  "unidad": 4,
+  "titulo": "Mi día",
+  "explicacion": [
+    { "tipo": "texto", "md": "El **presente simple** se usa para rutinas, hábitos y hechos. Con **I, you, we, they** el verbo va tal cual, sin cambios." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pronombre", "Verbo", "Ejemplo"],
+      "filas": [
+        ["I", "work", "I work in a bank."],
+        ["You", "work", "You work a lot."],
+        ["We", "work", "We work on Mondays."],
+        ["They", "work", "They work at night."]
+      ]
+    },
+    { "tipo": "tip", "md": "No se pone to be antes del verbo: se dice **I work**, nunca *I am work*." },
+    { "tipo": "texto", "md": "Verbos para contar tu día:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["get up", "levantarse"],
+        ["have breakfast", "desayunar"],
+        ["go to work", "ir al trabajo"],
+        ["start", "empezar"],
+        ["have lunch", "comer (a mediodía)"],
+        ["finish", "terminar"],
+        ["go home", "ir a casa"],
+        ["have dinner", "cenar"],
+        ["watch TV", "ver la tele"],
+        ["go to bed", "acostarse"]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "I get up at six o'clock.", "es": "Me levanto a las seis." },
+    { "tipo": "ejemplo", "en": "We have dinner at eight.", "es": "Cenamos a las ocho." },
+    { "tipo": "tip", "md": "Las comidas van con **have** y sin the: have breakfast, have lunch, have dinner." },
+    { "tipo": "tip", "md": "**every day** significa «todos los días» y va al final: I work every day." }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ at six o'clock.",
+      "opciones": ["get up", "gets up", "am get up"],
+      "correcta": 0,
+      "porque": "Con I el verbo va sin cambios y sin to be: I get up."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "They ___ in a hospital.",
+      "opciones": ["work", "works", "are work"],
+      "correcta": 0,
+      "porque": "Con they el verbo va sin cambios: They work."
+    },
+    {
+      "id": "e03",
+      "tipo": "emparejar",
+      "enunciado": "Une cada verbo con su significado.",
+      "pares": [
+        ["get up", "levantarse"],
+        ["have breakfast", "desayunar"],
+        ["go to bed", "acostarse"],
+        ["have dinner", "cenar"],
+        ["go home", "ir a casa"]
+      ],
+      "porque": "Varios de estos verbos son de dos o tres palabras: se aprenden completos."
+    },
+    {
+      "id": "e04",
+      "tipo": "ordenar",
+      "respuesta": ["I", "have", "breakfast", "at", "seven."],
+      "traduccion": "Desayuno a las siete.",
+      "porque": "El orden es pronombre + verbo + hora. La hora va con at."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "We ___ lunch at two o'clock.",
+      "opciones": ["have", "has", "are"],
+      "correcta": 0,
+      "porque": "Las comidas van con have, y con we no cambia: We have lunch."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["I work every day.", "I am work every day.", "I works every day."],
+      "correcta": 0,
+      "porque": "Con I el verbo va solo, sin am y sin -s."
+    },
+    {
+      "id": "e07",
+      "tipo": "hueco",
+      "frase": "I ___ to bed at eleven.",
+      "aceptadas": ["go"],
+      "pista": "acostarse = ___ to bed",
+      "porque": "Acostarse se dice go to bed."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «cenar»?",
+      "opciones": ["have dinner", "have breakfast", "have the dinner"],
+      "correcta": 0,
+      "porque": "Cenar es have dinner, sin the. Have breakfast es desayunar."
+    },
+    {
+      "id": "e09",
+      "tipo": "lectura",
+      "texto": "I get up at six in the morning. I have breakfast and go to work at seven. I finish work at four and go home. I have dinner with my family at eight.",
+      "pregunta": "¿A qué hora termina de trabajar?",
+      "opciones": ["A las cuatro", "A las siete", "A las ocho"],
+      "correcta": 0,
+      "porque": "«I finish work at four»: termina a las cuatro."
+    },
+    {
+      "id": "e10",
+      "tipo": "escucha",
+      "audio": "My parents get up at five and have breakfast at six.",
+      "pregunta": "¿A qué hora desayunan sus papás?",
+      "opciones": ["A las seis", "A las cinco", "A las siete"],
+      "correcta": 0,
+      "porque": "«Have breakfast at six»: desayunan a las seis. A las cinco se levantan."
+    },
+    {
+      "id": "e11",
+      "tipo": "ordenar",
+      "respuesta": ["They", "watch", "TV", "at", "night."],
+      "traduccion": "Ven la tele en la noche.",
+      "porque": "Con they el verbo va sin cambios, y «en la noche» es at night."
+    },
+    {
+      "id": "e12",
+      "tipo": "hueco",
+      "frase": "We ___ up at seven.",
+      "aceptadas": ["get", "wake"],
+      "pista": "levantarse = ___ up",
+      "porque": "Levantarse se dice get up."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "My brother and I ___ to school by bus.",
+      "opciones": ["go", "goes", "going"],
+      "correcta": 0,
+      "porque": "My brother and I equivale a we, y con we el verbo va sin cambios: go."
+    }
+  ]
+}
