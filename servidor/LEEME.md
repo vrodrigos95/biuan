@@ -32,6 +32,10 @@ domains/tudominio.com/
    - `gumroad_product_id`: Gumroad → tu producto → Content → License key.
    - `secreto`: 64 caracteres al azar (letras a–f y números 0–9).
    - `origenes`: `['https://tudominio.com']`.
+   - `db`: los mismos datos de MySQL que `trucosdeaula-privado/config.php` (la base de
+     trucosdeaula.com). Ahí, en la tabla `licencia_dispositivos`, se guardan los dispositivos
+     de Biuan junto con los de las demás apps. Las tablas se crean con `servidor/schema.sql`
+     del repositorio TrucosDeAula.
 4. Sube las **lecciones de pago** a `biuan-privado/contenido/lecciones/`, los exámenes de
    control a `biuan-privado/contenido/controles/` y el simulacro como
    `biuan-privado/contenido/simulacro.json`. Las de la Unidad 1 (gratis) van en
@@ -59,8 +63,14 @@ el dominio (`sitioUrl`) se guardan ahí, en el repositorio (no son secretos).
   30 días para ese dispositivo. La app lo renueva sola con internet.
 - `api/contenido.php`: entrega lecciones de pago, exámenes y simulacro solo con permiso válido.
 - `api/indice.php`: lista el contenido disponible leyendo las carpetas.
-- Hasta 3 dispositivos por clave. Para liberar dispositivos de una clave, borra su archivo
-  en `biuan-privado/datos/licencias/`.
+- Hasta 3 dispositivos por clave, guardados en MySQL (tabla `licencia_dispositivos` de
+  trucosdeaula.com, con `app = 'biuan'`). Los que ya estaban en `biuan-privado/datos/licencias/`
+  se pasan solos a la base la primera vez que esa clave se usa (el archivo queda como
+  `.migrado`). Sin `db` en la configuración se siguen usando los archivos.
+- Para liberar un dispositivo: `POST https://trucosdeaula.com/api/licencia.php` con
+  `{"accion":"liberar","licenseKey":…,"deviceId":…}`, o en phpMyAdmin:
+  `DELETE FROM licencia_dispositivos WHERE clave_hash = SHA2('LA-CLAVE', 256) AND app = 'biuan';`
+  Un dispositivo liberado deja de recibir contenido de pago aunque su permiso no haya vencido.
 - Límites: activar 5 intentos cada 15 min y 20 al día por IP; contenido 300 archivos por
   hora por clave.
 - Si Gumroad marca la compra como reembolsada o en disputa, al renovar se quita el acceso.

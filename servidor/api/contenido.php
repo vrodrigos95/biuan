@@ -15,6 +15,17 @@ if (!hash_equals((string)$permiso['d'], $dispositivo)) {
     responder(401, ['error' => 'sin_permiso', 'mensaje' => 'Activa tu clave en este dispositivo.']);
 }
 
+// Si el dispositivo se liberó, su permiso deja de servir aunque no haya vencido.
+try {
+    $sigueRegistrado = dispositivoRegistrado((string)$permiso['l'], $dispositivo);
+} catch (PDOException $e) {
+    error_log('contenido.php: ' . $e->getMessage());
+    responder(503, ['error' => 'servidor', 'mensaje' => 'No pudimos cargar el contenido. Inténtalo en unos minutos.']);
+}
+if (!$sigueRegistrado) {
+    responder(401, ['error' => 'sin_permiso', 'mensaje' => 'Activa tu clave en este dispositivo.']);
+}
+
 limitar('contenido', $permiso['l'], (int)$CONFIG['limite_contenido_hora'], 3600);
 
 // Solo archivos de contenido con nombres conocidos: nada de rutas arbitrarias.

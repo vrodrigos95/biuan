@@ -161,7 +161,30 @@ function consultarGumroad(string $clave, bool $incrementar): ?array
     return is_array($json) ? $json : ['success' => false];
 }
 
-// Registro de dispositivos por clave (un archivo JSON por clave, guardado con su hash).
+// Registro de dispositivos por clave (guardado con el hash de la clave).
+// Con 'db' en la configuración se usa la tabla central licencia_dispositivos de trucosdeaula.com
+// (app = 'biuan'), la misma que usa /api/licencia.php. Sin 'db', un archivo JSON por clave.
+const APP_DISPOSITIVOS = 'biuan';
+
+function db(): PDO
+{
+    global $CONFIG;
+    static $pdo = null;
+    if ($pdo === null) {
+        $pdo = new PDO($CONFIG['db']['dsn'], $CONFIG['db']['usuario'], $CONFIG['db']['clave'], [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_EMULATE_PREPARES => false,
+        ]);
+    }
+    return $pdo;
+}
+
+function usaBaseDeDatos(): bool
+{
+    global $CONFIG;
+    return !empty($CONFIG['db']['dsn']);
+}
+
 function leerDispositivos(string $hashClave): array
 {
     global $CONFIG;
@@ -178,6 +201,76 @@ function guardarDispositivos(string $hashClave, array $datos): void
         @mkdir($dir, 0700, true);
     }
     file_put_contents($dir . '/' . $hashClave . '.json', json_encode($datos), LOCK_EX);
+}
+
+// Pasa a MySQL los dispositivos que esta clave tenía en archivos (de antes de usar la base de datos).
+function importarDispositivosDeArchivo(string $hashClave): void
+{
+    global $CONFIG;
+    $archivo = $CONFIG['datos_dir'] . '/licencias/' . $hashClave . '.json';
+    if (!is_file($archivo)) {
+        return;
+    }
+    $st = db()->prepare('INSERT IGNORE INTO licencia_dispositivos (clave_hash, app, dispositivo, alta, ultimo_uso) VALUES (?, ?, ?, ?, ?)');
+    foreach (leerDispositivos($hashClave)['dispositivos'] as $d) {
+        $alta = date('Y-m-d H:i:s', strtotime((string)($d['desde'] ?? 'now')) ?: time());
+        $st->execute([$hashClave, APP_DISPOSITIVOS, (string)$d['id'], $alta, $alta]);
+    }
+    rename($archivo, $archivo . '.migrado');
+}
+
+function dispositivoRegistrado(string $hashClave, string $dispositivo): bool
+{
+    if (!usaBaseDeDatos()) {
+        return in_array($dispositivo, array_column(leerDispositivos($hashClave)['dispositivos'], 'id'), true);
+    }
+    importarDispositivosDeArchivo($hashClave);
+    $st = db()->prepare('SELECT 1 FROM licencia_dispositivos WHERE clave_hash = ? AND app = ? AND dispositivo = ?');
+    $st->execute([$hashClave, APP_DISPOSITIVOS, $dispositivo]);
+    return $st->fetchColumn() !== false;
+}
+
+// Registra el dispositivo (o actualiza su último uso). Devuelve false si la clave ya llegó al límite.
+function registrarDispositivo(string $hashClave, string $dispositivo): bool
+{
+    global $CONFIG;
+    $maximo = (int)$CONFIG['max_dispositivos'];
+    if (!usaBaseDeDatos()) {
+        $registro = leerDispositivos($hashClave);
+        if (in_array($dispositivo, array_column($registro['dispositivos'], 'id'), true)) {
+            return true;
+        }
+        if (count($registro['dispositivos']) >= $maximo) {
+            return false;
+        }
+        $registro['dispositivos'][] = ['id' => $dispositivo, 'desde' => date('c')];
+        guardarDispositivos($hashClave, $registro);
+        return true;
+    }
+    $pdo = db();
+    $ahora = date('Y-m-d H:i:s');
+    $pdo->beginTransaction();
+    try {
+        // FOR UPDATE: dos activaciones a la vez no rebasan el límite.
+        $st = $pdo->prepare('SELECT dispositivo FROM licencia_dispositivos WHERE clave_hash = ? AND app = ? FOR UPDATE');
+        $st->execute([$hashClave, APP_DISPOSITIVOS]);
+        $registrados = $st->fetchAll(PDO::FETCH_COLUMN);
+        if (in_array($dispositivo, $registrados, true)) {
+            $pdo->prepare('UPDATE licencia_dispositivos SET ultimo_uso = ? WHERE clave_hash = ? AND app = ? AND dispositivo = ?')
+                ->execute([$ahora, $hashClave, APP_DISPOSITIVOS, $dispositivo]);
+        } elseif (count($registrados) >= $maximo) {
+            $pdo->commit();
+            return false;
+        } else {
+            $pdo->prepare('INSERT INTO licencia_dispositivos (clave_hash, app, dispositivo, alta, ultimo_uso) VALUES (?, ?, ?, ?, ?)')
+                ->execute([$hashClave, APP_DISPOSITIVOS, $dispositivo, $ahora, $ahora]);
+        }
+        $pdo->commit();
+        return true;
+    } catch (Throwable $e) {
+        $pdo->rollBack();
+        throw $e;
+    }
 }
 
 function leerJsonEntrada(): array
