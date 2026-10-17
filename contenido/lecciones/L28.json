@@ -1,0 +1,306 @@
+{
+  "id": "L28",
+  "subnivel": "A2.1",
+  "unidad": 7,
+  "titulo": "Es mío",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Para decir de quién es algo se agrega **'s** al dueño: **Ana's phone** es «el teléfono de Ana»."
+    },
+    {
+      "tipo": "tip",
+      "md": "No traduzcas «de» palabra por palabra: se dice *Ana's phone*, nunca *the phone of Ana*."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Un dueño",
+          "+ 's",
+          "my brother's car"
+        ],
+        [
+          "Varios dueños (plural con -s)",
+          "solo el apóstrofo",
+          "my parents' house"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**'s** también puede ser la forma corta de is: en *Ana's tired*, significa «Ana is tired». El resto de la oración te dice cuál es."
+    },
+    {
+      "tipo": "texto",
+      "md": "Los **pronombres posesivos** sustituyen al posesivo y al sustantivo juntos: *It's my bag* es lo mismo que *It's mine*."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Posesivo",
+        "Pronombre",
+        "Español"
+      ],
+      "filas": [
+        [
+          "my",
+          "mine",
+          "mío"
+        ],
+        [
+          "your",
+          "yours",
+          "tuyo"
+        ],
+        [
+          "his",
+          "his",
+          "suyo (de él)"
+        ],
+        [
+          "her",
+          "hers",
+          "suyo (de ella)"
+        ],
+        [
+          "our",
+          "ours",
+          "nuestro"
+        ],
+        [
+          "their",
+          "theirs",
+          "suyo (de ellos)"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Después de mine, yours, hers… **nunca** va un sustantivo: *This bag is mine*, no *This is mine bag*."
+    },
+    {
+      "tipo": "texto",
+      "md": "Para preguntar de quién es algo se usa **Whose…?**"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "Whose keys are these? They're mine.",
+      "es": "¿De quién son estas llaves? Son mías."
+    },
+    {
+      "tipo": "texto",
+      "md": "Pertenencias:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "thing",
+          "cosa"
+        ],
+        [
+          "wallet",
+          "cartera"
+        ],
+        [
+          "backpack",
+          "mochila"
+        ],
+        [
+          "laptop",
+          "laptop"
+        ],
+        [
+          "charger",
+          "cargador"
+        ],
+        [
+          "headphones",
+          "audífonos"
+        ],
+        [
+          "glasses",
+          "lentes"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «el carro de Ana»?",
+      "opciones": [
+        "Ana's car",
+        "the car of Ana",
+        "Ana car"
+      ],
+      "correcta": 0,
+      "porque": "El dueño lleva 's y va antes de la cosa: Ana's car."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "This is my wallet. It's ___.",
+      "opciones": [
+        "mine",
+        "my",
+        "me"
+      ],
+      "correcta": 0,
+      "porque": "Sin sustantivo después se usa el pronombre posesivo: mine."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "Is this laptop ___?",
+      "opciones": [
+        "yours",
+        "your",
+        "you"
+      ],
+      "correcta": 0,
+      "porque": "Al final, sin sustantivo, va el pronombre posesivo: yours."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "That is her backpack. It's ___.",
+      "aceptadas": [
+        "hers"
+      ],
+      "pista": "de ella",
+      "porque": "El pronombre posesivo de her es hers."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "This is my ___ (brother) laptop.",
+      "aceptadas": [
+        "brother's"
+      ],
+      "pista": "el dueño lleva 's",
+      "porque": "Un solo dueño: se agrega 's. My brother's laptop."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "___ keys are these?",
+      "opciones": [
+        "Whose",
+        "Who",
+        "Who's"
+      ],
+      "correcta": 0,
+      "porque": "Para preguntar de quién es algo se usa Whose. Who's significa «who is»."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada posesivo con su pronombre.",
+      "pares": [
+        [
+          "my",
+          "mine"
+        ],
+        [
+          "your",
+          "yours"
+        ],
+        [
+          "her",
+          "hers"
+        ],
+        [
+          "our",
+          "ours"
+        ],
+        [
+          "their",
+          "theirs"
+        ]
+      ],
+      "porque": "Casi todos agregan -s; el de my es mine."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Qué significa «headphones»?",
+      "opciones": [
+        "audífonos",
+        "lentes",
+        "cargador"
+      ],
+      "correcta": 0,
+      "porque": "Headphones son audífonos; lentes es glasses y cargador es charger."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Whose",
+        "phone",
+        "is",
+        "this?"
+      ],
+      "traduccion": "¿De quién es este teléfono?",
+      "porque": "Whose + cosa + is + this?"
+    },
+    {
+      "id": "e10",
+      "tipo": "ordenar",
+      "respuesta": [
+        "These",
+        "keys",
+        "are",
+        "not",
+        "mine."
+      ],
+      "traduccion": "Estas llaves no son mías.",
+      "porque": "Sujeto + are not + pronombre posesivo."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "La casa de mis papás: my ___ house.",
+      "opciones": [
+        "parents'",
+        "parent's",
+        "parents"
+      ],
+      "correcta": 0,
+      "porque": "Parents es plural y ya termina en -s: solo se agrega el apóstrofo."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "There are three things on the desk. The blue backpack is Daniel's. The wallet is mine. The headphones aren't ours: they are the teacher's.",
+      "pregunta": "¿De quién son los audífonos?",
+      "opciones": [
+        "De la maestra",
+        "De Daniel",
+        "De quien escribe"
+      ],
+      "correcta": 0,
+      "porque": "«The headphones aren't ours: they are the teacher's»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Excuse me, is this umbrella yours? No, it isn't mine. It's Laura's.",
+      "pregunta": "¿De quién es el paraguas?",
+      "opciones": [
+        "De Laura",
+        "De quien contesta",
+        "De quien pregunta"
+      ],
+      "correcta": 0,
+      "porque": "«It isn't mine. It's Laura's»: es de Laura."
+    }
+  ]
+}

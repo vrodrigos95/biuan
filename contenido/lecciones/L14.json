@@ -1,0 +1,151 @@
+{
+  "id": "L14",
+  "subnivel": "A1.2",
+  "unidad": 4,
+  "titulo": "Él y ella",
+  "explicacion": [
+    { "tipo": "texto", "md": "Con **he, she, it** el verbo en presente simple lleva **-s** al final." },
+    { "tipo": "ejemplo", "en": "I work in an office. She works in a school.", "es": "Yo trabajo en una oficina. Ella trabaja en una escuela." },
+    { "tipo": "texto", "md": "Casi siempre basta con agregar -s, pero hay tres casos especiales:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Regla", "Ejemplo"],
+      "filas": [
+        ["La mayoría: + s", "work → works, play → plays"],
+        ["Termina en -s, -sh, -ch, -x, -o: + es", "watch → watches, fix → fixes, go → goes"],
+        ["Consonante + y: cambia a -ies", "study → studies, cry → cries"],
+        ["Irregular", "have → has"]
+      ]
+    },
+    { "tipo": "tip", "md": "Si antes de la y hay vocal, solo se agrega -s: play → plays." },
+    { "tipo": "tip", "md": "Un truco: cada vez que armes una oración, pregúntate «he, she, it… ¿dónde va la s?»." },
+    { "tipo": "texto", "md": "Trabajo y escuela:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["work", "trabajar"],
+        ["study", "estudiar"],
+        ["teach", "enseñar"],
+        ["learn", "aprender"],
+        ["office", "oficina"],
+        ["job", "trabajo, empleo"],
+        ["class", "clase"],
+        ["homework", "tarea"],
+        ["boss", "jefe"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "My mom ___ dinner every night.",
+      "opciones": ["cooks", "cook"],
+      "correcta": 0,
+      "porque": "My mom equivale a she, así que el verbo lleva -s: cooks (cocina)."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She ___ TV every evening.",
+      "opciones": ["watches", "watchs", "watch"],
+      "correcta": 0,
+      "porque": "Watch termina en -ch, así que se agrega -es: watches."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "He ___ cars.",
+      "opciones": ["fixes", "fixs", "fix"],
+      "correcta": 0,
+      "porque": "Fix (arreglar) termina en -x, así que se agrega -es: fixes."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "My dad ___ to work by bus.",
+      "aceptadas": ["goes"],
+      "pista": "verbo: go",
+      "porque": "My dad equivale a he, y go termina en -o: goes."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "The baby ___ a lot at night.",
+      "aceptadas": ["cries"],
+      "pista": "verbo: cry (llorar)",
+      "porque": "Cry termina en consonante + y: la y cambia a -ies, cries."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "The store ___ at 9 a.m.",
+      "opciones": ["opens", "open"],
+      "correcta": 0,
+      "porque": "The store es una cosa, equivale a it, y el verbo lleva -s: opens (abre)."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo queda el verbo «study» con she?",
+      "opciones": ["studies", "studys", "studyes"],
+      "correcta": 0,
+      "porque": "Study termina en consonante + y: la y cambia a -ies, studies."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "My sister ___ two jobs.",
+      "opciones": ["has", "haves", "have"],
+      "correcta": 0,
+      "porque": "Have es irregular: con he, she, it se convierte en has."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        ["teach", "enseñar"],
+        ["learn", "aprender"],
+        ["office", "oficina"],
+        ["homework", "tarea"],
+        ["boss", "jefe"]
+      ],
+      "porque": "Teach es lo que hace el maestro y learn lo que hace el alumno."
+    },
+    {
+      "id": "e10",
+      "tipo": "ordenar",
+      "respuesta": ["She", "works", "in", "an", "office."],
+      "traduccion": "Ella trabaja en una oficina.",
+      "porque": "Con she el verbo lleva -s: works. Office empieza con vocal, por eso an."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Laura is a teacher. She teaches English at a school. She starts at eight and finishes at two. Her husband Mario works in an office. He goes to work by bus.",
+      "pregunta": "¿Dónde trabaja Mario?",
+      "opciones": ["En una oficina", "En una escuela", "En un hospital"],
+      "correcta": 0,
+      "porque": "«Mario works in an office»: trabaja en una oficina. La escuela es de Laura."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "My brother studies in the morning and works in the afternoon.",
+      "pregunta": "¿Qué hace su hermano en la tarde?",
+      "opciones": ["Trabaja", "Estudia", "Ve la tele"],
+      "correcta": 0,
+      "porque": "«Works in the afternoon»: trabaja en la tarde. En la mañana estudia."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "¿Qué frase es correcta?",
+      "opciones": ["He plays soccer.", "He plaies soccer.", "He play soccer."],
+      "correcta": 0,
+      "porque": "En play hay vocal antes de la y, así que solo se agrega -s: plays."
+    }
+  ]
+}

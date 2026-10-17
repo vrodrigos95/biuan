@@ -1,0 +1,292 @@
+{
+  "id": "L38",
+  "subnivel": "A2.2",
+  "unidad": 10,
+  "titulo": "El mejor",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **superlativo** dice que algo es «el más…» de un grupo. Siempre lleva **the**."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Corto: the + adjetivo + est",
+          "tall → the tallest, cheap → the cheapest"
+        ],
+        [
+          "Termina en -e: + st",
+          "large → the largest"
+        ],
+        [
+          "Vocal corta + consonante: se duplica",
+          "big → the biggest, hot → the hottest"
+        ],
+        [
+          "Termina en -y: cambia a -iest",
+          "easy → the easiest"
+        ],
+        [
+          "Largo: the most + adjetivo",
+          "the most expensive, the most famous"
+        ]
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Adjetivo",
+        "Comparativo",
+        "Superlativo"
+      ],
+      "filas": [
+        [
+          "good",
+          "better",
+          "the best"
+        ],
+        [
+          "bad",
+          "worse",
+          "the worst"
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "Mexico City is the largest city in Mexico.",
+      "es": "La Ciudad de México es la ciudad más grande de México."
+    },
+    {
+      "tipo": "tip",
+      "md": "Después del superlativo, «de» se dice **in** cuando es un lugar o un grupo: *the best student in the class*, *the highest mountain in the world*."
+    },
+    {
+      "tipo": "tip",
+      "md": "Comparativo para dos cosas (*larger than*), superlativo para una entre todas (*the largest*)."
+    },
+    {
+      "tipo": "texto",
+      "md": "Ciudades y países:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "world",
+          "mundo"
+        ],
+        [
+          "country",
+          "país"
+        ],
+        [
+          "capital",
+          "capital"
+        ],
+        [
+          "large",
+          "grande"
+        ],
+        [
+          "high",
+          "alto (montañas, edificios)"
+        ],
+        [
+          "famous",
+          "famoso"
+        ],
+        [
+          "beautiful",
+          "hermoso"
+        ],
+        [
+          "safe",
+          "seguro"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "Mexico City is the ___ city in Mexico.",
+      "opciones": [
+        "largest",
+        "larger",
+        "most large"
+      ],
+      "correcta": 0,
+      "porque": "Es una entre todas: superlativo, large + st."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "This is the ___ hotel in the city.",
+      "opciones": [
+        "most expensive",
+        "expensivest",
+        "more expensive"
+      ],
+      "correcta": 0,
+      "porque": "Expensive es largo: the most + adjetivo."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "He is the ___ (tall) student in the class.",
+      "aceptadas": [
+        "tallest"
+      ],
+      "pista": "adjetivo corto",
+      "porque": "Tall es corto: tall + est."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "It is the ___ (good) restaurant in the town.",
+      "aceptadas": [
+        "best"
+      ],
+      "pista": "irregular",
+      "porque": "Good es irregular: good, better, the best."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el superlativo de bad?",
+      "opciones": [
+        "the worst",
+        "the baddest",
+        "the most bad"
+      ],
+      "correcta": 0,
+      "porque": "Bad es irregular: bad, worse, the worst."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "She is the best student ___ the class.",
+      "opciones": [
+        "in",
+        "of",
+        "than"
+      ],
+      "correcta": 0,
+      "porque": "Con un lugar o grupo, el «de» del superlativo es in."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada adjetivo con su superlativo.",
+      "pares": [
+        [
+          "tall",
+          "the tallest"
+        ],
+        [
+          "good",
+          "the best"
+        ],
+        [
+          "bad",
+          "the worst"
+        ],
+        [
+          "big",
+          "the biggest"
+        ],
+        [
+          "famous",
+          "the most famous"
+        ]
+      ],
+      "porque": "Todos los superlativos llevan the."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "It",
+        "is",
+        "the",
+        "highest",
+        "mountain",
+        "in",
+        "Mexico."
+      ],
+      "traduccion": "Es la montaña más alta de México.",
+      "porque": "the + superlativo + sustantivo + in + lugar."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "What",
+        "is",
+        "the",
+        "most",
+        "beautiful",
+        "city?"
+      ],
+      "traduccion": "¿Cuál es la ciudad más hermosa?",
+      "porque": "Beautiful es largo: the most beautiful."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "August is the ___ month here.",
+      "opciones": [
+        "hottest",
+        "hotter",
+        "most hot"
+      ],
+      "correcta": 0,
+      "porque": "Es uno entre todos los meses: the hottest, con doble t."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "Canada is ___ than Mexico.",
+      "opciones": [
+        "larger",
+        "the largest",
+        "largest"
+      ],
+      "correcta": 0,
+      "porque": "Se comparan dos cosas y hay than: comparativo."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Mexico is a large country. Mexico City is the capital and the largest city. The highest mountain is Pico de Orizaba. I think Guanajuato is the most beautiful city in Mexico, but Cancún is the most famous beach.",
+      "pregunta": "Según el texto, ¿cuál es la ciudad más grande de México?",
+      "opciones": [
+        "La Ciudad de México",
+        "Guanajuato",
+        "Cancún"
+      ],
+      "correcta": 0,
+      "porque": "«Mexico City is the capital and the largest city»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "My family is big. My brother Leo is the oldest and I am the youngest. My sister is the tallest.",
+      "pregunta": "¿Quién es el menor de la familia?",
+      "opciones": [
+        "Quien habla",
+        "Leo",
+        "La hermana"
+      ],
+      "correcta": 0,
+      "porque": "«I am the youngest»: quien habla es el menor."
+    }
+  ]
+}

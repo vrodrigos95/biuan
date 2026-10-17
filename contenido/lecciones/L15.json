@@ -1,0 +1,148 @@
+{
+  "id": "L15",
+  "subnivel": "A1.2",
+  "unidad": 4,
+  "titulo": "No lo hago",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para negar en presente simple se pone **don't** o **doesn't** antes del verbo." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pronombre", "Negativo", "Ejemplo"],
+      "filas": [
+        ["I / You / We / They", "don't + verbo", "I don't work."],
+        ["He / She / It", "doesn't + verbo", "She doesn't work."]
+      ]
+    },
+    { "tipo": "tip", "md": "Después de **doesn't** el verbo pierde la -s: *She doesn't work*, nunca *She doesn't works*. La s ya va en does." },
+    { "tipo": "tip", "md": "**don't** es do not y **doesn't** es does not. Al hablar casi siempre se usa la forma corta." },
+    { "tipo": "ejemplo", "en": "I don't watch TV.", "es": "No veo la tele." },
+    { "tipo": "ejemplo", "en": "He doesn't play soccer.", "es": "Él no juega futbol." },
+    { "tipo": "texto", "md": "Actividades de tiempo libre:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["play soccer", "jugar futbol"],
+        ["play video games", "jugar videojuegos"],
+        ["listen to music", "escuchar música"],
+        ["read", "leer"],
+        ["cook", "cocinar"],
+        ["dance", "bailar"],
+        ["swim", "nadar"],
+        ["go out", "salir"],
+        ["go to the movies", "ir al cine"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ meat.",
+      "opciones": ["don't eat", "doesn't eat", "not eat"],
+      "correcta": 0,
+      "porque": "Con I el negativo es don't + verbo: I don't eat meat (no como carne)."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "We ___ class on Fridays.",
+      "opciones": ["don't have", "doesn't have", "not have"],
+      "correcta": 0,
+      "porque": "Con we el negativo es don't + verbo: We don't have class."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "She ___ like spicy food.",
+      "aceptadas": ["doesn't", "does not"],
+      "pista": "negativo con she",
+      "porque": "Con she el negativo es doesn't: She doesn't like spicy food (no le gusta la comida picante)."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "We ___ speak French.",
+      "aceptadas": ["don't", "do not"],
+      "pista": "negativo con we",
+      "porque": "Con we el negativo es don't: We don't speak French (no hablamos francés)."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["He doesn't work on Sundays.", "He doesn't works on Sundays.", "He don't work on Sundays."],
+      "correcta": 0,
+      "porque": "Con he va doesn't, y después el verbo sin -s: doesn't work."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "My parents ___ go out at night.",
+      "opciones": ["don't", "doesn't", "aren't"],
+      "correcta": 0,
+      "porque": "My parents equivale a they, y con they el negativo es don't."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada actividad con su significado.",
+      "pares": [
+        ["read", "leer"],
+        ["swim", "nadar"],
+        ["dance", "bailar"],
+        ["go out", "salir"],
+        ["listen to music", "escuchar música"]
+      ],
+      "porque": "Listen siempre lleva to cuando dices qué escuchas: listen to music."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": ["I", "don't", "watch", "TV."],
+      "traduccion": "No veo la tele.",
+      "porque": "El orden es pronombre + don't + verbo."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "My brother ___ play video games.",
+      "opciones": ["doesn't", "don't", "isn't"],
+      "correcta": 0,
+      "porque": "My brother equivale a he, y con he el negativo es doesn't."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "Pasa a negativo: «She cooks.»",
+      "opciones": ["She doesn't cook.", "She doesn't cooks.", "She not cooks."],
+      "correcta": 0,
+      "porque": "Se agrega doesn't y el verbo pierde la -s: She doesn't cook."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "On Saturdays I play soccer with my friends. My sister doesn't play soccer. She reads and listens to music. We don't work on weekends.",
+      "pregunta": "¿Qué hace la hermana los sábados?",
+      "opciones": ["Lee y escucha música", "Juega futbol", "Trabaja"],
+      "correcta": 0,
+      "porque": "«She reads and listens to music»: lee y escucha música. No juega futbol."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "I don't go to the movies, but I watch movies at home.",
+      "pregunta": "¿Dónde ve películas?",
+      "opciones": ["En su casa", "En el cine", "En la escuela"],
+      "correcta": 0,
+      "porque": "Dice que no va al cine, pero «I watch movies at home»: las ve en casa."
+    },
+    {
+      "id": "e13",
+      "tipo": "ordenar",
+      "respuesta": ["She", "doesn't", "dance."],
+      "traduccion": "Ella no baila.",
+      "porque": "Con she va doesn't, y el verbo queda sin -s: dance."
+    }
+  ]
+}

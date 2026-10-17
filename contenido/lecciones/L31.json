@@ -1,0 +1,416 @@
+{
+  "id": "L31",
+  "subnivel": "A2.1",
+  "unidad": 8,
+  "titulo": "Verbos irregulares",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Muchos de los verbos más usados son **irregulares**: su pasado no lleva -ed y hay que aprenderlo de memoria. Lo bueno es que es igual para todas las personas."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I went to Oaxaca last year.",
+      "es": "Fui a Oaxaca el año pasado."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "She bought a ticket and flew to Tijuana.",
+      "es": "Compró un boleto y voló a Tijuana."
+    },
+    {
+      "tipo": "texto",
+      "md": "Los 30 irregulares más usados:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Verbo",
+        "Pasado",
+        "Español"
+      ],
+      "filas": [
+        [
+          "go",
+          "went",
+          "ir"
+        ],
+        [
+          "have",
+          "had",
+          "tener"
+        ],
+        [
+          "do",
+          "did",
+          "hacer"
+        ],
+        [
+          "get",
+          "got",
+          "conseguir, llegar"
+        ],
+        [
+          "make",
+          "made",
+          "hacer, preparar"
+        ],
+        [
+          "take",
+          "took",
+          "tomar, llevar"
+        ],
+        [
+          "come",
+          "came",
+          "venir"
+        ],
+        [
+          "see",
+          "saw",
+          "ver"
+        ],
+        [
+          "eat",
+          "ate",
+          "comer"
+        ],
+        [
+          "drink",
+          "drank",
+          "beber"
+        ],
+        [
+          "buy",
+          "bought",
+          "comprar"
+        ],
+        [
+          "say",
+          "said",
+          "decir"
+        ],
+        [
+          "give",
+          "gave",
+          "dar"
+        ],
+        [
+          "know",
+          "knew",
+          "saber, conocer"
+        ],
+        [
+          "think",
+          "thought",
+          "pensar, creer"
+        ],
+        [
+          "find",
+          "found",
+          "encontrar"
+        ],
+        [
+          "leave",
+          "left",
+          "salir, dejar"
+        ],
+        [
+          "write",
+          "wrote",
+          "escribir"
+        ],
+        [
+          "read",
+          "read",
+          "leer"
+        ],
+        [
+          "speak",
+          "spoke",
+          "hablar"
+        ],
+        [
+          "sleep",
+          "slept",
+          "dormir"
+        ],
+        [
+          "meet",
+          "met",
+          "conocer, reunirse"
+        ],
+        [
+          "pay",
+          "paid",
+          "pagar"
+        ],
+        [
+          "fly",
+          "flew",
+          "volar"
+        ],
+        [
+          "drive",
+          "drove",
+          "manejar"
+        ],
+        [
+          "swim",
+          "swam",
+          "nadar"
+        ],
+        [
+          "run",
+          "ran",
+          "correr"
+        ],
+        [
+          "sit",
+          "sat",
+          "sentarse"
+        ],
+        [
+          "wear",
+          "wore",
+          "traer puesto"
+        ],
+        [
+          "spend",
+          "spent",
+          "gastar, pasar (tiempo)"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**read** se escribe igual en presente y en pasado, pero el pasado se pronuncia «red»."
+    },
+    {
+      "tipo": "tip",
+      "md": "No intentes aprender los 30 de un jalón. Apréndelos de cinco en cinco, cada uno dentro de una oración sobre ti: *Yesterday I ate…*"
+    },
+    {
+      "tipo": "texto",
+      "md": "Viajes:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "trip",
+          "viaje"
+        ],
+        [
+          "ticket",
+          "boleto"
+        ],
+        [
+          "flight",
+          "vuelo"
+        ],
+        [
+          "airport",
+          "aeropuerto"
+        ],
+        [
+          "hotel",
+          "hotel"
+        ],
+        [
+          "suitcase",
+          "maleta"
+        ],
+        [
+          "passport",
+          "pasaporte"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el pasado de go?",
+      "opciones": [
+        "went",
+        "goed",
+        "wented"
+      ],
+      "correcta": 0,
+      "porque": "Go es irregular: su pasado es went."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "I ___ a ticket to Cancún.",
+      "opciones": [
+        "bought",
+        "buyed",
+        "buy"
+      ],
+      "correcta": 0,
+      "porque": "El pasado de buy es bought."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "We ___ (fly) to Tijuana last week.",
+      "aceptadas": [
+        "flew"
+      ],
+      "pista": "irregular",
+      "porque": "El pasado de fly es flew."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "She ___ (take) the bus to the airport.",
+      "aceptadas": [
+        "took"
+      ],
+      "pista": "irregular",
+      "porque": "El pasado de take es took."
+    },
+    {
+      "id": "e05",
+      "tipo": "emparejar",
+      "enunciado": "Une cada verbo con su pasado.",
+      "pares": [
+        [
+          "go",
+          "went"
+        ],
+        [
+          "see",
+          "saw"
+        ],
+        [
+          "eat",
+          "ate"
+        ],
+        [
+          "buy",
+          "bought"
+        ],
+        [
+          "leave",
+          "left"
+        ],
+        [
+          "have",
+          "had"
+        ]
+      ],
+      "porque": "Seis irregulares que usarás todo el tiempo."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "¿Qué significa «suitcase»?",
+      "opciones": [
+        "maleta",
+        "boleto",
+        "vuelo"
+      ],
+      "correcta": 0,
+      "porque": "Suitcase es maleta; boleto es ticket y vuelo es flight."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "We",
+        "went",
+        "to",
+        "the",
+        "beach",
+        "yesterday."
+      ],
+      "traduccion": "Ayer fuimos a la playa.",
+      "porque": "Sujeto + went + lugar + tiempo."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "saw",
+        "my",
+        "friends",
+        "at",
+        "the",
+        "airport."
+      ],
+      "traduccion": "Vi a mis amigos en el aeropuerto.",
+      "porque": "El pasado de see es saw."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "He ___ his passport at home!",
+      "opciones": [
+        "left",
+        "leaved",
+        "leaves"
+      ],
+      "correcta": 0,
+      "porque": "El pasado de leave es left: dejó su pasaporte en casa."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "They ___ in a small hotel.",
+      "opciones": [
+        "slept",
+        "sleeped",
+        "sleep"
+      ],
+      "correcta": 0,
+      "porque": "El pasado de sleep es slept."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "She had breakfast at the hotel.",
+        "She haved breakfast at the hotel.",
+        "She having breakfast at the hotel."
+      ],
+      "correcta": 0,
+      "porque": "El pasado de have es had, para todas las personas."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Last month Diana went to Oaxaca. She flew from Tijuana and took a bus to the hotel. She ate a lot of good food and bought a dress in the market. She spent four days there and came home on Sunday.",
+      "pregunta": "¿Qué compró Diana?",
+      "opciones": [
+        "Un vestido",
+        "Una maleta",
+        "Un boleto"
+      ],
+      "correcta": 0,
+      "porque": "«She bought a dress in the market»: compró un vestido."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "How was your trip? It was good! We drove to the beach, swam every day and met some friends.",
+      "pregunta": "¿Cómo llegaron a la playa?",
+      "opciones": [
+        "En carro",
+        "En avión",
+        "En camión"
+      ],
+      "correcta": 0,
+      "porque": "«We drove to the beach»: drove es el pasado de drive, manejar."
+    }
+  ]
+}

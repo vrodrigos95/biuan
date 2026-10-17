@@ -1,0 +1,162 @@
+{
+  "id": "L22",
+  "subnivel": "A1.2",
+  "unidad": 6,
+  "titulo": "¿Cuánto cuesta?",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para preguntar por una cantidad se usa **How many** con contables en plural y **How much** con incontables." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pregunta", "Va con", "Ejemplo"],
+      "filas": [
+        ["How many", "contables en plural", "How many eggs do you want?"],
+        ["How much", "incontables", "How much milk do you want?"]
+      ]
+    },
+    { "tipo": "texto", "md": "**How much** también sirve para preguntar el precio." },
+    { "tipo": "ejemplo", "en": "How much is this shirt? It's twenty dollars.", "es": "¿Cuánto cuesta esta camisa? Cuesta veinte dólares." },
+    { "tipo": "ejemplo", "en": "How much are these shoes? They're fifty dollars.", "es": "¿Cuánto cuestan estos zapatos? Cuestan cincuenta dólares." },
+    { "tipo": "tip", "md": "Para el precio se usa **is** con una cosa y **are** con varias." },
+    { "tipo": "tip", "md": "Los precios se dicen en dos partes: $9.50 es *nine fifty* y $12.99 es *twelve ninety-nine*." },
+    { "tipo": "texto", "md": "Cantidades:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["a lot of", "mucho, muchos"],
+        ["a few", "unos pocos (contables)"],
+        ["a little", "un poco (incontables)"],
+        ["a glass of", "un vaso de"],
+        ["a bottle of", "una botella de"],
+        ["a kilo of", "un kilo de"]
+      ]
+    },
+    { "tipo": "texto", "md": "En la tienda:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["price", "precio"],
+        ["cheap", "barato"],
+        ["expensive", "caro"],
+        ["money", "dinero"],
+        ["cash", "efectivo"],
+        ["card", "tarjeta"],
+        ["market", "mercado"]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "Can I pay by card?", "es": "¿Puedo pagar con tarjeta?" }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "How ___ sugar do you want?",
+      "opciones": ["much", "many"],
+      "correcta": 0,
+      "porque": "Sugar es incontable, así que va con How much."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "How ___ chairs are there in the room?",
+      "opciones": ["many", "much"],
+      "correcta": 0,
+      "porque": "Chairs es contable y está en plural, así que va con How many."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "How much ___ these shoes?",
+      "opciones": ["are", "is", "do"],
+      "correcta": 0,
+      "porque": "These shoes es plural: How much are…?"
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice el precio $9.50?",
+      "opciones": ["nine fifty", "nine and fifty", "ninety-five"],
+      "correcta": 0,
+      "porque": "Los precios se dicen en dos partes, sin and: nine fifty."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "How ___ is this bag?",
+      "aceptadas": ["much"],
+      "pista": "pregunta por el precio",
+      "porque": "El precio se pregunta con How much."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "How ___ brothers do you have?",
+      "aceptadas": ["many"],
+      "pista": "brothers es contable",
+      "porque": "Brothers es contable y está en plural: How many."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        ["cheap", "barato"],
+        ["expensive", "caro"],
+        ["cash", "efectivo"],
+        ["card", "tarjeta"],
+        ["price", "precio"]
+      ],
+      "porque": "Cheap y expensive son contrarios: barato y caro."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": ["How", "much", "is", "this", "book?"],
+      "traduccion": "¿Cuánto cuesta este libro?",
+      "porque": "Para una sola cosa, el precio se pregunta con How much is…?"
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "I don't have ___ friends here.",
+      "opciones": ["many", "much"],
+      "correcta": 0,
+      "porque": "Friends es contable y está en plural: many."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "Can I have a ___ of water, please?",
+      "opciones": ["glass", "few", "little"],
+      "correcta": 0,
+      "porque": "Un vaso de agua se dice a glass of water."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "At the market, apples are 30 pesos a kilo and eggs are 45 pesos. The cheese is expensive: 180 pesos a kilo. The bread is cheap.",
+      "pregunta": "¿Qué es caro en el mercado?",
+      "opciones": ["El queso", "El pan", "Las manzanas"],
+      "correcta": 0,
+      "porque": "«The cheese is expensive»: el queso es caro. El pan es cheap, barato."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "How much is this watch? It's forty-five dollars. And this one? It's ninety.",
+      "pregunta": "¿Cuánto cuesta el primer reloj?",
+      "opciones": ["45 dólares", "54 dólares", "90 dólares"],
+      "correcta": 0,
+      "porque": "El primero cuesta «forty-five dollars»: 45. El segundo cuesta 90."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "How many eggs do you want?",
+      "opciones": ["A few.", "A little.", "Much."],
+      "correcta": 0,
+      "porque": "Eggs es contable, así que se contesta con a few (unos pocos)."
+    }
+  ]
+}

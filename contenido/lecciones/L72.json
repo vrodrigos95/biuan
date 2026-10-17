@@ -1,0 +1,303 @@
+{
+  "id": "L72",
+  "subnivel": "B1.2",
+  "unidad": 18,
+  "titulo": "Repaso general",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "En B1 las estructuras se mezclan. El reto ya no es memorizar reglas, sino **reconocer cuál usar** en cada situación."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Tema",
+        "Regla",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "Pasado continuo y simple",
+          "*was / were + -ing* para la acción en progreso; pasado simple para la que interrumpe.",
+          "I **was sleeping** when the storm **started**."
+        ],
+        [
+          "Futuro",
+          "*will*: decisión del momento o promesa. *going to*: plan o evidencia. Presente continuo: cita agendada.",
+          "Look! It's **going to** rain."
+        ],
+        [
+          "Conectores",
+          "*although*, *however*, *so*, *because* + oración, *because of* + sustantivo.",
+          "We were late **because of** the storm."
+        ],
+        [
+          "Modales",
+          "*must / have to*: obligación. *should*: consejo. *don't have to*: no es necesario. *must not*: prohibido.",
+          "You **don't have to** pay now."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "En el examen: *while* suele ir con pasado continuo y *when* con la acción que interrumpe. Si hay un plan o evidencia visible, la respuesta suele ser *going to*; si es una decisión del momento o una promesa, *will*."
+    },
+    {
+      "tipo": "tip",
+      "md": "Usa eliminación de opciones y no te atores en una sola pregunta: márcala y regresa si el tiempo lo permite."
+    },
+    {
+      "tipo": "texto",
+      "md": "Vocabulario para este nivel:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "celebration",
+          "celebración"
+        ],
+        [
+          "illness",
+          "enfermedad"
+        ],
+        [
+          "improvement",
+          "mejora"
+        ],
+        [
+          "challenge",
+          "reto"
+        ],
+        [
+          "choice",
+          "elección"
+        ],
+        [
+          "rule",
+          "regla"
+        ],
+        [
+          "solution",
+          "solución"
+        ],
+        [
+          "expense",
+          "gasto"
+        ],
+        [
+          "departure",
+          "salida (viaje)"
+        ],
+        [
+          "arrival",
+          "llegada"
+        ],
+        [
+          "receipt",
+          "recibo"
+        ],
+        [
+          "announcement",
+          "anuncio"
+        ],
+        [
+          "promise",
+          "promesa"
+        ],
+        [
+          "storm",
+          "tormenta"
+        ],
+        [
+          "reminder",
+          "recordatorio"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ TV when she called.",
+      "opciones": [
+        "was watching",
+        "watched",
+        "am watching"
+      ],
+      "correcta": 0,
+      "porque": "Acción en progreso interrumpida por otra: pasado continuo."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "While we were having dinner, the lights ___ out.",
+      "opciones": [
+        "went",
+        "were going",
+        "go"
+      ],
+      "correcta": 0,
+      "porque": "Es la acción corta que interrumpe: pasado simple, went."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "Look at that car! It ___ crash.",
+      "opciones": [
+        "is going to",
+        "will to",
+        "going"
+      ],
+      "correcta": 0,
+      "porque": "Hay evidencia visible: is going to + verbo."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "I promise I ___ (send) you a reminder.",
+      "aceptadas": [
+        "will send",
+        "'ll send"
+      ],
+      "porque": "Una promesa va con will."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "___ the storm was strong, the plane left on time.",
+      "opciones": [
+        "Although",
+        "Because",
+        "So"
+      ],
+      "correcta": 0,
+      "porque": "Contraste entre dos ideas de la misma oración: although."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "The departure was late ___ the storm.",
+      "opciones": [
+        "because of",
+        "because",
+        "although"
+      ],
+      "correcta": 0,
+      "porque": "The storm es un sustantivo: because of."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "You ___ pay now; you can pay tomorrow.",
+      "opciones": [
+        "don't have to",
+        "must not",
+        "should"
+      ],
+      "correcta": 0,
+      "porque": "No es necesario pagar ahora: don't have to."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "She",
+        "was",
+        "sleeping",
+        "when",
+        "the",
+        "storm",
+        "started."
+      ],
+      "traduccion": "Ella estaba durmiendo cuando empezó la tormenta.",
+      "porque": "Acción en progreso (was sleeping) + when + acción que interrumpe (started)."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su traducción.",
+      "pares": [
+        [
+          "challenge",
+          "reto"
+        ],
+        [
+          "improvement",
+          "mejora"
+        ],
+        [
+          "expense",
+          "gasto"
+        ],
+        [
+          "receipt",
+          "recibo"
+        ],
+        [
+          "arrival",
+          "llegada"
+        ],
+        [
+          "departure",
+          "salida"
+        ]
+      ],
+      "porque": "Vocabulario de viajes y trámites que aparece seguido en exámenes B1."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "The ___ said the flight was late.",
+      "aceptadas": [
+        "announcement"
+      ],
+      "pista": "anuncio",
+      "porque": "Anuncio se dice announcement."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Dear passengers: because of the storm, the departure of flight 204 is late. The new departure time is 9:30 p.m. You don't have to change your ticket. However, you must keep your receipt. We will make another announcement in thirty minutes.",
+      "pregunta": "¿Por qué se retrasó el vuelo?",
+      "opciones": [
+        "Por la tormenta",
+        "Por una enfermedad",
+        "Por una celebración"
+      ],
+      "correcta": 0,
+      "porque": "«Because of the storm, the departure of flight 204 is late»."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Dear passengers: because of the storm, the departure of flight 204 is late. The new departure time is 9:30 p.m. You don't have to change your ticket. However, you must keep your receipt. We will make another announcement in thirty minutes.",
+      "pregunta": "¿Qué deben hacer los pasajeros?",
+      "opciones": [
+        "Guardar su recibo",
+        "Cambiar su boleto",
+        "Pagar otra vez"
+      ],
+      "correcta": 0,
+      "porque": "«You must keep your receipt»: deben guardar su recibo. Cambiar el boleto no es necesario (don't have to)."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Don't forget: we are meeting at five tomorrow. I'll send you a reminder.",
+      "pregunta": "¿Qué le va a mandar?",
+      "opciones": [
+        "Un recordatorio",
+        "Un recibo",
+        "Un anuncio"
+      ],
+      "correcta": 0,
+      "porque": "«I'll send you a reminder»: un recordatorio."
+    }
+  ]
+}

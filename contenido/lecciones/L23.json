@@ -1,0 +1,158 @@
+{
+  "id": "L23",
+  "subnivel": "A1.2",
+  "unidad": 6,
+  "titulo": "A mí, a él",
+  "explicacion": [
+    { "tipo": "texto", "md": "Los pronombres de objeto reciben la acción. Van **después** del verbo o de una preposición." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Sujeto", "Objeto", "Español"],
+      "filas": [
+        ["I", "me", "me, a mí"],
+        ["you", "you", "te, a ti"],
+        ["he", "him", "lo, a él"],
+        ["she", "her", "la, a ella"],
+        ["it", "it", "lo (una cosa)"],
+        ["we", "us", "nos, a nosotros"],
+        ["they", "them", "los, a ellos"]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "Can you help me?", "es": "¿Me puedes ayudar?" },
+    { "tipo": "ejemplo", "en": "I see him every day.", "es": "Lo veo todos los días." },
+    { "tipo": "ejemplo", "en": "This is for you.", "es": "Esto es para ti." },
+    { "tipo": "tip", "md": "En español el pronombre va antes del verbo: «lo veo». En inglés va después: **I see him**." },
+    { "tipo": "tip", "md": "**her** tiene dos usos: es posesivo (her car) y es objeto (I know her)." },
+    { "tipo": "texto", "md": "En el restaurante:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["menu", "menú"],
+        ["waiter", "mesero"],
+        ["order", "ordenar"],
+        ["dish", "platillo"],
+        ["fish", "pescado"],
+        ["drink", "bebida"],
+        ["dessert", "postre"],
+        ["bill", "cuenta"],
+        ["tip", "propina"]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "Can you bring me the menu, please?", "es": "¿Me trae el menú, por favor?" },
+    { "tipo": "ejemplo", "en": "I'd like the chicken, please.", "es": "Quiero el pollo, por favor." },
+    { "tipo": "tip", "md": "**I'd like…** (I would like) es la forma amable de pedir. Suena mejor que I want." }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I love my parents. I visit ___ every week.",
+      "opciones": ["them", "they", "their"],
+      "correcta": 0,
+      "porque": "Después del verbo va el pronombre de objeto: them (a ellos)."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "This is my brother. Do you know ___?",
+      "opciones": ["him", "he", "his"],
+      "correcta": 0,
+      "porque": "My brother es he, y su pronombre de objeto es him."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "I don't understand. Can you help ___?",
+      "opciones": ["me", "I", "my"],
+      "correcta": 0,
+      "porque": "Después del verbo help va el pronombre de objeto: me."
+    },
+    {
+      "id": "e04",
+      "tipo": "emparejar",
+      "enunciado": "Une cada pronombre de sujeto con su pronombre de objeto.",
+      "pares": [
+        ["I", "me"],
+        ["he", "him"],
+        ["she", "her"],
+        ["we", "us"],
+        ["they", "them"]
+      ],
+      "porque": "You e it no cambian: son iguales como sujeto y como objeto."
+    },
+    {
+      "id": "e05",
+      "tipo": "ordenar",
+      "respuesta": ["Can", "you", "help", "us?"],
+      "traduccion": "¿Nos puedes ayudar?",
+      "porque": "El pronombre de objeto us va después del verbo help."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "Ana is my friend. I see ___ every day.",
+      "aceptadas": ["her"],
+      "pista": "objeto de she",
+      "porque": "Ana es she, y su pronombre de objeto es her."
+    },
+    {
+      "id": "e07",
+      "tipo": "hueco",
+      "frase": "We are here. Can you see ___?",
+      "aceptadas": ["us"],
+      "pista": "objeto de we",
+      "porque": "El pronombre de objeto de we es us."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["I see him.", "I him see.", "I see he."],
+      "correcta": 0,
+      "porque": "El pronombre de objeto va después del verbo, y el de he es him."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "Quieres pedir pollo de forma amable. ¿Qué dices?",
+      "opciones": ["I'd like the chicken, please.", "Give me chicken.", "I like the chicken, please."],
+      "correcta": 0,
+      "porque": "Para pedir con amabilidad se usa I'd like. I like solo dice que te gusta."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "The menu? I have ___ here.",
+      "opciones": ["it", "him", "them"],
+      "correcta": 0,
+      "porque": "The menu es una sola cosa: it."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Good evening. Are you ready to order? — Yes. I'd like the chicken, and for my wife, the fish. — And to drink? — Bring us two glasses of water, please.",
+      "pregunta": "¿Qué platillo pide el cliente para su esposa?",
+      "opciones": ["Pescado", "Pollo", "Carne"],
+      "correcta": 0,
+      "porque": "«For my wife, the fish»: para su esposa pide pescado. El pollo es para él."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "Excuse me, can you bring us the bill, please? Of course. Here it is.",
+      "pregunta": "¿Qué pide el cliente?",
+      "opciones": ["La cuenta", "El menú", "El postre"],
+      "correcta": 0,
+      "porque": "«Can you bring us the bill»: bill es la cuenta."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "These are my keys. Give ___ to me, please.",
+      "opciones": ["them", "it", "they"],
+      "correcta": 0,
+      "porque": "My keys es plural, y después del verbo va el objeto: them."
+    }
+  ]
+}

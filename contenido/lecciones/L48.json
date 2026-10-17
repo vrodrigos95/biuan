@@ -1,0 +1,331 @@
+{
+  "id": "L48",
+  "subnivel": "A2.2",
+  "unidad": 12,
+  "titulo": "¿Alguna vez…?",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **presente perfecto** habla de experiencias de tu vida, sin decir cuándo pasaron. Se forma con **have / has** + el **participio** del verbo."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "I / You / We / They",
+          "have + participio",
+          "I have visited Canada."
+        ],
+        [
+          "He / She / It",
+          "has + participio",
+          "She has visited Canada."
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Con **ever** (alguna vez) se pregunta y con **never** (nunca) se niega:"
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Have you ever been to Canada?",
+          "¿Has estado alguna vez en Canadá?"
+        ],
+        [
+          "Yes, I have. / No, I haven't.",
+          "Sí. / No."
+        ],
+        [
+          "I have never been to Canada.",
+          "Nunca he estado en Canadá."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Al hablar, have y has se contraen: **I've** (I have), **she's** (she has), **haven't**, **hasn't**."
+    },
+    {
+      "tipo": "texto",
+      "md": "En los verbos regulares el participio es igual al pasado: visited, lived, tried. Los irregulares tienen su propia forma:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Verbo",
+        "Pasado",
+        "Participio"
+      ],
+      "filas": [
+        [
+          "be",
+          "was / were",
+          "been"
+        ],
+        [
+          "see",
+          "saw",
+          "seen"
+        ],
+        [
+          "eat",
+          "ate",
+          "eaten"
+        ],
+        [
+          "do",
+          "did",
+          "done"
+        ],
+        [
+          "fly",
+          "flew",
+          "flown"
+        ],
+        [
+          "write",
+          "wrote",
+          "written"
+        ],
+        [
+          "ride",
+          "rode",
+          "ridden"
+        ],
+        [
+          "meet",
+          "met",
+          "met"
+        ],
+        [
+          "lose",
+          "lost",
+          "lost"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Si dices **cuándo** pasó, usa pasado simple: *I went to Cancún in 2020*, no *I have been to Cancún in 2020*."
+    },
+    {
+      "tipo": "texto",
+      "md": "Experiencias:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "experience",
+          "experiencia"
+        ],
+        [
+          "abroad",
+          "en el extranjero"
+        ],
+        [
+          "try",
+          "probar"
+        ],
+        [
+          "ride a horse",
+          "montar a caballo"
+        ],
+        [
+          "climb a mountain",
+          "escalar una montaña"
+        ],
+        [
+          "concert",
+          "concierto"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "Have you ever ___ sushi?",
+      "opciones": [
+        "eaten",
+        "ate",
+        "eat"
+      ],
+      "correcta": 0,
+      "porque": "Después de have va el participio: eaten."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She ___ never been to Canada.",
+      "opciones": [
+        "has",
+        "have",
+        "is"
+      ],
+      "correcta": 0,
+      "porque": "Con she se usa has."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "I have never ___ (see) snow.",
+      "aceptadas": [
+        "seen"
+      ],
+      "pista": "participio",
+      "porque": "El participio de see es seen."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "___ you ever flown in a plane?",
+      "aceptadas": [
+        "have"
+      ],
+      "pista": "alguna vez",
+      "porque": "La pregunta empieza con Have: Have you ever…?"
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "Have you ever been to Oaxaca? Yes, I ___.",
+      "opciones": [
+        "have",
+        "did",
+        "was"
+      ],
+      "correcta": 0,
+      "porque": "La respuesta corta repite have: Yes, I have."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "I ___ to Cancún in 2020.",
+      "opciones": [
+        "went",
+        "have been",
+        "have go"
+      ],
+      "correcta": 0,
+      "porque": "In 2020 dice cuándo pasó: pasado simple."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Have",
+        "you",
+        "ever",
+        "ridden",
+        "a",
+        "horse?"
+      ],
+      "traduccion": "¿Has montado a caballo alguna vez?",
+      "porque": "Have + sujeto + ever + participio."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "have",
+        "never",
+        "been",
+        "abroad."
+      ],
+      "traduccion": "Nunca he estado en el extranjero.",
+      "porque": "Sujeto + have + never + participio."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada verbo con su participio.",
+      "pares": [
+        [
+          "see",
+          "seen"
+        ],
+        [
+          "eat",
+          "eaten"
+        ],
+        [
+          "be",
+          "been"
+        ],
+        [
+          "fly",
+          "flown"
+        ],
+        [
+          "write",
+          "written"
+        ],
+        [
+          "do",
+          "done"
+        ]
+      ],
+      "porque": "Participios irregulares muy comunes."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "«I've never tried it» significa ___.",
+      "opciones": [
+        "Nunca lo he probado",
+        "Ya lo probé",
+        "Siempre lo pruebo"
+      ],
+      "correcta": 0,
+      "porque": "I've es I have; never tried es «nunca he probado»."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "He has never climbed a mountain.",
+        "He have never climbed a mountain.",
+        "He has never climb a mountain."
+      ],
+      "correcta": 0,
+      "porque": "Con he va has, y el verbo va en participio: climbed."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "My grandmother is seventy, and she has done a lot of things. She has lived in three countries and she has written two books. She has ridden horses and climbed mountains. But she has never flown in a plane: she always travels by train.",
+      "pregunta": "¿Qué no ha hecho nunca la abuela?",
+      "opciones": [
+        "Volar en avión",
+        "Montar a caballo",
+        "Escribir un libro"
+      ],
+      "correcta": 0,
+      "porque": "«She has never flown in a plane»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Have you ever been to a concert? No, I haven't. But I'm going to my first concert next month!",
+      "pregunta": "¿Ha ido alguna vez a un concierto?",
+      "opciones": [
+        "No, pero irá el próximo mes",
+        "Sí, muchas veces",
+        "Sí, el mes pasado"
+      ],
+      "correcta": 0,
+      "porque": "«No, I haven't. But I'm going to my first concert next month»."
+    }
+  ]
+}

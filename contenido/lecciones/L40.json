@@ -1,0 +1,284 @@
+{
+  "id": "L40",
+  "subnivel": "A2.2",
+  "unidad": 10,
+  "titulo": "Demasiado o suficiente",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "**very**, **too** y **enough** dicen «qué tanto». Se parecen, pero no significan lo mismo."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Forma",
+        "Significado",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "**very** + adjetivo",
+          "muy (sin problema)",
+          "The dress is very nice."
+        ],
+        [
+          "**too** + adjetivo",
+          "demasiado (es un problema)",
+          "The dress is too expensive."
+        ],
+        [
+          "adjetivo + **enough**",
+          "suficientemente",
+          "The jacket is big enough."
+        ],
+        [
+          "**enough** + sustantivo",
+          "suficiente",
+          "I have enough money."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**too** siempre indica un problema: *It's too small* significa que no te sirve. Si solo quieres decir «muy», usa **very**."
+    },
+    {
+      "tipo": "tip",
+      "md": "**enough** va **después** del adjetivo, pero **antes** del sustantivo: *big enough*, *enough money*."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "These shoes aren't big enough. They're too small.",
+      "es": "Estos zapatos no son suficientemente grandes. Son demasiado chicos."
+    },
+    {
+      "tipo": "texto",
+      "md": "De compras:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "size",
+          "talla"
+        ],
+        [
+          "small",
+          "chico"
+        ],
+        [
+          "medium",
+          "mediano"
+        ],
+        [
+          "large",
+          "grande"
+        ],
+        [
+          "try on",
+          "probarse"
+        ],
+        [
+          "fit",
+          "quedar (de talla)"
+        ],
+        [
+          "tight",
+          "apretado"
+        ],
+        [
+          "loose",
+          "flojo"
+        ],
+        [
+          "on sale",
+          "en oferta"
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "Can I try on this jacket? What size are you?",
+      "es": "¿Me puedo probar esta chamarra? ¿Qué talla eres?"
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "These shoes are ___ small. I can't wear them.",
+      "opciones": [
+        "too",
+        "enough",
+        "more"
+      ],
+      "correcta": 0,
+      "porque": "Es un problema (no los puede usar): too."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "The jacket isn't big ___.",
+      "opciones": [
+        "enough",
+        "too",
+        "very"
+      ],
+      "correcta": 0,
+      "porque": "Enough va después del adjetivo: big enough."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "This dress is ___ nice. I love it!",
+      "opciones": [
+        "very",
+        "too",
+        "enough"
+      ],
+      "correcta": 0,
+      "porque": "No hay ningún problema, solo es «muy»: very."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "I don't have ___ money for the jacket.",
+      "aceptadas": [
+        "enough"
+      ],
+      "pista": "suficiente",
+      "porque": "«Suficiente dinero» es enough money: enough va antes del sustantivo."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "It's ___ expensive. I can't buy it.",
+      "aceptadas": [
+        "too"
+      ],
+      "pista": "demasiado",
+      "porque": "No lo puede comprar: es un problema, too."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "The",
+        "pants",
+        "are",
+        "too",
+        "tight."
+      ],
+      "traduccion": "El pantalón está demasiado apretado.",
+      "porque": "too + adjetivo."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "This",
+        "shirt",
+        "is",
+        "not",
+        "big",
+        "enough."
+      ],
+      "traduccion": "Esta camisa no es suficientemente grande.",
+      "porque": "adjetivo + enough."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada expresión con su significado.",
+      "pares": [
+        [
+          "size",
+          "talla"
+        ],
+        [
+          "tight",
+          "apretado"
+        ],
+        [
+          "loose",
+          "flojo"
+        ],
+        [
+          "try on",
+          "probarse"
+        ],
+        [
+          "on sale",
+          "en oferta"
+        ]
+      ],
+      "porque": "Vocabulario para comprar ropa."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "«Not big enough» significa lo mismo que ___.",
+      "opciones": [
+        "too small",
+        "too big",
+        "very big"
+      ],
+      "correcta": 0,
+      "porque": "Si no es suficientemente grande, es demasiado chico."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "It is big enough.",
+        "It is enough big.",
+        "It is too enough."
+      ],
+      "correcta": 0,
+      "porque": "Enough va después del adjetivo."
+    },
+    {
+      "id": "e11",
+      "tipo": "hueco",
+      "frase": "Can I ___ this sweater?",
+      "opciones": [
+        "try on",
+        "fit",
+        "size"
+      ],
+      "correcta": 0,
+      "porque": "Probarse una prenda es try on."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Carla went shopping yesterday. She liked a red dress, but it was too expensive. Then she tried on a blue skirt in size small, but it was too tight. The medium was big enough, and it was on sale, so she bought it.",
+      "pregunta": "¿Por qué Carla no compró el vestido rojo?",
+      "opciones": [
+        "Porque era demasiado caro",
+        "Porque le quedaba apretado",
+        "Porque no estaba en oferta"
+      ],
+      "correcta": 0,
+      "porque": "«She liked a red dress, but it was too expensive»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "How are the shoes? They're very nice, but they're too big. Do you have a smaller size?",
+      "pregunta": "¿Cuál es el problema con los zapatos?",
+      "opciones": [
+        "Son demasiado grandes",
+        "Son demasiado caros",
+        "Son demasiado chicos"
+      ],
+      "correcta": 0,
+      "porque": "«They're too big»: son demasiado grandes, por eso pide una talla más chica."
+    }
+  ]
+}

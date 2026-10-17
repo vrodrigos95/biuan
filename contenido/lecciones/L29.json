@@ -1,0 +1,311 @@
+{
+  "id": "L29",
+  "subnivel": "A2.1",
+  "unidad": 8,
+  "titulo": "Estuve ahí",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El pasado de **to be** tiene dos formas: **was** y **were**. Significan «fui», «era» y también «estuve», «estaba»."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Persona",
+        "Afirmativo",
+        "Negativo"
+      ],
+      "filas": [
+        [
+          "I / He / She / It",
+          "was",
+          "wasn't"
+        ],
+        [
+          "You / We / They",
+          "were",
+          "weren't"
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I was at home yesterday.",
+      "es": "Ayer estuve en casa."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "They weren't at school last week.",
+      "es": "No estuvieron en la escuela la semana pasada."
+    },
+    {
+      "tipo": "texto",
+      "md": "Para preguntar, **was** o **were** pasa al principio. Se contesta con una respuesta corta."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Were you at the party?",
+          "Yes, I was.",
+          "No, I wasn't."
+        ],
+        [
+          "Was she at work?",
+          "Yes, she was.",
+          "No, she wasn't."
+        ],
+        [
+          "Where were you?",
+          "I was at the gym.",
+          ""
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Para decir dónde y cuándo naciste se usa **was born**: *I was born in Guadalajara in 1998.* Nunca *I born*."
+    },
+    {
+      "tipo": "texto",
+      "md": "Los años se dicen en dos partes: 1998 es *nineteen ninety-eight* y 2015 es *twenty fifteen*."
+    },
+    {
+      "tipo": "texto",
+      "md": "Cuándo:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "yesterday",
+          "ayer"
+        ],
+        [
+          "last night",
+          "anoche"
+        ],
+        [
+          "last week",
+          "la semana pasada"
+        ],
+        [
+          "last year",
+          "el año pasado"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Dónde:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "at home",
+          "en casa"
+        ],
+        [
+          "at work",
+          "en el trabajo"
+        ],
+        [
+          "at school",
+          "en la escuela"
+        ],
+        [
+          "at a party",
+          "en una fiesta"
+        ],
+        [
+          "at the beach",
+          "en la playa"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ at home yesterday.",
+      "opciones": [
+        "was",
+        "were",
+        "am"
+      ],
+      "correcta": 0,
+      "porque": "Yesterday pide pasado, y con I va was."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "They ___ at the beach last week.",
+      "opciones": [
+        "were",
+        "was",
+        "are"
+      ],
+      "correcta": 0,
+      "porque": "Last week pide pasado, y con they va were."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "She ___ (not / be) at work yesterday.",
+      "aceptadas": [
+        "wasn't",
+        "was not"
+      ],
+      "porque": "Negativo en pasado con she: wasn't."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "___ you at the party last night?",
+      "opciones": [
+        "Were",
+        "Was",
+        "Are"
+      ],
+      "correcta": 0,
+      "porque": "En la pregunta el verbo va al principio; con you es were."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "Were they at school? No, they ___.",
+      "opciones": [
+        "weren't",
+        "wasn't",
+        "aren't"
+      ],
+      "correcta": 0,
+      "porque": "La respuesta corta repite el verbo: No, they weren't."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Where",
+        "were",
+        "you",
+        "last",
+        "night?"
+      ],
+      "traduccion": "¿Dónde estuviste anoche?",
+      "porque": "Wh- + were + sujeto, y el tiempo al final."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada expresión con su significado.",
+      "pares": [
+        [
+          "yesterday",
+          "ayer"
+        ],
+        [
+          "last night",
+          "anoche"
+        ],
+        [
+          "last week",
+          "la semana pasada"
+        ],
+        [
+          "last year",
+          "el año pasado"
+        ],
+        [
+          "beach",
+          "playa"
+        ]
+      ],
+      "porque": "Expresiones para ubicar algo en el pasado."
+    },
+    {
+      "id": "e08",
+      "tipo": "hueco",
+      "frase": "I ___ born in Guadalajara.",
+      "aceptadas": [
+        "was"
+      ],
+      "pista": "nací",
+      "porque": "Nacer se dice to be born: I was born."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice «Nací en 1998»?",
+      "opciones": [
+        "I was born in 1998.",
+        "I born in 1998.",
+        "I am born in 1998."
+      ],
+      "correcta": 0,
+      "porque": "Siempre lleva was o were: I was born."
+    },
+    {
+      "id": "e10",
+      "tipo": "ordenar",
+      "respuesta": [
+        "We",
+        "were",
+        "not",
+        "at",
+        "home",
+        "yesterday."
+      ],
+      "traduccion": "Ayer no estuvimos en casa.",
+      "porque": "Sujeto + were not + lugar + tiempo."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "It ___ cold yesterday.",
+      "opciones": [
+        "was",
+        "were",
+        "is"
+      ],
+      "correcta": 0,
+      "porque": "El clima va con it, y en pasado es was."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Last week I was in Cancún with my family. We were at the beach every day. The weather was hot and sunny. My brother wasn't with us: he was at work in Monterrey.",
+      "pregunta": "¿Dónde estaba el hermano?",
+      "opciones": [
+        "Trabajando en Monterrey",
+        "En la playa",
+        "En casa"
+      ],
+      "correcta": 0,
+      "porque": "«He was at work in Monterrey»: estaba en el trabajo, en Monterrey."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Where were you yesterday? I was at home in the morning and at the gym in the afternoon.",
+      "pregunta": "¿Dónde estuvo en la tarde?",
+      "opciones": [
+        "En el gimnasio",
+        "En casa",
+        "En el trabajo"
+      ],
+      "correcta": 0,
+      "porque": "«At the gym in the afternoon»: en la tarde estuvo en el gimnasio."
+    }
+  ]
+}

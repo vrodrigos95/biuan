@@ -1,0 +1,166 @@
+{
+  "id": "L17",
+  "subnivel": "A1.2",
+  "unidad": 5,
+  "titulo": "Siempre, a veces, nunca",
+  "explicacion": [
+    { "tipo": "texto", "md": "Los adverbios de frecuencia dicen qué tan seguido haces algo." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["always", "siempre"],
+        ["usually", "normalmente"],
+        ["often", "seguido"],
+        ["sometimes", "a veces"],
+        ["never", "nunca"]
+      ]
+    },
+    { "tipo": "texto", "md": "Van **antes** del verbo principal, pero **después** de to be." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Posición", "Ejemplo"],
+      "filas": [
+        ["Antes del verbo", "I always get up at six."],
+        ["Después de to be", "She is never late."]
+      ]
+    },
+    { "tipo": "tip", "md": "**never** ya es negativo y no se combina con don't: *I never eat meat*, no *I don't never eat meat*." },
+    { "tipo": "texto", "md": "Para preguntar por la frecuencia se usa **How often…?**" },
+    { "tipo": "ejemplo", "en": "How often do you go to the gym? Twice a week.", "es": "¿Qué tan seguido vas al gimnasio? Dos veces por semana." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["every day", "todos los días"],
+        ["once a week", "una vez por semana"],
+        ["twice a week", "dos veces por semana"],
+        ["three times a month", "tres veces al mes"],
+        ["on weekends", "los fines de semana"]
+      ]
+    },
+    { "tipo": "texto", "md": "Actividades de la semana:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["go to the gym", "ir al gimnasio"],
+        ["go shopping", "ir de compras"],
+        ["clean the house", "limpiar la casa"],
+        ["do the laundry", "lavar la ropa"],
+        ["visit my parents", "visitar a mis papás"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál significa «nunca»?",
+      "opciones": ["never", "always", "sometimes"],
+      "correcta": 0,
+      "porque": "Never es nunca. Always es siempre y sometimes es a veces."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["I always get up at six.", "I get always up at six.", "Always I get up at six."],
+      "correcta": 0,
+      "porque": "El adverbio de frecuencia va antes del verbo principal: always get up."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["She is never late.", "She never is late.", "She is late never."],
+      "correcta": 0,
+      "porque": "Con to be el adverbio va después del verbo: is never."
+    },
+    {
+      "id": "e04",
+      "tipo": "ordenar",
+      "respuesta": ["I", "usually", "have", "breakfast", "at", "seven."],
+      "traduccion": "Normalmente desayuno a las siete.",
+      "porque": "Usually va antes del verbo have."
+    },
+    {
+      "id": "e05",
+      "tipo": "emparejar",
+      "enunciado": "Une cada adverbio con su significado.",
+      "pares": [
+        ["always", "siempre"],
+        ["usually", "normalmente"],
+        ["often", "seguido"],
+        ["sometimes", "a veces"],
+        ["never", "nunca"]
+      ],
+      "porque": "Están ordenados de más a menos frecuente: de always a never."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "I ___ eat meat. I'm vegetarian.",
+      "opciones": ["never", "always", "usually"],
+      "correcta": 0,
+      "porque": "Una persona vegetariana no come carne: never (nunca)."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": ["I never go out at night.", "I don't never go out at night.", "I never don't go out at night."],
+      "correcta": 0,
+      "porque": "Never ya es negativo, así que no lleva don't."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Qué significa «twice a week»?",
+      "opciones": ["Dos veces por semana", "Una vez por semana", "Todos los días"],
+      "correcta": 0,
+      "porque": "Twice es dos veces. Una vez es once."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "How ___ do you go to the gym?",
+      "aceptadas": ["often"],
+      "pista": "qué tan seguido",
+      "porque": "La pregunta de frecuencia es How often…?"
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "We go shopping ___ a week.",
+      "opciones": ["once", "one", "first"],
+      "correcta": 0,
+      "porque": "Una vez por semana se dice once a week."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "I go to the gym three times a week. I usually go in the morning, but on Fridays I go at night. I never go on Sundays.",
+      "pregunta": "¿Cuándo va al gimnasio los viernes?",
+      "opciones": ["En la noche", "En la mañana", "No va"],
+      "correcta": 0,
+      "porque": "«On Fridays I go at night»: los viernes va en la noche."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "My sister always does the laundry on Saturdays, and I sometimes clean the house.",
+      "pregunta": "¿Qué hace su hermana los sábados?",
+      "opciones": ["Lava la ropa", "Limpia la casa", "Va de compras"],
+      "correcta": 0,
+      "porque": "«Does the laundry» es lavar la ropa. Limpiar la casa lo hace quien habla."
+    },
+    {
+      "id": "e13",
+      "tipo": "ordenar",
+      "respuesta": ["They", "never", "watch", "TV."],
+      "traduccion": "Ellos nunca ven la tele.",
+      "porque": "Never va antes del verbo watch, y no lleva don't."
+    }
+  ]
+}

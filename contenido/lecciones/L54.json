@@ -1,0 +1,273 @@
+{
+  "id": "L54",
+  "subnivel": "B1.1",
+  "unidad": 14,
+  "titulo": "Cuando y mientras",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Cuando dos acciones se cruzan en el pasado, la que estaba **en progreso** va en **pasado continuo** y la **corta que interrumpe** va en **pasado simple**."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Pasado continuo",
+        "Pasado simple"
+      ],
+      "filas": [
+        [
+          "was / were + verbo-ing",
+          "verbo en pasado"
+        ],
+        [
+          "I **was watching** TV…",
+          "…**when** she **called**."
+        ],
+        [
+          "La acción de fondo, en progreso",
+          "La acción corta que interrumpe"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Piensa en el pasado continuo como una **película** y en el pasado simple como una **foto**. *While* casi siempre va con la película (continuo); *when* casi siempre va con la foto (simple)."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "While I was cooking, he was reading the newspaper.",
+      "es": "Mientras yo cocinaba, él leía el periódico."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "I was walking home when I fell.",
+      "es": "Iba caminando a casa cuando me caí."
+    },
+    {
+      "tipo": "texto",
+      "md": "Accidentes e imprevistos, con su pasado:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Verbo",
+        "Pasado",
+        "Español"
+      ],
+      "filas": [
+        [
+          "fall",
+          "fell",
+          "caerse"
+        ],
+        [
+          "break",
+          "broke",
+          "romper"
+        ],
+        [
+          "cut",
+          "cut",
+          "cortar"
+        ],
+        [
+          "hurt",
+          "hurt",
+          "lastimar"
+        ],
+        [
+          "slip",
+          "slipped",
+          "resbalarse"
+        ],
+        [
+          "drop",
+          "dropped",
+          "dejar caer"
+        ],
+        [
+          "crash",
+          "crashed",
+          "chocar"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "En el examen, busca la palabra *while* (mientras): normalmente va con pasado continuo. *When* (cuando) suele introducir la acción que interrumpe."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ TV when she called.",
+      "opciones": [
+        "was watching",
+        "watched",
+        "watch"
+      ],
+      "correcta": 0,
+      "porque": "La acción estaba en progreso cuando la interrumpieron: pasado continuo."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "While I was cooking, he ___ the newspaper.",
+      "opciones": [
+        "was reading",
+        "reads",
+        "is reading"
+      ],
+      "correcta": 0,
+      "porque": "While con dos acciones en progreso al mismo tiempo: las dos van en pasado continuo."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "We ___ (drive) home when we saw the accident.",
+      "aceptadas": [
+        "were driving"
+      ],
+      "porque": "Manejar era la acción en progreso; ver el accidente la interrumpe: were + verbo-ing.",
+      "pista": "acción en progreso"
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "The phone ___ while she was sleeping.",
+      "opciones": [
+        "rang",
+        "was ring",
+        "rings"
+      ],
+      "correcta": 0,
+      "porque": "Sonar es la acción corta que interrumpe: pasado simple, rang."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "I was walking to school when I ___ (fall).",
+      "aceptadas": [
+        "fell"
+      ],
+      "pista": "pasado simple, irregular",
+      "porque": "Caerse es la acción corta que interrumpe: pasado simple. El pasado de fall es fell."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "He broke his leg ___ he was skiing.",
+      "opciones": [
+        "while",
+        "during",
+        "suddenly"
+      ],
+      "correcta": 0,
+      "porque": "While une la acción corta con la que estaba en progreso. During va con un sustantivo, no con una oración."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "She",
+        "was",
+        "cooking",
+        "when",
+        "I",
+        "arrived."
+      ],
+      "traduccion": "Ella estaba cocinando cuando llegué.",
+      "porque": "Primero la acción en progreso (was cooking) y después de when, la que interrumpe (arrived)."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada verbo con su significado.",
+      "pares": [
+        [
+          "slip",
+          "resbalarse"
+        ],
+        [
+          "drop",
+          "dejar caer"
+        ],
+        [
+          "hurt",
+          "lastimar"
+        ],
+        [
+          "crash",
+          "chocar"
+        ],
+        [
+          "break",
+          "romper"
+        ]
+      ],
+      "porque": "Verbos para hablar de accidentes e imprevistos."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "They ___ (play) soccer when it started to rain.",
+      "aceptadas": [
+        "were playing"
+      ],
+      "porque": "Jugar era la acción en progreso cuando empezó a llover: were + verbo-ing.",
+      "pista": "acción en progreso"
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "I ___ my finger while I was cooking.",
+      "opciones": [
+        "cut",
+        "was cutting",
+        "cuts"
+      ],
+      "correcta": 0,
+      "porque": "Cortarse es la acción corta que interrumpe: pasado simple. El pasado de cut es cut."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Yesterday Luis had a bad day. He was riding his bike to work when a dog ran in front of him. He fell and hurt his arm. While he was waiting for the doctor, he dropped his phone and it broke.",
+      "pregunta": "¿Qué estaba haciendo Luis cuando se cayó?",
+      "opciones": [
+        "Iba en bici al trabajo",
+        "Esperaba al doctor",
+        "Caminaba con su perro"
+      ],
+      "correcta": 0,
+      "porque": "«He was riding his bike to work when a dog ran in front of him»: iba en bici al trabajo."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Yesterday Luis had a bad day. He was riding his bike to work when a dog ran in front of him. He fell and hurt his arm. While he was waiting for the doctor, he dropped his phone and it broke.",
+      "pregunta": "¿Cuándo se le rompió el teléfono?",
+      "opciones": [
+        "Mientras esperaba al doctor",
+        "Cuando se cayó de la bici",
+        "Al llegar al trabajo"
+      ],
+      "correcta": 0,
+      "porque": "«While he was waiting for the doctor, he dropped his phone and it broke»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "I was washing the dishes when I slipped and broke a glass.",
+      "pregunta": "¿Qué rompió?",
+      "opciones": [
+        "Un vaso",
+        "Un plato",
+        "Una ventana"
+      ],
+      "correcta": 0,
+      "porque": "«I slipped and broke a glass»: rompió un vaso."
+    }
+  ]
+}

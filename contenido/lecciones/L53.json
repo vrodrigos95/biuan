@@ -1,0 +1,271 @@
+{
+  "id": "L53",
+  "subnivel": "B1.1",
+  "unidad": 14,
+  "titulo": "Estaba haciendo",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **pasado continuo** describe una acción que estaba **en progreso** en un momento del pasado."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Forma",
+        "Fórmula",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "Afirmativo",
+          "**was / were** + verbo-**ing**",
+          "I **was watching** TV."
+        ],
+        [
+          "Negativo",
+          "**wasn't / weren't** + verbo-ing",
+          "They **weren't studying**."
+        ],
+        [
+          "Pregunta",
+          "**Was / Were** + sujeto + verbo-ing",
+          "**Were** you **working**?"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**was** va con I, he, she, it. **were** va con you, we, they."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "At 6 p.m. yesterday, I was having dinner.",
+      "es": "Ayer a las 6 de la tarde estaba cenando."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "It was raining all night.",
+      "es": "Estuvo lloviendo toda la noche."
+    },
+    {
+      "tipo": "texto",
+      "md": "Palabras para contar historias:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "suddenly",
+          "de repente"
+        ],
+        [
+          "at that moment",
+          "en ese momento"
+        ],
+        [
+          "all night",
+          "toda la noche"
+        ],
+        [
+          "noise",
+          "ruido"
+        ],
+        [
+          "strange",
+          "extraño"
+        ],
+        [
+          "scared",
+          "asustado"
+        ],
+        [
+          "neighbor",
+          "vecino"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Practica contando una anécdota real: *Yesterday at 8 p.m. I was…* Contar historias reales fija la estructura mejor que las oraciones sueltas."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "They ___ studying when I arrived.",
+      "opciones": [
+        "weren't",
+        "didn't",
+        "wasn't"
+      ],
+      "correcta": 0,
+      "porque": "Negativo de pasado continuo con they: weren't + verbo-ing."
+    },
+    {
+      "id": "e02",
+      "tipo": "hueco",
+      "frase": "At 6 p.m. yesterday, I ___ (have) dinner.",
+      "aceptadas": [
+        "was having"
+      ],
+      "pista": "acción en progreso",
+      "porque": "Una hora exacta del pasado con una acción en progreso: was + verbo-ing."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "What ___ you doing at 8 p.m. last night?",
+      "opciones": [
+        "were",
+        "did",
+        "was"
+      ],
+      "correcta": 0,
+      "porque": "Pregunta de pasado continuo con you: were + sujeto + verbo-ing."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "She ___ (not / listen) at that moment.",
+      "aceptadas": [
+        "wasn't listening",
+        "was not listening"
+      ],
+      "porque": "Negativo de pasado continuo con she: wasn't + verbo-ing.",
+      "pista": "acción en progreso"
+    },
+    {
+      "id": "e05",
+      "tipo": "ordenar",
+      "respuesta": [
+        "I",
+        "was",
+        "watching",
+        "TV",
+        "at",
+        "nine."
+      ],
+      "traduccion": "Estaba viendo la tele a las nueve.",
+      "porque": "Sujeto + was + verbo-ing, y la hora al final."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Were",
+        "you",
+        "working",
+        "last",
+        "night?"
+      ],
+      "traduccion": "¿Estabas trabajando anoche?",
+      "porque": "En la pregunta, were pasa al principio: Were + sujeto + verbo-ing."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su traducción.",
+      "pares": [
+        [
+          "suddenly",
+          "de repente"
+        ],
+        [
+          "noise",
+          "ruido"
+        ],
+        [
+          "neighbor",
+          "vecino"
+        ],
+        [
+          "scared",
+          "asustado"
+        ],
+        [
+          "strange",
+          "extraño"
+        ]
+      ],
+      "porque": "Vocabulario para contar historias."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "It ___ raining all night.",
+      "opciones": [
+        "was",
+        "were",
+        "did"
+      ],
+      "correcta": 0,
+      "porque": "Con it se usa was: It was raining."
+    },
+    {
+      "id": "e09",
+      "tipo": "hueco",
+      "frase": "He ___ (talk) on the phone all night.",
+      "aceptadas": [
+        "was talking"
+      ],
+      "pista": "acción en progreso",
+      "porque": "Una acción que duró toda la noche, en progreso: was + verbo-ing."
+    },
+    {
+      "id": "e10",
+      "tipo": "lectura",
+      "texto": "Last night at eleven I was reading in bed. It was raining and my parents were sleeping. Suddenly, I heard a strange noise in the kitchen. I was scared! It was my neighbor's cat.",
+      "pregunta": "¿Qué estaba haciendo el narrador a las once?",
+      "opciones": [
+        "Leyendo en la cama",
+        "Durmiendo",
+        "Cocinando"
+      ],
+      "correcta": 0,
+      "porque": "«I was reading in bed»: estaba leyendo en la cama."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Last night at eleven I was reading in bed. It was raining and my parents were sleeping. Suddenly, I heard a strange noise in the kitchen. I was scared! It was my neighbor's cat.",
+      "pregunta": "¿Qué estaban haciendo sus papás?",
+      "opciones": [
+        "Durmiendo",
+        "Leyendo",
+        "Viendo la tele"
+      ],
+      "correcta": 0,
+      "porque": "«My parents were sleeping»: estaban durmiendo."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "What were you doing at seven this morning? I was having breakfast with my sister.",
+      "pregunta": "¿Qué estaba haciendo a las siete?",
+      "opciones": [
+        "Desayunando con su hermana",
+        "Trabajando",
+        "Durmiendo"
+      ],
+      "correcta": 0,
+      "porque": "«I was having breakfast with my sister»: estaba desayunando con su hermana."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "We were waiting for the bus.",
+        "We was waiting for the bus.",
+        "We were wait for the bus."
+      ],
+      "correcta": 0,
+      "porque": "Con we va were, y el verbo lleva -ing: were waiting."
+    }
+  ]
+}

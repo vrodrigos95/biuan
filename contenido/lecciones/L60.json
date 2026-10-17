@@ -1,0 +1,281 @@
+{
+  "id": "L60",
+  "subnivel": "B1.1",
+  "unidad": 15,
+  "titulo": "Modales en contexto",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Los **verbos modales** se aprenden mejor agrupados por lo que expresan, no como una lista suelta."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Modal",
+        "Qué expresa",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "**can / could**",
+          "Habilidad o permiso. *Could* es el pasado de *can* y también sirve para pedir algo con cortesía.",
+          "She **can** speak French."
+        ],
+        [
+          "**must**",
+          "Obligación fuerte; es común en reglas escritas.",
+          "You **must** wear a seatbelt."
+        ],
+        [
+          "**have to**",
+          "Obligación que viene de afuera: una regla, tu jefe, la escuela.",
+          "I **have to** finish this by Friday."
+        ],
+        [
+          "**should**",
+          "Consejo o recomendación; no es obligatorio.",
+          "You **should** see a doctor."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "En afirmativo, *must* y *have to* significan casi lo mismo. En negativo no: **don't have to** es «no es necesario» y **must not** es «está prohibido»."
+    },
+    {
+      "tipo": "tip",
+      "md": "Después de un modal el verbo va en forma base: *She can swim*, *You should go*. Nunca lleva -s ni to (excepto en *have to*)."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "Could you help me, please?",
+      "es": "¿Podrías ayudarme, por favor?"
+    },
+    {
+      "tipo": "texto",
+      "md": "Reglas del trabajo y la escuela:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "rule",
+          "regla"
+        ],
+        [
+          "uniform",
+          "uniforme"
+        ],
+        [
+          "badge",
+          "gafete"
+        ],
+        [
+          "on time",
+          "a tiempo"
+        ],
+        [
+          "early",
+          "temprano"
+        ],
+        [
+          "late",
+          "tarde"
+        ],
+        [
+          "break",
+          "descanso"
+        ],
+        [
+          "deadline",
+          "fecha límite"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "She ___ speak three languages.",
+      "opciones": [
+        "can",
+        "must",
+        "should"
+      ],
+      "correcta": 0,
+      "porque": "Es una habilidad: can."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "You ___ see a doctor about that cough.",
+      "opciones": [
+        "should",
+        "can",
+        "must not"
+      ],
+      "correcta": 0,
+      "porque": "Es un consejo: should."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "You ___ smoke in the hospital. It's a rule.",
+      "opciones": [
+        "must not",
+        "don't have to",
+        "could"
+      ],
+      "correcta": 0,
+      "porque": "Está prohibido: must not. Don't have to solo diría que no es necesario."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "Tomorrow is Sunday. You ___ get up early.",
+      "opciones": [
+        "don't have to",
+        "must not",
+        "should"
+      ],
+      "correcta": 0,
+      "porque": "No es necesario levantarse temprano: don't have to."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "It isn't necessary: you ___ bring food.",
+      "aceptadas": [
+        "don't have to",
+        "do not have to",
+        "don't need to",
+        "do not need to"
+      ],
+      "pista": "no es necesario",
+      "porque": "Falta de obligación: don't have to."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "___ you help me with this bag, please?",
+      "opciones": [
+        "Could",
+        "Must",
+        "Should"
+      ],
+      "correcta": 0,
+      "porque": "Petición cortés: Could you…?"
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "When I was a child, I ___ climb trees easily.",
+      "opciones": [
+        "could",
+        "can",
+        "must"
+      ],
+      "correcta": 0,
+      "porque": "Habilidad en el pasado: could."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "You",
+        "have",
+        "to",
+        "arrive",
+        "on",
+        "time."
+      ],
+      "traduccion": "Tienes que llegar a tiempo.",
+      "porque": "Obligación: have to + verbo en forma base."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Students",
+        "must",
+        "not",
+        "use",
+        "phones."
+      ],
+      "traduccion": "Los estudiantes no deben usar teléfonos.",
+      "porque": "Prohibición: must not + verbo en forma base."
+    },
+    {
+      "id": "e10",
+      "tipo": "emparejar",
+      "enunciado": "Une cada modal con lo que expresa.",
+      "pares": [
+        [
+          "must not",
+          "está prohibido"
+        ],
+        [
+          "don't have to",
+          "no es necesario"
+        ],
+        [
+          "should",
+          "es recomendable"
+        ],
+        [
+          "can",
+          "es posible o está permitido"
+        ],
+        [
+          "have to",
+          "es obligatorio"
+        ]
+      ],
+      "porque": "Lo importante de cada modal es lo que expresa."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "Welcome to the team! All employees have to wear a uniform and a badge. You must not use your phone in the kitchen. You don't have to bring lunch: it is free. You should arrive ten minutes early on your first day.",
+      "pregunta": "Según el aviso, ¿qué está prohibido?",
+      "opciones": [
+        "Usar el teléfono en la cocina",
+        "Llevar comida",
+        "Llegar temprano"
+      ],
+      "correcta": 0,
+      "porque": "«You must not use your phone in the kitchen»: must not es prohibición."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Welcome to the team! All employees have to wear a uniform and a badge. You must not use your phone in the kitchen. You don't have to bring lunch: it is free. You should arrive ten minutes early on your first day.",
+      "pregunta": "¿Qué no es necesario hacer?",
+      "opciones": [
+        "Llevar comida",
+        "Usar uniforme",
+        "Usar gafete"
+      ],
+      "correcta": 0,
+      "porque": "«You don't have to bring lunch: it is free»: don't have to es «no es necesario»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "You can take a break at eleven, but you have to be back at eleven fifteen.",
+      "pregunta": "¿A qué hora tiene que regresar?",
+      "opciones": [
+        "A las 11:15",
+        "A las 11:00",
+        "A las 11:50"
+      ],
+      "correcta": 0,
+      "porque": "«You have to be back at eleven fifteen»: a las 11:15. Fifteen es 15; fifty sería 50."
+    }
+  ]
+}

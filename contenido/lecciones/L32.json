@@ -1,0 +1,294 @@
+{
+  "id": "L32",
+  "subnivel": "A2.1",
+  "unidad": 8,
+  "titulo": "No fui, ¿fuiste?",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Para negar en pasado simple se usa **didn't** + el verbo en forma base. Es igual para todas las personas y para verbos regulares e irregulares."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Afirmativo",
+        "Negativo"
+      ],
+      "filas": [
+        [
+          "I went to the beach.",
+          "I didn't go to the beach."
+        ],
+        [
+          "She visited the museum.",
+          "She didn't visit the museum."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Después de **didn't** y de **did** el verbo regresa a su forma base: *didn't go*, nunca *didn't went*. El pasado ya va en did."
+    },
+    {
+      "tipo": "texto",
+      "md": "Para preguntar se pone **Did** al principio."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Did you go to the beach?",
+          "Yes, I did.",
+          "No, I didn't."
+        ],
+        [
+          "Did she visit the museum?",
+          "Yes, she did.",
+          "No, she didn't."
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Con palabras de pregunta, el orden es **Wh- + did + sujeto + verbo**:"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "Where did you go on vacation? I went to Chiapas.",
+      "es": "¿A dónde fuiste de vacaciones? Fui a Chiapas."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "What did you do last weekend?",
+      "es": "¿Qué hiciste el fin de semana pasado?"
+    },
+    {
+      "tipo": "tip",
+      "md": "Con **was** y **were** no se usa did: *I wasn't at home*, *Were you at home?*"
+    },
+    {
+      "tipo": "texto",
+      "md": "Vacaciones:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "vacation",
+          "vacaciones"
+        ],
+        [
+          "go on vacation",
+          "irse de vacaciones"
+        ],
+        [
+          "travel",
+          "viajar"
+        ],
+        [
+          "rent a car",
+          "rentar un carro"
+        ],
+        [
+          "take photos",
+          "tomar fotos"
+        ],
+        [
+          "have fun",
+          "divertirse"
+        ],
+        [
+          "museum",
+          "museo"
+        ],
+        [
+          "mountains",
+          "montañas"
+        ],
+        [
+          "souvenir",
+          "recuerdo"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ go to the party last night.",
+      "opciones": [
+        "didn't",
+        "wasn't",
+        "don't"
+      ],
+      "correcta": 0,
+      "porque": "Negativo en pasado simple: didn't + verbo en forma base."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She didn't ___ the museum.",
+      "opciones": [
+        "visit",
+        "visited",
+        "visits"
+      ],
+      "correcta": 0,
+      "porque": "Después de didn't el verbo va en forma base."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "We ___ (not / travel) last year.",
+      "aceptadas": [
+        "didn't travel",
+        "did not travel"
+      ],
+      "porque": "Negativo en pasado: didn't + verbo en forma base."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "___ you take photos yesterday?",
+      "opciones": [
+        "Did",
+        "Were",
+        "Was"
+      ],
+      "correcta": 0,
+      "porque": "La pregunta en pasado simple empieza con Did."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "Did they rent a car? Yes, they ___.",
+      "opciones": [
+        "did",
+        "were",
+        "rented"
+      ],
+      "correcta": 0,
+      "porque": "La respuesta corta repite did: Yes, they did."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Where",
+        "did",
+        "you",
+        "go",
+        "on",
+        "vacation?"
+      ],
+      "traduccion": "¿A dónde fuiste de vacaciones?",
+      "porque": "Wh- + did + sujeto + verbo en forma base."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Did",
+        "you",
+        "have",
+        "fun",
+        "yesterday?"
+      ],
+      "traduccion": "¿Te divertiste ayer?",
+      "porque": "Did + sujeto + verbo en forma base."
+    },
+    {
+      "id": "e08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "vacation",
+          "vacaciones"
+        ],
+        [
+          "travel",
+          "viajar"
+        ],
+        [
+          "museum",
+          "museo"
+        ],
+        [
+          "mountains",
+          "montañas"
+        ],
+        [
+          "souvenir",
+          "recuerdo"
+        ]
+      ],
+      "porque": "Vocabulario de vacaciones."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "Did she go to the beach?",
+        "Did she went to the beach?",
+        "Does she went to the beach?"
+      ],
+      "correcta": 0,
+      "porque": "Después de did el verbo va en forma base: go, no went."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "What ___ you do last weekend?",
+      "aceptadas": [
+        "did"
+      ],
+      "pista": "pregunta en pasado",
+      "porque": "Wh- + did + sujeto + verbo."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "I wasn't at home.",
+        "I didn't was at home.",
+        "I didn't be at home."
+      ],
+      "correcta": 0,
+      "porque": "Con was y were no se usa did: I wasn't."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "In July we went on vacation to Chiapas. We didn't fly: we drove for two days. We stayed in a small hotel near the mountains. We visited two museums, but we didn't buy any souvenirs.",
+      "pregunta": "¿Cómo viajaron a Chiapas?",
+      "opciones": [
+        "En carro",
+        "En avión",
+        "En tren"
+      ],
+      "correcta": 0,
+      "porque": "«We didn't fly: we drove for two days»: no volaron, manejaron."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Did you go to the beach on your vacation? No, I didn't. I stayed home and rested.",
+      "pregunta": "¿Qué hizo en sus vacaciones?",
+      "opciones": [
+        "Se quedó en casa",
+        "Fue a la playa",
+        "Fue a las montañas"
+      ],
+      "correcta": 0,
+      "porque": "«No, I didn't. I stayed home and rested»: se quedó en casa a descansar."
+    }
+  ]
+}

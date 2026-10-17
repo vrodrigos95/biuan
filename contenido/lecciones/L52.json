@@ -1,0 +1,378 @@
+{
+  "id": "L52",
+  "subnivel": "B1.1",
+  "unidad": 13,
+  "titulo": "Ha ido o ha estado",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "**been** y **gone** son los dos participios que se usan para «ir», y no significan lo mismo."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Forma",
+        "Significado",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "**has been to**",
+          "Fue y ya regresó (es una experiencia).",
+          "She has been to Canada."
+        ],
+        [
+          "**has gone to**",
+          "Se fue y sigue allá.",
+          "She has gone to Canada."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Si la persona está frente a ti, no puede haber *gone*: se dice *I have been to Monterrey*, nunca *I have gone to Monterrey* para hablar de tu experiencia."
+    },
+    {
+      "tipo": "texto",
+      "md": "Muchos participios irregulares terminan en **-n** o **-en**:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Verbo",
+        "Pasado",
+        "Participio"
+      ],
+      "filas": [
+        [
+          "go",
+          "went",
+          "gone"
+        ],
+        [
+          "take",
+          "took",
+          "taken"
+        ],
+        [
+          "give",
+          "gave",
+          "given"
+        ],
+        [
+          "write",
+          "wrote",
+          "written"
+        ],
+        [
+          "speak",
+          "spoke",
+          "spoken"
+        ],
+        [
+          "know",
+          "knew",
+          "known"
+        ],
+        [
+          "choose",
+          "chose",
+          "chosen"
+        ],
+        [
+          "break",
+          "broke",
+          "broken"
+        ],
+        [
+          "drive",
+          "drove",
+          "driven"
+        ],
+        [
+          "forget",
+          "forgot",
+          "forgotten"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Otros son iguales al pasado:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Verbo",
+        "Pasado",
+        "Participio"
+      ],
+      "filas": [
+        [
+          "teach",
+          "taught",
+          "taught"
+        ],
+        [
+          "think",
+          "thought",
+          "thought"
+        ],
+        [
+          "buy",
+          "bought",
+          "bought"
+        ],
+        [
+          "find",
+          "found",
+          "found"
+        ],
+        [
+          "leave",
+          "left",
+          "left"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "md": "Currículum y entrevista:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "résumé",
+          "currículum"
+        ],
+        [
+          "interview",
+          "entrevista"
+        ],
+        [
+          "skills",
+          "habilidades"
+        ],
+        [
+          "strengths",
+          "fortalezas"
+        ],
+        [
+          "hire",
+          "contratar"
+        ],
+        [
+          "salary",
+          "sueldo"
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "Have you ever worked in a team? Yes, I have worked in a team for two years.",
+      "es": "¿Has trabajado en equipo? Sí, he trabajado en equipo durante dos años."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "Ana isn't here. She has ___ to the bank.",
+      "opciones": [
+        "gone",
+        "been",
+        "went"
+      ],
+      "correcta": 0,
+      "porque": "Se fue y sigue allá: has gone."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "I have ___ to Canada twice. I loved it.",
+      "opciones": [
+        "been",
+        "gone",
+        "went"
+      ],
+      "correcta": 0,
+      "porque": "Es una experiencia y ya regresó: have been."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "Have you ever ___ (speak) English at work?",
+      "aceptadas": [
+        "spoken"
+      ],
+      "pista": "participio",
+      "porque": "El participio de speak es spoken."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "She has ___ (write) her résumé.",
+      "aceptadas": [
+        "written"
+      ],
+      "pista": "participio",
+      "porque": "El participio de write es written."
+    },
+    {
+      "id": "e05",
+      "tipo": "emparejar",
+      "enunciado": "Une cada verbo con su participio.",
+      "pares": [
+        [
+          "go",
+          "gone"
+        ],
+        [
+          "take",
+          "taken"
+        ],
+        [
+          "give",
+          "given"
+        ],
+        [
+          "speak",
+          "spoken"
+        ],
+        [
+          "choose",
+          "chosen"
+        ],
+        [
+          "break",
+          "broken"
+        ]
+      ],
+      "porque": "Participios irregulares que terminan en -n o -en."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "«He has gone to Monterrey» significa ___.",
+      "opciones": [
+        "Se fue a Monterrey y sigue allá",
+        "Ha visitado Monterrey alguna vez",
+        "Va a ir a Monterrey"
+      ],
+      "correcta": 0,
+      "porque": "Has gone: se fue y todavía no regresa."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": [
+        "She",
+        "has",
+        "chosen",
+        "a",
+        "new",
+        "job."
+      ],
+      "traduccion": "Ella ha elegido un trabajo nuevo.",
+      "porque": "El participio de choose es chosen."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Have",
+        "you",
+        "ever",
+        "been",
+        "to",
+        "an",
+        "interview?"
+      ],
+      "traduccion": "¿Has ido alguna vez a una entrevista?",
+      "porque": "Para una experiencia se usa been."
+    },
+    {
+      "id": "e09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "résumé",
+          "currículum"
+        ],
+        [
+          "skills",
+          "habilidades"
+        ],
+        [
+          "hire",
+          "contratar"
+        ],
+        [
+          "salary",
+          "sueldo"
+        ],
+        [
+          "strengths",
+          "fortalezas"
+        ]
+      ],
+      "porque": "Vocabulario para buscar trabajo."
+    },
+    {
+      "id": "e10",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el participio de know?",
+      "opciones": [
+        "known",
+        "knew",
+        "knowed"
+      ],
+      "correcta": 0,
+      "porque": "Know, knew, known."
+    },
+    {
+      "id": "e11",
+      "tipo": "hueco",
+      "frase": "They have ___ me the job!",
+      "opciones": [
+        "given",
+        "gave",
+        "give"
+      ],
+      "correcta": 0,
+      "porque": "Después de have va el participio: given."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Luis has written his résumé. He has worked in two restaurants and he has taught English to children. He has been to the United States twice, and he has spoken English at work for three years. He has never had a full-time job.",
+      "pregunta": "¿Qué no ha tenido nunca Luis?",
+      "opciones": [
+        "Un trabajo de tiempo completo",
+        "Un trabajo en un restaurante",
+        "Experiencia usando el inglés"
+      ],
+      "correcta": 0,
+      "porque": "«He has never had a full-time job»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Can I speak to the boss, please? I'm sorry, she has gone to a meeting. She will be here at four.",
+      "pregunta": "¿Dónde está la jefa?",
+      "opciones": [
+        "En una junta",
+        "De vacaciones",
+        "En su oficina"
+      ],
+      "correcta": 0,
+      "porque": "«She has gone to a meeting»: se fue a una junta y sigue allá."
+    }
+  ]
+}

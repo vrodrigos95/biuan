@@ -1,0 +1,291 @@
+{
+  "id": "L51",
+  "subnivel": "B1.1",
+  "unidad": 13,
+  "titulo": "¿Perfecto o pasado?",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **pasado simple** y el **presente perfecto** hablan del pasado, pero no son intercambiables. La pregunta clave es: ¿digo **cuándo** pasó?"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Tiempo",
+        "Cuándo se usa",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "Pasado simple",
+          "El momento ya terminó y se dice cuándo.",
+          "I saw that movie last week."
+        ],
+        [
+          "Presente perfecto",
+          "No se dice cuándo, o el periodo sigue abierto.",
+          "I have seen that movie."
+        ]
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Si la oración lleva…",
+        "casi siempre va con…"
+      ],
+      "filas": [
+        [
+          "yesterday, last week, two days ago, in 2015, when…",
+          "pasado simple"
+        ],
+        [
+          "ever, never, just, already, yet, for, since, this year",
+          "presente perfecto"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Las preguntas con **When…?** siempre van en pasado simple: *When did you arrive?*, nunca *When have you arrived?*"
+    },
+    {
+      "tipo": "texto",
+      "md": "Las noticias suelen dar primero el hecho en presente perfecto y luego los detalles en pasado simple:"
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "The team has won the final. They played last night.",
+      "es": "El equipo ganó la final. Jugaron anoche."
+    },
+    {
+      "tipo": "texto",
+      "md": "Noticias:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "news",
+          "noticias"
+        ],
+        [
+          "headline",
+          "titular"
+        ],
+        [
+          "team",
+          "equipo"
+        ],
+        [
+          "game",
+          "partido"
+        ],
+        [
+          "win → won → won",
+          "ganar"
+        ],
+        [
+          "fire",
+          "incendio"
+        ],
+        [
+          "government",
+          "gobierno"
+        ],
+        [
+          "announce",
+          "anunciar"
+        ],
+        [
+          "increase",
+          "aumentar"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**news** termina en -s pero es singular e incontable: *The news is good*, y nunca *a news*."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I ___ that movie last week.",
+      "opciones": [
+        "saw",
+        "have seen",
+        "seen"
+      ],
+      "correcta": 0,
+      "porque": "Last week dice cuándo: pasado simple."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "She ___ in Puebla since 2019.",
+      "opciones": [
+        "has lived",
+        "lived",
+        "lives"
+      ],
+      "correcta": 0,
+      "porque": "Since indica que empezó antes y sigue hoy: presente perfecto."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "When ___ you arrive?",
+      "opciones": [
+        "did",
+        "have",
+        "has"
+      ],
+      "correcta": 0,
+      "porque": "Las preguntas con When van en pasado simple."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "We ___ (win) the game yesterday.",
+      "aceptadas": [
+        "won"
+      ],
+      "pista": "se dice cuándo",
+      "porque": "Yesterday pide pasado simple: el pasado de win es won."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "The government has just ___ (announce) new prices.",
+      "aceptadas": [
+        "announced"
+      ],
+      "pista": "participio",
+      "porque": "Con has just va el participio: announced."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "I ___ my keys. I can't find them.",
+      "opciones": [
+        "have lost",
+        "lose",
+        "losing"
+      ],
+      "correcta": 0,
+      "porque": "No se dice cuándo y el resultado sigue ahora: presente perfecto."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál expresión pide pasado simple?",
+      "opciones": [
+        "two days ago",
+        "already",
+        "since Monday"
+      ],
+      "correcta": 0,
+      "porque": "Ago ubica el momento exacto en el pasado."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál expresión pide presente perfecto?",
+      "opciones": [
+        "yet",
+        "last night",
+        "in 2015"
+      ],
+      "correcta": 0,
+      "porque": "Yet va con presente perfecto; las otras dos dicen cuándo."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "She",
+        "bought",
+        "a",
+        "car",
+        "last",
+        "month."
+      ],
+      "traduccion": "Ella compró un carro el mes pasado.",
+      "porque": "Last month dice cuándo: pasado simple."
+    },
+    {
+      "id": "e10",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Have",
+        "you",
+        "read",
+        "the",
+        "news",
+        "today?"
+      ],
+      "traduccion": "¿Ya leíste las noticias hoy?",
+      "porque": "Today sigue abierto: presente perfecto."
+    },
+    {
+      "id": "e11",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "news",
+          "noticias"
+        ],
+        [
+          "headline",
+          "titular"
+        ],
+        [
+          "fire",
+          "incendio"
+        ],
+        [
+          "team",
+          "equipo"
+        ],
+        [
+          "government",
+          "gobierno"
+        ]
+      ],
+      "porque": "Vocabulario de noticias."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Good news: the Mexican team has won the final! They played last night in Monterrey and won two to one. The team arrived home this morning. They have not lost a game this year.",
+      "pregunta": "¿Cuándo jugó el equipo?",
+      "opciones": [
+        "Anoche",
+        "Esta mañana",
+        "Hace un año"
+      ],
+      "correcta": 0,
+      "porque": "«They played last night in Monterrey»: el detalle con fecha va en pasado simple."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "Have you read the news? There was a fire at the market last night. The government has just announced that the market will not open this week.",
+      "pregunta": "¿Cuándo fue el incendio?",
+      "opciones": [
+        "Anoche",
+        "Esta semana",
+        "Hace una semana"
+      ],
+      "correcta": 0,
+      "porque": "«There was a fire at the market last night»."
+    }
+  ]
+}

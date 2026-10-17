@@ -1,0 +1,312 @@
+{
+  "id": "L37",
+  "subnivel": "A2.2",
+  "unidad": 10,
+  "titulo": "Más que",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Para comparar dos cosas se usa el **comparativo** + **than** (que). La forma depende de qué tan largo es el adjetivo."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Corto: + er",
+          "tall → taller, cheap → cheaper"
+        ],
+        [
+          "Termina en -e: + r",
+          "nice → nicer, large → larger"
+        ],
+        [
+          "Vocal corta + consonante: se duplica",
+          "big → bigger, hot → hotter"
+        ],
+        [
+          "Termina en -y: cambia a -ier",
+          "easy → easier, heavy → heavier"
+        ],
+        [
+          "Largo (2 sílabas o más): more + adjetivo",
+          "more expensive, more modern"
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "A plane is faster than a train.",
+      "es": "Un avión es más rápido que un tren."
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "This phone is more expensive than my laptop.",
+      "es": "Este teléfono es más caro que mi laptop."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Irregular",
+        "Comparativo",
+        "Español"
+      ],
+      "filas": [
+        [
+          "good",
+          "better",
+          "mejor"
+        ],
+        [
+          "bad",
+          "worse",
+          "peor"
+        ],
+        [
+          "far",
+          "farther",
+          "más lejos"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "Nunca se combinan las dos formas: se dice *taller*, no *more taller*."
+    },
+    {
+      "tipo": "tip",
+      "md": "El «que» de la comparación es **than**, no *that*: *taller than me*."
+    },
+    {
+      "tipo": "texto",
+      "md": "Adjetivos para comparar:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "fast",
+          "rápido"
+        ],
+        [
+          "slow",
+          "lento"
+        ],
+        [
+          "easy",
+          "fácil"
+        ],
+        [
+          "difficult",
+          "difícil"
+        ],
+        [
+          "heavy",
+          "pesado"
+        ],
+        [
+          "light",
+          "ligero"
+        ],
+        [
+          "good",
+          "bueno"
+        ],
+        [
+          "bad",
+          "malo"
+        ],
+        [
+          "interesting",
+          "interesante"
+        ],
+        [
+          "boring",
+          "aburrido"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "My brother is ___ than me.",
+      "opciones": [
+        "taller",
+        "more tall",
+        "tall"
+      ],
+      "correcta": 0,
+      "porque": "Tall es corto: se agrega -er."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "A car is ___ than a bike.",
+      "opciones": [
+        "more expensive",
+        "expensiver",
+        "expensive"
+      ],
+      "correcta": 0,
+      "porque": "Expensive es largo: more + adjetivo."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "A plane is ___ (fast) than a train.",
+      "aceptadas": [
+        "faster"
+      ],
+      "pista": "adjetivo corto",
+      "porque": "Fast es corto: fast + er."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "English is ___ (easy) than Japanese.",
+      "aceptadas": [
+        "easier"
+      ],
+      "pista": "la y cambia",
+      "porque": "Termina en -y: la y cambia a -ier."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es el comparativo de good?",
+      "opciones": [
+        "better",
+        "gooder",
+        "more good"
+      ],
+      "correcta": 0,
+      "porque": "Good es irregular: better."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "Monterrey is hotter ___ Toluca.",
+      "opciones": [
+        "than",
+        "that",
+        "of"
+      ],
+      "correcta": 0,
+      "porque": "El «que» de la comparación es than."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada adjetivo con su comparativo.",
+      "pares": [
+        [
+          "good",
+          "better"
+        ],
+        [
+          "bad",
+          "worse"
+        ],
+        [
+          "big",
+          "bigger"
+        ],
+        [
+          "easy",
+          "easier"
+        ],
+        [
+          "expensive",
+          "more expensive"
+        ]
+      ],
+      "porque": "Dos irregulares, dos cortos y uno largo."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "My",
+        "bag",
+        "is",
+        "heavier",
+        "than",
+        "your",
+        "bag."
+      ],
+      "traduccion": "Mi mochila es más pesada que tu mochila.",
+      "porque": "Sujeto + is + comparativo + than + la otra cosa."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "This",
+        "book",
+        "is",
+        "more",
+        "interesting",
+        "than",
+        "the",
+        "movie."
+      ],
+      "traduccion": "Este libro es más interesante que la película.",
+      "porque": "Interesting es largo: more interesting than."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "Today is ___ than yesterday. It's raining and cold.",
+      "opciones": [
+        "worse",
+        "better",
+        "badder"
+      ],
+      "correcta": 0,
+      "porque": "Llueve y hace frío: hoy es peor. El comparativo de bad es worse."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "She is older than her sister.",
+        "She is more older than her sister.",
+        "She is older that her sister."
+      ],
+      "correcta": 0,
+      "porque": "No se combinan more y -er, y el «que» es than."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Ana and Luis are friends. Ana is twenty and Luis is twenty-five. Luis is taller than Ana, but Ana is faster: she runs every day. Ana's house is bigger than Luis's house, but his house is more modern.",
+      "pregunta": "¿Quién es más rápido?",
+      "opciones": [
+        "Ana",
+        "Luis",
+        "Son iguales"
+      ],
+      "correcta": 0,
+      "porque": "«Ana is faster: she runs every day»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "The bus is cheaper than the train, but the train is faster.",
+      "pregunta": "¿Cuál es más barato?",
+      "opciones": [
+        "El camión",
+        "El tren",
+        "Cuestan lo mismo"
+      ],
+      "correcta": 0,
+      "porque": "«The bus is cheaper than the train»: el camión es más barato."
+    }
+  ]
+}

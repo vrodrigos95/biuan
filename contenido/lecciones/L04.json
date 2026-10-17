@@ -1,0 +1,149 @@
+{
+  "id": "L04",
+  "subnivel": "A1.1",
+  "unidad": 1,
+  "titulo": "¿De dónde eres?",
+  "explicacion": [
+    { "tipo": "texto", "md": "Para preguntar de dónde es alguien se usa **Where + to be + persona + from?** Para responder: **persona + to be + from + lugar**." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pregunta", "Respuesta"],
+      "filas": [
+        ["Where are you from?", "I'm from Mexico."],
+        ["Where is she from?", "She's from Colombia."],
+        ["Where are they from?", "They're from Spain."]
+      ]
+    },
+    { "tipo": "tip", "md": "En inglés el *from* va al final de la pregunta: **Where are you from?** Nunca *From where are you?*" },
+    { "tipo": "ejemplo", "en": "I'm from Guadalajara, Mexico. I'm Mexican.", "es": "Soy de Guadalajara, México. Soy mexicano." },
+    { "tipo": "texto", "md": "Las nacionalidades se escriben siempre con **mayúscula**, a diferencia del español." },
+    {
+      "tipo": "tabla",
+      "columnas": ["País", "Nacionalidad"],
+      "filas": [
+        ["Mexico", "Mexican"],
+        ["Spain", "Spanish"],
+        ["Brazil", "Brazilian"],
+        ["Canada", "Canadian"],
+        ["Japan", "Japanese"],
+        ["the United States", "American"]
+      ]
+    },
+    { "tipo": "texto", "md": "Y los números del 0 al 20, que usarás para edades y teléfonos:" },
+    {
+      "tipo": "tabla",
+      "filas": [
+        ["0 zero", "1 one", "2 two", "3 three"],
+        ["4 four", "5 five", "6 six", "7 seven"],
+        ["8 eight", "9 nine", "10 ten", "11 eleven"],
+        ["12 twelve", "13 thirteen", "14 fourteen", "15 fifteen"],
+        ["16 sixteen", "17 seventeen", "18 eighteen", "19 nineteen"],
+        ["20 twenty", "", "", ""]
+      ]
+    },
+    { "tipo": "tip", "md": "Del 13 al 19 todos terminan en **-teen**: thir**teen**, four**teen**, fif**teen**…" }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "She ___ from Peru.",
+      "opciones": ["is", "are", "am"],
+      "correcta": 0,
+      "porque": "Con she (ella) el verbo to be es is."
+    },
+    {
+      "id": "e02",
+      "tipo": "hueco",
+      "frase": "Where ___ you from?",
+      "aceptadas": ["are"],
+      "pista": "to be con you",
+      "porque": "Con you el verbo to be es are: Where are you from?"
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es la nacionalidad de alguien de Japón?",
+      "opciones": ["Japanese", "Japan", "Japanish"],
+      "correcta": 0,
+      "porque": "Japan es el país; la nacionalidad es Japanese."
+    },
+    {
+      "id": "e04",
+      "tipo": "ordenar",
+      "respuesta": ["Where", "is", "he", "from?"],
+      "traduccion": "¿De dónde es él?",
+      "porque": "En la pregunta el verbo is va antes de la persona y from va al final."
+    },
+    {
+      "id": "e05",
+      "tipo": "emparejar",
+      "enunciado": "Une cada país con su nacionalidad.",
+      "pares": [
+        ["Mexico", "Mexican"],
+        ["Spain", "Spanish"],
+        ["Brazil", "Brazilian"],
+        ["Canada", "Canadian"]
+      ],
+      "porque": "Cada país tiene su propia forma de nacionalidad; conviene aprenderlas en pareja."
+    },
+    {
+      "id": "e06",
+      "tipo": "hueco",
+      "frase": "They ___ from Argentina.",
+      "opciones": ["are", "is", "am"],
+      "correcta": 0,
+      "porque": "Con they (ellos) el verbo to be es are."
+    },
+    {
+      "id": "e07",
+      "tipo": "escucha",
+      "audio": "My sister is from Brazil.",
+      "pregunta": "¿De dónde es la hermana?",
+      "opciones": ["De Brasil", "De Bolivia", "De Portugal"],
+      "correcta": 0,
+      "porque": "«My sister is from Brazil»: mi hermana es de Brasil."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Cómo se dice el número 15?",
+      "opciones": ["fifteen", "fifty", "five"],
+      "correcta": 0,
+      "porque": "15 es fifteen; fifty es 50 y five es 5."
+    },
+    {
+      "id": "e09",
+      "tipo": "lectura",
+      "texto": "Hi, I'm Tom. I'm from Canada, but I live in Mexico. My wife is Mexican.",
+      "pregunta": "¿De qué nacionalidad es la esposa de Tom?",
+      "opciones": ["Mexicana", "Canadiense", "Estadounidense"],
+      "correcta": 0,
+      "porque": "«My wife is Mexican»: su esposa es mexicana. Tom es el canadiense."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "enunciado": "Escribe la nacionalidad.",
+      "frase": "I'm from Spain. I'm ___.",
+      "aceptadas": ["Spanish"],
+      "porque": "La nacionalidad de España es Spanish, y en inglés se escribe con mayúscula."
+    },
+    {
+      "id": "e11",
+      "tipo": "escucha",
+      "audio": "Hello, I'm Kenji. I'm from Tokyo. I'm twelve years old.",
+      "pregunta": "¿Cuántos años tiene Kenji?",
+      "opciones": ["12", "20", "2"],
+      "correcta": 0,
+      "porque": "«I'm twelve years old»: twelve es 12."
+    },
+    {
+      "id": "e12",
+      "tipo": "ordenar",
+      "respuesta": ["She", "is", "from", "Colombia."],
+      "traduccion": "Ella es de Colombia.",
+      "porque": "En una afirmación el orden es persona + is + from + lugar."
+    }
+  ]
+}

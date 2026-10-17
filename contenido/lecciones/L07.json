@@ -1,0 +1,156 @@
+{
+  "id": "L07",
+  "subnivel": "A1.1",
+  "unidad": 2,
+  "titulo": "Mi familia",
+  "explicacion": [
+    { "tipo": "texto", "md": "Los adjetivos posesivos dicen de quién es algo. Van antes del sustantivo y **no cambian** en plural: my book, my books." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pronombre", "Posesivo", "Español"],
+      "filas": [
+        ["I", "my", "mi"],
+        ["you", "your", "tu / su (de usted)"],
+        ["he", "his", "su (de él)"],
+        ["she", "her", "su (de ella)"],
+        ["it", "its", "su (de una cosa o animal)"],
+        ["we", "our", "nuestro"],
+        ["they", "their", "su (de ellos)"]
+      ]
+    },
+    { "tipo": "tip", "md": "**his** y **her** dependen de quién es el dueño, no del objeto: *her car* es el carro de ella; *his car*, el de él." },
+    { "tipo": "ejemplo", "en": "This is my mother. Her name is Rosa.", "es": "Ella es mi mamá. Su nombre es Rosa." },
+    { "tipo": "ejemplo", "en": "They are my parents. Their house is big.", "es": "Ellos son mis papás. Su casa es grande." },
+    { "tipo": "texto", "md": "La familia:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["mother", "mamá"],
+        ["father", "papá"],
+        ["parents", "papás"],
+        ["brother", "hermano"],
+        ["sister", "hermana"],
+        ["son", "hijo"],
+        ["daughter", "hija"],
+        ["husband", "esposo"],
+        ["wife", "esposa"],
+        ["grandmother", "abuela"],
+        ["grandfather", "abuelo"]
+      ]
+    },
+    { "tipo": "tip", "md": "**parents** son los papás (mamá y papá). «Parientes» se dice *relatives*." }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "hueco",
+      "frase": "Ana has a phone. ___ phone is new.",
+      "aceptadas": ["her"],
+      "pista": "el posesivo de she",
+      "porque": "La dueña es Ana (she), así que el posesivo es her."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "This is James. ___ keys are on the table.",
+      "opciones": ["His", "He", "Him"],
+      "correcta": 0,
+      "porque": "El dueño es James (he), y antes de un sustantivo va el posesivo his."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "Sarah and John have a baby. ___ baby is beautiful.",
+      "opciones": ["Their", "His", "Her"],
+      "correcta": 0,
+      "porque": "Los dueños son dos personas (they), así que el posesivo es their."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "La casa es mía. This is ___ house.",
+      "opciones": ["my", "I", "me"],
+      "correcta": 0,
+      "porque": "Antes de un sustantivo va el posesivo: my house."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "We have a garden. ___ garden is small.",
+      "aceptadas": ["our"],
+      "pista": "el posesivo de we",
+      "porque": "Los dueños somos nosotros (we), así que el posesivo es our."
+    },
+    {
+      "id": "e06",
+      "tipo": "emparejar",
+      "enunciado": "Une cada familiar con su significado.",
+      "pares": [
+        ["mother", "mamá"],
+        ["father", "papá"],
+        ["sister", "hermana"],
+        ["son", "hijo"],
+        ["wife", "esposa"]
+      ],
+      "porque": "Con estas palabras ya puedes presentar a tu familia."
+    },
+    {
+      "id": "e07",
+      "tipo": "ordenar",
+      "respuesta": ["Her", "name", "is", "Rosa."],
+      "traduccion": "Su nombre (de ella) es Rosa.",
+      "porque": "El posesivo her va antes del sustantivo name."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Qué significa «parents»?",
+      "opciones": ["Papás", "Parientes", "Abuelos"],
+      "correcta": 0,
+      "porque": "Parents son mamá y papá. Parientes se dice relatives."
+    },
+    {
+      "id": "e09",
+      "tipo": "opcion",
+      "enunciado": "The girls are with ___ teacher.",
+      "opciones": ["their", "his", "its"],
+      "correcta": 0,
+      "porque": "The girls (ellas) equivale a they, y su posesivo es their."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "I have a brother. ___ name is Luis.",
+      "opciones": ["His", "Her", "Their"],
+      "correcta": 0,
+      "porque": "Brother es hombre (he), así que el posesivo es his."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "This is my family. My father is a driver and my mother is a nurse. My sister Carla is a student. Her husband is from Peru.",
+      "pregunta": "¿Quién es de Perú?",
+      "opciones": ["El esposo de Carla", "El papá", "El hermano de Carla"],
+      "correcta": 0,
+      "porque": "«Her husband is from Peru»: her se refiere a Carla, y husband es esposo."
+    },
+    {
+      "id": "e12",
+      "tipo": "escucha",
+      "audio": "My grandmother is from Spain, but my grandfather is from Mexico.",
+      "pregunta": "¿De dónde es el abuelo?",
+      "opciones": ["De México", "De España", "De Perú"],
+      "correcta": 0,
+      "porque": "Grandfather es abuelo: «my grandfather is from Mexico»."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "The dog is in ___ house.",
+      "opciones": ["its", "it's", "it"],
+      "correcta": 0,
+      "porque": "El posesivo de it es its, sin apóstrofo. It's significa it is."
+    }
+  ]
+}

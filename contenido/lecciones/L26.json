@@ -1,0 +1,285 @@
+{
+  "id": "L26",
+  "subnivel": "A2.1",
+  "unidad": 7,
+  "titulo": "Siempre o ahora",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "El **presente simple** habla de rutinas y de cosas que siempre son así. El **presente continuo** habla de lo que pasa ahora o solo por estos días."
+    },
+    {
+      "tipo": "tabla",
+      "filas": [
+        [
+          "Presente simple",
+          "rutinas, hábitos, hechos",
+          "I work in a bank."
+        ],
+        [
+          "Presente continuo",
+          "ahora mismo o temporal",
+          "I'm working at home today."
+        ]
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Si la oración lleva…",
+        "casi siempre va con…"
+      ],
+      "filas": [
+        [
+          "always, usually, never, every day",
+          "presente simple"
+        ],
+        [
+          "now, right now, at the moment, today",
+          "presente continuo"
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**Look!** (¡Mira!) y **Listen!** (¡Escucha!) anuncian algo que está pasando ahora: Look! It's raining."
+    },
+    {
+      "tipo": "tip",
+      "md": "Algunos verbos casi nunca van en continuo: **like, love, hate, want, know**. Se dice *I want a coffee*, nunca *I am wanting a coffee*."
+    },
+    {
+      "tipo": "texto",
+      "md": "El clima:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "weather",
+          "clima"
+        ],
+        [
+          "sunny",
+          "soleado"
+        ],
+        [
+          "cloudy",
+          "nublado"
+        ],
+        [
+          "windy",
+          "con viento"
+        ],
+        [
+          "rainy",
+          "lluvioso"
+        ],
+        [
+          "hot",
+          "caluroso"
+        ],
+        [
+          "cold",
+          "frío"
+        ],
+        [
+          "rain",
+          "llover, lluvia"
+        ],
+        [
+          "snow",
+          "nevar, nieve"
+        ]
+      ]
+    },
+    {
+      "tipo": "ejemplo",
+      "en": "What's the weather like? It's sunny and hot.",
+      "es": "¿Cómo está el clima? Está soleado y hace calor."
+    },
+    {
+      "tipo": "tip",
+      "md": "Para el clima se usa **it**: It's cold. It's raining. En español no hay sujeto, pero en inglés el it es obligatorio."
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "I usually ___ to work by bus.",
+      "opciones": [
+        "go",
+        "am going",
+        "going"
+      ],
+      "correcta": 0,
+      "porque": "Usually indica una rutina: presente simple."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "Look! It ___.",
+      "opciones": [
+        "is raining",
+        "rains",
+        "rain"
+      ],
+      "correcta": 0,
+      "porque": "Look! anuncia algo que pasa ahora: presente continuo."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "She is a nurse. She ___ (work) in a hospital.",
+      "aceptadas": [
+        "works"
+      ],
+      "pista": "es un hecho de siempre",
+      "porque": "Es su trabajo de siempre: presente simple, con -s por ser she."
+    },
+    {
+      "id": "e04",
+      "tipo": "hueco",
+      "frase": "She ___ (work) at home today.",
+      "aceptadas": [
+        "is working",
+        "'s working"
+      ],
+      "pista": "es solo por hoy",
+      "porque": "Today indica algo temporal: presente continuo."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es correcto?",
+      "opciones": [
+        "I want a coffee.",
+        "I am wanting a coffee.",
+        "I wanting a coffee."
+      ],
+      "correcta": 0,
+      "porque": "Want casi nunca va en continuo: I want."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "It ___ a lot in winter here.",
+      "opciones": [
+        "snows",
+        "is snowing",
+        "snowing"
+      ],
+      "correcta": 0,
+      "porque": "Es un hecho que se repite cada invierno: presente simple."
+    },
+    {
+      "id": "e07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        [
+          "sunny",
+          "soleado"
+        ],
+        [
+          "cloudy",
+          "nublado"
+        ],
+        [
+          "windy",
+          "con viento"
+        ],
+        [
+          "rainy",
+          "lluvioso"
+        ],
+        [
+          "snow",
+          "nieve"
+        ]
+      ],
+      "porque": "Vocabulario del clima."
+    },
+    {
+      "id": "e08",
+      "tipo": "ordenar",
+      "respuesta": [
+        "It",
+        "is",
+        "raining",
+        "right",
+        "now."
+      ],
+      "traduccion": "Está lloviendo ahora mismo.",
+      "porque": "El clima lleva it; right now va al final."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "What's",
+        "the",
+        "weather",
+        "like",
+        "today?"
+      ],
+      "traduccion": "¿Cómo está el clima hoy?",
+      "porque": "What's the weather like? es la pregunta fija para el clima."
+    },
+    {
+      "id": "e10",
+      "tipo": "hueco",
+      "frase": "Every day he ___ at six.",
+      "opciones": [
+        "gets up",
+        "is getting up",
+        "get up"
+      ],
+      "correcta": 0,
+      "porque": "Every day indica una rutina: presente simple, con -s por ser he."
+    },
+    {
+      "id": "e11",
+      "tipo": "opcion",
+      "enunciado": "He ___ a book at the moment.",
+      "opciones": [
+        "is reading",
+        "reads",
+        "read"
+      ],
+      "correcta": 0,
+      "porque": "At the moment indica algo que pasa ahora: presente continuo."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "Hi, Laura! I'm in Monterrey this week. It's very hot and sunny here. In Toluca it usually rains in the afternoon, but here it never rains. Right now I'm sitting in a park and drinking some juice.",
+      "pregunta": "¿Cómo está el clima en Monterrey?",
+      "opciones": [
+        "Caluroso y soleado",
+        "Lluvioso",
+        "Frío y nublado"
+      ],
+      "correcta": 0,
+      "porque": "«It's very hot and sunny here»: hace calor y está soleado."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "What's the weather like in your city? It's cold and windy today, but it isn't raining.",
+      "pregunta": "¿Cómo está el clima?",
+      "opciones": [
+        "Frío y con viento",
+        "Frío y lluvioso",
+        "Soleado y caluroso"
+      ],
+      "correcta": 0,
+      "porque": "«It's cold and windy today, but it isn't raining»: frío y con viento, sin lluvia."
+    }
+  ]
+}

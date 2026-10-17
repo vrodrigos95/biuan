@@ -1,0 +1,163 @@
+{
+  "id": "L02",
+  "subnivel": "A1.1",
+  "unidad": 1,
+  "titulo": "Yo soy, tú eres",
+  "explicacion": [
+    { "tipo": "texto", "md": "Los pronombres personales dicen de quién hablamos. En inglés **siempre** se ponen: no se pueden omitir como en español." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["I", "yo"],
+        ["you", "tú / usted / ustedes"],
+        ["he", "él"],
+        ["she", "ella"],
+        ["it", "eso (cosas y animales)"],
+        ["we", "nosotros"],
+        ["they", "ellos / ellas"]
+      ]
+    },
+    { "tipo": "tip", "md": "**I** (yo) se escribe siempre con mayúscula, aunque vaya a media oración." },
+    { "tipo": "texto", "md": "El verbo **to be** significa *ser* y también *estar*. En presente tiene tres formas: **am**, **is** y **are**." },
+    {
+      "tipo": "tabla",
+      "columnas": ["Pronombre", "To be", "Forma corta"],
+      "filas": [
+        ["I", "am", "I'm"],
+        ["You / We / They", "are", "you're / we're / they're"],
+        ["He / She / It", "is", "he's / she's / it's"]
+      ]
+    },
+    { "tipo": "ejemplo", "en": "I am a student.", "es": "Soy estudiante." },
+    { "tipo": "ejemplo", "en": "She is a doctor.", "es": "Ella es doctora." },
+    { "tipo": "ejemplo", "en": "We are teachers.", "es": "Somos maestros." },
+    { "tipo": "tip", "md": "En español decimos «soy maestro», pero en inglés la profesión lleva **a** o **an**: I am **a** teacher. En plural no lleva nada: We are teachers." },
+    { "tipo": "texto", "md": "Algunas profesiones para empezar:" },
+    {
+      "tipo": "tabla",
+      "columnas": ["Inglés", "Español"],
+      "filas": [
+        ["teacher", "maestro / maestra"],
+        ["student", "estudiante"],
+        ["doctor", "doctor / doctora"],
+        ["nurse", "enfermero / enfermera"],
+        ["engineer", "ingeniero / ingeniera"],
+        ["driver", "chofer"],
+        ["cook", "cocinero / cocinera"],
+        ["waiter", "mesero"]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "My parents ___ doctors.",
+      "opciones": ["are", "is", "am"],
+      "correcta": 0,
+      "porque": "My parents (mis papás) equivale a they, y con they se usa are."
+    },
+    {
+      "id": "e02",
+      "tipo": "emparejar",
+      "enunciado": "Une cada pronombre con su significado.",
+      "pares": [
+        ["I", "yo"],
+        ["he", "él"],
+        ["she", "ella"],
+        ["we", "nosotros"],
+        ["they", "ellos"]
+      ],
+      "porque": "Estos pronombres se usan en todas las oraciones; vale la pena memorizarlos primero."
+    },
+    {
+      "id": "e03",
+      "tipo": "hueco",
+      "frase": "He ___ my classmate.",
+      "opciones": ["is", "are", "am"],
+      "correcta": 0,
+      "porque": "Con he (él) el verbo to be es is. Classmate es compañero de clase."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "My brother and I ___ students.",
+      "opciones": ["are", "is", "am"],
+      "correcta": 0,
+      "porque": "My brother and I (mi hermano y yo) equivale a we, y con we se usa are."
+    },
+    {
+      "id": "e05",
+      "tipo": "hueco",
+      "frase": "She ___ a nurse.",
+      "aceptadas": ["is"],
+      "pista": "to be con she",
+      "porque": "Con she (ella) el verbo to be es is: She is a nurse."
+    },
+    {
+      "id": "e06",
+      "tipo": "ordenar",
+      "respuesta": ["We", "are", "teachers."],
+      "traduccion": "Somos maestros.",
+      "porque": "El orden es pronombre + to be + profesión. En plural la profesión no lleva a."
+    },
+    {
+      "id": "e07",
+      "tipo": "opcion",
+      "enunciado": "¿Cuál es la forma corta de «they are»?",
+      "opciones": ["they're", "their", "there"],
+      "correcta": 0,
+      "porque": "They are se contrae como they're. Their y there suenan parecido, pero son otras palabras."
+    },
+    {
+      "id": "e08",
+      "tipo": "opcion",
+      "enunciado": "¿Qué pronombre sustituye a «Ana and Luis»?",
+      "opciones": ["They", "We", "She"],
+      "correcta": 0,
+      "porque": "Son dos personas y no estás incluido tú: they (ellos)."
+    },
+    {
+      "id": "e09",
+      "tipo": "lectura",
+      "texto": "Hi! I'm Carlos and I'm an engineer. My wife is Elena. She is a nurse. We are from Puebla.",
+      "pregunta": "¿A qué se dedica Elena?",
+      "opciones": ["Es enfermera", "Es ingeniera", "Es maestra"],
+      "correcta": 0,
+      "porque": "«She is a nurse»: Elena es enfermera. El ingeniero es Carlos."
+    },
+    {
+      "id": "e10",
+      "tipo": "escucha",
+      "audio": "This is my friend Paul. He is a cook in a restaurant.",
+      "pregunta": "¿Cuál es el trabajo de Paul?",
+      "opciones": ["Cocinero", "Mesero", "Chofer"],
+      "correcta": 0,
+      "porque": "«He is a cook»: cook significa cocinero."
+    },
+    {
+      "id": "e11",
+      "tipo": "hueco",
+      "frase": "My friends ___ at the park.",
+      "aceptadas": ["are"],
+      "pista": "my friends = they",
+      "porque": "My friends (mis amigos) equivale a they, y con they se usa are."
+    },
+    {
+      "id": "e12",
+      "tipo": "ordenar",
+      "respuesta": ["I", "am", "a", "student."],
+      "traduccion": "Soy estudiante.",
+      "porque": "Con I se usa am, y la profesión en singular lleva a: I am a student."
+    },
+    {
+      "id": "e13",
+      "tipo": "opcion",
+      "enunciado": "This book ___ interesting.",
+      "opciones": ["is", "are", "am"],
+      "correcta": 0,
+      "porque": "This book (este libro) es una cosa, equivale a it, y con it se usa is."
+    }
+  ]
+}

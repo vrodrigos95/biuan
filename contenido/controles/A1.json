@@ -1,0 +1,414 @@
+{
+  "id": "A1",
+  "titulo": "Examen de control A1",
+  "minutos": 20,
+  "aprobacion": 70,
+  "espera_horas_reintento": 12,
+  "desbloquea": "A2.1",
+  "secciones": [
+    {
+      "habilidad": "gramatica",
+      "titulo": "Gramática",
+      "preguntas": [
+        {
+          "id": "g01",
+          "tipo": "opcion",
+          "enunciado": "My brother ___ a doctor.",
+          "opciones": [
+            "is",
+            "are",
+            "am"
+          ],
+          "correcta": 0,
+          "porque": "My brother equivale a he: is."
+        },
+        {
+          "id": "g02",
+          "tipo": "hueco",
+          "frase": "She's from Mexico. She ___ from Spain.",
+          "aceptadas": [
+            "isn't",
+            "is not"
+          ],
+          "pista": "negativo de is",
+          "porque": "Negativo de to be con she: is not, o la forma corta isn't."
+        },
+        {
+          "id": "g03",
+          "tipo": "opcion",
+          "enunciado": "I have ___ umbrella.",
+          "opciones": [
+            "an",
+            "a",
+            "any"
+          ],
+          "correcta": 0,
+          "porque": "Umbrella empieza con sonido de vocal y es una sola: an."
+        },
+        {
+          "id": "g04",
+          "tipo": "opcion",
+          "enunciado": "___ are my books.",
+          "opciones": [
+            "Those",
+            "That",
+            "This"
+          ],
+          "correcta": 0,
+          "porque": "Books es plural y el verbo es are: those. This y that van con is."
+        },
+        {
+          "id": "g05",
+          "tipo": "opcion",
+          "enunciado": "This is my sister. ___ name is Rosa.",
+          "opciones": [
+            "Her",
+            "His",
+            "Their"
+          ],
+          "correcta": 0,
+          "porque": "El posesivo depende del dueño: es el nombre de ella, her."
+        },
+        {
+          "id": "g06",
+          "tipo": "hueco",
+          "frase": "She ___ two children.",
+          "opciones": [
+            "has",
+            "have",
+            "is"
+          ],
+          "correcta": 0,
+          "porque": "Con she, have cambia a has."
+        },
+        {
+          "id": "g07",
+          "tipo": "opcion",
+          "enunciado": "The class starts ___ 8 o'clock.",
+          "opciones": [
+            "at",
+            "in",
+            "on"
+          ],
+          "correcta": 0,
+          "porque": "Con una hora exacta se usa at."
+        },
+        {
+          "id": "g08",
+          "tipo": "hueco",
+          "frase": "My father ___ (work) in a bank.",
+          "aceptadas": [
+            "works"
+          ],
+          "porque": "My father equivale a he: en presente simple el verbo lleva -s."
+        },
+        {
+          "id": "g09",
+          "tipo": "hueco",
+          "frase": "He ___ (not / like) coffee.",
+          "aceptadas": [
+            "doesn't like",
+            "does not like"
+          ],
+          "porque": "Negativo en tercera persona: doesn't + verbo sin -s."
+        },
+        {
+          "id": "g10",
+          "tipo": "opcion",
+          "enunciado": "___ she take the bus to work?",
+          "opciones": [
+            "Does",
+            "Do",
+            "Is"
+          ],
+          "correcta": 0,
+          "porque": "Pregunta en presente simple con she: Does + sujeto + verbo sin -s."
+        },
+        {
+          "id": "g11",
+          "tipo": "ordenar",
+          "respuesta": [
+            "I",
+            "always",
+            "get",
+            "up",
+            "at",
+            "six."
+          ],
+          "traduccion": "Siempre me levanto a las seis.",
+          "porque": "El adverbio de frecuencia va antes del verbo principal: I always get up."
+        },
+        {
+          "id": "g12",
+          "tipo": "opcion",
+          "enunciado": "She loves ___.",
+          "opciones": [
+            "dancing",
+            "dance",
+            "dances"
+          ],
+          "correcta": 0,
+          "porque": "Después de like, love y hate la actividad lleva -ing: dancing."
+        },
+        {
+          "id": "g13",
+          "tipo": "opcion",
+          "enunciado": "She can ___ English.",
+          "opciones": [
+            "speak",
+            "speaks",
+            "to speak"
+          ],
+          "correcta": 0,
+          "porque": "Después de can el verbo va en forma base, sin -s y sin to."
+        },
+        {
+          "id": "g14",
+          "tipo": "ordenar",
+          "respuesta": [
+            "Where",
+            "do",
+            "you",
+            "work?"
+          ],
+          "traduccion": "¿Dónde trabajas?",
+          "porque": "Pregunta con Wh-: Where + do + sujeto + verbo."
+        },
+        {
+          "id": "g15",
+          "tipo": "opcion",
+          "enunciado": "I don't have ___ milk.",
+          "opciones": [
+            "any",
+            "some",
+            "a"
+          ],
+          "correcta": 0,
+          "porque": "En negativo se usa any. Milk es incontable, así que no lleva a."
+        },
+        {
+          "id": "g16",
+          "tipo": "opcion",
+          "enunciado": "How ___ eggs do you want?",
+          "opciones": [
+            "many",
+            "much",
+            "any"
+          ],
+          "correcta": 0,
+          "porque": "Eggs es contable en plural: How many."
+        },
+        {
+          "id": "g17",
+          "tipo": "opcion",
+          "enunciado": "I see ___ every day.",
+          "opciones": [
+            "him",
+            "he",
+            "his"
+          ],
+          "correcta": 0,
+          "porque": "Después del verbo va el pronombre de objeto: him."
+        }
+      ]
+    },
+    {
+      "habilidad": "vocabulario",
+      "titulo": "Vocabulario",
+      "preguntas": [
+        {
+          "id": "v01",
+          "tipo": "emparejar",
+          "enunciado": "Une cada palabra con su traducción.",
+          "pares": [
+            [
+              "Monday",
+              "lunes"
+            ],
+            [
+              "kitchen",
+              "cocina"
+            ],
+            [
+              "grandmother",
+              "abuela"
+            ],
+            [
+              "always",
+              "siempre"
+            ],
+            [
+              "cheap",
+              "barato"
+            ]
+          ],
+          "porque": "Días, casa, familia, frecuencia y compras: vocabulario básico de A1."
+        },
+        {
+          "id": "v02",
+          "tipo": "opcion",
+          "enunciado": "My mother and my father are my ___.",
+          "opciones": [
+            "parents",
+            "sons",
+            "brothers"
+          ],
+          "correcta": 0,
+          "porque": "Mamá y papá juntos son parents (papás)."
+        },
+        {
+          "id": "v03",
+          "tipo": "opcion",
+          "enunciado": "¿Cómo se dice 45?",
+          "opciones": [
+            "forty-five",
+            "fourteen-five",
+            "fifty-four"
+          ],
+          "correcta": 0,
+          "porque": "40 es forty y 5 es five: forty-five."
+        },
+        {
+          "id": "v04",
+          "tipo": "opcion",
+          "enunciado": "¿Qué dices al despedirte para ir a dormir?",
+          "opciones": [
+            "Good night",
+            "Good evening",
+            "Good morning"
+          ],
+          "correcta": 0,
+          "porque": "Good night se dice al despedirte o al irte a dormir; good evening es para saludar al llegar."
+        },
+        {
+          "id": "v05",
+          "tipo": "opcion",
+          "enunciado": "In a restaurant, the ___ brings the menu.",
+          "opciones": [
+            "waiter",
+            "boss",
+            "driver"
+          ],
+          "correcta": 0,
+          "porque": "Quien trae el menú en un restaurante es el mesero: waiter."
+        }
+      ]
+    },
+    {
+      "habilidad": "lectura",
+      "titulo": "Lectura",
+      "preguntas": [
+        {
+          "id": "l01",
+          "tipo": "lectura",
+          "texto": "Hi! I'm Sofía. I'm nineteen years old and I'm a student. I live in Puebla with my parents and my brother. I get up at six thirty every day and I go to school by bus. On weekends I play soccer.",
+          "pregunta": "¿Cómo va Sofía a la escuela?",
+          "opciones": [
+            "En autobús",
+            "Caminando",
+            "En carro"
+          ],
+          "correcta": 0,
+          "porque": "«I go to school by bus»: en autobús."
+        },
+        {
+          "id": "l02",
+          "tipo": "lectura",
+          "texto": "Hi! I'm Sofía. I'm nineteen years old and I'm a student. I live in Puebla with my parents and my brother. I get up at six thirty every day and I go to school by bus. On weekends I play soccer.",
+          "pregunta": "¿Qué hace Sofía los fines de semana?",
+          "opciones": [
+            "Juega futbol",
+            "Va al gimnasio",
+            "Visita a sus papás"
+          ],
+          "correcta": 0,
+          "porque": "«On weekends I play soccer»: juega futbol."
+        },
+        {
+          "id": "l03",
+          "tipo": "lectura",
+          "texto": "My house is small. There is a living room, a kitchen and a bathroom. There are two bedrooms. There isn't a garden, but there is a park in front of the house.",
+          "pregunta": "¿Cuántas recámaras hay en la casa?",
+          "opciones": [
+            "Dos",
+            "Una",
+            "Tres"
+          ],
+          "correcta": 0,
+          "porque": "«There are two bedrooms»: hay dos recámaras."
+        },
+        {
+          "id": "l04",
+          "tipo": "lectura",
+          "texto": "My house is small. There is a living room, a kitchen and a bathroom. There are two bedrooms. There isn't a garden, but there is a park in front of the house.",
+          "pregunta": "¿Qué hay enfrente de la casa?",
+          "opciones": [
+            "Un parque",
+            "Un jardín",
+            "Una escuela"
+          ],
+          "correcta": 0,
+          "porque": "«There is a park in front of the house»: in front of es enfrente de."
+        }
+      ]
+    },
+    {
+      "habilidad": "escucha",
+      "titulo": "Listening",
+      "preguntas": [
+        {
+          "id": "e01",
+          "tipo": "escucha",
+          "audio": "Excuse me, where is the bathroom? It's next to the kitchen.",
+          "pregunta": "¿Dónde está el baño?",
+          "opciones": [
+            "Junto a la cocina",
+            "Junto a la recámara",
+            "En el jardín"
+          ],
+          "correcta": 0,
+          "porque": "«It's next to the kitchen»: junto a la cocina."
+        },
+        {
+          "id": "e02",
+          "tipo": "escucha",
+          "audio": "My birthday is on March fifth.",
+          "pregunta": "¿Cuándo es su cumpleaños?",
+          "opciones": [
+            "El 5 de marzo",
+            "El 15 de marzo",
+            "El 5 de mayo"
+          ],
+          "correcta": 0,
+          "porque": "«March fifth»: 5 de marzo."
+        },
+        {
+          "id": "e03",
+          "tipo": "escucha",
+          "audio": "Excuse me, how do I get to the bank? Go straight for two blocks and turn left.",
+          "pregunta": "¿Qué hay que hacer después de dos cuadras?",
+          "opciones": [
+            "Dar vuelta a la izquierda",
+            "Dar vuelta a la derecha",
+            "Cruzar la calle"
+          ],
+          "correcta": 0,
+          "porque": "«Turn left»: da vuelta a la izquierda."
+        },
+        {
+          "id": "e04",
+          "tipo": "escucha",
+          "audio": "How much is this shirt? It's twenty dollars.",
+          "pregunta": "¿Cuánto cuesta la camisa?",
+          "opciones": [
+            "20 dólares",
+            "12 dólares",
+            "30 dólares"
+          ],
+          "correcta": 0,
+          "porque": "«It's twenty dollars»: twenty es 20; twelve sería 12 y thirty, 30."
+        }
+      ]
+    }
+  ]
+}

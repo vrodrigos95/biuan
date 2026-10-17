@@ -1,0 +1,677 @@
+{
+  "subniveles": [
+    {
+      "id": "A1.1",
+      "nivel": "A1",
+      "titulo": "Primeros pasos",
+      "unidades": [
+        {
+          "numero": 1,
+          "titulo": "Presentarte",
+          "lecciones": [
+            {
+              "id": "L01",
+              "numero": 1,
+              "titulo": "Hola y adiós",
+              "gramatica": "Saludos, fórmulas fijas",
+              "vocabulario": "Saludos, despedidas, alfabeto, deletrear"
+            },
+            {
+              "id": "L02",
+              "numero": 2,
+              "titulo": "Yo soy, tú eres",
+              "gramatica": "Pronombres personales, to be afirmativo",
+              "vocabulario": "Profesiones básicas"
+            },
+            {
+              "id": "L03",
+              "numero": 3,
+              "titulo": "¿Eres tú?",
+              "gramatica": "To be negativo y preguntas, respuestas cortas",
+              "vocabulario": "Estados de ánimo"
+            },
+            {
+              "id": "L04",
+              "numero": 4,
+              "titulo": "¿De dónde eres?",
+              "gramatica": "Where … from?",
+              "vocabulario": "Países, nacionalidades, números 0–20"
+            }
+          ],
+          "gratis": true
+        },
+        {
+          "numero": 2,
+          "titulo": "Tu mundo",
+          "lecciones": [
+            {
+              "id": "L05",
+              "numero": 5,
+              "titulo": "Un, una, el",
+              "gramatica": "Artículos a / an / the",
+              "vocabulario": "Objetos cotidianos"
+            },
+            {
+              "id": "L06",
+              "numero": 6,
+              "titulo": "Esto y aquello",
+              "gramatica": "Plurales, this / that / these / those",
+              "vocabulario": "Cosas del salón y la oficina"
+            },
+            {
+              "id": "L07",
+              "numero": 7,
+              "titulo": "Mi familia",
+              "gramatica": "Adjetivos posesivos (my, your, his, her…)",
+              "vocabulario": "Familia"
+            },
+            {
+              "id": "L08",
+              "numero": 8,
+              "titulo": "Lo que tengo",
+              "gramatica": "Have / has",
+              "vocabulario": "Números 21–100, edad, teléfono"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Dónde y cuándo",
+          "lecciones": [
+            {
+              "id": "L09",
+              "numero": 9,
+              "titulo": "Hay y no hay",
+              "gramatica": "There is / there are",
+              "vocabulario": "La casa, muebles"
+            },
+            {
+              "id": "L10",
+              "numero": 10,
+              "titulo": "¿Dónde está?",
+              "gramatica": "Preposiciones de lugar (in, on, under, next to…)",
+              "vocabulario": "Lugares de la casa y la ciudad"
+            },
+            {
+              "id": "L11",
+              "numero": 11,
+              "titulo": "Fechas y horas",
+              "gramatica": "Decir la hora y la fecha",
+              "vocabulario": "Días, meses, la hora"
+            },
+            {
+              "id": "L12",
+              "numero": 12,
+              "titulo": "In, on, at",
+              "gramatica": "Preposiciones de tiempo",
+              "vocabulario": "Partes del día, estaciones"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A1.2",
+      "nivel": "A1",
+      "titulo": "Vida diaria",
+      "unidades": [
+        {
+          "numero": 4,
+          "titulo": "Rutinas",
+          "lecciones": [
+            {
+              "id": "L13",
+              "numero": 13,
+              "titulo": "Mi día",
+              "gramatica": "Presente simple afirmativo (I / you / we / they)",
+              "vocabulario": "Verbos de rutina"
+            },
+            {
+              "id": "L14",
+              "numero": 14,
+              "titulo": "Él y ella",
+              "gramatica": "Tercera persona (-s, -es, -ies)",
+              "vocabulario": "Trabajo y escuela"
+            },
+            {
+              "id": "L15",
+              "numero": 15,
+              "titulo": "No lo hago",
+              "gramatica": "Negativo con don't / doesn't",
+              "vocabulario": "Tiempo libre"
+            },
+            {
+              "id": "L16",
+              "numero": 16,
+              "titulo": "¿Lo haces?",
+              "gramatica": "Preguntas con do / does, respuestas cortas",
+              "vocabulario": "Transporte"
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Gustos y habilidades",
+          "lecciones": [
+            {
+              "id": "L17",
+              "numero": 17,
+              "titulo": "Siempre, a veces, nunca",
+              "gramatica": "Adverbios de frecuencia",
+              "vocabulario": "Actividades semanales"
+            },
+            {
+              "id": "L18",
+              "numero": 18,
+              "titulo": "Me gusta",
+              "gramatica": "Like / love / hate + -ing",
+              "vocabulario": "Pasatiempos, deportes"
+            },
+            {
+              "id": "L19",
+              "numero": 19,
+              "titulo": "Puedo y no puedo",
+              "gramatica": "Can / can't (habilidad y permiso)",
+              "vocabulario": "Habilidades"
+            },
+            {
+              "id": "L20",
+              "numero": 20,
+              "titulo": "Qué, quién, dónde",
+              "gramatica": "Preguntas Wh-",
+              "vocabulario": "Datos personales"
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Comer y comprar",
+          "lecciones": [
+            {
+              "id": "L21",
+              "numero": 21,
+              "titulo": "Algo de comer",
+              "gramatica": "Contables e incontables, some / any",
+              "vocabulario": "Comida y bebida"
+            },
+            {
+              "id": "L22",
+              "numero": 22,
+              "titulo": "¿Cuánto cuesta?",
+              "gramatica": "How much / how many",
+              "vocabulario": "Precios, tiendas, cantidades"
+            },
+            {
+              "id": "L23",
+              "numero": 23,
+              "titulo": "A mí, a él",
+              "gramatica": "Pronombres de objeto (me, him, her, us, them)",
+              "vocabulario": "En el restaurante"
+            },
+            {
+              "id": "L24",
+              "numero": 24,
+              "titulo": "Sigue derecho",
+              "gramatica": "Imperativos",
+              "vocabulario": "La ciudad, indicaciones"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2.1",
+      "nivel": "A2",
+      "titulo": "Ahora y antes",
+      "unidades": [
+        {
+          "numero": 7,
+          "titulo": "Lo que pasa ahora",
+          "lecciones": [
+            {
+              "id": "L25",
+              "numero": 25,
+              "titulo": "Ahora mismo",
+              "gramatica": "Presente continuo",
+              "vocabulario": "Acciones en curso"
+            },
+            {
+              "id": "L26",
+              "numero": 26,
+              "titulo": "Siempre o ahora",
+              "gramatica": "Presente simple vs. continuo",
+              "vocabulario": "Clima"
+            },
+            {
+              "id": "L27",
+              "numero": 27,
+              "titulo": "¿Cómo es?",
+              "gramatica": "Orden de adjetivos, look like",
+              "vocabulario": "Ropa, descripción física"
+            },
+            {
+              "id": "L28",
+              "numero": 28,
+              "titulo": "Es mío",
+              "gramatica": "Posesivo 's, pronombres posesivos (mine, yours…)",
+              "vocabulario": "Pertenencias"
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "El pasado",
+          "lecciones": [
+            {
+              "id": "L29",
+              "numero": 29,
+              "titulo": "Estuve ahí",
+              "gramatica": "Was / were",
+              "vocabulario": "Lugares, fechas pasadas"
+            },
+            {
+              "id": "L30",
+              "numero": 30,
+              "titulo": "Verbos regulares",
+              "gramatica": "Pasado simple con -ed, pronunciación",
+              "vocabulario": "Fin de semana"
+            },
+            {
+              "id": "L31",
+              "numero": 31,
+              "titulo": "Verbos irregulares",
+              "gramatica": "Los 30 irregulares más usados",
+              "vocabulario": "Viajes"
+            },
+            {
+              "id": "L32",
+              "numero": 32,
+              "titulo": "No fui, ¿fuiste?",
+              "gramatica": "Negativo y preguntas con did",
+              "vocabulario": "Vacaciones"
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Contar lo que pasó",
+          "lecciones": [
+            {
+              "id": "L33",
+              "numero": 33,
+              "titulo": "Hace dos días",
+              "gramatica": "Ago, last, yesterday, in 2020",
+              "vocabulario": "Expresiones de tiempo"
+            },
+            {
+              "id": "L34",
+              "numero": 34,
+              "titulo": "Y, pero, porque",
+              "gramatica": "And, but, because, so",
+              "vocabulario": "Vida escolar y laboral"
+            },
+            {
+              "id": "L35",
+              "numero": 35,
+              "titulo": "Primero, luego",
+              "gramatica": "Secuencia: first, then, after that, finally",
+              "vocabulario": "Lectura: una anécdota"
+            },
+            {
+              "id": "L36",
+              "numero": 36,
+              "titulo": "Había una vez",
+              "gramatica": "There was / there were",
+              "vocabulario": "Describir lugares en pasado"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2.2",
+      "nivel": "A2",
+      "titulo": "Comparar y planear",
+      "unidades": [
+        {
+          "numero": 10,
+          "titulo": "Comparar",
+          "lecciones": [
+            {
+              "id": "L37",
+              "numero": 37,
+              "titulo": "Más que",
+              "gramatica": "Comparativos",
+              "vocabulario": "Adjetivos de personas y cosas"
+            },
+            {
+              "id": "L38",
+              "numero": 38,
+              "titulo": "El mejor",
+              "gramatica": "Superlativos",
+              "vocabulario": "Ciudades y países"
+            },
+            {
+              "id": "L39",
+              "numero": 39,
+              "titulo": "Rápido y bien",
+              "gramatica": "Adverbios de modo (-ly, irregulares)",
+              "vocabulario": "Formas de hacer algo"
+            },
+            {
+              "id": "L40",
+              "numero": 40,
+              "titulo": "Demasiado o suficiente",
+              "gramatica": "Too / enough / very",
+              "vocabulario": "Compras, tallas"
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "titulo": "Planes",
+          "lecciones": [
+            {
+              "id": "L41",
+              "numero": 41,
+              "titulo": "Voy a hacerlo",
+              "gramatica": "Going to",
+              "vocabulario": "Planes y metas"
+            },
+            {
+              "id": "L42",
+              "numero": 42,
+              "titulo": "Lo haré",
+              "gramatica": "Will (predicciones, decisiones, promesas)",
+              "vocabulario": "Tecnología, el futuro"
+            },
+            {
+              "id": "L43",
+              "numero": 43,
+              "titulo": "Ya quedamos",
+              "gramatica": "Presente continuo con valor de futuro",
+              "vocabulario": "Citas y agenda"
+            },
+            {
+              "id": "L44",
+              "numero": 44,
+              "titulo": "Me gustaría",
+              "gramatica": "Would like, invitar y ofrecer",
+              "vocabulario": "Viajes, hotel, aeropuerto"
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "titulo": "Obligaciones y experiencias",
+          "lecciones": [
+            {
+              "id": "L45",
+              "numero": 45,
+              "titulo": "Tengo que",
+              "gramatica": "Have to / don't have to",
+              "vocabulario": "Trabajo, tareas"
+            },
+            {
+              "id": "L46",
+              "numero": 46,
+              "titulo": "Deberías",
+              "gramatica": "Should / shouldn't",
+              "vocabulario": "Salud, consejos"
+            },
+            {
+              "id": "L47",
+              "numero": 47,
+              "titulo": "Prohibido",
+              "gramatica": "Must / mustn't",
+              "vocabulario": "Reglas, señales"
+            },
+            {
+              "id": "L48",
+              "numero": 48,
+              "titulo": "¿Alguna vez…?",
+              "gramatica": "Presente perfecto: ever / never",
+              "vocabulario": "Experiencias"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1.1",
+      "nivel": "B1",
+      "titulo": "Conectar el tiempo",
+      "unidades": [
+        {
+          "numero": 13,
+          "titulo": "Presente perfecto",
+          "lecciones": [
+            {
+              "id": "L49",
+              "numero": 49,
+              "titulo": "Ya, todavía, apenas",
+              "gramatica": "Just / already / yet",
+              "vocabulario": "Pendientes y logros"
+            },
+            {
+              "id": "L50",
+              "numero": 50,
+              "titulo": "Desde hace",
+              "gramatica": "For / since",
+              "vocabulario": "Estudios y empleo"
+            },
+            {
+              "id": "L51",
+              "numero": 51,
+              "titulo": "¿Perfecto o pasado?",
+              "gramatica": "Presente perfecto vs. pasado simple",
+              "vocabulario": "Noticias"
+            },
+            {
+              "id": "L52",
+              "numero": 52,
+              "titulo": "Ha ido o ha estado",
+              "gramatica": "Been / gone, participios irregulares",
+              "vocabulario": "Currículum, entrevista"
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "titulo": "Narrar",
+          "lecciones": [
+            {
+              "id": "L53",
+              "numero": 53,
+              "titulo": "Estaba haciendo",
+              "gramatica": "Pasado continuo",
+              "vocabulario": "Historias"
+            },
+            {
+              "id": "L54",
+              "numero": 54,
+              "titulo": "Cuando y mientras",
+              "gramatica": "Pasado continuo vs. simple, when / while",
+              "vocabulario": "Accidentes, imprevistos"
+            },
+            {
+              "id": "L55",
+              "numero": 55,
+              "titulo": "Antes solía",
+              "gramatica": "Used to",
+              "vocabulario": "Infancia, cambios"
+            },
+            {
+              "id": "L56",
+              "numero": 56,
+              "titulo": "Aunque, sin embargo",
+              "gramatica": "Conectores: although, however, so, because of",
+              "vocabulario": "Opiniones"
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "titulo": "Futuro y posibilidad",
+          "lecciones": [
+            {
+              "id": "L57",
+              "numero": 57,
+              "titulo": "Tres futuros",
+              "gramatica": "Will vs. going to vs. presente continuo",
+              "vocabulario": "Planes de carrera"
+            },
+            {
+              "id": "L58",
+              "numero": 58,
+              "titulo": "Si pasa, haré",
+              "gramatica": "Primer condicional",
+              "vocabulario": "Decisiones, consecuencias"
+            },
+            {
+              "id": "L59",
+              "numero": 59,
+              "titulo": "Tal vez",
+              "gramatica": "May / might / could",
+              "vocabulario": "Probabilidad"
+            },
+            {
+              "id": "L60",
+              "numero": 60,
+              "titulo": "Modales en contexto",
+              "gramatica": "Must, have to, should, can: repaso",
+              "vocabulario": "Reglas de trabajo y escuela"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1.2",
+      "nivel": "B1",
+      "titulo": "Nivel examen",
+      "unidades": [
+        {
+          "numero": 16,
+          "titulo": "Estructuras clave",
+          "lecciones": [
+            {
+              "id": "L61",
+              "numero": 61,
+              "titulo": "Si pudiera",
+              "gramatica": "Segundo condicional",
+              "vocabulario": "Situaciones hipotéticas"
+            },
+            {
+              "id": "L62",
+              "numero": 62,
+              "titulo": "Fue hecho",
+              "gramatica": "Voz pasiva en presente y pasado",
+              "vocabulario": "Procesos, inventos"
+            },
+            {
+              "id": "L63",
+              "numero": 63,
+              "titulo": "El que, la que",
+              "gramatica": "Relativas: who, which, that, where",
+              "vocabulario": "Definir personas y cosas"
+            },
+            {
+              "id": "L64",
+              "numero": 64,
+              "titulo": "-ing o to",
+              "gramatica": "Gerundio vs. infinitivo",
+              "vocabulario": "Verbos frecuentes con cada patrón"
+            }
+          ]
+        },
+        {
+          "numero": 17,
+          "titulo": "Reportar y precisar",
+          "lecciones": [
+            {
+              "id": "L65",
+              "numero": 65,
+              "titulo": "Dijo que",
+              "gramatica": "Estilo indirecto básico",
+              "vocabulario": "Mensajes, recados"
+            },
+            {
+              "id": "L66",
+              "numero": 66,
+              "titulo": "¿Podría decirme…?",
+              "gramatica": "Preguntas indirectas, question tags",
+              "vocabulario": "Trámites, atención al cliente"
+            },
+            {
+              "id": "L67",
+              "numero": 67,
+              "titulo": "Mucho, poco, bastante",
+              "gramatica": "Much, many, a few, a little, too much",
+              "vocabulario": "Hábitos, consumo"
+            },
+            {
+              "id": "L68",
+              "numero": 68,
+              "titulo": "Phrasal verbs",
+              "gramatica": "Los 25 más frecuentes",
+              "vocabulario": "Vida diaria y trabajo"
+            }
+          ]
+        },
+        {
+          "numero": 18,
+          "titulo": "Preparación para examen",
+          "lecciones": [
+            {
+              "id": "L69",
+              "numero": 69,
+              "titulo": "Leer con estrategia",
+              "gramatica": "Idea principal, detalle, inferencia",
+              "vocabulario": "Textos tipo examen"
+            },
+            {
+              "id": "L70",
+              "numero": 70,
+              "titulo": "Escuchar con estrategia",
+              "gramatica": "Conversaciones y avisos",
+              "vocabulario": "Listening tipo examen"
+            },
+            {
+              "id": "L71",
+              "numero": 71,
+              "titulo": "Errores de hispanohablantes",
+              "gramatica": "Falsos amigos, calcos del español",
+              "vocabulario": "Actually, realize, assist…"
+            },
+            {
+              "id": "L72",
+              "numero": 72,
+              "titulo": "Repaso general",
+              "gramatica": "Todos los temas de B1",
+              "vocabulario": "Mixto"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "controles": [
+    {
+      "id": "A1",
+      "titulo": "Examen de control A1",
+      "despuesDe": "A1.2"
+    },
+    {
+      "id": "A2",
+      "titulo": "Examen de control A2",
+      "despuesDe": "A2.2"
+    },
+    {
+      "id": "B1",
+      "titulo": "Examen de control B1",
+      "despuesDe": "B1.2"
+    }
+  ],
+  "minutosPorLeccion": 5
+}

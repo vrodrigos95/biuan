@@ -1,0 +1,284 @@
+{
+  "id": "L56",
+  "subnivel": "B1.1",
+  "unidad": 14,
+  "titulo": "Aunque, sin embargo",
+  "explicacion": [
+    {
+      "tipo": "texto",
+      "md": "Los **conectores** unen dos ideas y dicen qué relación hay entre ellas."
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Conector",
+        "Relación",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "**and**",
+          "suma",
+          "I like tea **and** coffee."
+        ],
+        [
+          "**but**",
+          "contraste simple",
+          "She is tired **but** happy."
+        ],
+        [
+          "**because**",
+          "causa (+ oración)",
+          "He stayed home **because** he was sick."
+        ],
+        [
+          "**because of**",
+          "causa (+ sustantivo)",
+          "He stayed home **because of** the rain."
+        ],
+        [
+          "**so**",
+          "consecuencia",
+          "It was raining, **so** we stayed inside."
+        ],
+        [
+          "**although**",
+          "aunque",
+          "**Although** it was raining, we went for a walk."
+        ],
+        [
+          "**however**",
+          "sin embargo",
+          "It was raining. **However**, we went for a walk."
+        ]
+      ]
+    },
+    {
+      "tipo": "tip",
+      "md": "**because** va seguido de una oración con sujeto y verbo: *because it was raining*. **because of** va seguido de un sustantivo: *because of the rain*."
+    },
+    {
+      "tipo": "tip",
+      "md": "**although** une dos ideas en la misma oración. **however** empieza una oración nueva y lleva coma después: *However, …*"
+    },
+    {
+      "tipo": "tip",
+      "md": "Antes de elegir, pregúntate qué relación hay entre las ideas: ¿sumo, contrasto, doy la razón o doy el resultado?"
+    },
+    {
+      "tipo": "texto",
+      "md": "Para dar tu opinión:"
+    },
+    {
+      "tipo": "tabla",
+      "columnas": [
+        "Inglés",
+        "Español"
+      ],
+      "filas": [
+        [
+          "in my opinion",
+          "en mi opinión"
+        ],
+        [
+          "I think",
+          "creo que"
+        ],
+        [
+          "I agree",
+          "estoy de acuerdo"
+        ],
+        [
+          "I disagree",
+          "no estoy de acuerdo"
+        ],
+        [
+          "advantage",
+          "ventaja"
+        ],
+        [
+          "disadvantage",
+          "desventaja"
+        ]
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "e01",
+      "tipo": "opcion",
+      "enunciado": "She is tired ___ happy.",
+      "opciones": [
+        "but",
+        "because",
+        "so"
+      ],
+      "correcta": 0,
+      "porque": "Contraste simple entre dos ideas: but."
+    },
+    {
+      "id": "e02",
+      "tipo": "opcion",
+      "enunciado": "He stayed home ___ he was sick.",
+      "opciones": [
+        "because",
+        "so",
+        "although"
+      ],
+      "correcta": 0,
+      "porque": "Da la razón, y sigue una oración completa: because."
+    },
+    {
+      "id": "e03",
+      "tipo": "opcion",
+      "enunciado": "It was raining, ___ we stayed inside.",
+      "opciones": [
+        "so",
+        "because",
+        "but"
+      ],
+      "correcta": 0,
+      "porque": "Quedarse adentro es la consecuencia de la lluvia: so."
+    },
+    {
+      "id": "e04",
+      "tipo": "opcion",
+      "enunciado": "___ it was raining, we went for a walk.",
+      "opciones": [
+        "Although",
+        "Because",
+        "However"
+      ],
+      "correcta": 0,
+      "porque": "Contraste dentro de la misma oración: although. However empezaría una oración aparte y llevaría coma."
+    },
+    {
+      "id": "e05",
+      "tipo": "opcion",
+      "enunciado": "We stayed home ___ the rain.",
+      "opciones": [
+        "because of",
+        "because",
+        "although"
+      ],
+      "correcta": 0,
+      "porque": "The rain es un sustantivo, no una oración: because of."
+    },
+    {
+      "id": "e06",
+      "tipo": "opcion",
+      "enunciado": "The phone is expensive. ___, it is very good.",
+      "opciones": [
+        "However",
+        "Although",
+        "Because"
+      ],
+      "correcta": 0,
+      "porque": "Oración nueva, con coma después, que contrasta con la anterior: However."
+    },
+    {
+      "id": "e07",
+      "tipo": "hueco",
+      "frase": "I was tired, ___ I went to bed early.",
+      "opciones": [
+        "so",
+        "but",
+        "because of"
+      ],
+      "correcta": 0,
+      "porque": "Irse a dormir es el resultado de estar cansado: so."
+    },
+    {
+      "id": "e08",
+      "tipo": "hueco",
+      "frase": "The flight was late because ___ the storm.",
+      "aceptadas": [
+        "of"
+      ],
+      "pista": "va antes de un sustantivo",
+      "porque": "The storm es un sustantivo: because of."
+    },
+    {
+      "id": "e09",
+      "tipo": "ordenar",
+      "respuesta": [
+        "Although",
+        "he",
+        "is",
+        "young,",
+        "he",
+        "is",
+        "responsible."
+      ],
+      "traduccion": "Aunque es joven, es responsable.",
+      "porque": "Although va al inicio, seguido de una idea completa; después de la coma va la otra idea."
+    },
+    {
+      "id": "e10",
+      "tipo": "emparejar",
+      "enunciado": "Une cada expresión con su significado.",
+      "pares": [
+        [
+          "although",
+          "aunque"
+        ],
+        [
+          "however",
+          "sin embargo"
+        ],
+        [
+          "so",
+          "así que"
+        ],
+        [
+          "because of",
+          "debido a"
+        ],
+        [
+          "I agree",
+          "estoy de acuerdo"
+        ]
+      ],
+      "porque": "Conectores y frases para opinar."
+    },
+    {
+      "id": "e11",
+      "tipo": "lectura",
+      "texto": "In my opinion, working from home is a good idea. You save time and money because you don't travel. However, there is a disadvantage: you don't see your coworkers. Although I like my house, I sometimes feel alone.",
+      "pregunta": "Según el texto, ¿cuál es la desventaja de trabajar en casa?",
+      "opciones": [
+        "No ves a tus compañeros",
+        "Gastas más dinero",
+        "Pierdes tiempo"
+      ],
+      "correcta": 0,
+      "porque": "«However, there is a disadvantage: you don't see your coworkers»."
+    },
+    {
+      "id": "e12",
+      "tipo": "lectura",
+      "texto": "In my opinion, working from home is a good idea. You save time and money because you don't travel. However, there is a disadvantage: you don't see your coworkers. Although I like my house, I sometimes feel alone.",
+      "pregunta": "¿Por qué se ahorra tiempo y dinero?",
+      "opciones": [
+        "Porque no hay que trasladarse",
+        "Porque se trabaja menos",
+        "Porque la casa es grande"
+      ],
+      "correcta": 0,
+      "porque": "«You save time and money because you don't travel»."
+    },
+    {
+      "id": "e13",
+      "tipo": "escucha",
+      "audio": "I wanted to buy the jacket. However, it was very expensive, so I didn't buy it.",
+      "pregunta": "¿Por qué no compró la chamarra?",
+      "opciones": [
+        "Porque era muy cara",
+        "Porque no le gustó",
+        "Porque la tienda estaba cerrada"
+      ],
+      "correcta": 0,
+      "porque": "«It was very expensive, so I didn't buy it»: era muy cara."
+    }
+  ]
+}
