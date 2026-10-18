@@ -11,6 +11,15 @@ return [
     // Dispositivos distintos que puede activar una misma clave.
     'max_dispositivos' => 3,
 
+    // Base de datos de trucosdeaula.com (la misma de /api/licencia.php): los dispositivos se
+    // guardan en su tabla licencia_dispositivos con app = 'biuan'. Usa los mismos datos que
+    // trucosdeaula-privado/config.php. Si 'dsn' queda vacío, se usan archivos en datos/licencias/.
+    'db' => [
+        'dsn' => '', // p. ej. 'mysql:host=localhost;dbname=u000000000_trucos;charset=utf8mb4'
+        'usuario' => '',
+        'clave' => '',
+    ],
+
     // Días que dura un permiso antes de renovarse con Gumroad (la app renueva sola con internet).
     'dias_permiso' => 30,
 

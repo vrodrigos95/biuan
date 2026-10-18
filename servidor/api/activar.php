@@ -20,8 +20,12 @@ limitar('activar15', $ip, (int)$CONFIG['limite_activar_15min'], 900);
 limitar('activardia', $ip, (int)$CONFIG['limite_activar_dia'], 86400);
 
 $hashClave = hash('sha256', $clave);
-$registro = leerDispositivos($hashClave);
-$conocido = in_array($dispositivo, array_column($registro['dispositivos'], 'id'), true);
+try {
+    $conocido = dispositivoRegistrado($hashClave, $dispositivo);
+} catch (PDOException $e) {
+    error_log('activar.php: ' . $e->getMessage());
+    responder(500, ['error' => 'servidor', 'mensaje' => 'No pudimos activar tu clave en este momento. Inténtalo en unos minutos.']);
+}
 
 // Solo un dispositivo nuevo suma un uso en Gumroad; las renovaciones no.
 $g = consultarGumroad($clave, !$conocido);
@@ -43,15 +47,17 @@ if (!empty($compra['test']) && empty($CONFIG['permitir_compras_prueba'])) {
     responder(403, ['error' => 'clave_invalida', 'mensaje' => 'Esa clave es de una compra de prueba.']);
 }
 
-if (!$conocido) {
-    if (count($registro['dispositivos']) >= (int)$CONFIG['max_dispositivos']) {
-        responder(403, [
-            'error' => 'limite_dispositivos',
-            'mensaje' => 'Esta clave ya se activó en ' . (int)$CONFIG['max_dispositivos'] . ' dispositivos. Escríbenos si necesitas liberar uno.',
-        ]);
-    }
-    $registro['dispositivos'][] = ['id' => $dispositivo, 'desde' => date('c')];
-    guardarDispositivos($hashClave, $registro);
+try {
+    $cabe = registrarDispositivo($hashClave, $dispositivo);
+} catch (PDOException $e) {
+    error_log('activar.php: ' . $e->getMessage());
+    responder(500, ['error' => 'servidor', 'mensaje' => 'No pudimos activar tu clave en este momento. Inténtalo en unos minutos.']);
+}
+if (!$cabe) {
+    responder(403, [
+        'error' => 'limite_dispositivos',
+        'mensaje' => 'Esta clave ya se activó en ' . (int)$CONFIG['max_dispositivos'] . ' dispositivos. Escríbenos si necesitas liberar uno.',
+    ]);
 }
 
 responder(200, crearPermiso($hashClave, $dispositivo));
